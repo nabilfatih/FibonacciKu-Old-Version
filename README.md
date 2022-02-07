@@ -1,1 +1,1 @@
-# fibonacciku's web application
+# FibonacciKu's web application
