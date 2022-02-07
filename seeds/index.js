@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
 const beranda = require('../models/beranda');
-const pelajaran = require('../models/pelajaran');
+const subBabMTK = require('./subBabMTK');
+const bab = require('./bab');
+const { dataPelajaran, dataPelajaranUjian } = require('./dataPelajaran');
+const Pelajaran = require('../models/pelajaran');
 
 mongoose.connect('mongodb://localhost:27017/fibonacciku', {
     useNewUrlParser: true,
@@ -14,8 +17,7 @@ db.once("open", () => {
 });
 
 const seedDB = async() => {
-    await beranda.deleteMany({});
-    
+    await Pelajaran.deleteMany({});
 }
 
 seedDB().then(() => {

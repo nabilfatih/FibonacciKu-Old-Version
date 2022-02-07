@@ -5,7 +5,6 @@ const pelajaranSchema = new Schema ({
     pelajaran: String,
     bab: String,
     judul: String,
-    deskripsi: String,
     link: String
 });
 
