@@ -1,0 +1,306 @@
+.forms {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+    &__image {
+        content: "";
+        position: absolute;
+        min-height: 100%;
+        min-width: 170%;
+        background-image: url('/img/masuk/latar_planetdarkblueungu.png');
+        background-size: 115%;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @include breakpoint-down(medium){
+            min-height: 100%;
+            background-size: 200%;
+        }
+
+        @include breakpoint-down(small){
+            background-image: none;
+        }
+    }
+    
+    z-index: 0;
+
+    &__container {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    &__box {
+        z-index: 2;
+        background: white;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+        width: 21.875rem;
+        padding: 3.125rem 2.5rem;
+        border-radius: 0.3125rem;
+        overflow: hidden;
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 2.5rem;
+            font-weight: 700;
+        }
+
+        .field {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 1.5625rem;
+
+            &.active {
+                border-bottom: 0.125rem solid $darkBlue;
+                transition: 0.3s ease;
+
+                i {
+                    color: $darkBlue;
+                    transition: 0.3s ease;
+                }
+            }
+
+            input {
+                border: none;
+                outline: none;
+                background: none;
+                width: 100%;
+                font-size: 1em;
+                padding-bottom: 0.3125rem;
+            }
+
+            i {
+                color: #828da0;
+                font-size: 1.3em;
+                margin-right: 0.625rem;
+                padding-bottom: 0.3125rem;
+            }
+
+            .eye-btn {
+                cursor: pointer;
+
+                i:hover {
+                    color: #0065ff;
+                    transition: 0.3s ease;
+                }
+            }
+        }
+
+        .forgot-link {
+            text-align: right;
+            transform: translateY(-10px);
+
+            a {
+                color: #0065ff;
+                font-size: 0.8em;
+                text-decoration: none;
+                font-weight: 500;
+            }
+        }
+
+        .submit-btn {
+            background: linear-gradient(to right, $greenTeal, $blue);
+            color: black;
+            border: none;
+            outline: none;
+            width: 7.5rem;
+            padding: 0.625rem 1.875rem;
+            border-radius: 0.3125rem;
+            font-size: 0.85em;
+            font-weight: 500;
+            margin-top: 0.3125rem;
+            cursor: pointer;
+        }
+
+        .login-options {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .text {
+                color: #828da0;
+                font-size: 0.65em;
+                margin: 1.5625rem 0;
+            }
+
+            .other-logins {
+                display: flex;
+
+                a {
+                    border: 1px solid #ccc;
+                    padding: 0.6875rem 2rem;
+                    border-radius: 0.75rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 0.3125rem;
+
+                    img {
+                        width: 1.25rem;
+                    }
+                }
+
+                a:hover {
+                    border: 1px solid $darkBlue;
+                }
+            }
+        }
+
+        ::placeholder {
+            color: #828da0;
+            font-size: 0.85em;
+        }
+    }
+
+    &__imgBox {
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 0.3125rem 1.5625rem rgba(0, 0, 0, 0.15);
+        height: 25rem;
+        padding: 0.9375rem 2.1875rem;
+
+        img {
+            max-width: 16.875rem;
+        }
+
+        .sliding-link {
+            display: flex;
+            font-size: 0.8em;
+            //margin-bottom: 2rem;
+
+            a {
+                
+                margin-top: 2px;
+                margin-bottom: 33.75px;
+                max-height: 1.125rem;
+                color: #0065ff;
+                font-weight: 600;
+                margin-left: 0.3125rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .sign-in-imgBox {
+        border-radius: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
+    }
+
+    .sign-up-imgBox {
+        border-radius: 0.3125rem 0 0 0.3125rem;
+    }
+
+    // .sign-in-form.hide .sign-in-box{
+    //     transform: translateX(100%);
+    //     visibility: hidden;
+    // }
+
+    // .sign-in-form.hide .sign-in-imgBox {
+    //     transform: translateX(-100%);
+    //     visibility: hidden;
+    // }
+
+    // .sign-in-form.show .sign-in-box,
+    // .sign-in-form.show .sign-in-imgBox {
+    //     transform: translateX(0);
+    //     visibility: visible;
+    //     transition: 0.5s ease;
+    // }
+
+    // .sign-up-form .sign-up-imgBox {
+    //     transform: translateX(100%);
+    //     visibility: hidden;
+    // }
+
+    // .sign-up-form .sign-up-box {
+    //     transform: translateX(-100%);
+    //     visibility: hidden;
+    // }
+
+    // .sign-up-form.show .sign-up-imgBox,
+    // .sign-up-form.show .sign-up-box {
+    //     transform: translateX(0);
+    //     visibility: visible;
+    //     transition: 0.5s ease;
+    // }
+
+    @include breakpoint-down(small){
+        
+        &__container {
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            bottom: 0;
+            overflow: hidden;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-right: 1.875rem;
+            padding-left: 1.875rem;
+            font-size: 1em;
+        }
+
+        &__box{
+            
+            width: 100%;
+            box-shadow: none;
+            padding: 0;
+            margin-bottom: 1rem;
+
+        }
+
+        &__imgBox {
+            
+            box-shadow: none;
+            width: 100%;
+            height: auto;
+            padding: 2.1875rem 2.1875rem 0.9375rem;
+            padding-top: 1rem;
+            padding-bottom: 0;
+            
+            .sliding-link {
+                height: 3rem;
+                a {
+                    margin-top: 0.05rem;
+                }
+            }
+
+            img {
+                //display: none;
+                max-width: 54%;
+                min-width: 11.25rem;
+            }
+
+            // &.sign-up-imgBox {
+            //     img {
+            //         display: none;
+            //     }
+            // }
+        }
+
+
+        .sign-up-form {
+            flex-direction: column-reverse;
+        }
+
+        .other-logins {
+            
+            a {
+                padding: 0.5625rem 1.5625rem;
+                margin: 0 0.1875rem;
+            }
+        }
+    }
+}

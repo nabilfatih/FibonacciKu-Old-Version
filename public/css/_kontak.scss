@@ -1,0 +1,113 @@
+.kontak {
+    
+    &__intro {
+
+        text-align: center;
+        margin-bottom: 2rem;
+
+        @include breakpoint-up(medium) {
+            margin-bottom: 3.5rem;
+        }
+
+        h2 {
+            font-weight: 1000;
+        }
+
+        p {
+            text-align: left;
+            margin-bottom: 10px;
+
+            @include breakpoint-down(small) {
+                text-align: center;
+            }
+        }
+    }
+
+    &__container {
+        row-gap: 3rem;
+
+        @include breakpoint-up(medium) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__information {
+
+        display: flex;
+        margin-bottom: 2rem;
+    }
+
+    &__subtitle {
+        margin-right: 1rem;
+    }
+
+    &__foto {
+        img {
+            margin-top: 2rem;
+            margin-left: 7rem;
+            margin-right: 2rem;
+            width: 22rem;
+
+            @include breakpoint-down(medium) {
+                margin-left: 5rem;
+                margin-right: 2rem;
+                width: 17rem;
+            }
+
+            @include breakpoint-down(small) {
+                display: none;
+            }
+        }
+    }
+
+    &__icon {
+        font-size: 2rem;
+        color: $darkBlue;
+        margin-right: 0.5rem;
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: large;
+    }
+
+    &__subtitle {
+        font-size: medium;
+        opacity: 0.7;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        
+        padding: 1.5rem;
+        border-radius: 15px;
+        box-shadow: 4px 3px 6px 2px rgba(0,0,0,.2);
+        background: linear-gradient(to right, $blueSky, $lightPurple);
+
+    }
+
+    &__konten {
+        background-color: $verylightBlue;
+        border-radius: .5rem;
+        padding: .5rem 1rem .25rem;
+    }
+
+    &__label {
+        font-size: small;
+    }
+
+    &__input {
+
+        width: 100%;
+        background-color: $verylightBlue;
+        font-size: medium;
+        border: none;
+        outline: none;
+        padding: .25rem .5rem .5rem 0;
+        resize: none;
+    }
+
+}

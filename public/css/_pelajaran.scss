@@ -1,0 +1,194 @@
+.pelajaran {
+
+    background-color: $cream;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+
+    @include breakpoint-up(large){
+        padding-bottom: 3rem;
+    }
+
+    &__intro {
+        margin-bottom: 2rem;
+        margin-bottom: 0;
+
+        h2 {
+            font-weight: 1000;
+        }
+
+        @include breakpoint-up(medium){
+            text-align: center;
+        }
+        @include breakpoint-up(large){
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &__grid {
+        gap: 2.5rem;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        @include breakpoint-down(small) {
+            flex-direction: column;
+        }
+    }
+
+    &__card {
+        
+        padding: 1rem;
+        // border: 5px solid black;
+        border-radius: 15px;
+        box-shadow: 6px 3px 6px 0 rgba(0,0,0,.2);
+        background: linear-gradient(to right, $blueSky, $lightPurple);
+
+        .button {
+
+            border: 1px solid transparent;
+            &:hover {
+                border: 1px solid $darkBlue;
+            }
+            background-image: linear-gradient(to right, $lightGreen, $greenTeal);
+        }
+
+        @include breakpoint-up(medium){
+            flex: 2 1 30%;
+        }
+
+        @include breakpoint-up(large){
+            flex: 2 1 30%;
+        }
+    }
+
+    &__icon {
+        content: "";
+        position: relative;
+        width: 100%;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0rem;
+
+        @include breakpoint-up(large){
+            margin-bottom: 1.5rem;
+        }
+
+        img {
+            max-width: 128px;
+        }
+    }
+
+    &__title {
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: 1.15;
+        color: $darkBlue;
+        margin-bottom: 1rem;
+
+        @include breakpoint-up(large){
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+.ujian {
+    background-color: $mostLightPink;
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+    @include breakpoint-up(large){
+        padding-bottom: 3rem;
+    }
+
+    &__intro {
+        margin-bottom: 2rem;
+        margin-bottom: 0;
+
+        h2 {
+            font-weight: 1000;
+        }
+
+        @include breakpoint-up(medium){
+            text-align: center;
+        }
+        @include breakpoint-up(large){
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &__grid {
+        gap: 2.5rem;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        @include breakpoint-down(small) {
+            flex-direction: column;
+        }
+    }
+
+    &__card {
+        
+        padding: 1rem;
+        // border: 5px solid black;
+        border-radius: 15px;
+        box-shadow: 6px 3px 6px 0 rgba(0,0,0,.2);
+        background: linear-gradient(to left, $greenTeal, $yellowGreen);
+
+        .button {
+            border: 1px solid transparent;
+            &:hover {
+                border: 1px solid $darkBlue;
+            }
+            background-image: linear-gradient(to right, $lightBrown, $mostLightBrown);
+        }
+
+        @include breakpoint-up(medium){
+            flex: 2 1 30%;
+        }
+
+        @include breakpoint-up(large){
+            flex: 2 1 30%;
+        }
+    }
+
+    &__icon {
+        content: "";
+        position: relative;
+        width: 100%;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0rem;
+
+        @include breakpoint-up(large){
+            margin-bottom: 1.5rem;
+        }
+
+        img {
+            max-width: 128px;
+        }
+    }
+
+    &__title {
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: 1.15;
+        color: $darkBlue;
+        margin-bottom: 1rem;
+
+        @include breakpoint-up(large){
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}

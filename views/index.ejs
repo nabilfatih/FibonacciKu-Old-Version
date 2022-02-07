@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FibonacciKu | Belajar Gratis Kapanpun Dimanapun</title>
+    <link rel="icon" type="image" href="img/beranda/logofibo.svg">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Belajar gratis dimanapun dan kapanpun di platform pendidikan terbaik di Indonesia - 100% Gratis!">
+    <meta name="keywords" content="fibonacciku, fibonacciku.id, fibonacciku indonesia, belajar online, platform pendidikan, bimbel gratis, 
+    bimbel gratis indonesia, patform pendidikan indonesia, platform belajar, belajar, start up muda, start up anak bangsa, bimbel,
+    platform pendidikan gratis indonesia, platform pendidikan terbaik indonesia, belajar gratis indonesia, bimbel sd, bimbel smp, 
+    bimbel sma, bimbel kuliah, belajar pelajaran gratis, bimbel utbk, bimbel utbk gratis, mata pelajaran">
+    <meta name='robots' content="index, follow">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/dist/style.css" onload="this.media='all'">
+
+    <script src="js/beranda/script.js" async></script>
+</head>
+<body>
+    <!-- <header class="header">
+        <div class="overlay has-fade"></div>
+
+        <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+            <a href="/" class="header__logo">
+                <img src="img/beranda/logofibonama.svg" alt="FibonacciKu">
+            </a>
+
+            <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <div class="header__links hide-for-mobile">
+                <a href="/">Beranda</a><a href="https://www.youtube.com/c/Fibonacciku" target="_blank">Mata Pelajaran</a><a href="https://www.youtube.com/c/Fibonacciku/about" target="_blank">Tentang</a><a href="https://www.youtube.com/c/Fibonacciku/about" target="_blank">Kontak</a><a href="https://saweria.co/Fibonacciku" target="_blank">Donasi</a>
+            </div>
+
+            <div class="header__register hide-for-mobile">
+                <a href="/masuk" class="button header__cta">Masuk</a>
+                <a href="/daftar" class="button header__cta">Daftar</a>
+            </div>
+
+        </nav>
+
+        <div class="header__menu has-fade hide-for-desktop">
+            <a href="/">Beranda</a>
+            <a href="https://www.youtube.com/c/Fibonacciku" target="_blank">Mata Pelajaran</a>
+            <a href="https://www.youtube.com/c/Fibonacciku/about" target="_blank">Tentang</a>
+            <a href="https://www.youtube.com/c/Fibonacciku/about" target="_blank">Kontak</a>
+            <a href="https://saweria.co/Fibonacciku" target="_blank">Donasi</a>
+        </div>
+    </header> -->
+
+    <%- include('./partials/navbar.ejs')  %>
+
+    <%- include('./partials/home.ejs')  %>
+
+    <%- include('./partials/footer.ejs')  %>
+
+    <!-- <section class="hero">
+        <div class="container">
+            
+            <div class="hero__image"></div>
+
+            <div class="hero__text container--pall">
+                <h1>
+                    Belajar Gratis Kapanpun Dimanapun
+                </h1>
+                <p>
+                    FibonacciKu percaya bahwa semua orang berhak mendapatkan pendidikan gratis yang berkualitas
+                </p>
+
+                <div class="hero__register hide-for-mobile">
+                    <a href="/masuk" class="button header__cta">Masuk</a>
+                    <a href="/daftar" class="button header__cta">Daftar</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="feature">
+
+        <div class="feature container container--pall">
+
+            <div class="feature__intro">
+                <h2>Kenapa memilih FibonacciKu?</h2>
+                <p>
+                    Kita menyediakan pendidikan gratis untuk orang Indonesia
+                    di seluruh dunia yang dapat diakses kapanpun dan dimanapun.
+                </p>
+            </div>
+    
+            <div class="feature__grid">
+                <div class="feature__item">
+                    <div class="feature__icon belajar_mandiri">
+                        
+                    </div>
+                    <div class="feature__title">
+                        Belajar Mandiri
+                    </div>
+                    <div class="feature__description">
+                        Murid belajar pada kemampuannya sendiri, dengan tujuan mengisi gap
+                        pemahaman suatu materi supaya memiliki pondasi yang kuat
+                    </div>
+                </div>
+    
+                <div class="feature__item">
+                    <div class="feature__icon konten_terpercaya">
+                       
+                    </div>
+                    <div class="feature__title">
+                        Konten Terpercaya
+                    </div>
+                    <div class="feature__description">
+                        Diciptakan oleh mahasiswa di jerman yang berpengalaman
+                        di bidangnya dan mengajar dengan sepenuh hati
+                    </div>
+                </div>
+    
+                <div class="feature__item">
+                    <div class="feature__icon belajar_asyik">
+                        
+                    </div>
+                    <div class="feature__title">
+                        Belajar Asyik
+                    </div>
+                    <div class="feature__description">
+                        Pembelajaran yang simpel dan tentunya menyenangkan
+                        untuk semua umur
+                    </div>
+                </div>
+    
+                <div class="feature__item">
+                    <div class="feature__icon akses_gratis">
+                        
+                    </div>
+                    <div class="feature__title">
+                        Akses Gratis
+                    </div>
+                    <div class="feature__description">
+                        Semua materi di FibonacciKu dapat diakses secara gratis
+                        kapanpun dan dimanapun kamu berada
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="donasi">
+        <div class="container">
+
+            <div class="donasi__image"></div>
+
+            <div class="donasi__text container--pall">
+                <h1>
+                    Kita butuh Kamu
+                </h1>
+                <p>
+                    Bantuan donasi yang kamu berikan sangat berarti
+                    untuk kita, supaya kita dapat selalu memberikan
+                    pendidikan gratis yang berkualitas kepada kalian semua
+                </p>
+                <a href="https://saweria.co/Fibonacciku" target="_blank" class="button footer__cta">Donasi Sekarang</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="container">
+            <a class="footer__logo" href="/">
+                <img src="img/beranda/logofibonama_footer.svg">
+            </a>
+    
+            <div class="footer__social">
+                <a href="https://www.instagram.com/fibonacciku.id/" target="_blank">
+                    <img src="/img/beranda/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/company/fibonacciku" target="_blank">
+                    <img src="/img/beranda/linkedin.png" alt="Linkedin">
+                </a>
+                <a href="https://www.youtube.com/c/Fibonacciku" target="_blank">
+                    <img src="/img/beranda/youtube.png" alt="Youtube">
+                </a>
+            </div>
+    
+            <div class="footer__links col1">
+                <a href="/karir">Karir</a>
+                <a href="/kontak">Kontak</a>
+                <a href="/tim">Tim Kita</a>
+            </div>
+    
+            <div class="footer__links col2">
+                <a href="/tentang">Tentang Kita</a>
+                <a href="/kebijakanprivasi">Kebijakan Privasi</a>
+                <a href="/syaratketentuan">Syarat & Ketentuan</a>
+            </div>
+    
+            <div class="footer__cta">
+                <a href="https://saweria.co/Fibonacciku" target="_blank" class="button">Donasi</a>
+            </div>
+    
+            <div class="footer__copyright">
+                2022 &copy; FibonacciKu. All Rights Reserved
+            </div>
+        </div>
+
+    </footer> -->
+
+</body>
+</html>

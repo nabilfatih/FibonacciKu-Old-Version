@@ -1,0 +1,47 @@
+<footer class="footer">
+
+    <div class="container">
+        <% if(!currentUser) {%> 
+        <a class="footer__logo" href="/">
+            <img src="/img/beranda/logofibonama_footer.svg">
+        </a>
+        <% } else {%> 
+        <a class="footer__logo" href="/beranda">
+            <img src="/img/beranda/logofibonama_footer.svg">
+        </a>
+        <% } %> 
+
+        <div class="footer__social">
+            <a href="https://www.instagram.com/fibonacciku.id/" target="_blank">
+                <img src="/img/beranda/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/company/fibonacciku" target="_blank">
+                <img src="/img/beranda/linkedin.png" alt="Linkedin">
+            </a>
+            <a href="https://www.youtube.com/c/Fibonacciku" target="_blank">
+                <img src="/img/beranda/youtube.png" alt="Youtube">
+            </a>
+        </div>
+
+        <div class="footer__links col1">
+            <a href="/karir">Karir</a>
+            <a href="/kontak">Kontak</a>
+            <a href="/tim">Tim Kita</a>
+        </div>
+
+        <div class="footer__links col2">
+            <a href="/tentang">Tentang Kita</a>
+            <a href="/kebijakanprivasi">Kebijakan Privasi</a>
+            <a href="/syaratketentuan">Syarat & Ketentuan</a>
+        </div>
+
+        <div class="footer__cta">
+            <a href="https://saweria.co/Fibonacciku" target="_blank" class="button">Donasi</a>
+        </div>
+
+        <div class="footer__copyright">
+            Jerman - Indonesia &copy; FibonacciKu 2022. All Rights Reserved
+        </div>
+    </div>
+
+</footer>

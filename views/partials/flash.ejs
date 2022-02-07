@@ -1,0 +1,27 @@
+<style>
+    .alert {
+        margin-top: 76px;
+    }
+
+    .symbol {
+        padding-left: 0.5rem;
+    }
+</style>
+
+<% if(success && success.length) {%> 
+    <div class="alert alert-success alert-dismissible fade show mb-0" role="alert">
+        <%= success %>
+        <a type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </a> 
+    </div>
+<% } %>
+
+<% if(error && error.length) {%>
+    <div class="alert alert-danger alert-dismissible fade show mb-0 text-center" role="alert">
+        <%= error %>
+        <a type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true" class="symbol">&times;</span>
+        </a> 
+    </div>
+<% } %> 

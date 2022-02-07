@@ -1,0 +1,63 @@
+<% layout('layouts/boilerplate') %>
+
+<style onload="this.media='all'"> 
+
+    .error {
+        position: relative;
+        width: 100%;
+        min-height: 80vh;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-top: 77px;
+    }
+    .background__image {
+        position: absolute;
+        width: 100%;
+        min-height: 100vh;
+        background-image: url('/img/illustration/tree_sunset.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    @media (max-width: 63.9375em) {
+        .background__image {
+            min-height: 100%;
+        }
+    }
+
+    /* .footer {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    } */
+
+    @media only screen and (max-width: 39.9375em) {
+        .footer {
+            position: relative;
+        }
+    }
+
+    @media only screen and (max-width: 63.9375em) {
+        .footer {
+            position: relative;
+        }
+    }
+</style>
+
+<section class="error">
+
+    <div class="background__image"></div>
+
+    <div class="container--pall row">
+        <div class="col-6 offset-3 pt-5 pb-5">
+            <div class="alert alert-danger" role="alert">
+                <h4 class="alert-heading"><%= err.message  %> </h4>
+                <p class="mb-0">Oh tidak! ada sesuatu yang salah! mungkin ada monster yang bersembunyi disini! atau mungkin hantu(?) HIHIHIHI :)</p>
+                <hr>
+                <p class="mb-0">Apa yang kamu cari tidak dapat ditemukan, pastikan apa yang kamu cari benar!</p>
+            </div>
+        </div>
+    </div>
+</section>

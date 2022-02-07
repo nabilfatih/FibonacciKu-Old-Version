@@ -1,0 +1,131 @@
+.feature {
+    background-color: $verylightGreen;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    @include breakpoint-up(large){
+        padding-bottom: 2rem;
+    }
+
+    &__intro {
+        margin-bottom: 3.75rem;
+        margin-bottom: 0;
+
+        @include breakpoint-up(medium){
+            text-align: left;
+        }
+        @include breakpoint-up(large){
+            text-align: left;
+            width: 60%;
+        }
+    }
+
+    &__grid {
+
+        @include breakpoint-up(medium){
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        padding: 1rem;
+        padding-top: 0.5rem;
+        
+        @include breakpoint-up(medium){
+            flex: 0 0 50%;
+        }
+
+        @include breakpoint-up(large){
+            flex: 2;
+        }
+    }
+
+    &__icon {
+        content: "";
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        margin-bottom: 0rem;
+        padding-bottom: 0rem;
+        
+        
+        @include breakpoint-up(large){
+            margin-bottom: 1rem;
+        }
+
+        &.belajar_mandiri {
+        
+            background-image: url('/img/beranda/dino_pembelajaran_mandiri.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 90%;
+
+            // @include breakpoint-up(large){
+            //     background-size: 83%;
+            //     background-repeat: no-repeat;
+            //     background-position: center;
+            // }
+        }
+
+        &.konten_terpercaya {
+
+            background-image: url('/img/beranda/burung_konten_terpercaya.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 90%;
+
+            // @include breakpoint-up(large){
+            //     background-size: 85%;
+            //     background-repeat: no-repeat;
+            //     background-position: center;
+            // }
+        }
+
+        &.belajar_asyik {
+
+            background-image: url('/img/beranda/dinoair_belajar_asyik.svg');
+            background-size: 65%;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            // @include breakpoint-up(large){
+            //     background-size: 70%;
+            //     background-repeat: no-repeat;
+            //     background-position: center;
+            // }
+        }
+
+        &.akses_gratis {
+
+            background-image: url('/img/beranda/triceratop_akses_gratis.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 90%;
+            // @include breakpoint-up(large){
+            //     background-size: 100%;
+            //     background-repeat: no-repeat;
+            //     background-position: center;
+            // }
+        }
+    }
+
+    &__title {
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: 1.15;
+        color: $darkBlue;
+        margin-bottom: 1rem;
+
+        @include breakpoint-up(large){
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__description {
+        font-size: 0.875rem;
+        line-height: 1.5;
+    }
+}

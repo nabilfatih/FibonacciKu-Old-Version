@@ -1,0 +1,83 @@
+<% layout('layouts/boilerplate') %>
+<%- include('../partials/flash') %>
+
+<style>
+    .kontak-form {
+        background-color: rgb(255, 248, 243);
+        margin-top: 45px;
+    }
+</style>
+
+<section class="kontak-form">
+    <div class="container container--pall">
+        <div class="kontak__intro">
+            <h2>Kamu Bisa Kontak Kita!</h2>
+            <p>
+                Kalau kamu ada saran atau masukan untuk kita, bisa mengisi form dibawah!
+            </p>
+            <p>
+                Atau bahkan jika kamu ingin kerjasama dengan kita, dengan senang hati kita membuka tangan lebar-lebar.
+            </p>
+        </div>
+        <div class="kontak__container grid">
+    
+            <div class="kontak__grid">
+                
+                <div class="kontak__information">
+                    <i class="uil uil-phone kontak__icon"></i>
+    
+                    <div>
+                        <h3 class="kontak__title">Telepon</h3>
+                        <span class="kontak__subtitle">+49-17669341393</span>
+                    </div>
+                </div>
+                <div class="kontak__information">
+                    <i class="uil uil-map-marker kontak__icon"></i>
+    
+                    <div>
+                        <h3 class="kontak__title">Lokasi</h3>
+                        <span class="kontak__subtitle">Regensburg - Jerman, Plato Wild Str. 2A, Nr. 1024</span>
+                    </div>
+                </div>
+                <div class="kontak__information">
+                    <div class="kontak__foto">
+                        <img src="img/icon/kontak-icon.png">
+                    </div>
+                </div>
+            </div>
+    
+            <form action="/kontakSubmit" method="POST" class="kontak__form grid">
+                    
+                <div class="kontak__konten">
+                    <label for="" class="kontak__label">Nama Lengkap</label>
+                    <input type="text" id="nama" class="kontak__input">
+                </div>
+                <div class="kontak__konten">
+                     <label for="" class="kontak__label">Email</label>
+                    <input type="email" id="email" class="kontak__input">
+                </div>
+                    
+                <div class="kontak__konten">
+                    <label for="" class="kontak__label">Subjek</label>
+                    <input type="text" id="subject" class="kontak__input">
+                </div>
+
+                <div class="kontak__konten">
+                    <label for="" class="kontak__label">Pesan</label>
+                    <textarea id="pesan" cols="0" rows="7" class="kontak__input"></textarea>
+                </div>
+    
+                <div>
+                    <button type="submit">
+                        Kirim Pesan
+                        <i class="uil uil-message button__icon"></i>
+                    </button>
+                </div>
+            </form>
+    
+        </div>
+    </div>
+
+</section>
+
+<script src="js/kontak/script.js"></script>
