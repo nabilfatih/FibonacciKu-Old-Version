@@ -19,14 +19,16 @@ const seedDB = async() => {
     for (let i = 0; i < dataPelajaran.length; i++) {
         const pelajaran = new Pelajaran({
             query: `${dataPelajaran[i].query}`,
-            pelajaran: `${dataPelajaran[i].pelajaran}`
+            pelajaran: `${dataPelajaran[i].pelajaran}`,
+            icon: `${dataPelajaran[i].icon}`
         })
         await pelajaran.save();
     }
     for (let i = 0; i < dataPelajaranUjian.length; i++) {
         const pelajaranUjian = new Pelajaran({
             query: `${dataPelajaranUjian[i].query}`,
-            pelajaran: `${dataPelajaranUjian[i].pelajaran}`
+            pelajaran: `${dataPelajaranUjian[i].pelajaran}`,
+            icon: `${dataPelajaranUjian[i].icon}`
         })
         await pelajaranUjian.save();
     }
