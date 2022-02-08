@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const pelajaranBabSchema = new Schema ({
+const babSchema = new Schema ({
     query: String,
     pelajaran: String,
     icon: String,
@@ -10,5 +10,5 @@ const pelajaranBabSchema = new Schema ({
     link: String
 })
 
-module.exports = mongoose.model('PelajaranBab', pelajaranBabSchema);
+module.exports = mongoose.model('Bab', babSchema);
 
