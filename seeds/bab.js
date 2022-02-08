@@ -1,4 +1,8 @@
-module.exports.matematika = [
+module.exports.babMTK = [
+    // {
+    //     icon: ,
+    //     bab: ,
+    // },
     "Fungsi",
     "Matematika Dasar",
     "Aljabar",
@@ -11,10 +15,10 @@ module.exports.matematika = [
     "Analisis"
 ]
 
-module.exports.fisika = [
+module.exports.babFisika = [
     "Fisika Dasar",
 ]
 
-module.exports.informatika = [
+module.exports.babInformatika = [
     "Sistem Bilangan"
 ]

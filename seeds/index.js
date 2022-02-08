@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const { dataPelajaran, dataPelajaranUjian } = require('./dataPelajaran');
+const { babMTK, babFisika, babInformatika } = require('./bab');
 const Pelajaran = require('../models/pelajaran');
 
 mongoose.connect('mongodb://localhost:27017/fibonacciku', {

@@ -26,8 +26,9 @@ router.get('/', isLoggedIn, async (req, res) => {
     });
 });
 
-router.get('/:pelajaran', isLoggedIn, async(req, res) => {
-    res.render('pelajaran/show');
+router.get('/:query', isLoggedIn, async(req, res) => {
+    const pelajaran = await Pelajaran.findOne({query: req.params.query})
+    res.render('pelajaran/show', { pelajaran });
 })
 
 module.exports = router;
