@@ -25,12 +25,13 @@
                     </div>
     
                     <div class="pelajaran__title">
-                        Matematika
+                        Matematika 
                     </div>
-    
-                    <div class="button">
+                    <% for (let pelajaran of MTK) {%> 
+                    <a class="button" href="mata-pelajaran/<%= pelajaran.query %>">
                         Belajar Disini!
-                    </div>
+                    </a>
+                    <%  }%> 
                 </div>
     
                 <div class="pelajaran__card">
@@ -41,10 +42,11 @@
                     <div class="pelajaran__title">
                         Fisika
                     </div>
-    
-                    <div class="button">
+                    <% for (let pelajaran of Fisika) {%> 
+                    <a class="button" href="mata-pelajaran/<%= pelajaran.query %>">
                         Belajar Disini!
-                    </div>
+                    </a>
+                    <%  }%> 
                 </div>
     
                 <div class="pelajaran__card">
@@ -55,10 +57,11 @@
                     <div class="pelajaran__title">
                         Informatika
                     </div>
-    
-                    <div class="button">
+                    <% for (let pelajaran of Informatika) {%> 
+                    <a class="button" href="mata-pelajaran/<%= pelajaran.query %>">
                         Belajar Disini!
-                    </div>
+                    </a>
+                    <%  }%>
                 </div>
     
                 <div class="pelajaran__card">
@@ -69,10 +72,11 @@
                     <div class="pelajaran__title">
                         Biologi
                     </div>
-    
-                    <div class="button">
+                    <% for (let pelajaran of Biologi) {%> 
+                    <a class="button" href="mata-pelajaran/<%= pelajaran.query %>">
                         Belajar Disini!
-                    </div>
+                    </a>
+                    <%  }%>
                 </div>
     
                 <div class="pelajaran__card">
@@ -83,10 +87,11 @@
                     <div class="pelajaran__title">
                         Kimia
                     </div>
-    
-                    <div class="button">
+                    <% for (let pelajaran of Kimia) {%> 
+                    <a class="button" href="mata-pelajaran/<%= pelajaran.query %>">
                         Belajar Disini!
-                    </div>
+                    </a>
+                    <%  }%>
                 </div>
     
                 <div class="pelajaran__card">
@@ -97,10 +102,11 @@
                     <div class="pelajaran__title">
                         Astronomi
                     </div>
-    
-                    <div class="button">
+                    <% for (let pelajaran of Astronomi) {%> 
+                    <a class="button" href="mata-pelajaran/<%= pelajaran.query %>">
                         Belajar Disini!
-                    </div>
+                    </a>
+                    <%  }%>
                 </div>
         </div>
 
@@ -123,10 +129,11 @@
                 <div class="ujian__title">
                     UTBK/SBMPTN
                 </div>
-
-                <div class="button">
+                <% for (let pelajaran of UTBK) {%> 
+                <a class="button" href="mata-pelajaran/<%= pelajaran.query %>">
                     Belajar Disini!
-                </div>
+                </a>
+                <%  }%>
             </div>
 
             <div class="ujian__card">
@@ -137,10 +144,11 @@
                 <div class="ujian__title">
                     Aufnahmeprüfung
                 </div>
-
-                <div class="button">
+                <% for (let pelajaran of ANP) {%> 
+                <a class="button" href="mata-pelajaran/<%= pelajaran.query %>">
                     Belajar Disini!
-                </div>
+                </a>
+                <%  }%>
             </div>
         </div>
 

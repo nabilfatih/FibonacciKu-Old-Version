@@ -1,7 +1,4 @@
 const mongoose = require('mongoose');
-const beranda = require('../models/beranda');
-const subBabMTK = require('./subBabMTK');
-const bab = require('./bab');
 const { dataPelajaran, dataPelajaranUjian } = require('./dataPelajaran');
 const Pelajaran = require('../models/pelajaran');
 
@@ -18,8 +15,24 @@ db.once("open", () => {
 
 const seedDB = async() => {
     await Pelajaran.deleteMany({});
+    for (let i = 0; i < dataPelajaran.length; i++) {
+        const pelajaran = new Pelajaran({
+            query: `${dataPelajaran[i].query}`,
+            pelajaran: `${dataPelajaran[i].pelajaran}`
+        })
+        await pelajaran.save();
+    }
+    for (let i = 0; i < dataPelajaranUjian.length; i++) {
+        const pelajaranUjian = new Pelajaran({
+            query: `${dataPelajaranUjian[i].query}`,
+            pelajaran: `${dataPelajaranUjian[i].pelajaran}`
+        })
+        await pelajaranUjian.save();
+    }
 }
 
-seedDB().then(() => {
-    mongoose.connection.close();
-});
+seedDB();
+
+// seedDB().then(() => {
+//     mongoose.connection.close();
+// });
