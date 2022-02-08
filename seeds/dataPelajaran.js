@@ -2,6 +2,7 @@ module.exports.dataPelajaran = [
     {
         query: "matematika",
         pelajaran: "Matematika",
+        
     },
     {
         query: "fisika",
