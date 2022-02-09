@@ -1,4 +1,4 @@
-.show {
+.shows {
     
     padding-bottom: 2rem;
     background-color: $verylightBlue;
@@ -73,6 +73,14 @@
 
         img {
             max-width: 128px;
+        }
+    }
+
+    &__bab {
+        font-size: 1.25rem;
+
+        @include breakpoint-down(medium) {
+            font-size: 1.1rem;
         }
     }
 }

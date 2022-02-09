@@ -1,16 +1,16 @@
 <% layout('layouts/boilerplate') %>
 
 <style>
-    .show-pelajaran {
+    .shows-pelajaran {
         margin-top: 76px;
     }
 </style>
 
-<section class="show-pelajaran">
-    <div class="show">
-        <div class="show__header">
+<section class="shows-pelajaran">
+    <div class="shows">
+        <div class="shows__header">
             <div class="container">
-                <div class="show__pelajaran">
+                <div class="shows__pelajaran">
                     <img src="<%= pelajaran.icon %>">
                     <h1><%= pelajaran.pelajaran %> </h1>
                 </div>
@@ -18,14 +18,14 @@
         </div>
 
         <div class="container container--px">
-            <div class="show__grid">
+            <div class="shows__grid">
                 <% for (let bab of babs) {%>
-                <div class="show__card">
-                    <div class="show__icon">
+                <div class="shows__card">
+                    <div class="shows__icon">
                         <img src="<%= bab.icon %> ">
                     </div>
     
-                    <a href="" class="show__bab">
+                    <a href="" class="shows__bab">
                         <%= bab.bab %> 
                     </a>
                 </div>
