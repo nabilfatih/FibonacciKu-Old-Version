@@ -391,7 +391,7 @@ button:hover::before, .button:hover::before {
   height: 4px;
   left: 0;
   right: 0;
-  bottom: -30px;
+  bottom: -29.5px;
   background: -webkit-gradient(linear, left top, right top, from(#93ffd8), to(#28c7fa));
   background: linear-gradient(to right, #93ffd8, #28c7fa);
   opacity: 0;
@@ -1025,7 +1025,7 @@ button:hover::before, .button:hover::before {
 .shows__header {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #aeefec;
+  background-color: #074684;
 }
 
 .shows__pelajaran {
@@ -1044,6 +1044,7 @@ button:hover::before, .button:hover::before {
   margin-bottom: 0;
   padding-left: 1rem;
   font-weight: 600;
+  color: white;
 }
 
 @media (max-width: 63.9375em) {
@@ -1078,8 +1079,8 @@ button:hover::before, .button:hover::before {
   border-radius: 15px;
   -webkit-box-shadow: 6px 3px 6px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 6px 3px 6px 0 rgba(0, 0, 0, 0.2);
-  background: -webkit-gradient(linear, left top, right top, from(#cddeff), to(#ffcddd));
-  background: linear-gradient(to right, #cddeff, #ffcddd);
+  background: -webkit-gradient(linear, left top, right top, from(#88e0ef), to(#cfffdc));
+  background: linear-gradient(to right, #88e0ef, #cfffdc);
 }
 
 @media (min-width: 40em) {
@@ -1118,13 +1119,18 @@ button:hover::before, .button:hover::before {
 }
 
 .shows__bab {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 63.9375em) {
   .shows__bab {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
+}
+
+.kontak {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .kontak__intro {
