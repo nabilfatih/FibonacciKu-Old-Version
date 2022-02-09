@@ -1117,12 +1117,13 @@ button:hover::before, .button:hover::before {
   max-width: 128px;
 }
 
-.shows__bab {
+.shows__bab h3 {
   font-size: 1.1rem;
+  color: #002651;
 }
 
 @media (max-width: 63.9375em) {
-  .shows__bab {
+  .shows__bab h3 {
     font-size: 1rem;
   }
 }
