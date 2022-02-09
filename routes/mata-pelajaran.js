@@ -4,6 +4,7 @@ const catchAsync = require('../utils/catchAsync');
 const route = require('color-convert/route');
 const { isLoggedIn } = require('../middleware');
 const Pelajaran = require('../models/pelajaran');
+const Bab = require('../models/bab');
 
 router.get('/', isLoggedIn, async (req, res) => {
     const MTK = await Pelajaran.find({query: "matematika"});
@@ -27,8 +28,12 @@ router.get('/', isLoggedIn, async (req, res) => {
 });
 
 router.get('/:query', isLoggedIn, async(req, res) => {
-    const pelajaran = await Pelajaran.findOne({query: req.params.query})
-    res.render('pelajaran/show', { pelajaran });
-})
+    const pelajaran = await Pelajaran.findOne({query: req.params.query});
+    const babs = await Bab.find({query: req.params.query});
+    res.render('pelajaran/show', {
+        pelajaran,
+        babs
+    });
+});
 
 module.exports = router;

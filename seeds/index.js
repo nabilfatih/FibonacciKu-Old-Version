@@ -38,6 +38,7 @@ const seedDB = async() => {
     for (let i = 0; i < babMTK.length; i++) {
         const babmtk = new Bab({
             query: `${babMTK[i].query}`,
+            querybab: `${babMTK[i].querybab}`,
             pelajaran: `${babMTK[i].pelajaran}`,
             icon: `${babMTK[i].icon}`,
             bab: `${babMTK[i].bab}`
@@ -47,6 +48,7 @@ const seedDB = async() => {
     for (let i = 0; i < babFisika.length; i++) {
         const babfisika = new Bab({
             query: `${babFisika[i].query}`,
+            querybab: `${babFisika[i].querybab}`,
             pelajaran: `${babFisika[i].pelajaran}`,
             icon: `${babFisika[i].icon}`,
             bab: `${babFisika[i].bab}`
@@ -56,6 +58,7 @@ const seedDB = async() => {
     for (let i = 0; i < babInformatika.length; i++) {
         const babinformatika = new Bab({
             query: `${babInformatika[i].query}`,
+            querybab: `${babInformatika[i].querybab}`,
             pelajaran: `${babInformatika[i].pelajaran}`,
             icon: `${babInformatika[i].icon}`,
             bab: `${babInformatika[i].bab}`

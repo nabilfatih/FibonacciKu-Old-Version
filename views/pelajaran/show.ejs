@@ -1,8 +1,32 @@
 <% layout('layouts/boilerplate') %>
 
+<style>
+    .show {
+        margin-top: 76px;
+    }
+</style>
+
 <section class="show">
     <div class="container container--pall">
-        <h1> Matematika </h1>
-        <h1> <%= pelajaran.pelajaran %>  </h1>
+        <div class="show__header">
+            <div class="show__pelajaran">
+                <img src="<%= pelajaran.icon %> ">
+                <h1><%= pelajaran.pelajaran %> </h1>
+            </div>
+        </div>
+ 
+        <div class="show__grid">
+            <% for (let bab of babs) {%>
+            <div class="show__card">
+                <div class="show__icon">
+                    <img src="<%= bab.icon %> ">
+                </div>
+
+                <a href="" class="show__bab">
+                    <%= bab.bab %> 
+                </a>
+            </div>
+            <%  }%>
+        </div>
     </div>
 </section>

@@ -1,80 +1,92 @@
 module.exports.babMTK = [
     {
-        query: "fungsi",
+        query: "matematika",
+        querybab: "fungsi",
         pelajaran: "Matematika",
-        icon: "img/icon/fungsi-icon.png",
+        icon: "/img/icon/fungsi-icon.png",
         bab: "Fungsi"
     },
     {
-        query: "mtk-dasar",
+        query: "matematika",
+        querybab: "mtk-dasar",
         pelajaran: "Matematika",
-        icon: "img/icon/mtkdasar-icon.png",
+        icon: "/img/icon/mtkdasar-icon.png",
         bab: "Matematika Dasar"
     },
     {
-        query: "aljabar",
+        query: "matematika",
+        querybab: "aljabar",
         pelajaran: "Matematika",
-        icon: "img/icon/aljabar-icon.png",
+        icon: "/img/icon/aljabar-icon.png",
         bab: "Aljabar"
     },
     {
-        query: "matriks",
+        query: "matematika",
+        querybab: "matriks",
         pelajaran: "Matematika",
-        icon: "img/icon/matriks-icon.png",
+        icon: "/img/icon/matriks-icon.png",
         bab: "Matriks"
     },
     {
         query: "matematika",
+        querybab: "eksponen",
         pelajaran: "Matematika",
-        icon: "img/icon/eksponen-icon.png",
+        icon: "/img/icon/eksponen-icon.png",
         bab: "Eksponen"
     },
     {
-        query: "teori-bilangan",
+        query: "matematika",
+        querybab: "teori-bilangan",
         pelajaran: "Matematika",
-        icon: "img/icon/teoribilangan-icon.png",
+        icon: "/img/icon/teoribilangan-icon.png",
         bab: "Teori Bilangan"
     },
     {
-        query: "himpunan",
+        query: "matematika",
+        querybab: "himpunan",
         pelajaran: "Matematika",
-        icon: "img/icon/himpunan-icon.png",
+        icon: "/img/icon/himpunan-icon.png",
         bab: "Himpunan"
     },
     {
-        query: "turunan",
+        query: "matematika",
+        querybab: "turunan",
         pelajaran: "Matematika",
-        icon: "img/icon/turunan-icon.png",
+        icon: "/img/icon/turunan-icon.png",
         bab: "Turunan"
     },
     {
-        query: "aljabar-linear",
+        query: "matematika",
+        querybab: "aljabar-linear",
         pelajaran: "Matematika",
-        icon: "img/icon/aljabarlinear-icon.png",
+        icon: "/img/icon/aljabarlinear-icon.png",
         bab: "Aljabar Linear"
     },
     {
-        query: "analisis",
+        query: "matematika",
+        querybab: "analisis",
         pelajaran: "Matematika",
-        icon: "img/icon/analisis-icon.png",
+        icon: "/img/icon/analisis-icon.png",
         bab: "Analisis"
     }
 ]
 
 module.exports.babFisika = [
     {
-        query: "fisika-dasar",
+        query: "fisika",
+        querybab: "fisika-dasar",
         pelajaran: "Fisika",
-        icon: "img/icon/fisikadasar-icon.png",
+        icon: "/img/icon/fisikadasar-icon.png",
         bab: "Fisika Dasar"
     }
 ]
 
 module.exports.babInformatika = [
     {
-        query: "sistem-bilangan",
+        query: "informatika",
+        querybab: "sistem-bilangan",
         pelajaran: "Informatika",
-        icon: "img/icon/sistembilangan-icon.png",
+        icon: "/img/icon/sistembilangan-icon.png",
         bab: "Sistem Bilangan"
     }
 ]
