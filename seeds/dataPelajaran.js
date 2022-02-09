@@ -17,7 +17,7 @@ module.exports.dataPelajaran = [
     {
         query: "biologi",
         pelajaran: "Biologi",
-        icon: "/img/icon/biologi-icon.png"
+        icon: "/img/icon/bio-icon.png"
     },
     {
         query: "kimia",
