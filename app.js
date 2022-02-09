@@ -5,7 +5,6 @@ if (process.env.NODE_ENV !== "production") {
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
-const beranda = require('./models/beranda');
 const ejsMate = require('ejs-mate');
 const Joi = require('joi');
 const catchAsync = require('./utils/catchAsync');
@@ -16,7 +15,6 @@ const methodOverride = require('method-override');
 const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const User = require('./models/user');
-const Pelajaran = require('./models/pelajaran');
 const nodemailer = require('nodemailer');
 
 const MongoDBStore = require("connect-mongo");
