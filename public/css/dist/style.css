@@ -77,7 +77,6 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -1018,7 +1017,7 @@ button:hover::before, .button:hover::before {
 }
 
 .shows {
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
   background-color: #e4fbff;
 }
 
@@ -1056,7 +1055,7 @@ button:hover::before, .button:hover::before {
 
 .shows__grid {
   gap: 2.5rem;
-  padding-top: 2rem;
+  padding-top: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1129,8 +1128,8 @@ button:hover::before, .button:hover::before {
 }
 
 .kontak {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .kontak__intro {
