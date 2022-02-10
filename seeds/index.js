@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const { dataPelajaran, dataPelajaranUjian } = require('./dataPelajaran');
-const { babMTK, babFisika, babInformatika } = require('./dataBab');
+const { babMTK, babFisika, babInformatika, babBiologi, babKimia, babAI } = require('./dataBab');
 const Pelajaran = require('../models/pelajaran');
 const Bab = require('../models/bab');
 
@@ -64,6 +64,36 @@ const seedDB = async() => {
             bab: `${babInformatika[i].bab}`
         })
         await babinformatika.save();
+    }
+    for (let i = 0; i < babBiologi.length; i++) {
+        const babbiologi = new Bab({
+            query: `${babBiologi[i].query}`,
+            querybab: `${babBiologi[i].querybab}`,
+            pelajaran: `${babBiologi[i].pelajaran}`,
+            icon: `${babBiologi[i].icon}`,
+            bab: `${babBiologi[i].bab}`
+        })
+        await babbiologi.save();
+    }
+    for (let i = 0; i < babKimia.length; i++) {
+        const babkimia = new Bab({
+            query: `${babKimia[i].query}`,
+            querybab: `${babKimia[i].querybab}`,
+            pelajaran: `${babKimia[i].pelajaran}`,
+            icon: `${babKimia[i].icon}`,
+            bab: `${babKimia[i].bab}`
+        })
+        await babkimia.save();
+    }
+    for (let i = 0; i < babAI.length; i++) {
+        const babai = new Bab({
+            query: `${babAI[i].query}`,
+            querybab: `${babAI[i].querybab}`,
+            pelajaran: `${babAI[i].pelajaran}`,
+            icon: `${babAI[i].icon}`,
+            bab: `${babAI[i].bab}`
+        })
+        await babai.save();
     }
 }
 

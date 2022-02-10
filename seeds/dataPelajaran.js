@@ -25,9 +25,9 @@ module.exports.dataPelajaran = [
         icon: "/img/icon/kimia-icon.png"
     },
     {
-        query: "astronomi",
-        pelajaran: "Astronomi",
-        icon: "/img/icon/astronomi-icon.png"
+        query: "kecerdasan-buatan",
+        pelajaran: "Kecerdasan Buatan",
+        icon: "/img/icon/kecerdasanbuatan-icon.png"
     }
 ]
 

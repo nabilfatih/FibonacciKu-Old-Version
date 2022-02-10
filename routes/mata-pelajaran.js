@@ -12,7 +12,7 @@ router.get('/', isLoggedIn, async (req, res) => {
     const Informatika = await Pelajaran.find({query: "informatika"});
     const Biologi = await Pelajaran.find({query: "biologi"});
     const Kimia = await Pelajaran.find({query: "kimia"});
-    const Astronomi = await Pelajaran.find({query: "astronomi"});
+    const AI = await Pelajaran.find({query: "kecerdasan-buatan"});
     const UTBK = await Pelajaran.find({query: "utbk-sbmptn"});
     const ANP = await Pelajaran.find({query: "aufnahmeprüfung"});
     res.render('pelajaran/index', {
@@ -21,7 +21,7 @@ router.get('/', isLoggedIn, async (req, res) => {
         Informatika,
         Biologi,
         Kimia,
-        Astronomi,
+        AI,
         UTBK,
         ANP
     });
