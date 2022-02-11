@@ -36,4 +36,8 @@ router.get('/:query', isLoggedIn, async(req, res) => {
     });
 });
 
+router.get('/:query/:querybab', isLoggedIn, async(req, res) => {
+    res.render('pelajaran/belajar')
+})
+
 module.exports = router;
