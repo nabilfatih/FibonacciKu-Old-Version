@@ -37,7 +37,10 @@ router.get('/:query', isLoggedIn, async(req, res) => {
 });
 
 router.get('/:query/:querybab', isLoggedIn, async(req, res) => {
-    res.render('pelajaran/belajar')
-})
+    const bab = await Bab.find({query: req.params.query});
+    res.render('pelajaran/show-belajar', {
+        bab
+    });
+});
 
 module.exports = router;
