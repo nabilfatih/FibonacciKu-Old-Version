@@ -19,6 +19,8 @@
 
         .header__belajar {
 
+            display: flex;
+            flex-direction: column;
             margin-top: 0.4rem;
 
             h3 {
