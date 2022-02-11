@@ -37,7 +37,7 @@ router.get('/:query', isLoggedIn, async(req, res) => {
 });
 
 router.get('/:query/:querybab', isLoggedIn, async(req, res) => {
-    const bab = await Bab.find({query: req.params.query});
+    const bab = await Bab.find({query: req.params.query, querybab: req.params.querybab});
     res.render('pelajaran/show-belajar', {
         bab
     });

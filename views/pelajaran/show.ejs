@@ -22,12 +22,12 @@
                 <% for (let bab of babs) {%>
                 <div class="shows__card">
                     <div class="shows__icon">
-                        <a href="">
+                        <a href="<%= pelajaran.query %>/<%= bab.querybab %>">
                             <img src="<%= bab.icon %> ">
                         </a>
                     </div>
     
-                    <a href="" class="shows__bab">
+                    <a href="<%= pelajaran.query %>/<%= bab.querybab %>" class="shows__bab">
                         <h3>
                             <%= bab.bab %> 
                         </h3>
