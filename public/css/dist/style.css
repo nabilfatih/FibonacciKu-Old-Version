@@ -1038,6 +1038,21 @@ button:hover::before, .button:hover::before {
   width: 85px;
 }
 
+.shows__pelajaran .header__belajar {
+  margin-top: 0.4rem;
+}
+
+.shows__pelajaran .header__belajar h3 {
+  padding-left: 1.15rem;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  color: #d9ecf2;
+}
+
+.shows__pelajaran .header__belajar h1 {
+  margin-top: 0;
+}
+
 .shows__pelajaran h1 {
   margin-top: 0.9rem;
   margin-bottom: 0;
