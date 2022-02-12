@@ -143,13 +143,36 @@
 
     &__konten {
         display: flex;
+        flex-direction: column;
         text-align: left;
     }
 
     &__keterangan {
+
+        margin-bottom: 1rem;
+
         h4 {
             font-size: 1rem;
             color: $darkGrey;
+        }
+    }
+
+    &__videos {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .konten {
+            display: flex;
+            gap: 0.5rem;
+
+            .uil-play-circle {
+                font-size: 2rem;
+            }
+
+            .judul {
+                margin-top: 0.575rem;
+            }
         }
     }
 }

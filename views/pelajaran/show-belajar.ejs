@@ -36,7 +36,17 @@
                             </div>
 
                             <div class="belajar__videos">
-
+                                <% for (let judul of kontens) {%> 
+                                    <% if(judul.subbab == subbab.subbab) {%>
+                                        <div class="konten">
+                                            <i class="uil uil-play-circle"></i>
+                                            <div class="judul">
+                                                <%= judul.judul %>
+                                            </div>
+                                        </div>
+            
+                                    <%  }%> 
+                                <%  }%> 
                             </div>
                         </div>
                     </div>

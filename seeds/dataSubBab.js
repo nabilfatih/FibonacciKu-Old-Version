@@ -5,7 +5,7 @@ module.exports.Fungsi = [
         querysubbab: "apa-itu-fungsi?",
         pelajaran: "Matematika",
         bab: "Fungsi",
-        subbab: "Apa itu Fungsi?"
+        subbab: "Apa itu Fungsi?",
     },
     {
         query: "matematika",
@@ -13,7 +13,8 @@ module.exports.Fungsi = [
         querysubbab: "menghitung-fungsi",
         pelajaran: "Matematika",
         bab: "Fungsi",
-        subbab: "Menghitung Fungsi"
+        subbab: "Menghitung Fungsi",
+        konten: ""
     },
     {
         query: "matematika",

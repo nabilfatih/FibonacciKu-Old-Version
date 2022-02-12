@@ -4,7 +4,9 @@ const { babMTK, babFisika, babInformatika, babBiologi, babKimia, babAI } = requi
 const Pelajaran = require('../models/pelajaran');
 const Bab = require('../models/bab');
 const SubBab = require('../models/subbab');
+const Konten = require('../models/konten');
 const { Fungsi, MTKDasar, Aljabar, Matriks, Eksponen, TeoriBilangan, Himpunan, Turunan, AljabarLinear, Analisis } = require('./dataSubBab');
+const { ApaItuFungsi, MenghitungFungsi } = require('./dataKonten');
 
 mongoose.connect('mongodb://localhost:27017/fibonacciku', {
     useNewUrlParser: true,
@@ -109,7 +111,7 @@ const seedDB = async() => {
             querysubbab: `${Fungsi[i].querysubbab}`,
             pelajaran: `${Fungsi[i].pelajaran}`,
             bab: `${Fungsi[i].bab}`,
-            subbab: `${Fungsi[i].subbab}`
+            subbab: `${Fungsi[i].subbab}`,
         })
         await fungsi.save();
     }
@@ -212,10 +214,39 @@ const seedDB = async() => {
         })
         await analisis.save();
     }
+
+    //Konten
+    await Konten.deleteMany({});
+    for (let i = 0; i < ApaItuFungsi.length; i++) {
+        const apaitufungsi = new Konten({
+            query: `${ApaItuFungsi[i].query}`,
+            querybab: `${ApaItuFungsi[i].querybab}`,
+            queryjudul: `${ApaItuFungsi[i].queryjudul}`,
+            tipe: `${ApaItuFungsi[i].tipe}`,
+            pelajaran: `${ApaItuFungsi[i].pelajaran}`,
+            bab: `${ApaItuFungsi[i].bab}`,
+            subbab: `${ApaItuFungsi[i].subbab}`,
+            judul: `${ApaItuFungsi[i].judul}`,
+            link: `${ApaItuFungsi[i].link}`
+        })
+        await apaitufungsi.save();
+    }
+    for (let i = 0; i < MenghitungFungsi.length; i++) {
+        const menghitungfungsi = new Konten({
+            query: `${MenghitungFungsi[i].query}`,
+            querybab: `${MenghitungFungsi[i].querybab}`,
+            queryjudul: `${MenghitungFungsi[i].queryjudul}`,
+            tipe: `${MenghitungFungsi[i].tipe}`,
+            pelajaran: `${MenghitungFungsi[i].pelajaran}`,
+            bab: `${MenghitungFungsi[i].bab}`,
+            subbab: `${MenghitungFungsi[i].subbab}`,
+            judul: `${MenghitungFungsi[i].judul}`,
+            link: `${MenghitungFungsi[i].link}`
+        })
+        await menghitungfungsi.save();
+    }
 }
 
-seedDB();
-
-// seedDB().then(() => {
-//     mongoose.connection.close();
-// });
+seedDB().then(() => {
+    mongoose.connection.close();
+});

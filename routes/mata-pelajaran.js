@@ -6,6 +6,7 @@ const { isLoggedIn } = require('../middleware');
 const Pelajaran = require('../models/pelajaran');
 const Bab = require('../models/bab');
 const SubBab = require('../models/subbab');
+const Konten = require('../models/konten');
 
 router.get('/', isLoggedIn, async (req, res) => {
     const MTK = await Pelajaran.find({query: "matematika"});
@@ -41,10 +42,12 @@ router.get('/:query/:querybab', isLoggedIn, async(req, res) => {
     const pelajaran = await Pelajaran.findOne({query: req.params.query});
     const babs = await Bab.findOne({querybab: req.params.querybab});
     const subbabs = await SubBab.find({querybab: req.params.querybab});
+    const kontens = await Konten.find({querybab: req.params.querybab});
     res.render('pelajaran/show-belajar', {
         pelajaran,
         babs,
-        subbabs
+        subbabs,
+        kontens
     });
 });
 
