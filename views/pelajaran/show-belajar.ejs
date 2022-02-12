@@ -21,7 +21,13 @@
         </div>
 
         <div class="container container--px">
-
+            <div class="belajar__grid">
+                <% for (let subbab of subbabs) {%>
+                    <div class="belajar__card">
+                        <h1><%= subbab.subbab %> </h1>
+                    </div>
+                <%  }%>
+            </div>
         </div>
     </div>
 </section>
