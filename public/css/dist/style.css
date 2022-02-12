@@ -1177,6 +1177,7 @@ button:hover::before, .button:hover::before {
 }
 
 .belajar__subbab h3 {
+  font-weight: 700;
   margin-bottom: 1.75rem;
 }
 
