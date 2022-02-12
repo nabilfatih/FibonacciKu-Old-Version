@@ -1154,6 +1154,28 @@ button:hover::before, .button:hover::before {
   text-decoration: underline;
 }
 
+.belajar__grid {
+  gap: 1.5rem;
+  padding-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.belajar__card {
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, right top, from(#88e0ef), to(#cfffdc));
+  background: linear-gradient(to right, #88e0ef, #cfffdc);
+}
+
 .kontak {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;

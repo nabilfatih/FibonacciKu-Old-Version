@@ -111,3 +111,24 @@
         }
     }
 }
+
+.belajar {
+
+    &__grid {
+        gap: 1.5rem;
+        padding-top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__card {
+        
+        padding: 1rem;
+        // border: 5px solid black;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 3px 3px 6px 0 rgba(0,0,0,.2);
+        background: linear-gradient(to right, $lightBlue, $lightGreen);
+
+    }
+}
