@@ -3,6 +3,8 @@ const { dataPelajaran, dataPelajaranUjian } = require('./dataPelajaran');
 const { babMTK, babFisika, babInformatika, babBiologi, babKimia, babAI } = require('./dataBab');
 const Pelajaran = require('../models/pelajaran');
 const Bab = require('../models/bab');
+const SubBab = require('../models/subbab');
+const { Fungsi, MTKDasar, Aljabar, Matriks, Eksponen, TeoriBilangan, Himpunan, Turunan, AljabarLinear, Analisis } = require('./dataSubBab');
 
 mongoose.connect('mongodb://localhost:27017/fibonacciku', {
     useNewUrlParser: true,
@@ -16,6 +18,7 @@ db.once("open", () => {
 });
 
 const seedDB = async() => {
+    //Pelajaran
     await Pelajaran.deleteMany({});
     for (let i = 0; i < dataPelajaran.length; i++) {
         const pelajaran = new Pelajaran({
@@ -34,6 +37,7 @@ const seedDB = async() => {
         await pelajaranUjian.save();
     }
 
+    //Bab
     await Bab.deleteMany({});
     for (let i = 0; i < babMTK.length; i++) {
         const babmtk = new Bab({
@@ -94,6 +98,119 @@ const seedDB = async() => {
             bab: `${babAI[i].bab}`
         })
         await babai.save();
+    }
+
+    //Subbab
+    await SubBab.deleteMany({});
+    for (let i = 0; i < Fungsi.length; i++) {
+        const fungsi = new SubBab({
+            query: `${Fungsi[i].query}`,
+            querybab: `${Fungsi[i].querybab}`,
+            querysubbab: `${Fungsi[i].querysubbab}`,
+            pelajaran: `${Fungsi[i].pelajaran}`,
+            bab: `${Fungsi[i].bab}`,
+            subbab: `${Fungsi[i].subbab}`
+        })
+        await fungsi.save();
+    }
+    for (let i = 0; i < MTKDasar.length; i++) {
+        const mtkdasar = new SubBab({
+            query: `${MTKDasar[i].query}`,
+            querybab: `${MTKDasar[i].querybab}`,
+            querysubbab: `${MTKDasar[i].querysubbab}`,
+            pelajaran: `${MTKDasar[i].pelajaran}`,
+            bab: `${MTKDasar[i].bab}`,
+            subbab: `${MTKDasar[i].subbab}`
+        })
+        await mtkdasar.save();
+    }
+    for (let i = 0; i < Aljabar.length; i++) {
+        const aljabar = new SubBab({
+            query: `${Aljabar[i].query}`,
+            querybab: `${Aljabar[i].querybab}`,
+            querysubbab: `${Aljabar[i].querysubbab}`,
+            pelajaran: `${Aljabar[i].pelajaran}`,
+            bab: `${Aljabar[i].bab}`,
+            subbab: `${Aljabar[i].subbab}`
+        })
+        await aljabar.save();
+    }
+    for (let i = 0; i < Matriks.length; i++) {
+        const matriks = new SubBab({
+            query: `${Matriks[i].query}`,
+            querybab: `${Matriks[i].querybab}`,
+            querysubbab: `${Matriks[i].querysubbab}`,
+            pelajaran: `${Matriks[i].pelajaran}`,
+            bab: `${Matriks[i].bab}`,
+            subbab: `${Matriks[i].subbab}`
+        })
+        await matriks.save();
+    }
+    for (let i = 0; i < Eksponen.length; i++) {
+        const eksponen = new SubBab({
+            query: `${Eksponen[i].query}`,
+            querybab: `${Eksponen[i].querybab}`,
+            querysubbab: `${Eksponen[i].querysubbab}`,
+            pelajaran: `${Eksponen[i].pelajaran}`,
+            bab: `${Eksponen[i].bab}`,
+            subbab: `${Eksponen[i].subbab}`
+        })
+        await eksponen.save();
+    }
+    for (let i = 0; i < TeoriBilangan.length; i++) {
+        const teoribilangan = new SubBab({
+            query: `${TeoriBilangan[i].query}`,
+            querybab: `${TeoriBilangan[i].querybab}`,
+            querysubbab: `${TeoriBilangan[i].querysubbab}`,
+            pelajaran: `${TeoriBilangan[i].pelajaran}`,
+            bab: `${TeoriBilangan[i].bab}`,
+            subbab: `${TeoriBilangan[i].subbab}`
+        })
+        await teoribilangan.save();
+    }
+    for (let i = 0; i < Himpunan.length; i++) {
+        const himpunan = new SubBab({
+            query: `${Himpunan[i].query}`,
+            querybab: `${Himpunan[i].querybab}`,
+            querysubbab: `${Himpunan[i].querysubbab}`,
+            pelajaran: `${Himpunan[i].pelajaran}`,
+            bab: `${Himpunan[i].bab}`,
+            subbab: `${Himpunan[i].subbab}`
+        })
+        await himpunan.save();
+    }
+    for (let i = 0; i < Turunan.length; i++) {
+        const turunan = new SubBab({
+            query: `${Turunan[i].query}`,
+            querybab: `${Turunan[i].querybab}`,
+            querysubbab: `${Turunan[i].querysubbab}`,
+            pelajaran: `${Turunan[i].pelajaran}`,
+            bab: `${Turunan[i].bab}`,
+            subbab: `${Turunan[i].subbab}`
+        })
+        await turunan.save();
+    }
+    for (let i = 0; i < AljabarLinear.length; i++) {
+        const aljabarlinear = new SubBab({
+            query: `${AljabarLinear[i].query}`,
+            querybab: `${AljabarLinear[i].querybab}`,
+            querysubbab: `${AljabarLinear[i].querysubbab}`,
+            pelajaran: `${AljabarLinear[i].pelajaran}`,
+            bab: `${AljabarLinear[i].bab}`,
+            subbab: `${AljabarLinear[i].subbab}`
+        })
+        await aljabarlinear.save();
+    }
+    for(let i = 0; i < Analisis.length; i++) {
+        const analisis = new SubBab({
+            query: `${Analisis[i].query}`,
+            querybab: `${Analisis[i].querybab}`,
+            querysubbab: `${Analisis[i].querysubbab}`,
+            pelajaran: `${Analisis[i].pelajaran}`,
+            bab: `${Analisis[i].bab}`,
+            subbab: `${Analisis[i].subbab}`
+        })
+        await analisis.save();
     }
 }
 
