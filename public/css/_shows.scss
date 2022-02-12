@@ -28,6 +28,10 @@
                 margin-bottom: 0;
                 font-size: 1.1rem;
                 color: $blueGrey;
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
 
             h1 {
