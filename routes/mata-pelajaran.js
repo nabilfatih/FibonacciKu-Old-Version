@@ -9,23 +9,12 @@ const SubBab = require('../models/subbab');
 const Konten = require('../models/konten');
 
 router.get('/', isLoggedIn, async (req, res) => {
-    const MTK = await Pelajaran.find({query: "matematika"});
-    const Fisika = await Pelajaran.find({query: "fisika"});
-    const Informatika = await Pelajaran.find({query: "informatika"});
-    const Biologi = await Pelajaran.find({query: "biologi"});
-    const Kimia = await Pelajaran.find({query: "kimia"});
-    const AI = await Pelajaran.find({query: "kecerdasan-buatan"});
-    const UTBK = await Pelajaran.find({query: "utbk-sbmptn"});
-    const ANP = await Pelajaran.find({query: "aufnahmeprüfung"});
+    const pelajarans = await Pelajaran.find({jenis: "pelajaran"});
+    const ujians = await Pelajaran.find({jenis: "ujian"});
+    
     res.render('pelajaran/index', {
-        MTK,
-        Fisika,
-        Informatika,
-        Biologi,
-        Kimia,
-        AI,
-        UTBK,
-        ANP
+        pelajarans,
+        ujians
     });
 });
 

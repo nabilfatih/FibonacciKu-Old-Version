@@ -19,95 +19,23 @@
         </div>
     
         <div class="pelajaran__grid">
+
+            <% for (let pelajaran of pelajarans) {%>
                 <div class="pelajaran__card">
                     <div class="pelajaran__icon">
-                        <img src="/img/icon/mtk-icon.png">
+                        <img src="<%= pelajaran.icon %> ">
                     </div>
     
                     <div class="pelajaran__title">
-                        Matematika 
+                        <%= pelajaran.pelajaran %> 
                     </div>
-                    <% for (let pelajaran of MTK) {%> 
+        
                     <a class="button" href="mata-pelajaran/<%= pelajaran.query %>">
                         Belajar Disini!
                     </a>
-                    <%  }%> 
                 </div>
-    
-                <div class="pelajaran__card">
-                    <div class="pelajaran__icon">
-                        <img src="/img/icon/fisika-icon.png">
-                    </div>
-    
-                    <div class="pelajaran__title">
-                        Fisika
-                    </div>
-                    <% for (let pelajaran of Fisika) {%> 
-                    <a class="button" href="mata-pelajaran/<%= pelajaran.query %>">
-                        Belajar Disini!
-                    </a>
-                    <%  }%> 
-                </div>
-    
-                <div class="pelajaran__card">
-                    <div class="pelajaran__icon">
-                        <img src="/img/icon/cs-icon.png">
-                    </div>
-    
-                    <div class="pelajaran__title">
-                        Informatika
-                    </div>
-                    <% for (let pelajaran of Informatika) {%> 
-                    <a class="button" href="mata-pelajaran/<%= pelajaran.query %>">
-                        Belajar Disini!
-                    </a>
-                    <%  }%>
-                </div>
-    
-                <div class="pelajaran__card">
-                    <div class="pelajaran__icon">
-                        <img src="/img/icon/bio-icon.png">
-                    </div>
-    
-                    <div class="pelajaran__title">
-                        Biologi
-                    </div>
-                    <% for (let pelajaran of Biologi) {%> 
-                    <a class="button" href="mata-pelajaran/<%= pelajaran.query %>">
-                        Belajar Disini!
-                    </a>
-                    <%  }%>
-                </div>
-    
-                <div class="pelajaran__card">
-                    <div class="pelajaran__icon">
-                        <img src="/img/icon/kimia-icon.png">
-                    </div>
-    
-                    <div class="pelajaran__title">
-                        Kimia
-                    </div>
-                    <% for (let pelajaran of Kimia) {%> 
-                    <a class="button" href="mata-pelajaran/<%= pelajaran.query %>">
-                        Belajar Disini!
-                    </a>
-                    <%  }%>
-                </div>
-    
-                <div class="pelajaran__card">
-                    <div class="pelajaran__icon">
-                        <img src="/img/icon/kecerdasanbuatan-icon.png">
-                    </div>
-    
-                    <div class="pelajaran__title">
-                        Kecerdasan Buatan
-                    </div>
-                    <% for (let pelajaran of AI) {%> 
-                    <a class="button" href="mata-pelajaran/<%= pelajaran.query %>">
-                        Belajar Disini!
-                    </a>
-                    <%  }%>
-                </div>
+            <%  }%>
+
         </div>
 
     </div>
@@ -121,35 +49,24 @@
         </div>
 
         <div class="ujian__grid">
-            <div class="ujian__card">
-                <div class="ujian__icon">
-                    <img src="/img/icon/utbk-icon.png">
-                </div>
 
-                <div class="ujian__title">
-                    UTBK/SBMPTN
+            <% for (let ujian of ujians) {%>
+                <div class="ujian__card">
+                    <div class="ujian__icon">
+                        <img src="<%= ujian.icon %> ">
+                    </div>
+    
+                    <div class="ujian__title">
+                        <%= ujian.pelajaran %> 
+                    </div>
+                    
+                    <a class="button" href="mata-pelajaran/<%= ujian.query %>">
+                        Belajar Disini!
+                    </a>
+                
                 </div>
-                <% for (let pelajaran of UTBK) {%> 
-                <a class="button" href="mata-pelajaran/<%= pelajaran.query %>">
-                    Belajar Disini!
-                </a>
-                <%  }%>
-            </div>
+            <%  }%>
 
-            <div class="ujian__card">
-                <div class="ujian__icon">
-                    <img src="/img/icon/anp-icon.png">
-                </div>
-
-                <div class="ujian__title">
-                    Aufnahmeprüfung
-                </div>
-                <% for (let pelajaran of ANP) {%> 
-                <a class="button" href="mata-pelajaran/<%= pelajaran.query %>">
-                    Belajar Disini!
-                </a>
-                <%  }%>
-            </div>
         </div>
 
     </div>

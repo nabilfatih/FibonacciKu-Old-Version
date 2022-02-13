@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
-const DataPelajaran = require('./dataPelajaran');
-const DataBab = require('./dataBab');
 const Pelajaran = require('../models/pelajaran');
 const Bab = require('../models/bab');
 const SubBab = require('../models/subbab');
 const Konten = require('../models/konten');
+const DataPelajaran = require('./dataPelajaran');
+const DataBab = require('./dataBab');
 const DataSubBab = require('./dataSubBab');
 const DataKonten = require('./dataKonten');
 
@@ -25,9 +25,10 @@ const seedDB = async() => {
     await Pelajaran.deleteMany({});
     for (let i = 0; i < DataPelajaran.length; i++) {
         const datapelajaran = new Pelajaran({
+            jenis: `${DataPelajaran[i].jenis}`,
             query: `${DataPelajaran[i].query}`,
             pelajaran: `${DataPelajaran[i].pelajaran}`,
-            icon: `${DataPelajaran[i].icon}`
+            icon: `${DataPelajaran[i].pelajaran}`
         })
         await datapelajaran.save();
     }
