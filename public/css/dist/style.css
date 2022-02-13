@@ -1035,7 +1035,8 @@ button:hover::before, .button:hover::before {
 }
 
 .shows__pelajaran img {
-  width: 85px;
+  max-width: 85px;
+  max-height: 85px;
 }
 
 .shows__pelajaran .header__belajar {
