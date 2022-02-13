@@ -6,7 +6,7 @@ const Bab = require('../models/bab');
 const SubBab = require('../models/subbab');
 const Konten = require('../models/konten');
 const { Fungsi, MTKDasar, Aljabar, Matriks, Eksponen, TeoriBilangan, Himpunan, Turunan, AljabarLinear, Analisis } = require('./dataSubBab');
-const { ApaItuFungsi, MenghitungFungsi } = require('./dataKonten');
+const { ApaItuFungsi, MenghitungFungsi, MenentukanInputFungsi, RangeDanDomain, FungsiKomposisi, FungsiInvers } = require('./dataKonten');
 
 mongoose.connect('mongodb://localhost:27017/fibonacciku', {
     useNewUrlParser: true,
@@ -244,6 +244,62 @@ const seedDB = async() => {
             link: `${MenghitungFungsi[i].link}`
         })
         await menghitungfungsi.save();
+    }
+    for (let i = 0; i < MenentukanInputFungsi.length; i++) {
+        const menentukaninputfungsi = new Konten({
+            query: `${MenentukanInputFungsi[i].query}`,
+            querybab: `${MenentukanInputFungsi[i].querybab}`,
+            queryjudul: `${MenentukanInputFungsi[i].queryjudul}`,
+            tipe: `${MenentukanInputFungsi[i].tipe}`,
+            pelajaran: `${MenentukanInputFungsi[i].pelajaran}`,
+            bab: `${MenentukanInputFungsi[i].bab}`,
+            subbab: `${MenentukanInputFungsi[i].subbab}`,
+            judul: `${MenentukanInputFungsi[i].judul}`,
+            link: `${MenentukanInputFungsi[i].link}`
+        })
+        await menentukaninputfungsi.save();
+    }
+    for (let i = 0; i < RangeDanDomain.length; i++) {
+        const rangedandomain = new Konten({
+            query: `${RangeDanDomain[i].query}`,
+            querybab: `${RangeDanDomain[i].querybab}`,
+            queryjudul: `${RangeDanDomain[i].queryjudul}`,
+            tipe: `${RangeDanDomain[i].tipe}`,
+            pelajaran: `${RangeDanDomain[i].pelajaran}`,
+            bab: `${RangeDanDomain[i].bab}`,
+            subbab: `${RangeDanDomain[i].subbab}`,
+            judul: `${RangeDanDomain[i].judul}`,
+            link: `${RangeDanDomain[i].link}`
+        })
+        await rangedandomain.save();
+    }
+    for (let i = 0; i < FungsiKomposisi.length; i++) {
+        const fungsikomposisi = new Konten({
+            query: `${FungsiKomposisi[i].query}`,
+            querybab: `${FungsiKomposisi[i].querybab}`,
+            queryjudul: `${FungsiKomposisi[i].queryjudul}`,
+            tipe: `${FungsiKomposisi[i].tipe}`,
+            pelajaran: `${FungsiKomposisi[i].pelajaran}`,
+            bab: `${FungsiKomposisi[i].bab}`,
+            subbab: `${FungsiKomposisi[i].subbab}`,
+            judul: `${FungsiKomposisi[i].judul}`,
+            link: `${FungsiKomposisi[i].link}`
+        })
+        await fungsikomposisi.save();
+    }
+    for (let i = 0; i < FungsiInvers.length; i++) {
+        const fungsinvers = new Konten({
+            query: `${FungsiInvers[i].query}`,
+            querybab: `${FungsiInvers[i].querybab}`,
+            queryjudul: `${FungsiInvers[i].queryjudul}`,
+            tipe: `${FungsiInvers[i].tipe}`,
+            pelajaran: `${FungsiInvers[i].pelajaran}`,
+            bab: `${FungsiInvers[i].bab}`,
+            subbab: `${FungsiInvers[i].subbab}`,
+            judul: `${FungsiInvers[i].judul}`,
+            link: `${FungsiInvers[i].link}`
+        })
+        await fungsinvers.save();
     }
 }
 

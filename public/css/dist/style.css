@@ -1181,7 +1181,7 @@ button:hover::before, .button:hover::before {
 }
 
 .belajar__subbab h3 {
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 1.75rem;
 }
 
@@ -1229,6 +1229,10 @@ button:hover::before, .button:hover::before {
 
 .belajar__videos .konten .judul {
   margin-top: 0.575rem;
+}
+
+.belajar__videos .konten .judul:hover {
+  text-decoration: underline;
 }
 
 .kontak {

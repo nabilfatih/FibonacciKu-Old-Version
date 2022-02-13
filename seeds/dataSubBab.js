@@ -43,10 +43,10 @@ module.exports.Fungsi = [
     {
         query: "matematika",
         querybab: "fungsi",
-        querysubbab: "invers-fungsi",
+        querysubbab: "fungsi-invers",
         pelajaran: "Matematika",
         bab: "Fungsi",
-        subbab: "Invers Fungsi"
+        subbab: "Fungsi Invers"
     }
 ]
 

@@ -136,7 +136,7 @@
 
     &__subbab {
         h3 {
-            font-weight: 700;
+            font-weight: 800;
             margin-bottom: 1.75rem;
         }
     }
@@ -172,6 +172,10 @@
 
             .judul {
                 margin-top: 0.575rem;
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }
