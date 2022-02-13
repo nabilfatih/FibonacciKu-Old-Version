@@ -128,10 +128,10 @@ module.exports.DataSubBab = [
     {
         query: "matematika",
         querybab: "aljabar",
-        querysubbab: "mencari-nilai-pada-aljabar",
+        querysubbab: "mencari-suatu-nilai-pada-aljabar",
         pelajaran: "Matematika",
         bab: "Aljabar",
-        subbab: "Mencari Nilai pada Aljabar"
+        subbab: "Mencari Suatu Nilai pada Aljabar"
     },
     {
         query: "matematika",
@@ -149,6 +149,22 @@ module.exports.DataSubBab = [
         bab: "Aljabar",
         subbab: "Apa itu Polinomial?"
     },
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "menghitung-polinomial",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Menghitung Polinomial"
+    },
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "bentuk-spesial-polinomial",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Bentuk Spesial Polinomial"
+    },
 
     //Matematika: Matriks
     {
@@ -162,10 +178,10 @@ module.exports.DataSubBab = [
     {
         query: "matematika",
         querybab: "matriks",
-        querysubbab: "perkalian-matriks",
+        querysubbab: "menghitung-matriks",
         pelajaran: "Matematika",
         bab: "Matriks",
-        subbab: "Perkalian Matriks"
+        subbab: "Menghitung Matriks"
     },
     {
         query: "matematika",
@@ -274,7 +290,7 @@ module.exports.DataSubBab = [
     {
         query: "matematika",
         querybab: "turunan",
-        querybab: "apa-itu-turunan?",
+        querysubbab: "apa-itu-turunan?",
         pelajaran: "Matematika",
         bab: "Turunan",
         subbab: "Apa itu Turunan?"
@@ -282,7 +298,7 @@ module.exports.DataSubBab = [
     {
         query: "matematika",
         querybab: "turunan",
-        querybab: "aturan-turunan",
+        querysubbab: "aturan-turunan",
         pelajaran: "Matematika",
         bab: "Turunan",
         subbab: "Aturan Turunan"
@@ -290,7 +306,7 @@ module.exports.DataSubBab = [
     {
         query: "matematika",
         querybab: "turunan",
-        querybab: "contoh-soal-turunan",
+        querysubbab: "contoh-soal-turunan",
         pelajaran: "Matematika",
         bab: "Turunan",
         subbab: "Contoh Soal Turunan"

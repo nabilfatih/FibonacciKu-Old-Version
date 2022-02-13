@@ -588,5 +588,522 @@ module.exports.DataKonten = [
         subbab: "Akar Kuadrat",
         judul: "Konsep Akar Kuadrat",
         link: "https://youtu.be/S0f6uZlIexA"
-    }
+    },
+
+    //Aljabar: Apa itu Aljabar?
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "apa-itu-aljabar?",
+        queryjudul: "definisi-variabel-persamaan-dan-ekspresi",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Apa itu Aljabar?",
+        judul: "Definisi Variabel, Persamaan, dan Ekspresi",
+        link: "https://youtu.be/W6q1JAMAjt8"
+    },
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "apa-itu-aljabar?",
+        queryjudul: "hubungan-antara-koefisien-dan-variabel",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Apa itu Aljabar?",
+        judul: "Hubungan antara Koefisien dan Variabel",
+        link: "https://youtu.be/j0FuZRnRZgo"
+    },
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "apa-itu-aljabar?",
+        queryjudul: "kesalahan-konsep-pada-aljabar",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Apa itu Aljabar?",
+        judul: "Kesalahan Konsep pada Aljabar",
+        link: "https://youtu.be/-PqPzzo6c0o"
+    },
+    
+    //Aljabar: Menyederhanakan Aljabar
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "menyederhanakan-aljabar",
+        queryjudul: "menyederhanakan-ekspresi-monomial-aljabar",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Menyederhanakan Aljabar",
+        judul: "Menyederhanakan Ekspresi Monomial Aljabar",
+        link: "https://youtu.be/RtoI7zQVvY4"
+    },
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "menyederhanakan-aljabar",
+        queryjudul: "trik-mudah-menyederhanakan-ekspresi-aljabar",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Menyederhanakan Aljabar",
+        judul: "Trik Mudah Menyederhanakan Ekspresi Aljabar",
+        link: "https://youtu.be/zaJ5I6UnBow"
+    },
+    
+    //Aljabar: Mencari Suatu Nilai pada Aljabar
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "mencari-suatu-nilai-pada-aljabar",
+        queryjudul: "mencari-nilai-x-pada-persamaan-aljabar",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Mencari Suatu Nilai pada Aljabar",
+        judul: "Mencari Nilai x pada Persamaan Aljabar",
+        link: "https://youtu.be/NMNrV9Exybs"
+    },
+
+    //Aljabar: Menfaktorkan Aljabar
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "menfaktorkan-aljabar",
+        queryjudul: "cara-menfaktorkan-persamaan-aljabar",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Menfaktorkan Aljabar",
+        judul: "Cara Menfaktorkan Persamaan Aljabar",
+        link: "https://youtu.be/RO2mcXQer-A"
+    },
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "menfaktorkan-aljabar",
+        queryjudul: "cara-pistol-untuk-membagi-aljabar",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Menfaktorkan Aljabar",
+        judul: "Cara Pistol untuk Membagi Aljabar",
+        link: "https://youtu.be/IJ3m9O1P6mA"
+    },
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "menfaktorkan-aljabar",
+        queryjudul: "metode-horner-untuk-menfaktorkan-aljabar",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Menfaktorkan Aljabar",
+        judul: "Metode Horner untuk Menfaktorkan Aljabar",
+        link: "https://youtu.be/YtMlrCtkwOc"
+    },
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "menfaktorkan-aljabar",
+        queryjudul: "contoh-soal-menfaktorkan-aljabar",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Menfaktorkan Aljabar",
+        judul: "Contoh Soal Menfaktorkan Aljabar",
+        link: "https://youtu.be/lcl2bET8QUw"
+    },
+    
+
+    //Aljabar: Apa itu Polinomial?
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "apa-itu-polinomial?",
+        queryjudul: "konsep-polinomial-aljabar",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Apa itu Polinomial?",
+        judul: "Konsep Polinomial Aljabar",
+        link: "https://youtu.be/Tq0DWVaphtA"
+    },
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "apa-itu-polinomial?",
+        queryjudul: "derajat-pada-polinomial",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Apa itu Polinomial?",
+        judul: "Derajat pada Polinomial",
+        link: "https://youtu.be/xQrrSf_5UeQ"
+    },
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "apa-itu-polinomial?",
+        queryjudul: "menganalisa-ekspresi-polinomial-aljabar",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Apa itu Polinomial?",
+        judul: "Menganalisa Ekspresi Polinomial Aljabar",
+        link: "https://youtu.be/TXRk3NrMGCY"
+    },
+
+    //Aljabar: Menghitung Polinomial
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "menghitung-polinomial",
+        queryjudul: "penjumlahan-polinomial",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Menghitung Polinomial",
+        judul: "Penjumlahan Polinomial",
+        link: "https://youtu.be/gCTd5h-mdBo"
+    },
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "menghitung-polinomial",
+        queryjudul: "pengurangan-polinomial",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Menghitung Polinomial",
+        judul: "Pengurangan Polinomial",
+        link: "https://youtu.be/bPZX-PFrcV8"
+    },
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "menghitung-polinomial",
+        queryjudul: "perkalian-monomial",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Menghitung Polinomial",
+        judul: "Perkalian Monomial",
+        link: "https://youtu.be/rh1XGkv_iOQ"
+    },
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "menghitung-polinomial",
+        queryjudul: "konsep-perkalian-monomial-dengan-visual",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Menghitung Polinomial",
+        judul: "Konsep Perkalian Monomial dengan Visual",
+        link: "https://youtu.be/mTbpbsUP6Xs"
+    },
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "menghitung-polinomial",
+        queryjudul: "perkalian-monomial-dan-polinomial",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Menghitung Polinomial",
+        judul: "Perkalian Monomial dan Polinomial",
+        link: "https://youtu.be/RTwBanJMwaU"
+    },
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "menghitung-polinomial",
+        queryjudul: "perkalian-binomial-dan-polinomial",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Menghitung Polinomial",
+        judul: "Perkalian Binomial dan Polinomial",
+        link: "https://youtu.be/HOpLGQILXvc"
+    },
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "menghitung-polinomial",
+        queryjudul: "konsep-perkalian-binomial-dan-polinomial-dengan-visual",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Menghitung Polinomial",
+        judul: "Konsep Perkalian Binomial dan Polinomial dengan Visual",
+        link: "https://youtu.be/HOpLGQILXvc"
+    },
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "bentuk-spesial-polinomial",
+        queryjudul: "bentuk-spesial-kuadrat-polinomial",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Bentuk Spesial Polinomial",
+        judul: "Bentuk Spesial Kuadrat Polinomial",
+        link: "https://youtu.be/AT-KchQBoAQ"
+    },
+    {
+        query: "matematika",
+        querybab: "aljabar",
+        querysubbab: "bentuk-spesial-polinomial",
+        queryjudul: "perkalian-spesial-polinomial",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar",
+        subbab: "Bentuk Spesial Polinomial",
+        judul: "Perkalian Spesial Polinomial",
+        link: "https://youtu.be/bYMZGv9KJOE"
+    },
+
+    //Matriks: Apa itu Matriks?
+    {
+        query: "matematika",
+        querybab: "matriks",
+        querysubbab: "apa-itu-matriks?",
+        queryjudul: "konsep-dan-kegunaan-matriks",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matriks",
+        subbab: "Apa itu Martiks?",
+        judul: "Konsep dan Kegunaan Matriks",
+        link: "https://youtu.be/nCX2e0FkT7M"
+    },
+    {
+        query: "matematika",
+        querybab: "matriks",
+        querysubbab: "apa-itu-matriks?",
+        queryjudul: "definisi-skalar-matriks",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matriks",
+        subbab: "Apa itu Martiks?",
+        judul: "Definisi Skalar Matriks",
+        link: "https://youtu.be/ZCxaXXIW9HQ"
+    },
+
+    //Matriks: Menghitung Matriks
+    {
+        query: "matematika",
+        querybab: "matriks",
+        querysubbab: "menghitung-matriks",
+        queryjudul: "penjumlahan-dan-pengurangan-matriks",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matriks",
+        subbab: "Menghitung Matriks",
+        judul: "Penjumlahan dan Pengurangan Matriks",
+        link: "https://youtu.be/fo8GRSUJ4VA"
+    },
+    {
+        query: "matematika",
+        querybab: "matriks",
+        querysubbab: "menghitung-matriks",
+        queryjudul: "cara-mengalikan-matriks",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matriks",
+        subbab: "Menghitung Matriks",
+        judul: "Cara Mengalikan Matriks",
+        link: "https://youtu.be/OTeFX2KCENM"
+    },
+    {
+        query: "matematika",
+        querybab: "matriks",
+        querysubbab: "menghitung-matriks",
+        queryjudul: "trik-mudah-mengalikan-matriks",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matriks",
+        subbab: "Menghitung Matriks",
+        judul: "Trik Mudah Mengalikan Matriks",
+        link: "https://youtu.be/wrbyGVC-RIw"
+    },
+    {
+        query: "matematika",
+        querybab: "matriks",
+        querysubbab: "menghitung-matriks",
+        queryjudul: "aturan-perkalian-pada-matriks",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matriks",
+        subbab: "Menghitung Matriks",
+        judul: "Aturan Perkalian pada Matriks",
+        link: "https://youtu.be/rXJOsHbH0_s"
+    },
+
+    //Matriks: Jenis-Jenis Matriks
+    {
+        query: "matematika",
+        querybab: "matriks",
+        querysubbab: "jenis-jenis-matriks",
+        queryjudul: "matriks-punya-identitas?",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matriks",
+        subbab: "Jenis-Jenis Matriks",
+        judul: "Matriks Punya Identitas?",
+        link: "https://youtu.be/DZJj3NDEIz8"
+    },
+    {
+        query: "matematika",
+        querybab: "matriks",
+        querysubbab: "jenis-jenis-matriks",
+        queryjudul: "definisi-matriks-transpose",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matriks",
+        subbab: "Jenis-Jenis Matriks",
+        judul: "Definisi Matriks Transpose",
+        link: "https://youtu.be/CiS6aJhlvVM"
+    },
+    {
+        query: "matematika",
+        querybab: "matriks",
+        querysubbab: "jenis-jenis-matriks",
+        queryjudul: "sifat-matriks-transpose",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matriks",
+        subbab: "Jenis-Jenis Matriks",
+        judul: "Sifat Matriks Transpose",
+        link: "https://youtu.be/nd3no9JPzNk"
+    },
+    {
+        query: "matematika",
+        querybab: "matriks",
+        querysubbab: "jenis-jenis-matriks",
+        queryjudul: "apakah-ada-matriks-nol?",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matriks",
+        subbab: "Jenis-Jenis Matriks",
+        judul: "Apakah Ada Matriks Nol?",
+        link: "https://youtu.be/UeZ4q6YGaHw"
+    },
+
+    //Matriks: Mencari Determinan Matriks
+    {
+        query: "matematika",
+        querybab: "matriks",
+        querysubbab: "mencari-determinan-matriks",
+        queryjudul: "determinan-matriks-2x2",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matriks",
+        subbab: "Mencari Determinan Matriks",
+        judul: "Determinan Matriks 2 x 2",
+        link: "https://youtu.be/UVZidcU5iKc"
+    },
+    {
+        query: "matematika",
+        querybab: "matriks",
+        querysubbab: "mencari-determinan-matriks",
+        queryjudul: "mencari-determinan-matriks-dengan-metode-sarrus",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matriks",
+        subbab: "Mencari Determinan Matriks",
+        judul: "Mencari Determinan Matriks 3 x 3 Dengan Metode Sarrus",
+        link: "https://youtu.be/jbwu4yrXPio"
+    },
+    {
+        query: "matematika",
+        querybab: "matriks",
+        querysubbab: "mencari-determinan-matriks",
+        queryjudul: "menghitung-determinan-dengan-metode-laplace",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matriks",
+        subbab: "Mencari Determinan Matriks",
+        judul: "Menghitung Determinan dengan Metode Laplace",
+        link: "https://youtu.be/zVkFxnQXqfo"
+    },
+    {
+        query: "matematika",
+        querybab: "matriks",
+        querysubbab: "mencari-determinan-matriks",
+        queryjudul: "menentukan-determinan-dengan-metode-eliminasi-gaussian",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matriks",
+        subbab: "Mencari Determinan Matriks",
+        judul: "Menentukan Determinan dengan Metode Eliminasi Gaussian",
+        link: "https://youtu.be/8PBsNiyVXx8"
+    },
+
+    //Matriks: Matriks Invers
+    {
+        query: "matematika",
+        querybab: "matriks",
+        querysubbab: "matriks-invers",
+        queryjudul: "konsep-matriks-invers",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matriks",
+        subbab: "Matriks Invers",
+        judul: "Konsep Matriks Invers",
+        link: "https://youtu.be/LeF66n44zRk"
+    },
+    {
+        query: "matematika",
+        querybab: "matriks",
+        querysubbab: "matriks-invers",
+        queryjudul: "cara-mencari-matriks-invers-2x2",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matriks",
+        subbab: "Matriks Invers",
+        judul: "Cara Mencari Matriks Invers 2 x 2",
+        link: "https://youtu.be/ynE4ejZdmGk"
+    },
+    {
+        query: "matematika",
+        querybab: "matriks",
+        querysubbab: "matriks-invers",
+        queryjudul: "aturan-matriks-invers",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matriks",
+        subbab: "Matriks Invers",
+        judul: "Aturan Matriks Invers",
+        link: "https://youtu.be/eI2kcwCG-Rw"
+    },
+
+    //Matriks: Definit pada Matriks
+    {
+        query: "matematika",
+        querybab: "matriks",
+        querysubbab: "definit-pada-matriks",
+        queryjudul: "menentukan-matriks-definit-positif-dengan-determinan",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matriks",
+        subbab: "Definit pada Matriks",
+        judul: "Menentukan Matriks Definit Positif dengan Determinan",
+        link: "https://youtu.be/jqah8Cfqo8o"
+    },
+    {
+        query: "matematika",
+        querybab: "matriks",
+        querysubbab: "definit-pada-matriks",
+        queryjudul: "mencari-matriks-definit-positif-dengan-pivot",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matriks",
+        subbab: "Definit pada Matriks",
+        judul: "Mencari Matriks Definit Positif dengan Pivot",
+        link: "https://youtu.be/sz2n2dWpEhw"
+    },
 ]
