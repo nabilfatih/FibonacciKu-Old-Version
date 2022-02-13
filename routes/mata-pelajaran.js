@@ -11,7 +11,6 @@ const Konten = require('../models/konten');
 router.get('/', isLoggedIn, async (req, res) => {
     const pelajarans = await Pelajaran.find({jenis: "pelajaran"});
     const ujians = await Pelajaran.find({jenis: "ujian"});
-    
     res.render('pelajaran/index', {
         pelajarans,
         ujians

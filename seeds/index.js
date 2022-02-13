@@ -3,10 +3,10 @@ const Pelajaran = require('../models/pelajaran');
 const Bab = require('../models/bab');
 const SubBab = require('../models/subbab');
 const Konten = require('../models/konten');
-const DataPelajaran = require('./dataPelajaran');
-const DataBab = require('./dataBab');
-const DataSubBab = require('./dataSubBab');
-const DataKonten = require('./dataKonten');
+const { DataPelajaran } = require('./dataPelajaran');
+const { DataBab } = require('./dataBab');
+const { DataSubBab } = require('./dataSubBab');
+const { DataKonten } = require('./dataKonten');
 
 mongoose.connect('mongodb://localhost:27017/fibonacciku', {
     useNewUrlParser: true,
@@ -28,7 +28,7 @@ const seedDB = async() => {
             jenis: `${DataPelajaran[i].jenis}`,
             query: `${DataPelajaran[i].query}`,
             pelajaran: `${DataPelajaran[i].pelajaran}`,
-            icon: `${DataPelajaran[i].pelajaran}`
+            icon: `${DataPelajaran[i].icon}`
         })
         await datapelajaran.save();
     }

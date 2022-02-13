@@ -10,6 +10,6 @@ const subbabSchema = new Schema ({
     subbab: String,
     judul: String,
     link: String
-})
+});
 
 module.exports = mongoose.model('SubBab', subbabSchema);
