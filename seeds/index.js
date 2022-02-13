@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
-const { dataPelajaran, dataPelajaranUjian, DataPelajaran } = require('./dataPelajaran');
-const { babMTK, babFisika, babInformatika, babBiologi, babKimia, babAI, DataBab } = require('./dataBab');
+const DataPelajaran = require('./dataPelajaran');
+const DataBab = require('./dataBab');
 const Pelajaran = require('../models/pelajaran');
 const Bab = require('../models/bab');
 const SubBab = require('../models/subbab');
 const Konten = require('../models/konten');
-const { Fungsi, MTKDasar, Aljabar, Matriks, Eksponen, TeoriBilangan, Himpunan, Turunan, AljabarLinear, Analisis, DataSubBab } = require('./dataSubBab');
-const { ApaItuFungsi, MenghitungFungsi, MenentukanInputFungsi, RangeDanDomain, FungsiKomposisi, FungsiInvers, PenjumlahanDanPengurangan, PerkalianDanPembagian, UrutanOperasi, ApaItuBilanganDesimal, ApaItuPecahan, RasioPerbandingan, AkarKuadrat, DataKonten } = require('./dataKonten');
+const DataSubBab = require('./dataSubBab');
+const DataKonten = require('./dataKonten');
 
 mongoose.connect('mongodb://localhost:27017/fibonacciku', {
     useNewUrlParser: true,
