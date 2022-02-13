@@ -1,4 +1,6 @@
-module.exports.ApaItuFungsi = [
+module.exports.DataKonten = [
+
+    //Fungsi: Apa itu Fungsi?
     {
         query: "matematika",
         querybab: "fungsi",
@@ -58,10 +60,9 @@ module.exports.ApaItuFungsi = [
         subbab: "Apa itu Fungsi?",
         judul: "Apa Perbedaan dari Injektif, Surjektif, dan Bijektif?",
         link: "https://youtu.be/PJk09juNRaI"
-    }
-]
+    },
 
-module.exports.MenghitungFungsi = [
+    //Fungsi: Menghitung Fungsi
     {
         query: "matematika",
         querybab: "fungsi",
@@ -121,10 +122,9 @@ module.exports.MenghitungFungsi = [
         subbab: "Menghitung Fungsi",
         judul: "Menentukan Fungsi dari Persamaan",
         link: "https://youtu.be/CVCeSARRoqY"
-    }
-]
+    },
 
-module.exports.MenentukanInputFungsi = [
+    //Fungsi: Menentukan Input Fungsi
     {
         query: "matematika",
         querybab: "fungsi",
@@ -148,10 +148,9 @@ module.exports.MenentukanInputFungsi = [
         subbab: "Menentukan Input Fungsi",
         judul: "Mencari Input dari Fungsi yang Diketahui Outputnya (Grafik)",
         link: "https://youtu.be/Ca5OF9S4ovo"
-    }
-]
+    },
 
-module.exports.RangeDanDomain = [
+    //Fungsi: Range & Domain
     {
         query: "matematika",
         querybab: "fungsi",
@@ -224,9 +223,8 @@ module.exports.RangeDanDomain = [
         judul: "Menentukan Domain dari Suatu Fungsi",
         link: "https://youtu.be/A_LOsSQN1oI"
     },
-]
 
-module.exports.FungsiKomposisi = [
+    //Fungsi: Fungsi Komposisi
     {
         query: "matematika",
         querybab: "fungsi",
@@ -275,9 +273,8 @@ module.exports.FungsiKomposisi = [
         judul: "Mencari Fungsi dari Fungsi Komposisi",
         link: "https://youtu.be/d8hCAKlIOjY"
     },
-]
 
-module.exports.FungsiInvers = [
+    //Fungsi: Fungsi Invers
     {
         query: "matematika",
         querybab: "fungsi",
@@ -325,5 +322,271 @@ module.exports.FungsiInvers = [
         subbab: "Fungsi Invers",
         judul: "Sifat Invers pada Fungsi Komposisi",
         link: "https://youtu.be/7W-vuUQJ_eU"
+    },
+
+    //MTK Dasar: Penjumalahan & Pengurangan
+    {
+        query: "matematika",
+        querybab: "mtk-dasar",
+        querysubbab: "penjumlahan-pengurangan",
+        queryjudul: "konsep-menjumlahkan-bilangan-negatif",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matematika Dasar",
+        subbab: "Penjumlahan & Pengurangan",
+        judul: "Konsep Menjumlahkan Bilangan Negatif",
+        link: "https://youtu.be/V8dOAYfbppg"
+    },
+    {
+        query: "matematika",
+        querybab: "mtk-dasar",
+        querysubbab: "penjumlahan-pengurangan",
+        queryjudul: "kenapa-mengurangi-bilangan-negatif-sama-dengan-positif",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matematika Dasar",
+        subbab: "Penjumlahan & Pengurangan",
+        judul: "Kenapa Mengurangi Bilangan Negatif = Positif",
+        link: "https://youtu.be/xqgZLlQ06PA"
+    },
+    {
+        query: "matematika",
+        querybab: "mtk-dasar",
+        querysubbab: "penjumlahan-pengurangan",
+        queryjudul: "pengurangan-bilangan-negatif",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matematika Dasar",
+        subbab: "Penjumlahan & Pengurangan",
+        judul: "Pengurangan Bilangan Negatif",
+        link: "https://youtu.be/8VNkNOOQR3Q"
+    },
+
+    //MTK Dasar: Perkalian & Pembagian
+    {
+        query: "matematika",
+        querybab: "mtk-dasar",
+        querysubbab: "perkalian-pembagian",
+        queryjudul: "perkalian-bilangan-positif-dan-negatif",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matematika Dasar",
+        subbab: "Perkalian & Pembagian",
+        judul: "Perkalian Bilangan Positif & Negatif",
+        link: "https://youtu.be/OX-DYEgTayg"
+    },
+    {
+        query: "matematika",
+        querybab: "mtk-dasar",
+        querysubbab: "perkalian-pembagian",
+        queryjudul: "pembagian-bilangan-positif-dan-negatif",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matematika Dasar",
+        subbab: "Perkalian & Pembagian",
+        judul: "Pembagian Bilangan Positif & Negatif",
+        link: "https://youtu.be/eCJzx8rY2gI"
+    },
+    {
+        query: "matematika",
+        querybab: "mtk-dasar",
+        querysubbab: "perkalian-pembagian",
+        queryjudul: "kenapa-negatif-dikali-negatif-sama-dengan-positif",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matematika Dasar",
+        subbab: "Perkalian & Pembagian",
+        judul: "Kenapa Negatif x Negatif = Positif",
+        link: "https://youtu.be/fF9cFkjypOU"
+    },
+    {
+        query: "matematika",
+        querybab: "mtk-dasar",
+        querysubbab: "perkalian-pembagian",
+        queryjudul: "pembuktian-negatif-dikali-negatif-sama-dengan-positif",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matematika Dasar",
+        subbab: "Perkalian & Pembagian",
+        judul: "Pembuktian Negatif x Negatif = Positif",
+        link: "https://youtu.be/YQDEcJQF_B0"
+    },
+
+    //MTK Dasar: Urutan Operasi
+    {
+        query: "matematika",
+        querybab: "mtk-dasar",
+        querysubbab: "urutan-operasi",
+        queryjudul: "kenapa-urutan-operasi-matematika-penting?",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matematika Dasar",
+        subbab: "Urutan Operasi",
+        judul: "Kenapa Urutan Operasi Matematika Penting?",
+        link: "https://youtu.be/BqR18TxiNTk"
+    },
+    {
+        query: "matematika",
+        querybab: "mtk-dasar",
+        querysubbab: "urutan-operasi",
+        queryjudul: "soal-urutan-operasi-matematika",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matematika Dasar",
+        subbab: "Urutan Operasi",
+        judul: "Soal Urutan Operasi Matematika",
+        link: "https://youtu.be/q9VCPA8uAj0"
+    },
+    {
+        query: "matematika",
+        querybab: "mtk-dasar",
+        querysubbab: "urutan-operasi",
+        queryjudul: "contoh-soal-urutan-operasi-matematika",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matematika Dasar",
+        subbab: "Urutan Operasi",
+        judul: "Contoh Soal Urutan Operasi Matematika",
+        link: "https://youtu.be/spfVfSUEfc8"
+    },
+
+    //MTK Dasar: Apa itu Bilangan Desimal?
+    {
+        query: "matematika",
+        querybab: "mtk-dasar",
+        querysubbab: "apa-itu-bilangan-desimal?",
+        queryjudul: "konsep-bilangan-desimal",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matematika Dasar",
+        subbab: "Apa itu Bilangan Desimal?",
+        judul: "Konsep Bilangan Desimal",
+        link: "https://youtu.be/0pF1IHmsBl0"
+    },
+    {
+        query: "matematika",
+        querybab: "mtk-dasar",
+        querysubbab: "apa-itu-bilangan-desimal?",
+        queryjudul: "cara-menjumlahkan-bilangan-desimal",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matematika Dasar",
+        subbab: "Apa itu Bilangan Desimal?",
+        judul: "Cara Menjumlahkan Bilangan Desimal",
+        link: "https://youtu.be/ho75Cl7NM90"
+    },
+    {
+        query: "matematika",
+        querybab: "mtk-dasar",
+        querysubbab: "apa-itu-bilangan-desimal?",
+        queryjudul: "penjumlahan-3-bilangan-desimal",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matematika Dasar",
+        subbab: "Apa itu Bilangan Desimal?",
+        judul: "Penjumlahan 3 Bilangan Desimal",
+        link: "https://youtu.be/H-7NkdW4I3g"
+    },
+
+    //MTK Dasar: Apa itu Pecahan?
+    {
+        query: "matematika",
+        querybab: "mtk-dasar",
+        querysubbab: "apa-itu-pecahan?",
+        queryjudul: "konsep-merubah-bilangan-desimal-menjadi-pecahan",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matematika Dasar",
+        subbab: "Apa itu Pecahan?",
+        judul: "Konsep Merubah Bilangan Desimal Menjadi Pecahan",
+        link: "https://youtu.be/fqX3Sy295Bg"
+    },
+    {
+        query: "matematika",
+        querybab: "mtk-dasar",
+        querysubbab: "apa-itu-pecahan?",
+        queryjudul: "cara-merubah-pecahan-menjadi-bilangan-desimal",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matematika Dasar",
+        subbab: "Apa itu Pecahan?",
+        judul: "Cara Merubah Pecahan Menjadi Bilangan Desimal",
+        link: "https://youtu.be/OyKWTNx6YPU"
+    },
+    {
+        query: "matematika",
+        querybab: "mtk-dasar",
+        querysubbab: "apa-itu-pecahan?",
+        queryjudul: "penjumlahan-pecahan",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matematika Dasar",
+        subbab: "Apa itu Pecahan?",
+        judul: "Penjumlahan Pecahan",
+        link: "https://youtu.be/G0UheI12m1M"
+    },
+    {
+        query: "matematika",
+        querybab: "mtk-dasar",
+        querysubbab: "apa-itu-pecahan?",
+        queryjudul: "perkalian-pecahan",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matematika Dasar",
+        subbab: "Apa itu Pecahan?",
+        judul: "Perkalian Pecahan",
+        link: "https://youtu.be/GZIa3JQB8mY"
+    },
+    {
+        query: "matematika",
+        querybab: "mtk-dasar",
+        querysubbab: "apa-itu-pecahan?",
+        queryjudul: "pembagian-pecahan",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matematika Dasar",
+        subbab: "Apa itu Pecahan?",
+        judul: "Pembagian Pecahan",
+        link: "https://youtu.be/vGd-k2YrtWQ"
+    },
+
+    //MTK Dasar: Rasio/Perbandingan
+    {
+        query: "matematika",
+        querybab: "mtk-dasar",
+        querysubbab: "rasio-perbandingan",
+        queryjudul: "konsep-rasio-perbandingan",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matematika Dasar",
+        subbab: "Rasio/Perbandingan",
+        judul: "Konsep Rasio/Perbandingan",
+        link: "https://youtu.be/atGzSEVMuq8"
+    },
+    {
+        query: "matematika",
+        querybab: "mtk-dasar",
+        querysubbab: "rasio-perbandingan",
+        queryjudul: "mencari-rasio-dari-sebuah-tabel",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matematika Dasar",
+        subbab: "Rasio/Perbandingan",
+        judul: "Mencari Rasio dari sebuah Tabel",
+        link: "https://youtu.be/S0f6uZlIexA"
+    },
+
+    //MTK Dasar: Akar Kuadrat
+    {
+        query: "matematika",
+        querybab: "mtk-dasar",
+        querysubbab: "akar-kuadrat",
+        queryjudul: "konsep-akar-kuadrat",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Matematika Dasar",
+        subbab: "Akar Kuadrat",
+        judul: "Konsep Akar Kuadrat",
+        link: "https://youtu.be/S0f6uZlIexA"
     }
 ]

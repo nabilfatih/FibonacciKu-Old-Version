@@ -1,4 +1,6 @@
-module.exports.dataPelajaran = [
+module.exports.DataPelajaran = [
+
+    //Pelajaran
     {
         query: "matematika",
         pelajaran: "Matematika",
@@ -28,10 +30,9 @@ module.exports.dataPelajaran = [
         query: "kecerdasan-buatan",
         pelajaran: "Kecerdasan Buatan",
         icon: "/img/icon/kecerdasanbuatan-icon.png"
-    }
-]
+    },
 
-module.exports.dataPelajaranUjian = [
+    //Ujian
     {
         query: "utbk-sbmptn",
         pelajaran: "UTBK/SBMPTN",

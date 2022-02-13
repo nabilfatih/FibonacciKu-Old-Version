@@ -1,4 +1,6 @@
-module.exports.babMTK = [
+module.exports.DataBab = [
+
+    //Matematika
     {
         query: "matematika",
         querybab: "fungsi",
@@ -68,10 +70,9 @@ module.exports.babMTK = [
         pelajaran: "Matematika",
         icon: "/img/icon/analisis-icon.png",
         bab: "Analisis"
-    }
-]
+    },
 
-module.exports.babFisika = [
+    //Fisika
     {
         query: "fisika",
         querybab: "fisika-dasar",
@@ -113,10 +114,9 @@ module.exports.babFisika = [
         pelajaran: "Fisika",
         icon: "/img/icon/usahaenergi-icon.png",
         bab: "Usaha & Energi"
-    }
-]
+    },
 
-module.exports.babInformatika = [
+    //Informatika
     {
         query: "informatika",
         querybab: "sistem-bilangan",
@@ -151,10 +151,9 @@ module.exports.babInformatika = [
         pelajaran: "Informatika",
         icon: "/img/icon/arsitekturkomputer-icon.png",
         bab: "Arsitektur Komputer"
-    }
-]
+    },
 
-module.exports.babBiologi = [
+    //Biologi
     {
         query: "biologi",
         querybab: "metabolisme",
@@ -196,10 +195,9 @@ module.exports.babBiologi = [
         pelajaran: "Biologi",
         icon: "/img/icon/virus-icon.png",
         bab: "Virus"
-    }
-]
+    },
 
-module.exports.babKimia = [
+    //Kimia
     {
         query: "kimia",
         querybab: "atom",
@@ -241,10 +239,9 @@ module.exports.babKimia = [
         pelajaran: "Kimia",
         icon: "/img/icon/asambasa-icon.png",
         bab: "Asam Basa"
-    }
-]
+    },
 
-module.exports.babAI = [
+    //Kecerdasan Buatan
     {
         query: "kecerdasan-buatan",
         querybab: "fundamental-kecerdasan-buatan",
@@ -279,5 +276,5 @@ module.exports.babAI = [
         pelajaran: "Kecerdasan Buatan",
         icon: "/img/icon/etik-icon.png",
         bab: "Etik"
-    }
+    },
 ]

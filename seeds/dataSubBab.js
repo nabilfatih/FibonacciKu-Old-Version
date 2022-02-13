@@ -1,4 +1,6 @@
-module.exports.Fungsi = [
+module.exports.DataSubBab = [
+
+    //Matematika: Fungsi
     {
         query: "matematika",
         querybab: "fungsi",
@@ -14,7 +16,6 @@ module.exports.Fungsi = [
         pelajaran: "Matematika",
         bab: "Fungsi",
         subbab: "Menghitung Fungsi",
-        konten: ""
     },
     {
         query: "matematika",
@@ -47,10 +48,9 @@ module.exports.Fungsi = [
         pelajaran: "Matematika",
         bab: "Fungsi",
         subbab: "Fungsi Invers"
-    }
-]
+    },
 
-module.exports.MTKDasar = [
+    //Matematika: MTK Dasar
     {
         query: "matematika",
         querybab: "mtk-dasar",
@@ -106,10 +106,9 @@ module.exports.MTKDasar = [
         pelajaran: "Matematika",
         bab: "Matematika Dasar",
         subbab: "Akar Kuadrat"
-    }
-]
+    },
 
-module.exports.Aljabar = [
+    //Matematika: Aljabar
     {
         query: "matematika",
         querybab: "aljabar",
@@ -149,10 +148,9 @@ module.exports.Aljabar = [
         pelajaran: "Matematika",
         bab: "Aljabar",
         subbab: "Apa itu Polinomial?"
-    }
-]
+    },
 
-module.exports.Matriks = [
+    //Matematika: Matriks
     {
         query: "matematika",
         querybab: "matriks",
@@ -200,10 +198,9 @@ module.exports.Matriks = [
         pelajaran: "Matematika",
         bab: "Matriks",
         subbab: "Definit pada Matriks"
-    }
-]
+    },
 
-module.exports.Eksponen = [
+    //Matematika: Eksponen
     {
         query: "matematika",
         querybab: "eksponen",
@@ -227,10 +224,9 @@ module.exports.Eksponen = [
         pelajaran: "Matematika",
         bab: "Eksponen",
         subbab: "Apa itu Logaritma?"
-    }
-]
+    },
 
-module.exports.TeoriBilangan = [
+    //Matematika: Teori Bilangan
     {
         query: "matematika",
         querybab: "teori-bilangan",
@@ -254,10 +250,9 @@ module.exports.TeoriBilangan = [
         pelajaran: "Matematika",
         bab: "Teori Bilangan",
         subbab: "Sifat Bilangan"
-    }
-]
+    },
 
-module.exports.Himpunan = [
+    //Matematika: Himpunan
     {
         query: "matematika",
         querybab: "himpunan",
@@ -273,10 +268,9 @@ module.exports.Himpunan = [
         pelajaran: "Matematika",
         bab: "Himpunan",
         subbab: "Jenis-Jenis Himpunan"
-    }
-]
+    },
 
-module.exports.Turunan = [
+    //Matematika: Turunan
     {
         query: "matematika",
         querybab: "turunan",
@@ -300,10 +294,9 @@ module.exports.Turunan = [
         pelajaran: "Matematika",
         bab: "Turunan",
         subbab: "Contoh Soal Turunan"
-    }
-]
+    },
 
-module.exports.AljabarLinear = [
+    //Matematika: Aljabar Linear
     {
         query: "matematika",
         querybab: "aljabar-linear",
@@ -319,10 +312,9 @@ module.exports.AljabarLinear = [
         pelajaran: "Matematika",
         bab: "Aljabar Linear",
         subbab: "Dekomposisi"
-    }
-]
+    },
 
-module.exports.Analisis = [
+    //Matematika: Analisis
     {
         query: "matematika",
         querybab: "analisis",
