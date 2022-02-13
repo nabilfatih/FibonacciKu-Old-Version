@@ -1141,6 +1141,7 @@ button:hover::before, .button:hover::before {
 
 .shows__icon img {
   max-width: 128px;
+  max-height: 128px;
 }
 
 .shows__bab h3 {

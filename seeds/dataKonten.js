@@ -1,5 +1,6 @@
 module.exports.DataKonten = [
 
+    //Pelajaran Matematika
     //Fungsi: Apa itu Fungsi?
     {
         query: "matematika",
@@ -1106,4 +1107,683 @@ module.exports.DataKonten = [
         judul: "Mencari Matriks Definit Positif dengan Pivot",
         link: "https://youtu.be/sz2n2dWpEhw"
     },
+
+    //Eksponen: Sifat Eksponen
+    {
+        query: "matematika",
+        querybab: "eksponen",
+        querysubbab: "sifat-eksponen",
+        queryjudul: "apa-saja-sifat-eksponen?",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Eksponen",
+        subbab: "Sifat Eksponen",
+        judul: "Apa Saja Sifat Eksponen?",
+        link: "https://youtu.be/hAIu74sumA8"
+    },
+    {
+        query: "matematika",
+        querybab: "eksponen",
+        querysubbab: "sifat-eksponen",
+        queryjudul: "kenapa-suatu-bilangan-jika-dipangkat-0-=-1",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Eksponen",
+        subbab: "Sifat Eksponen",
+        judul: "Kenapa Suatu Bilangan Jika Dipangkat 0 = 1",
+        link: "https://youtu.be/tOY1RLd0cAY"
+    },
+
+    //Eksponen: Contoh Soal Eksponen
+    {
+        query: "matematika",
+        querybab: "eksponen",
+        querysubbab: "contoh-soal-eksponen",
+        queryjudul: "soal-eksponen-dengan-pecahan-berpangkat-1",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Eksponen",
+        subbab: "Contoh Soal Eksponen",
+        judul: "Soal Eksponen dengan Pecahan Berpangkat 1",
+        link: "https://youtu.be/P1yYj2Yv5KI"
+    },
+    {
+        query: "matematika",
+        querybab: "eksponen",
+        querysubbab: "contoh-soal-eksponen",
+        queryjudul: "soal-eksponen-dengan-pecahan-berpangkat-2",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Eksponen",
+        subbab: "Contoh Soal Eksponen",
+        judul: "Soal Eksponen dengan Pecahan Berpangkat 2",
+        link: "https://youtu.be/kXNETK6jPwc"
+    },
+    {
+        query: "matematika",
+        querybab: "eksponen",
+        querysubbab: "contoh-soal-eksponen",
+        queryjudul: "soal-eksponen-dengan-pecahan-dan-akar-kuadrat",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Eksponen",
+        subbab: "Contoh Soal Eksponen",
+        judul: "Soal Eksponen dengan Pecahan dan Akar Kuadrat",
+        link: "https://youtu.be/ZwCcpH6sB2w"
+    },
+    {
+        query: "matematika",
+        querybab: "eksponen",
+        querysubbab: "contoh-soal-eksponen",
+        queryjudul: "soal-eksponen-dengan-akar",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Eksponen",
+        subbab: "Contoh Soal Eksponen",
+        judul: "Soal Eksponen dengan Akar",
+        link: "https://youtu.be/XYrzqtVaRt4"
+    },
+    {
+        query: "matematika",
+        querybab: "eksponen",
+        querysubbab: "contoh-soal-eksponen",
+        queryjudul: "soal-eksponen-dengan-akar-dan-pecahan-kompleks",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Eksponen",
+        subbab: "Contoh Soal Eksponen",
+        judul: "Soal Eksponen dengan Akar dan Pecahan Kompleks",
+        link: "https://youtu.be/RviN7hhMkRw"
+    },
+
+    //Eksponen: Apa itu Logaritma?
+    {
+        query: "matematika",
+        querybab: "eksponen",
+        querysubbab: "apa-itu-logaritma?",
+        queryjudul: "konsep-logaritma",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Eksponen",
+        subbab: "Apa itu Logaritma?",
+        judul: "Konsep Logaritma",
+        link: "https://youtu.be/M88ONmVrxpw"
+    },
+
+    //Eksponen: Menghitung Logaritma
+    {
+        query: "matematika",
+        querybab: "eksponen",
+        querysubbab: "menghitung-logaritma",
+        queryjudul: "aturan-penjumlahan-logaritma",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Eksponen",
+        subbab: "Menghitung Logaritma",
+        judul: "Aturan Penjumlahan Logaritma",
+        link: "https://youtu.be/FPM78JbaxxI"
+    },
+    {
+        query: "matematika",
+        querybab: "eksponen",
+        querysubbab: "menghitung-logaritma",
+        queryjudul: "aturan-pengurangan-logaritma",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Eksponen",
+        subbab: "Menghitung Logaritma",
+        judul: "Aturan Pengurangan Logaritma",
+        link: "https://youtu.be/XjtLkqxV3nw"
+    },
+
+    //Teori Bilangan: Bilangan di Matematika
+    {
+        query: "matematika",
+        querybab: "teori-bilangan",
+        querysubbab: "bilangan-di-matematika",
+        queryjudul: "apa-saja-bilangan-di-matematika?",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Teori Bilangan",
+        subbab: "Bilangan di Matematika",
+        judul: "Apa saja Bilangan di Matematika?",
+        link: "https://youtu.be/5Zv24AEEFIQ"
+    },
+    {
+        query: "matematika",
+        querybab: "teori-bilangan",
+        querysubbab: "bilangan-di-matematika",
+        queryjudul: "bilangan-kompleks-imajiner",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Teori Bilangan",
+        subbab: "Bilangan di Matematika",
+        judul: "Bilangan Komples/Imajiner",
+        link: "https://youtu.be/wyvOdRLN13E"
+    },
+    {
+        query: "matematika",
+        querybab: "teori-bilangan",
+        querysubbab: "bilangan-di-matematika",
+        queryjudul: "bilangan-bulat-dan-pecahan",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Teori Bilangan",
+        subbab: "Bilangan di Matematika",
+        judul: "Bilangan Bulat dan Pecahan",
+        link: "https://youtu.be/Gpw1eNhGCns"
+    },
+    {
+        query: "matematika",
+        querybab: "teori-bilangan",
+        querysubbab: "bilangan-di-matematika",
+        queryjudul: "definisi-bilangan-genap-dan-ganjil",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Teori Bilangan",
+        subbab: "Bilangan di Matematika",
+        judul: "Definisi Bilangan Genap dan Ganjil",
+        link: "https://youtu.be/mswsnsc8Vn0"
+    },
+    {
+        query: "matematika",
+        querybab: "teori-bilangan",
+        querysubbab: "bilangan-di-matematika",
+        queryjudul: "konsep-bilangan-prima",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Teori Bilangan",
+        subbab: "Bilangan di Matematika",
+        judul: "Konsep Bilangan Prima",
+        link: "https://youtu.be/7cRdxL0vi2M"
+    },
+    {
+        query: "matematika",
+        querybab: "teori-bilangan",
+        querysubbab: "bilangan-di-matematika",
+        queryjudul: "apa-itu-bilangan-fibonacci?",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Teori Bilangan",
+        subbab: "Bilangan di Matematika",
+        judul: "Apa itu Bilangan Fibonacci?",
+        link: "https://youtu.be/7a3chyV6dvg"
+    },
+    {
+        query: "matematika",
+        querybab: "teori-bilangan",
+        querysubbab: "bilangan-di-matematika",
+        queryjudul: "konsep-modulo",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Teori Bilangan",
+        subbab: "Bilangan di Matematika",
+        judul: "Konsep Modulo",
+        link: "https://youtu.be/ym4DFJcD1Z4"
+    },
+
+    //Teori Bilangan: Fakta Unik Bilangan
+    {
+        query: "matematika",
+        querybab: "teori-bilangan",
+        querysubbab: "fakta-unik-bilangan",
+        queryjudul: "bagaimana-jika-kita-menjumlahkan-semua-bilangan?",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Teori Bilangan",
+        subbab: "Fakta Unik Bilangan",
+        judul: "Bagaimana Jika Kita Menjumlahkan Semua Bilangan?",
+        link: "https://youtu.be/RveUmzib7ds"
+    },
+    
+    //Teori Bilangan: Sifat Bilangan
+    {
+        query: "matematika",
+        querybab: "teori-bilangan",
+        querysubbab: "sifat-bilangan",
+        queryjudul: "konsep-komutatif-asosiatif-netral-dan-invers-persamaan",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Teori Bilangan",
+        subbab: "Sifat Bilangan",
+        judul: "Konsep Komutatif, Asosiatif, Netral, dan Invers Persamaan",
+        link: "https://youtu.be/g9tMv_edDwc"
+    },
+    {
+        query: "matematika",
+        querybab: "teori-bilangan",
+        querysubbab: "sifat-bilangan",
+        queryjudul: "konsep-komutatif-asosiatif-netral-dan-invers-perkalian",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Teori Bilangan",
+        subbab: "Sifat Bilangan",
+        judul: "Konsep Komutatif, Asosiatif, Netral, dan Invers Perkalian",
+        link: "https://youtu.be/3LYK0kPCGW4"
+    },
+
+    //Himpunan: Apa itu Himpunan?
+    {
+        query: "matematika",
+        querybab: "himpunan",
+        querysubbab: "apa-itu-himpunan?",
+        queryjudul: "konsep-himpunan",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Himpunan",
+        subbab: "Apa itu Himpunan?",
+        judul: "Konsep Himpunan",
+        link: "https://youtu.be/ewB0FJm5S3A"
+    },
+
+    //Himpunan: Deskripsi Himpunan
+    {
+        query: "matematika",
+        querybab: "himpunan",
+        querysubbab: "deskripsi-himpunan",
+        queryjudul: "konsep-deskripsi-himpunan",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Himpunan",
+        subbab: "Deskripsi Himpunan",
+        judul: "Konsep Deskripsi Himpunan",
+        link: "https://youtu.be/tEFJNnaQNQg"
+    },
+    {
+        query: "matematika",
+        querybab: "himpunan",
+        querysubbab: "deskripsi-himpunan",
+        queryjudul: "cara-mendeskripsikan-himpunan",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Himpunan",
+        subbab: "Deskripsi Himpunan",
+        judul: "Cara Mendeskripsikan Himpunan",
+        link: "https://youtu.be/dzneq2clQMk"
+    },
+
+    //Himpunan: Jenis-Jenis Himpunan
+    {
+        query: "matematika",
+        querybab: "himpunan",
+        querysubbab: "jenis-jenis-himpunan",
+        queryjudul: "konsep-himpunan-bagian",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Himpunan",
+        subbab: "Jenis-Jenis Himpunan",
+        judul: "Konsep Himpunan Bagian",
+        link: "https://youtu.be/uaV75eBmauU"
+    },
+    {
+        query: "matematika",
+        querybab: "himpunan",
+        querysubbab: "jenis-jenis-himpunan",
+        queryjudul: "apa-itu-irisan-himpunan?",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Himpunan",
+        subbab: "Jenis-Jenis Himpunan",
+        judul: "Apa itu Irisan Himpunan?",
+        link: "https://youtu.be/FSuXdNNaDYI"
+    },
+    {
+        query: "matematika",
+        querybab: "himpunan",
+        querysubbab: "jenis-jenis-himpunan",
+        queryjudul: "himpunan-gabungan",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Himpunan",
+        subbab: "Jenis-Jenis Himpunan",
+        judul: "Himpunan Gabungan",
+        link: "https://youtu.be/KiAZ5cXwpfM"
+    },
+    {
+        query: "matematika",
+        querybab: "himpunan",
+        querysubbab: "jenis-jenis-himpunan",
+        queryjudul: "selisih-himpunan",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Himpunan",
+        subbab: "Jenis-Jenis Himpunan",
+        judul: "Selisih Himpunan",
+        link: "https://youtu.be/Ommnv4Eic_A"
+    },
+    {
+        query: "matematika",
+        querybab: "himpunan",
+        querysubbab: "jenis-jenis-himpunan",
+        queryjudul: "konsep-komplemen-himpunan",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Himpunan",
+        subbab: "Jenis-Jenis Himpunan",
+        judul: "Konsep Komplemen Himpunan",
+        link: "https://youtu.be/Hq86RH3Yaus"
+    },
+
+    //Turunan: Apa itu Turunan?
+    {
+        query: "matematika",
+        querybab: "turunan",
+        querysubbab: "apa-itu-turunan?",
+        queryjudul: "cara-menurunkan-fungsi",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Turunan",
+        subbab: "Apa itu Turunan?",
+        judul: "Cara Menurunkan Fungsi",
+        link: "https://youtu.be/0o3cTU1D2Zk"
+    },
+    {
+        query: "matematika",
+        querybab: "turunan",
+        querysubbab: "apa-itu-turunan?",
+        queryjudul: "kenapa-notasi-turunan-sangat-penting",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Turunan",
+        subbab: "Apa itu Turunan?",
+        judul: "Kenapa Notasi Turunan sangat Penting",
+        link: "https://youtu.be/uZVWoiArZXk"
+    },
+
+    //Turunan: Aturan Turunan
+    {
+        query: "matematika",
+        querybab: "turunan",
+        querysubbab: "aturan-turunan",
+        queryjudul: "aturan-rantai",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Turunan",
+        subbab: "Aturan Turunan",
+        judul: "Aturan Rantai",
+        link: "https://youtu.be/JkrRMU1TpEc"
+    },
+    {
+        query: "matematika",
+        querybab: "turunan",
+        querysubbab: "aturan-turunan",
+        queryjudul: "aturan-turunan-pada-operasi-perkalian",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Turunan",
+        subbab: "Aturan Turunan",
+        judul: "Aturan Turunan pada Operasi Perkalian",
+        link: "https://youtu.be/BSsS3-Za-OM"
+    },
+    {
+        query: "matematika",
+        querybab: "turunan",
+        querysubbab: "aturan-turunan",
+        queryjudul: "aturan-turunan-pada-operasi-pembagian",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Turunan",
+        subbab: "Aturan Turunan",
+        judul: "Aturan Turunan pada Operasi Pembagian",
+        link: "https://youtu.be/l90URrE-7m0"
+    },
+
+    //Turunan: Contoh Soal Turunan
+    {
+        query: "matematika",
+        querybab: "turunan",
+        querysubbab: "contoh-soal-turunan",
+        queryjudul: "soal-turunan-dengan-aturan-rantai",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Turunan",
+        subbab: "Contoh Soal Turunan",
+        judul: "Soal Turunan dengan Aturan Rantai",
+        link: "https://youtu.be/r7bV6FuJN_Q"
+    },
+    {
+        query: "matematika",
+        querybab: "turunan",
+        querysubbab: "contoh-soal-turunan",
+        queryjudul: "soal-turunan-dengan-aturan-rantai-pada-trigonometri",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Turunan",
+        subbab: "Contoh Soal Turunan",
+        judul: "Soal Turunan dengan Aturan Rantai pada Trigonometri",
+        link: "https://youtu.be/8UDTjcDjac4"
+    },
+    {
+        query: "matematika",
+        querybab: "turunan",
+        querysubbab: "contoh-soal-turunan",
+        queryjudul: "soal-turunan-dengan-eksponensial",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Turunan",
+        subbab: "Contoh Soal Turunan",
+        judul: "Soal Turunan dengan Eksponensial",
+        link: "https://youtu.be/C1BqMiHUc1A"
+    },
+
+    //Aljabar Linear: Persamaan Linear
+    {
+        query: "matematika",
+        querybab: "aljabar-linear",
+        querysubbab: "persamaan-linear",
+        queryjudul: "konsep-metode-eliminasi-gaussian",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar Linear",
+        subbab: "Persamaan Linear",
+        judul: "Konsep Metode Eliminasi Gaussian",
+        link: "https://youtu.be/TA05NomLpKk"
+    },
+
+    //Aljabar Linear: Dekomposisi
+    {
+        query: "matematika",
+        querybab: "aljabar-linear",
+        querysubbab: "dekomposisi",
+        queryjudul: "metode-cholesky-dekomposisi",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar Linear",
+        subbab: "Dekomposisi",
+        judul: "Metode Cholesky Dekomposisi",
+        link: "https://youtu.be/eOgUpL0PhVE"
+    },
+    {
+        query: "matematika",
+        querybab: "aljabar-linear",
+        querysubbab: "dekomposisi",
+        queryjudul: "metode-lu-dekomposisi",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Aljabar Linear",
+        subbab: "Dekomposisi",
+        judul: "Metode LU Dekomposisi",
+        link: "https://youtu.be/7YYZOlCXL_Y"
+    },
+
+    //Analisis: Limit tak Hingga
+    {
+        query: "matematika",
+        querybab: "analisis",
+        querysubbab: "limit-tak-hingga",
+        queryjudul: "limit-tak-hingga-dengan-bilangan-euler",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Analisis",
+        subbab: "Limit Tak Hingga",
+        judul: "Limit Tak Hingga dengan Bilangan Euler",
+        link: "https://youtu.be/LNCfpM7hFAk"
+    },
+
+    //Analisis: Limit Point
+    {
+        query: "matematika",
+        querybab: "analisis",
+        querysubbab: "limit-point",
+        queryjudul: "mencari-limit-point-pada-barisan-kompleks",
+        tipe: "video",
+        pelajaran: "Matematika",
+        bab: "Analisis",
+        subbab: "Limit Point",
+        judul: "Mencari Limit Point pada Barisan Kompleks",
+        link: "https://youtu.be/KR61TXYvH5I"
+    },
+
+
+
+    //Pelajaran Fisika
+    //Fisika Dasar: Satuan
+    {
+        query: "fisika",
+        querybab: "fisika-dasar",
+        querysubbab: "Satuan",
+        queryjudul: "konversi-satuan-panjang",
+        tipe: "video",
+        pelajaran: "Fisika",
+        bab: "Fisika Dasar",
+        subbab: "Satuan",
+        judul: "Konversi Satuan Panjang",
+        link: "https://youtu.be/OOC9PkOvcXE"
+    },
+
+
+
+    //Pelajaran Informatika
+    //Sistem Bilangan: Apa itu Sistem Bilangan?
+    {
+        query: "informatika",
+        querybab: "sistem-bilangan",
+        querysubbab: "apa-itu-sistem-bilangan?",
+        queryjudul: "konsep-sistem-bilangan",
+        tipe: "video",
+        pelajaran: "Informatika",
+        bab: "Sistem Bilangan",
+        subbab: "Apa itu Sistem Bilangan?",
+        judul: "Konsep Sistem Bilangan",
+        link: "https://youtu.be/GER_LMQgOzI"
+    },
+
+    //Sistem Bilangan: Merubah Bilangan
+    {
+        query: "informatika",
+        querybab: "sistem-bilangan",
+        querysubbab: "merubah-bilangan",
+        queryjudul: "merubah-bilangan-biner-dan-desimal",
+        tipe: "video",
+        pelajaran: "Informatika",
+        bab: "Sistem Bilangan",
+        subbab: "Merubah Bilangan",
+        judul: "Merubah Bilangan Biner dan Desimal",
+        link: "https://youtu.be/OP_U3WYB_Ac"
+    },
+    {
+        query: "informatika",
+        querybab: "sistem-bilangan",
+        querysubbab: "merubah-bilangan",
+        queryjudul: "merubah-bilangan-desimal-dan-oktal",
+        tipe: "video",
+        pelajaran: "Informatika",
+        bab: "Sistem Bilangan",
+        subbab: "Merubah Bilangan",
+        judul: "Merubah Bilangan Desimal dan Oktal",
+        link: "https://youtu.be/FBNQdVQAvaI"
+    },
+    {
+        query: "informatika",
+        querybab: "sistem-bilangan",
+        querysubbab: "merubah-bilangan",
+        queryjudul: "merubah-bilangan-hexa-dan-desimal",
+        tipe: "video",
+        pelajaran: "Informatika",
+        bab: "Sistem Bilangan",
+        subbab: "Merubah Bilangan",
+        judul: "Merubah Bilangan Hexa dan Desimal",
+        link: "https://youtu.be/fw2V1qnpwME"
+    },
+
+    //Sistem Bilangan: Metode Merubah Bilangan
+    {
+        query: "informatika",
+        querybab: "sistem-bilangan",
+        querysubbab: "merubah-bilangan-biner-dan-oktal-dengan-metode-dual-triad",
+        pelajaran: "Informatika",
+        bab: "Sistem Bilangan",
+        subbab: "Metode Merubah Bilangan",
+        judul: "Merubah Bilangan Biner dan Oktal dengan Metode Dual Triad",
+        link: "https://youtu.be/1cHNnQOP6jw"
+    },
+    {
+        query: "informatika",
+        querybab: "sistem-bilangan",
+        querysubbab: "merubah-bilangan-biner-dan-oktal-dengan-metode-dual-tetrad",
+        pelajaran: "Informatika",
+        bab: "Sistem Bilangan",
+        subbab: "Metode Merubah Bilangan",
+        judul: "Merubah Bilangan Biner dan Hexa dengan Metode Dual Tetrad",
+        link: "https://youtu.be/fOcOwQm_HZs"
+    },
+    {
+        query: "informatika",
+        querybab: "sistem-bilangan",
+        querysubbab: "metode-horner-untuk-merubah-bilangan-oktal-ke-desimal",
+        pelajaran: "Informatika",
+        bab: "Sistem Bilangan",
+        subbab: "Metode Merubah Bilangan",
+        judul: "Metode Horner untuk Merubah Bilangan Oktal ke Desimal",
+        link: "https://youtu.be/_vuwHIYrNuI"
+    },
+    {
+        query: "informatika",
+        querybab: "sistem-bilangan",
+        querysubbab: "skema-horner-untuk-merubah-bilangan-biner-ke-desimal",
+        pelajaran: "Informatika",
+        bab: "Sistem Bilangan",
+        subbab: "Metode Merubah Bilangan",
+        judul: "Skema Horner untuk Merubah Bilangan Biner ke Desimal",
+        link: "https://youtu.be/JQbfCBsItgs"
+    },
+
+    //Sistem Bilangan: Menghitung Bilangan Biner
+    {
+        query: "informatika",
+        querybab: "sistem-bilangan",
+        querysubbab: "menghitung-bilangan-biner",
+        queryjudul: "penjumlahan-dan-pengurangan-bilangan-biner",
+        tipe: "video",
+        pelajaran: "Informatika",
+        bab: "Sistem Bilangan",
+        subbab: "Menghitung Bilangan Biner",
+        judul: "Penjumlahan dan Pengurangan Bilangan Biner",
+        link: "https://youtu.be/ZhwuDD5pqcg"
+    },
+    {
+        query: "informatika",
+        querybab: "sistem-bilangan",
+        querysubbab: "menghitung-bilangan-biner",
+        queryjudul: "perkalian-bilangan-biner",
+        tipe: "video",
+        pelajaran: "Informatika",
+        bab: "Sistem Bilangan",
+        subbab: "Menghitung Bilangan Biner",
+        judul: "Perkalian Bilangan Biner",
+        link: "https://youtu.be/u6mySYeI9zY"
+    },
+    {
+        query: "informatika",
+        querybab: "sistem-bilangan",
+        querysubbab: "menghitung-bilangan-biner",
+        queryjudul: "pembagian-bilangan-biner",
+        tipe: "video",
+        pelajaran: "Informatika",
+        bab: "Sistem Bilangan",
+        subbab: "Menghitung Bilangan Biner",
+        judul: "Pembagian Bilangan Biner",
+        link: "https://youtu.be/0I0BXbjX40w"
+    },
+    
 ]

@@ -1,5 +1,6 @@
 module.exports.DataSubBab = [
 
+    // Pelajaran Matematika
     //Matematika: Fungsi
     {
         query: "matematika",
@@ -241,6 +242,14 @@ module.exports.DataSubBab = [
         bab: "Eksponen",
         subbab: "Apa itu Logaritma?"
     },
+    {
+        query: "matematika",
+        querybab: "eksponen",
+        querysubbab: "menghitung-logaritma",
+        pelajaran: "Matematika",
+        bab: "Eksponen",
+        subbab: "Menghitung Logaritma"
+    },
 
     //Matematika: Teori Bilangan
     {
@@ -254,10 +263,10 @@ module.exports.DataSubBab = [
     {
         query: "matematika",
         querybab: "teori-bilangan",
-        querysubbab: "fakta-unik",
+        querysubbab: "fakta-unik-bilangan",
         pelajaran: "Matematika",
         bab: "Teori Bilangan",
-        subbab: "Fakta Unik"
+        subbab: "Fakta Unik Bilangan"
     },
     {
         query: "matematika",
@@ -276,6 +285,14 @@ module.exports.DataSubBab = [
         pelajaran: "Matematika",
         bab: "Himpunan",
         subbab: "Apa itu Himpunan?"
+    },
+    {
+        query: "matematika",
+        querybab: "himpunan",
+        querysubbab: "deskripsi-himpunan",
+        pelajaran: "Matematika",
+        bab: "Himpunan",
+        subbab: "Deskripsi Himpunan"
     },
     {
         query: "matematika",
@@ -346,5 +363,53 @@ module.exports.DataSubBab = [
         pelajaran: "Matematika",
         bab: "Analisis",
         subbab: "Limit Point"
+    },
+
+
+    //Pelajaran Fisika
+    //Fisika: Satuan
+    {
+        query: "fisika",
+        querybab: "fisika-dasar",
+        querysubbab: "Satuan",
+        pelajaran: "Fisika",
+        bab: "Fisika Dasar",
+        subbab: "Satuan"
+    },
+
+
+    //Pelajaran Informatika
+    //Informatika: Sistem Bilangan
+    {
+        query: "informatika",
+        querybab: "sistem-bilangan",
+        querysubbab: "apa-itu-sistem-bilangan?",
+        pelajaran: "Informatika",
+        bab: "Sistem Bilangan",
+        subbab: "Apa itu Sistem Bilangan?"
+    },
+    {
+        query: "informatika",
+        querybab: "sistem-bilangan",
+        querysubbab: "merubah-bilangan",
+        pelajaran: "Informatika",
+        bab: "Sistem Bilangan",
+        subbab: "Merubah Bilangan"
+    },
+    {
+        query: "informatika",
+        querybab: "sistem-bilangan",
+        querysubbab: "metode-merubah-bilangan",
+        pelajaran: "Informatika",
+        bab: "Sistem Bilangan",
+        subbab: "Metode Merubah Bilangan"
+    },
+    {
+        query: "informatika",
+        querybab: "sistem-bilangan",
+        querysubbab: "menghitung-bilangan-biner",
+        pelajaran: "Informatika",
+        bab: "Sistem Bilangan",
+        subbab: "Menghitung Bilangan Biner"
     }
 ]

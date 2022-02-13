@@ -1,5 +1,6 @@
 module.exports.DataBab = [
 
+    //Pelajaran
     //Matematika
     {
         query: "matematika",
@@ -276,5 +277,38 @@ module.exports.DataBab = [
         pelajaran: "Kecerdasan Buatan",
         icon: "/img/icon/etik-icon.png",
         bab: "Etik"
+    },
+
+
+
+    //Ujian
+    //Aufnahmeprüfung
+    {
+        query: "aufnahmeprüfung",
+        querybab: "stk-kaiserslautern",
+        pelajaran: "Aufnahmeprüfung",
+        icon: "/img/icon/stkkl-icon.png",
+        bab: "STK Kaiserslautern"
+    },
+    {
+        query: "aufnahmeprüfung",
+        querybab: "stk-halle",
+        pelajaran: "Aufnahmeprüfung",
+        icon: "/img/icon/stkhalle-icon.png",
+        bab: "STK Halle"
+    },
+    {
+        query: "aufnahmeprüfung",
+        querybab: "stk-bochum",
+        pelajaran: "Aufnahmeprüfung",
+        icon: "/img/icon/stkbochum-icon.png",
+        bab: "STK Bochum"
+    },
+    {
+        query: "aufnahmeprüfung",
+        querybab: "stk-zittau-görlitz",
+        pelajaran: "Aufnahmeprüfung",
+        icon: "/img/icon/stkzittau-icon.png",
+        bab: "STK Zittau/Görlitz"
     },
 ]
