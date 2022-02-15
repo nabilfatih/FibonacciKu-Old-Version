@@ -588,7 +588,7 @@ module.exports.DataKonten = [
         bab: "Matematika Dasar",
         subbab: "Akar Kuadrat",
         judul: "Konsep Akar Kuadrat",
-        link: "https://www.youtube-nocookie.com/embed/S0f6uZlIexA"
+        link: "https://www.youtube-nocookie.com/embed/ERbCDVCzLmg"
     },
 
     //Aljabar: Apa itu Aljabar?
