@@ -12,7 +12,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Apa itu Fungsi?",
         judul: "Konsep Fungsi",
-        link: "https://youtu.be/xr0lfljKzx0"
+        link: "https://www.youtube-nocookie.com/embed/xr0lfljKzx0"
     },
     {
         query: "matematika",
@@ -24,7 +24,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Apa itu Fungsi?",
         judul: "Apa Perbedaan Fungsi dan Persamaan?",
-        link: "https://youtu.be/daizVE3GFis"
+        link: "https://www.youtube-nocookie.com/embed/daizVE3GFis"
     },
     {
         query: "matematika",
@@ -36,7 +36,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Apa itu Fungsi?",
         judul: "Bagaimana Menghitung Notasi Interval?",
-        link: "https://youtu.be/O2j7uKzEfcY"
+        link: "https://www.youtube-nocookie.com/embed/O2j7uKzEfcY"
     },
     {
         query: "matematika",
@@ -48,7 +48,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Apa itu Fungsi?",
         judul: "Menentukan Suatu Notasi Termasuk Fungsi atau Bukan",
-        link: "https://youtu.be/1BWuK44SVFA"
+        link: "https://www.youtube-nocookie.com/embed/1BWuK44SVFA"
     },
     {
         query: "matematika",
@@ -60,7 +60,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Apa itu Fungsi?",
         judul: "Apa Perbedaan dari Injektif, Surjektif, dan Bijektif?",
-        link: "https://youtu.be/PJk09juNRaI"
+        link: "https://www.youtube-nocookie.com/embed/PJk09juNRaI"
     },
 
     //Fungsi: Menghitung Fungsi
@@ -74,7 +74,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Menghitung Fungsi",
         judul: "Menghitung Fungsi Persamaan Aljabar",
-        link: "https://youtu.be/ocNR5U7R09s"
+        link: "https://www.youtube-nocookie.com/embed/ocNR5U7R09s"
     },
     {
         query: "matematika",
@@ -86,7 +86,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Menghitung Fungsi",
         judul: "Menghitung Fungsi dengan Grafik",
-        link: "https://youtu.be/gOvpD2Y61Ck"
+        link: "https://www.youtube-nocookie.com/embed/gOvpD2Y61Ck"
     },
     {
         query: "matematika",
@@ -98,7 +98,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Menghitung Fungsi",
         judul: "Menghitung Fungsi Diskrit dengan Grafik",
-        link: "https://youtu.be/J3XAMuPD5qQ"
+        link: "https://www.youtube-nocookie.com/embed/J3XAMuPD5qQ"
     },
     {
         query: "matematika",
@@ -110,7 +110,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Menghitung Fungsi",
         judul: "Menghitung Ekspresi Fungsi dengan Grafik",
-        link: "https://youtu.be/3fx3aFzAG_g"
+        link: "https://www.youtube-nocookie.com/embed/3fx3aFzAG_g"
     },
     {
         query: "matematika",
@@ -122,7 +122,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Menghitung Fungsi",
         judul: "Menentukan Fungsi dari Persamaan",
-        link: "https://youtu.be/CVCeSARRoqY"
+        link: "https://www.youtube-nocookie.com/embed/CVCeSARRoqY"
     },
 
     //Fungsi: Menentukan Input Fungsi
@@ -136,7 +136,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Menentukan Input Fungsi",
         judul: "Menentukan Input dari Fungsi yang Diketahui Outputnya (Persamaan)",
-        link: "https://youtu.be/LGXgmk9ezEg"
+        link: "https://www.youtube-nocookie.com/embed/LGXgmk9ezEg"
     },
     {
         query: "matematika",
@@ -148,7 +148,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Menentukan Input Fungsi",
         judul: "Mencari Input dari Fungsi yang Diketahui Outputnya (Grafik)",
-        link: "https://youtu.be/Ca5OF9S4ovo"
+        link: "https://www.youtube-nocookie.com/embed/Ca5OF9S4ovo"
     },
 
     //Fungsi: Range & Domain
@@ -162,7 +162,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Range & Domain",
         judul: "Apa itu Domain, Kodomain, dan Range?",
-        link: "https://youtu.be/qtgRxbf_uvA"
+        link: "https://www.youtube-nocookie.com/embed/qtgRxbf_uvA"
     },
     {
         query: "matematika",
@@ -174,7 +174,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Range & Domain",
         judul: "Konsep Domain",
-        link: "https://youtu.be/OqA7Ff9K33k"
+        link: "https://www.youtube-nocookie.com/embed/OqA7Ff9K33k"
     },
     {
         query: "matematika",
@@ -186,7 +186,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Range & Domain",
         judul: "Konsep Range",
-        link: "https://youtu.be/gd-4Url9Nqk"
+        link: "https://www.youtube-nocookie.com/embed/gd-4Url9Nqk"
     },
     {
         query: "matematika",
@@ -198,7 +198,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Range & Domain",
         judul: "Menentukan Domain dan Range dari Grafik",
-        link: "https://youtu.be/ilU-es7jfXw"
+        link: "https://www.youtube-nocookie.com/embed/ilU-es7jfXw"
     },
     {
         query: "matematika",
@@ -210,7 +210,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Range & Domain",
         judul: "Menentukan Suatu Nilai Apakah Termasuk Domain atau Bukan",
-        link: "https://youtu.be/abl58ZFNeDg"
+        link: "https://www.youtube-nocookie.com/embed/abl58ZFNeDg"
     },
     {
         query: "matematika",
@@ -222,7 +222,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Range & Domain",
         judul: "Menentukan Domain dari Suatu Fungsi",
-        link: "https://youtu.be/A_LOsSQN1oI"
+        link: "https://www.youtube-nocookie.com/embed/A_LOsSQN1oI"
     },
 
     //Fungsi: Fungsi Komposisi
@@ -236,7 +236,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Fungsi Komposisi",
         judul: "Konsep Fungsi Komposisi",
-        link: "https://youtu.be/gkRVZZPK3DA"
+        link: "https://www.youtube-nocookie.com/embed/gkRVZZPK3DA"
     },
     {
         query: "matematika",
@@ -248,7 +248,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Fungsi Komposisi",
         judul: "Sifat Fungsi Komposisi",
-        link: "https://youtu.be/nXtwdBGIEBs"
+        link: "https://www.youtube-nocookie.com/embed/nXtwdBGIEBs"
     },
     {
         query: "matematika",
@@ -260,7 +260,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Fungsi Komposisi",
         judul: "Menghitung Fungsi Komposisi",
-        link: "https://youtu.be/-OWTASVTF8A"
+        link: "https://www.youtube-nocookie.com/embed/-OWTASVTF8A"
     },
     {
         query: "matematika",
@@ -272,7 +272,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Fungsi Komposisi",
         judul: "Mencari Fungsi dari Fungsi Komposisi",
-        link: "https://youtu.be/d8hCAKlIOjY"
+        link: "https://www.youtube-nocookie.com/embed/d8hCAKlIOjY"
     },
 
     //Fungsi: Fungsi Invers
@@ -286,7 +286,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Fungsi Invers",
         judul: "Konsep Fungsi Invers",
-        link: "https://youtu.be/Xj1NmTxcl7Y"
+        link: "https://www.youtube-nocookie.com/embed/Xj1NmTxcl7Y"
     },
     {
         query: "matematika",
@@ -298,7 +298,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Fungsi Invers",
         judul: "Mencari Fungsi dari Fungsi Inversnya",
-        link: "https://youtu.be/PjHOhFn70_Q"
+        link: "https://www.youtube-nocookie.com/embed/PjHOhFn70_Q"
     },
     {
         query: "matematika",
@@ -310,7 +310,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Fungsi Invers",
         judul: "Menentukan Invers dari sebuah Fungsi",
-        link: "https://youtu.be/8pBsRS1EHxI"
+        link: "https://www.youtube-nocookie.com/embed/8pBsRS1EHxI"
     },
     {
         query: "matematika",
@@ -322,7 +322,7 @@ module.exports.DataKonten = [
         bab: "Fungsi",
         subbab: "Fungsi Invers",
         judul: "Sifat Invers pada Fungsi Komposisi",
-        link: "https://youtu.be/7W-vuUQJ_eU"
+        link: "https://www.youtube-nocookie.com/embed/7W-vuUQJ_eU"
     },
 
     //MTK Dasar: Penjumalahan & Pengurangan
@@ -336,7 +336,7 @@ module.exports.DataKonten = [
         bab: "Matematika Dasar",
         subbab: "Penjumlahan & Pengurangan",
         judul: "Konsep Menjumlahkan Bilangan Negatif",
-        link: "https://youtu.be/V8dOAYfbppg"
+        link: "https://www.youtube-nocookie.com/embed/V8dOAYfbppg"
     },
     {
         query: "matematika",
@@ -348,7 +348,7 @@ module.exports.DataKonten = [
         bab: "Matematika Dasar",
         subbab: "Penjumlahan & Pengurangan",
         judul: "Kenapa Mengurangi Bilangan Negatif = Positif",
-        link: "https://youtu.be/xqgZLlQ06PA"
+        link: "https://www.youtube-nocookie.com/embed/xqgZLlQ06PA"
     },
     {
         query: "matematika",
@@ -360,7 +360,7 @@ module.exports.DataKonten = [
         bab: "Matematika Dasar",
         subbab: "Penjumlahan & Pengurangan",
         judul: "Pengurangan Bilangan Negatif",
-        link: "https://youtu.be/8VNkNOOQR3Q"
+        link: "https://www.youtube-nocookie.com/embed/8VNkNOOQR3Q"
     },
 
     //MTK Dasar: Perkalian & Pembagian
@@ -374,7 +374,7 @@ module.exports.DataKonten = [
         bab: "Matematika Dasar",
         subbab: "Perkalian & Pembagian",
         judul: "Perkalian Bilangan Positif & Negatif",
-        link: "https://youtu.be/OX-DYEgTayg"
+        link: "https://www.youtube-nocookie.com/embed/OX-DYEgTayg"
     },
     {
         query: "matematika",
@@ -386,7 +386,7 @@ module.exports.DataKonten = [
         bab: "Matematika Dasar",
         subbab: "Perkalian & Pembagian",
         judul: "Pembagian Bilangan Positif & Negatif",
-        link: "https://youtu.be/eCJzx8rY2gI"
+        link: "https://www.youtube-nocookie.com/embed/eCJzx8rY2gI"
     },
     {
         query: "matematika",
@@ -398,7 +398,7 @@ module.exports.DataKonten = [
         bab: "Matematika Dasar",
         subbab: "Perkalian & Pembagian",
         judul: "Kenapa Negatif x Negatif = Positif",
-        link: "https://youtu.be/fF9cFkjypOU"
+        link: "https://www.youtube-nocookie.com/embed/fF9cFkjypOU"
     },
     {
         query: "matematika",
@@ -410,7 +410,7 @@ module.exports.DataKonten = [
         bab: "Matematika Dasar",
         subbab: "Perkalian & Pembagian",
         judul: "Pembuktian Negatif x Negatif = Positif",
-        link: "https://youtu.be/YQDEcJQF_B0"
+        link: "https://www.youtube-nocookie.com/embed/YQDEcJQF_B0"
     },
 
     //MTK Dasar: Urutan Operasi
@@ -424,7 +424,7 @@ module.exports.DataKonten = [
         bab: "Matematika Dasar",
         subbab: "Urutan Operasi",
         judul: "Kenapa Urutan Operasi Matematika Penting?",
-        link: "https://youtu.be/BqR18TxiNTk"
+        link: "https://www.youtube-nocookie.com/embed/BqR18TxiNTk"
     },
     {
         query: "matematika",
@@ -436,7 +436,7 @@ module.exports.DataKonten = [
         bab: "Matematika Dasar",
         subbab: "Urutan Operasi",
         judul: "Soal Urutan Operasi Matematika",
-        link: "https://youtu.be/q9VCPA8uAj0"
+        link: "https://www.youtube-nocookie.com/embed/q9VCPA8uAj0"
     },
     {
         query: "matematika",
@@ -448,7 +448,7 @@ module.exports.DataKonten = [
         bab: "Matematika Dasar",
         subbab: "Urutan Operasi",
         judul: "Contoh Soal Urutan Operasi Matematika",
-        link: "https://youtu.be/spfVfSUEfc8"
+        link: "https://www.youtube-nocookie.com/embed/spfVfSUEfc8"
     },
 
     //MTK Dasar: Apa itu Bilangan Desimal?
@@ -462,7 +462,7 @@ module.exports.DataKonten = [
         bab: "Matematika Dasar",
         subbab: "Apa itu Bilangan Desimal?",
         judul: "Konsep Bilangan Desimal",
-        link: "https://youtu.be/0pF1IHmsBl0"
+        link: "https://www.youtube-nocookie.com/embed/0pF1IHmsBl0"
     },
     {
         query: "matematika",
@@ -474,7 +474,7 @@ module.exports.DataKonten = [
         bab: "Matematika Dasar",
         subbab: "Apa itu Bilangan Desimal?",
         judul: "Cara Menjumlahkan Bilangan Desimal",
-        link: "https://youtu.be/ho75Cl7NM90"
+        link: "https://www.youtube-nocookie.com/embed/ho75Cl7NM90"
     },
     {
         query: "matematika",
@@ -486,7 +486,7 @@ module.exports.DataKonten = [
         bab: "Matematika Dasar",
         subbab: "Apa itu Bilangan Desimal?",
         judul: "Penjumlahan 3 Bilangan Desimal",
-        link: "https://youtu.be/H-7NkdW4I3g"
+        link: "https://www.youtube-nocookie.com/embed/H-7NkdW4I3g"
     },
 
     //MTK Dasar: Apa itu Pecahan?
@@ -500,7 +500,7 @@ module.exports.DataKonten = [
         bab: "Matematika Dasar",
         subbab: "Apa itu Pecahan?",
         judul: "Konsep Merubah Bilangan Desimal Menjadi Pecahan",
-        link: "https://youtu.be/fqX3Sy295Bg"
+        link: "https://www.youtube-nocookie.com/embed/fqX3Sy295Bg"
     },
     {
         query: "matematika",
@@ -512,7 +512,7 @@ module.exports.DataKonten = [
         bab: "Matematika Dasar",
         subbab: "Apa itu Pecahan?",
         judul: "Cara Merubah Pecahan Menjadi Bilangan Desimal",
-        link: "https://youtu.be/OyKWTNx6YPU"
+        link: "https://www.youtube-nocookie.com/embed/OyKWTNx6YPU"
     },
     {
         query: "matematika",
@@ -524,7 +524,7 @@ module.exports.DataKonten = [
         bab: "Matematika Dasar",
         subbab: "Apa itu Pecahan?",
         judul: "Penjumlahan Pecahan",
-        link: "https://youtu.be/G0UheI12m1M"
+        link: "https://www.youtube-nocookie.com/embed/G0UheI12m1M"
     },
     {
         query: "matematika",
@@ -536,7 +536,7 @@ module.exports.DataKonten = [
         bab: "Matematika Dasar",
         subbab: "Apa itu Pecahan?",
         judul: "Perkalian Pecahan",
-        link: "https://youtu.be/GZIa3JQB8mY"
+        link: "https://www.youtube-nocookie.com/embed/GZIa3JQB8mY"
     },
     {
         query: "matematika",
@@ -548,7 +548,7 @@ module.exports.DataKonten = [
         bab: "Matematika Dasar",
         subbab: "Apa itu Pecahan?",
         judul: "Pembagian Pecahan",
-        link: "https://youtu.be/vGd-k2YrtWQ"
+        link: "https://www.youtube-nocookie.com/embed/vGd-k2YrtWQ"
     },
 
     //MTK Dasar: Rasio/Perbandingan
@@ -562,7 +562,7 @@ module.exports.DataKonten = [
         bab: "Matematika Dasar",
         subbab: "Rasio/Perbandingan",
         judul: "Konsep Rasio/Perbandingan",
-        link: "https://youtu.be/atGzSEVMuq8"
+        link: "https://www.youtube-nocookie.com/embed/atGzSEVMuq8"
     },
     {
         query: "matematika",
@@ -574,7 +574,7 @@ module.exports.DataKonten = [
         bab: "Matematika Dasar",
         subbab: "Rasio/Perbandingan",
         judul: "Mencari Rasio dari sebuah Tabel",
-        link: "https://youtu.be/S0f6uZlIexA"
+        link: "https://www.youtube-nocookie.com/embed/S0f6uZlIexA"
     },
 
     //MTK Dasar: Akar Kuadrat
@@ -588,7 +588,7 @@ module.exports.DataKonten = [
         bab: "Matematika Dasar",
         subbab: "Akar Kuadrat",
         judul: "Konsep Akar Kuadrat",
-        link: "https://youtu.be/S0f6uZlIexA"
+        link: "https://www.youtube-nocookie.com/embed/S0f6uZlIexA"
     },
 
     //Aljabar: Apa itu Aljabar?
@@ -602,7 +602,7 @@ module.exports.DataKonten = [
         bab: "Aljabar",
         subbab: "Apa itu Aljabar?",
         judul: "Definisi Variabel, Persamaan, dan Ekspresi",
-        link: "https://youtu.be/W6q1JAMAjt8"
+        link: "https://www.youtube-nocookie.com/embed/W6q1JAMAjt8"
     },
     {
         query: "matematika",
@@ -614,7 +614,7 @@ module.exports.DataKonten = [
         bab: "Aljabar",
         subbab: "Apa itu Aljabar?",
         judul: "Hubungan antara Koefisien dan Variabel",
-        link: "https://youtu.be/j0FuZRnRZgo"
+        link: "https://www.youtube-nocookie.com/embed/j0FuZRnRZgo"
     },
     {
         query: "matematika",
@@ -626,7 +626,7 @@ module.exports.DataKonten = [
         bab: "Aljabar",
         subbab: "Apa itu Aljabar?",
         judul: "Kesalahan Konsep pada Aljabar",
-        link: "https://youtu.be/-PqPzzo6c0o"
+        link: "https://www.youtube-nocookie.com/embed/-PqPzzo6c0o"
     },
     
     //Aljabar: Menyederhanakan Aljabar
@@ -640,7 +640,7 @@ module.exports.DataKonten = [
         bab: "Aljabar",
         subbab: "Menyederhanakan Aljabar",
         judul: "Menyederhanakan Ekspresi Monomial Aljabar",
-        link: "https://youtu.be/RtoI7zQVvY4"
+        link: "https://www.youtube-nocookie.com/embed/RtoI7zQVvY4"
     },
     {
         query: "matematika",
@@ -652,7 +652,7 @@ module.exports.DataKonten = [
         bab: "Aljabar",
         subbab: "Menyederhanakan Aljabar",
         judul: "Trik Mudah Menyederhanakan Ekspresi Aljabar",
-        link: "https://youtu.be/zaJ5I6UnBow"
+        link: "https://www.youtube-nocookie.com/embed/zaJ5I6UnBow"
     },
     
     //Aljabar: Mencari Suatu Nilai pada Aljabar
@@ -666,7 +666,7 @@ module.exports.DataKonten = [
         bab: "Aljabar",
         subbab: "Mencari Suatu Nilai pada Aljabar",
         judul: "Mencari Nilai x pada Persamaan Aljabar",
-        link: "https://youtu.be/NMNrV9Exybs"
+        link: "https://www.youtube-nocookie.com/embed/NMNrV9Exybs"
     },
 
     //Aljabar: Menfaktorkan Aljabar
@@ -680,7 +680,7 @@ module.exports.DataKonten = [
         bab: "Aljabar",
         subbab: "Menfaktorkan Aljabar",
         judul: "Cara Menfaktorkan Persamaan Aljabar",
-        link: "https://youtu.be/RO2mcXQer-A"
+        link: "https://www.youtube-nocookie.com/embed/RO2mcXQer-A"
     },
     {
         query: "matematika",
@@ -692,7 +692,7 @@ module.exports.DataKonten = [
         bab: "Aljabar",
         subbab: "Menfaktorkan Aljabar",
         judul: "Cara Pistol untuk Membagi Aljabar",
-        link: "https://youtu.be/IJ3m9O1P6mA"
+        link: "https://www.youtube-nocookie.com/embed/IJ3m9O1P6mA"
     },
     {
         query: "matematika",
@@ -704,7 +704,7 @@ module.exports.DataKonten = [
         bab: "Aljabar",
         subbab: "Menfaktorkan Aljabar",
         judul: "Metode Horner untuk Menfaktorkan Aljabar",
-        link: "https://youtu.be/YtMlrCtkwOc"
+        link: "https://www.youtube-nocookie.com/embed/YtMlrCtkwOc"
     },
     {
         query: "matematika",
@@ -716,7 +716,7 @@ module.exports.DataKonten = [
         bab: "Aljabar",
         subbab: "Menfaktorkan Aljabar",
         judul: "Contoh Soal Menfaktorkan Aljabar",
-        link: "https://youtu.be/lcl2bET8QUw"
+        link: "https://www.youtube-nocookie.com/embed/lcl2bET8QUw"
     },
     
 
@@ -731,7 +731,7 @@ module.exports.DataKonten = [
         bab: "Aljabar",
         subbab: "Apa itu Polinomial?",
         judul: "Konsep Polinomial Aljabar",
-        link: "https://youtu.be/Tq0DWVaphtA"
+        link: "https://www.youtube-nocookie.com/embed/Tq0DWVaphtA"
     },
     {
         query: "matematika",
@@ -743,7 +743,7 @@ module.exports.DataKonten = [
         bab: "Aljabar",
         subbab: "Apa itu Polinomial?",
         judul: "Derajat pada Polinomial",
-        link: "https://youtu.be/xQrrSf_5UeQ"
+        link: "https://www.youtube-nocookie.com/embed/xQrrSf_5UeQ"
     },
     {
         query: "matematika",
@@ -755,7 +755,7 @@ module.exports.DataKonten = [
         bab: "Aljabar",
         subbab: "Apa itu Polinomial?",
         judul: "Menganalisa Ekspresi Polinomial Aljabar",
-        link: "https://youtu.be/TXRk3NrMGCY"
+        link: "https://www.youtube-nocookie.com/embed/TXRk3NrMGCY"
     },
 
     //Aljabar: Menghitung Polinomial
@@ -769,7 +769,7 @@ module.exports.DataKonten = [
         bab: "Aljabar",
         subbab: "Menghitung Polinomial",
         judul: "Penjumlahan Polinomial",
-        link: "https://youtu.be/gCTd5h-mdBo"
+        link: "https://www.youtube-nocookie.com/embed/gCTd5h-mdBo"
     },
     {
         query: "matematika",
@@ -781,7 +781,7 @@ module.exports.DataKonten = [
         bab: "Aljabar",
         subbab: "Menghitung Polinomial",
         judul: "Pengurangan Polinomial",
-        link: "https://youtu.be/bPZX-PFrcV8"
+        link: "https://www.youtube-nocookie.com/embed/bPZX-PFrcV8"
     },
     {
         query: "matematika",
@@ -793,7 +793,7 @@ module.exports.DataKonten = [
         bab: "Aljabar",
         subbab: "Menghitung Polinomial",
         judul: "Perkalian Monomial",
-        link: "https://youtu.be/rh1XGkv_iOQ"
+        link: "https://www.youtube-nocookie.com/embed/rh1XGkv_iOQ"
     },
     {
         query: "matematika",
@@ -805,7 +805,7 @@ module.exports.DataKonten = [
         bab: "Aljabar",
         subbab: "Menghitung Polinomial",
         judul: "Konsep Perkalian Monomial dengan Visual",
-        link: "https://youtu.be/mTbpbsUP6Xs"
+        link: "https://www.youtube-nocookie.com/embed/mTbpbsUP6Xs"
     },
     {
         query: "matematika",
@@ -817,7 +817,7 @@ module.exports.DataKonten = [
         bab: "Aljabar",
         subbab: "Menghitung Polinomial",
         judul: "Perkalian Monomial dan Polinomial",
-        link: "https://youtu.be/RTwBanJMwaU"
+        link: "https://www.youtube-nocookie.com/embed/RTwBanJMwaU"
     },
     {
         query: "matematika",
@@ -829,7 +829,7 @@ module.exports.DataKonten = [
         bab: "Aljabar",
         subbab: "Menghitung Polinomial",
         judul: "Perkalian Binomial dan Polinomial",
-        link: "https://youtu.be/HOpLGQILXvc"
+        link: "https://www.youtube-nocookie.com/embed/HOpLGQILXvc"
     },
     {
         query: "matematika",
@@ -841,7 +841,7 @@ module.exports.DataKonten = [
         bab: "Aljabar",
         subbab: "Menghitung Polinomial",
         judul: "Konsep Perkalian Binomial dan Polinomial dengan Visual",
-        link: "https://youtu.be/HOpLGQILXvc"
+        link: "https://www.youtube-nocookie.com/embed/HOpLGQILXvc"
     },
     {
         query: "matematika",
@@ -853,7 +853,7 @@ module.exports.DataKonten = [
         bab: "Aljabar",
         subbab: "Bentuk Spesial Polinomial",
         judul: "Bentuk Spesial Kuadrat Polinomial",
-        link: "https://youtu.be/AT-KchQBoAQ"
+        link: "https://www.youtube-nocookie.com/embed/AT-KchQBoAQ"
     },
     {
         query: "matematika",
@@ -865,7 +865,7 @@ module.exports.DataKonten = [
         bab: "Aljabar",
         subbab: "Bentuk Spesial Polinomial",
         judul: "Perkalian Spesial Polinomial",
-        link: "https://youtu.be/bYMZGv9KJOE"
+        link: "https://www.youtube-nocookie.com/embed/bYMZGv9KJOE"
     },
 
     //Matriks: Apa itu Matriks?
@@ -879,7 +879,7 @@ module.exports.DataKonten = [
         bab: "Matriks",
         subbab: "Apa itu Martiks?",
         judul: "Konsep dan Kegunaan Matriks",
-        link: "https://youtu.be/nCX2e0FkT7M"
+        link: "https://www.youtube-nocookie.com/embed/nCX2e0FkT7M"
     },
     {
         query: "matematika",
@@ -891,7 +891,7 @@ module.exports.DataKonten = [
         bab: "Matriks",
         subbab: "Apa itu Martiks?",
         judul: "Definisi Skalar Matriks",
-        link: "https://youtu.be/ZCxaXXIW9HQ"
+        link: "https://www.youtube-nocookie.com/embed/ZCxaXXIW9HQ"
     },
 
     //Matriks: Menghitung Matriks
@@ -905,7 +905,7 @@ module.exports.DataKonten = [
         bab: "Matriks",
         subbab: "Menghitung Matriks",
         judul: "Penjumlahan dan Pengurangan Matriks",
-        link: "https://youtu.be/fo8GRSUJ4VA"
+        link: "https://www.youtube-nocookie.com/embed/fo8GRSUJ4VA"
     },
     {
         query: "matematika",
@@ -917,7 +917,7 @@ module.exports.DataKonten = [
         bab: "Matriks",
         subbab: "Menghitung Matriks",
         judul: "Cara Mengalikan Matriks",
-        link: "https://youtu.be/OTeFX2KCENM"
+        link: "https://www.youtube-nocookie.com/embed/OTeFX2KCENM"
     },
     {
         query: "matematika",
@@ -929,7 +929,7 @@ module.exports.DataKonten = [
         bab: "Matriks",
         subbab: "Menghitung Matriks",
         judul: "Trik Mudah Mengalikan Matriks",
-        link: "https://youtu.be/wrbyGVC-RIw"
+        link: "https://www.youtube-nocookie.com/embed/wrbyGVC-RIw"
     },
     {
         query: "matematika",
@@ -941,7 +941,7 @@ module.exports.DataKonten = [
         bab: "Matriks",
         subbab: "Menghitung Matriks",
         judul: "Aturan Perkalian pada Matriks",
-        link: "https://youtu.be/rXJOsHbH0_s"
+        link: "https://www.youtube-nocookie.com/embed/rXJOsHbH0_s"
     },
 
     //Matriks: Jenis-Jenis Matriks
@@ -955,7 +955,7 @@ module.exports.DataKonten = [
         bab: "Matriks",
         subbab: "Jenis-Jenis Matriks",
         judul: "Matriks Punya Identitas?",
-        link: "https://youtu.be/DZJj3NDEIz8"
+        link: "https://www.youtube-nocookie.com/embed/DZJj3NDEIz8"
     },
     {
         query: "matematika",
@@ -967,7 +967,7 @@ module.exports.DataKonten = [
         bab: "Matriks",
         subbab: "Jenis-Jenis Matriks",
         judul: "Definisi Matriks Transpose",
-        link: "https://youtu.be/CiS6aJhlvVM"
+        link: "https://www.youtube-nocookie.com/embed/CiS6aJhlvVM"
     },
     {
         query: "matematika",
@@ -979,7 +979,7 @@ module.exports.DataKonten = [
         bab: "Matriks",
         subbab: "Jenis-Jenis Matriks",
         judul: "Sifat Matriks Transpose",
-        link: "https://youtu.be/nd3no9JPzNk"
+        link: "https://www.youtube-nocookie.com/embed/nd3no9JPzNk"
     },
     {
         query: "matematika",
@@ -991,7 +991,7 @@ module.exports.DataKonten = [
         bab: "Matriks",
         subbab: "Jenis-Jenis Matriks",
         judul: "Apakah Ada Matriks Nol?",
-        link: "https://youtu.be/UeZ4q6YGaHw"
+        link: "https://www.youtube-nocookie.com/embed/UeZ4q6YGaHw"
     },
 
     //Matriks: Mencari Determinan Matriks
@@ -1005,7 +1005,7 @@ module.exports.DataKonten = [
         bab: "Matriks",
         subbab: "Mencari Determinan Matriks",
         judul: "Determinan Matriks 2 x 2",
-        link: "https://youtu.be/UVZidcU5iKc"
+        link: "https://www.youtube-nocookie.com/embed/UVZidcU5iKc"
     },
     {
         query: "matematika",
@@ -1017,7 +1017,7 @@ module.exports.DataKonten = [
         bab: "Matriks",
         subbab: "Mencari Determinan Matriks",
         judul: "Mencari Determinan Matriks 3 x 3 Dengan Metode Sarrus",
-        link: "https://youtu.be/jbwu4yrXPio"
+        link: "https://www.youtube-nocookie.com/embed/jbwu4yrXPio"
     },
     {
         query: "matematika",
@@ -1029,7 +1029,7 @@ module.exports.DataKonten = [
         bab: "Matriks",
         subbab: "Mencari Determinan Matriks",
         judul: "Menghitung Determinan dengan Metode Laplace",
-        link: "https://youtu.be/zVkFxnQXqfo"
+        link: "https://www.youtube-nocookie.com/embed/zVkFxnQXqfo"
     },
     {
         query: "matematika",
@@ -1041,7 +1041,7 @@ module.exports.DataKonten = [
         bab: "Matriks",
         subbab: "Mencari Determinan Matriks",
         judul: "Menentukan Determinan dengan Metode Eliminasi Gaussian",
-        link: "https://youtu.be/8PBsNiyVXx8"
+        link: "https://www.youtube-nocookie.com/embed/8PBsNiyVXx8"
     },
 
     //Matriks: Matriks Invers
@@ -1055,7 +1055,7 @@ module.exports.DataKonten = [
         bab: "Matriks",
         subbab: "Matriks Invers",
         judul: "Konsep Matriks Invers",
-        link: "https://youtu.be/LeF66n44zRk"
+        link: "https://www.youtube-nocookie.com/embed/LeF66n44zRk"
     },
     {
         query: "matematika",
@@ -1067,7 +1067,7 @@ module.exports.DataKonten = [
         bab: "Matriks",
         subbab: "Matriks Invers",
         judul: "Cara Mencari Matriks Invers 2 x 2",
-        link: "https://youtu.be/ynE4ejZdmGk"
+        link: "https://www.youtube-nocookie.com/embed/ynE4ejZdmGk"
     },
     {
         query: "matematika",
@@ -1079,7 +1079,7 @@ module.exports.DataKonten = [
         bab: "Matriks",
         subbab: "Matriks Invers",
         judul: "Aturan Matriks Invers",
-        link: "https://youtu.be/eI2kcwCG-Rw"
+        link: "https://www.youtube-nocookie.com/embed/eI2kcwCG-Rw"
     },
 
     //Matriks: Definit pada Matriks
@@ -1093,7 +1093,7 @@ module.exports.DataKonten = [
         bab: "Matriks",
         subbab: "Definit pada Matriks",
         judul: "Menentukan Matriks Definit Positif dengan Determinan",
-        link: "https://youtu.be/jqah8Cfqo8o"
+        link: "https://www.youtube-nocookie.com/embed/jqah8Cfqo8o"
     },
     {
         query: "matematika",
@@ -1105,7 +1105,7 @@ module.exports.DataKonten = [
         bab: "Matriks",
         subbab: "Definit pada Matriks",
         judul: "Mencari Matriks Definit Positif dengan Pivot",
-        link: "https://youtu.be/sz2n2dWpEhw"
+        link: "https://www.youtube-nocookie.com/embed/sz2n2dWpEhw"
     },
 
     //Eksponen: Sifat Eksponen
@@ -1119,7 +1119,7 @@ module.exports.DataKonten = [
         bab: "Eksponen",
         subbab: "Sifat Eksponen",
         judul: "Apa Saja Sifat Eksponen?",
-        link: "https://youtu.be/hAIu74sumA8"
+        link: "https://www.youtube-nocookie.com/embed/hAIu74sumA8"
     },
     {
         query: "matematika",
@@ -1131,7 +1131,7 @@ module.exports.DataKonten = [
         bab: "Eksponen",
         subbab: "Sifat Eksponen",
         judul: "Kenapa Suatu Bilangan Jika Dipangkat 0 = 1",
-        link: "https://youtu.be/tOY1RLd0cAY"
+        link: "https://www.youtube-nocookie.com/embed/tOY1RLd0cAY"
     },
 
     //Eksponen: Contoh Soal Eksponen
@@ -1145,7 +1145,7 @@ module.exports.DataKonten = [
         bab: "Eksponen",
         subbab: "Contoh Soal Eksponen",
         judul: "Soal Eksponen dengan Pecahan Berpangkat 1",
-        link: "https://youtu.be/P1yYj2Yv5KI"
+        link: "https://www.youtube-nocookie.com/embed/P1yYj2Yv5KI"
     },
     {
         query: "matematika",
@@ -1157,7 +1157,7 @@ module.exports.DataKonten = [
         bab: "Eksponen",
         subbab: "Contoh Soal Eksponen",
         judul: "Soal Eksponen dengan Pecahan Berpangkat 2",
-        link: "https://youtu.be/kXNETK6jPwc"
+        link: "https://www.youtube-nocookie.com/embed/kXNETK6jPwc"
     },
     {
         query: "matematika",
@@ -1169,7 +1169,7 @@ module.exports.DataKonten = [
         bab: "Eksponen",
         subbab: "Contoh Soal Eksponen",
         judul: "Soal Eksponen dengan Pecahan dan Akar Kuadrat",
-        link: "https://youtu.be/ZwCcpH6sB2w"
+        link: "https://www.youtube-nocookie.com/embed/ZwCcpH6sB2w"
     },
     {
         query: "matematika",
@@ -1181,7 +1181,7 @@ module.exports.DataKonten = [
         bab: "Eksponen",
         subbab: "Contoh Soal Eksponen",
         judul: "Soal Eksponen dengan Akar",
-        link: "https://youtu.be/XYrzqtVaRt4"
+        link: "https://www.youtube-nocookie.com/embed/XYrzqtVaRt4"
     },
     {
         query: "matematika",
@@ -1193,7 +1193,7 @@ module.exports.DataKonten = [
         bab: "Eksponen",
         subbab: "Contoh Soal Eksponen",
         judul: "Soal Eksponen dengan Akar dan Pecahan Kompleks",
-        link: "https://youtu.be/RviN7hhMkRw"
+        link: "https://www.youtube-nocookie.com/embed/RviN7hhMkRw"
     },
 
     //Eksponen: Apa itu Logaritma?
@@ -1207,7 +1207,7 @@ module.exports.DataKonten = [
         bab: "Eksponen",
         subbab: "Apa itu Logaritma?",
         judul: "Konsep Logaritma",
-        link: "https://youtu.be/M88ONmVrxpw"
+        link: "https://www.youtube-nocookie.com/embed/M88ONmVrxpw"
     },
 
     //Eksponen: Menghitung Logaritma
@@ -1221,7 +1221,7 @@ module.exports.DataKonten = [
         bab: "Eksponen",
         subbab: "Menghitung Logaritma",
         judul: "Aturan Penjumlahan Logaritma",
-        link: "https://youtu.be/FPM78JbaxxI"
+        link: "https://www.youtube-nocookie.com/embed/FPM78JbaxxI"
     },
     {
         query: "matematika",
@@ -1233,7 +1233,7 @@ module.exports.DataKonten = [
         bab: "Eksponen",
         subbab: "Menghitung Logaritma",
         judul: "Aturan Pengurangan Logaritma",
-        link: "https://youtu.be/XjtLkqxV3nw"
+        link: "https://www.youtube-nocookie.com/embed/XjtLkqxV3nw"
     },
 
     //Teori Bilangan: Bilangan di Matematika
@@ -1247,7 +1247,7 @@ module.exports.DataKonten = [
         bab: "Teori Bilangan",
         subbab: "Bilangan di Matematika",
         judul: "Apa saja Bilangan di Matematika?",
-        link: "https://youtu.be/5Zv24AEEFIQ"
+        link: "https://www.youtube-nocookie.com/embed/5Zv24AEEFIQ"
     },
     {
         query: "matematika",
@@ -1259,7 +1259,7 @@ module.exports.DataKonten = [
         bab: "Teori Bilangan",
         subbab: "Bilangan di Matematika",
         judul: "Bilangan Komples/Imajiner",
-        link: "https://youtu.be/wyvOdRLN13E"
+        link: "https://www.youtube-nocookie.com/embed/wyvOdRLN13E"
     },
     {
         query: "matematika",
@@ -1271,7 +1271,7 @@ module.exports.DataKonten = [
         bab: "Teori Bilangan",
         subbab: "Bilangan di Matematika",
         judul: "Bilangan Bulat dan Pecahan",
-        link: "https://youtu.be/Gpw1eNhGCns"
+        link: "https://www.youtube-nocookie.com/embed/Gpw1eNhGCns"
     },
     {
         query: "matematika",
@@ -1283,7 +1283,7 @@ module.exports.DataKonten = [
         bab: "Teori Bilangan",
         subbab: "Bilangan di Matematika",
         judul: "Definisi Bilangan Genap dan Ganjil",
-        link: "https://youtu.be/mswsnsc8Vn0"
+        link: "https://www.youtube-nocookie.com/embed/mswsnsc8Vn0"
     },
     {
         query: "matematika",
@@ -1295,7 +1295,7 @@ module.exports.DataKonten = [
         bab: "Teori Bilangan",
         subbab: "Bilangan di Matematika",
         judul: "Konsep Bilangan Prima",
-        link: "https://youtu.be/7cRdxL0vi2M"
+        link: "https://www.youtube-nocookie.com/embed/7cRdxL0vi2M"
     },
     {
         query: "matematika",
@@ -1307,7 +1307,7 @@ module.exports.DataKonten = [
         bab: "Teori Bilangan",
         subbab: "Bilangan di Matematika",
         judul: "Apa itu Bilangan Fibonacci?",
-        link: "https://youtu.be/7a3chyV6dvg"
+        link: "https://www.youtube-nocookie.com/embed/7a3chyV6dvg"
     },
     {
         query: "matematika",
@@ -1319,7 +1319,7 @@ module.exports.DataKonten = [
         bab: "Teori Bilangan",
         subbab: "Bilangan di Matematika",
         judul: "Konsep Modulo",
-        link: "https://youtu.be/ym4DFJcD1Z4"
+        link: "https://www.youtube-nocookie.com/embed/ym4DFJcD1Z4"
     },
 
     //Teori Bilangan: Fakta Unik Bilangan
@@ -1333,7 +1333,7 @@ module.exports.DataKonten = [
         bab: "Teori Bilangan",
         subbab: "Fakta Unik Bilangan",
         judul: "Bagaimana Jika Kita Menjumlahkan Semua Bilangan?",
-        link: "https://youtu.be/RveUmzib7ds"
+        link: "https://www.youtube-nocookie.com/embed/RveUmzib7ds"
     },
     
     //Teori Bilangan: Sifat Bilangan
@@ -1347,7 +1347,7 @@ module.exports.DataKonten = [
         bab: "Teori Bilangan",
         subbab: "Sifat Bilangan",
         judul: "Konsep Komutatif, Asosiatif, Netral, dan Invers Persamaan",
-        link: "https://youtu.be/g9tMv_edDwc"
+        link: "https://www.youtube-nocookie.com/embed/g9tMv_edDwc"
     },
     {
         query: "matematika",
@@ -1359,7 +1359,7 @@ module.exports.DataKonten = [
         bab: "Teori Bilangan",
         subbab: "Sifat Bilangan",
         judul: "Konsep Komutatif, Asosiatif, Netral, dan Invers Perkalian",
-        link: "https://youtu.be/3LYK0kPCGW4"
+        link: "https://www.youtube-nocookie.com/embed/3LYK0kPCGW4"
     },
 
     //Himpunan: Apa itu Himpunan?
@@ -1373,7 +1373,7 @@ module.exports.DataKonten = [
         bab: "Himpunan",
         subbab: "Apa itu Himpunan?",
         judul: "Konsep Himpunan",
-        link: "https://youtu.be/ewB0FJm5S3A"
+        link: "https://www.youtube-nocookie.com/embed/ewB0FJm5S3A"
     },
 
     //Himpunan: Deskripsi Himpunan
@@ -1387,7 +1387,7 @@ module.exports.DataKonten = [
         bab: "Himpunan",
         subbab: "Deskripsi Himpunan",
         judul: "Konsep Deskripsi Himpunan",
-        link: "https://youtu.be/tEFJNnaQNQg"
+        link: "https://www.youtube-nocookie.com/embed/tEFJNnaQNQg"
     },
     {
         query: "matematika",
@@ -1399,7 +1399,7 @@ module.exports.DataKonten = [
         bab: "Himpunan",
         subbab: "Deskripsi Himpunan",
         judul: "Cara Mendeskripsikan Himpunan",
-        link: "https://youtu.be/dzneq2clQMk"
+        link: "https://www.youtube-nocookie.com/embed/dzneq2clQMk"
     },
 
     //Himpunan: Jenis-Jenis Himpunan
@@ -1413,7 +1413,7 @@ module.exports.DataKonten = [
         bab: "Himpunan",
         subbab: "Jenis-Jenis Himpunan",
         judul: "Konsep Himpunan Bagian",
-        link: "https://youtu.be/uaV75eBmauU"
+        link: "https://www.youtube-nocookie.com/embed/uaV75eBmauU"
     },
     {
         query: "matematika",
@@ -1425,7 +1425,7 @@ module.exports.DataKonten = [
         bab: "Himpunan",
         subbab: "Jenis-Jenis Himpunan",
         judul: "Apa itu Irisan Himpunan?",
-        link: "https://youtu.be/FSuXdNNaDYI"
+        link: "https://www.youtube-nocookie.com/embed/FSuXdNNaDYI"
     },
     {
         query: "matematika",
@@ -1437,7 +1437,7 @@ module.exports.DataKonten = [
         bab: "Himpunan",
         subbab: "Jenis-Jenis Himpunan",
         judul: "Himpunan Gabungan",
-        link: "https://youtu.be/KiAZ5cXwpfM"
+        link: "https://www.youtube-nocookie.com/embed/KiAZ5cXwpfM"
     },
     {
         query: "matematika",
@@ -1449,7 +1449,7 @@ module.exports.DataKonten = [
         bab: "Himpunan",
         subbab: "Jenis-Jenis Himpunan",
         judul: "Selisih Himpunan",
-        link: "https://youtu.be/Ommnv4Eic_A"
+        link: "https://www.youtube-nocookie.com/embed/Ommnv4Eic_A"
     },
     {
         query: "matematika",
@@ -1461,7 +1461,7 @@ module.exports.DataKonten = [
         bab: "Himpunan",
         subbab: "Jenis-Jenis Himpunan",
         judul: "Konsep Komplemen Himpunan",
-        link: "https://youtu.be/Hq86RH3Yaus"
+        link: "https://www.youtube-nocookie.com/embed/Hq86RH3Yaus"
     },
 
     //Turunan: Apa itu Turunan?
@@ -1475,7 +1475,7 @@ module.exports.DataKonten = [
         bab: "Turunan",
         subbab: "Apa itu Turunan?",
         judul: "Cara Menurunkan Fungsi",
-        link: "https://youtu.be/0o3cTU1D2Zk"
+        link: "https://www.youtube-nocookie.com/embed/0o3cTU1D2Zk"
     },
     {
         query: "matematika",
@@ -1487,7 +1487,7 @@ module.exports.DataKonten = [
         bab: "Turunan",
         subbab: "Apa itu Turunan?",
         judul: "Kenapa Notasi Turunan sangat Penting",
-        link: "https://youtu.be/uZVWoiArZXk"
+        link: "https://www.youtube-nocookie.com/embed/uZVWoiArZXk"
     },
 
     //Turunan: Aturan Turunan
@@ -1501,7 +1501,7 @@ module.exports.DataKonten = [
         bab: "Turunan",
         subbab: "Aturan Turunan",
         judul: "Aturan Rantai",
-        link: "https://youtu.be/JkrRMU1TpEc"
+        link: "https://www.youtube-nocookie.com/embed/JkrRMU1TpEc"
     },
     {
         query: "matematika",
@@ -1513,7 +1513,7 @@ module.exports.DataKonten = [
         bab: "Turunan",
         subbab: "Aturan Turunan",
         judul: "Aturan Turunan pada Operasi Perkalian",
-        link: "https://youtu.be/BSsS3-Za-OM"
+        link: "https://www.youtube-nocookie.com/embed/BSsS3-Za-OM"
     },
     {
         query: "matematika",
@@ -1525,7 +1525,7 @@ module.exports.DataKonten = [
         bab: "Turunan",
         subbab: "Aturan Turunan",
         judul: "Aturan Turunan pada Operasi Pembagian",
-        link: "https://youtu.be/l90URrE-7m0"
+        link: "https://www.youtube-nocookie.com/embed/l90URrE-7m0"
     },
 
     //Turunan: Contoh Soal Turunan
@@ -1539,7 +1539,7 @@ module.exports.DataKonten = [
         bab: "Turunan",
         subbab: "Contoh Soal Turunan",
         judul: "Soal Turunan dengan Aturan Rantai",
-        link: "https://youtu.be/r7bV6FuJN_Q"
+        link: "https://www.youtube-nocookie.com/embed/r7bV6FuJN_Q"
     },
     {
         query: "matematika",
@@ -1551,7 +1551,7 @@ module.exports.DataKonten = [
         bab: "Turunan",
         subbab: "Contoh Soal Turunan",
         judul: "Soal Turunan dengan Aturan Rantai pada Trigonometri",
-        link: "https://youtu.be/8UDTjcDjac4"
+        link: "https://www.youtube-nocookie.com/embed/8UDTjcDjac4"
     },
     {
         query: "matematika",
@@ -1563,7 +1563,7 @@ module.exports.DataKonten = [
         bab: "Turunan",
         subbab: "Contoh Soal Turunan",
         judul: "Soal Turunan dengan Eksponensial",
-        link: "https://youtu.be/C1BqMiHUc1A"
+        link: "https://www.youtube-nocookie.com/embed/C1BqMiHUc1A"
     },
 
     //Aljabar Linear: Persamaan Linear
@@ -1577,7 +1577,7 @@ module.exports.DataKonten = [
         bab: "Aljabar Linear",
         subbab: "Persamaan Linear",
         judul: "Konsep Metode Eliminasi Gaussian",
-        link: "https://youtu.be/TA05NomLpKk"
+        link: "https://www.youtube-nocookie.com/embed/TA05NomLpKk"
     },
 
     //Aljabar Linear: Dekomposisi
@@ -1591,7 +1591,7 @@ module.exports.DataKonten = [
         bab: "Aljabar Linear",
         subbab: "Dekomposisi",
         judul: "Metode Cholesky Dekomposisi",
-        link: "https://youtu.be/eOgUpL0PhVE"
+        link: "https://www.youtube-nocookie.com/embed/eOgUpL0PhVE"
     },
     {
         query: "matematika",
@@ -1603,7 +1603,7 @@ module.exports.DataKonten = [
         bab: "Aljabar Linear",
         subbab: "Dekomposisi",
         judul: "Metode LU Dekomposisi",
-        link: "https://youtu.be/7YYZOlCXL_Y"
+        link: "https://www.youtube-nocookie.com/embed/7YYZOlCXL_Y"
     },
 
     //Analisis: Limit tak Hingga
@@ -1617,7 +1617,7 @@ module.exports.DataKonten = [
         bab: "Analisis",
         subbab: "Limit Tak Hingga",
         judul: "Limit Tak Hingga dengan Bilangan Euler",
-        link: "https://youtu.be/LNCfpM7hFAk"
+        link: "https://www.youtube-nocookie.com/embed/LNCfpM7hFAk"
     },
 
     //Analisis: Limit Point
@@ -1631,7 +1631,7 @@ module.exports.DataKonten = [
         bab: "Analisis",
         subbab: "Limit Point",
         judul: "Mencari Limit Point pada Barisan Kompleks",
-        link: "https://youtu.be/KR61TXYvH5I"
+        link: "https://www.youtube-nocookie.com/embed/KR61TXYvH5I"
     },
 
 
@@ -1648,7 +1648,7 @@ module.exports.DataKonten = [
         bab: "Fisika Dasar",
         subbab: "Satuan",
         judul: "Konversi Satuan Panjang",
-        link: "https://youtu.be/OOC9PkOvcXE"
+        link: "https://www.youtube-nocookie.com/embed/OOC9PkOvcXE"
     },
 
 
@@ -1665,7 +1665,7 @@ module.exports.DataKonten = [
         bab: "Sistem Bilangan",
         subbab: "Apa itu Sistem Bilangan?",
         judul: "Konsep Sistem Bilangan",
-        link: "https://youtu.be/GER_LMQgOzI"
+        link: "https://www.youtube-nocookie.com/embed/GER_LMQgOzI"
     },
 
     //Sistem Bilangan: Merubah Bilangan
@@ -1679,7 +1679,7 @@ module.exports.DataKonten = [
         bab: "Sistem Bilangan",
         subbab: "Merubah Bilangan",
         judul: "Merubah Bilangan Biner dan Desimal",
-        link: "https://youtu.be/OP_U3WYB_Ac"
+        link: "https://www.youtube-nocookie.com/embed/OP_U3WYB_Ac"
     },
     {
         query: "informatika",
@@ -1691,7 +1691,7 @@ module.exports.DataKonten = [
         bab: "Sistem Bilangan",
         subbab: "Merubah Bilangan",
         judul: "Merubah Bilangan Desimal dan Oktal",
-        link: "https://youtu.be/FBNQdVQAvaI"
+        link: "https://www.youtube-nocookie.com/embed/FBNQdVQAvaI"
     },
     {
         query: "informatika",
@@ -1703,7 +1703,7 @@ module.exports.DataKonten = [
         bab: "Sistem Bilangan",
         subbab: "Merubah Bilangan",
         judul: "Merubah Bilangan Hexa dan Desimal",
-        link: "https://youtu.be/fw2V1qnpwME"
+        link: "https://www.youtube-nocookie.com/embed/fw2V1qnpwME"
     },
 
     //Sistem Bilangan: Metode Merubah Bilangan
@@ -1715,7 +1715,7 @@ module.exports.DataKonten = [
         bab: "Sistem Bilangan",
         subbab: "Metode Merubah Bilangan",
         judul: "Merubah Bilangan Biner dan Oktal dengan Metode Dual Triad",
-        link: "https://youtu.be/1cHNnQOP6jw"
+        link: "https://www.youtube-nocookie.com/embed/1cHNnQOP6jw"
     },
     {
         query: "informatika",
@@ -1725,7 +1725,7 @@ module.exports.DataKonten = [
         bab: "Sistem Bilangan",
         subbab: "Metode Merubah Bilangan",
         judul: "Merubah Bilangan Biner dan Hexa dengan Metode Dual Tetrad",
-        link: "https://youtu.be/fOcOwQm_HZs"
+        link: "https://www.youtube-nocookie.com/embed/fOcOwQm_HZs"
     },
     {
         query: "informatika",
@@ -1735,7 +1735,7 @@ module.exports.DataKonten = [
         bab: "Sistem Bilangan",
         subbab: "Metode Merubah Bilangan",
         judul: "Metode Horner untuk Merubah Bilangan Oktal ke Desimal",
-        link: "https://youtu.be/_vuwHIYrNuI"
+        link: "https://www.youtube-nocookie.com/embed/_vuwHIYrNuI"
     },
     {
         query: "informatika",
@@ -1745,7 +1745,7 @@ module.exports.DataKonten = [
         bab: "Sistem Bilangan",
         subbab: "Metode Merubah Bilangan",
         judul: "Skema Horner untuk Merubah Bilangan Biner ke Desimal",
-        link: "https://youtu.be/JQbfCBsItgs"
+        link: "https://www.youtube-nocookie.com/embed/JQbfCBsItgs"
     },
 
     //Sistem Bilangan: Menghitung Bilangan Biner
@@ -1759,7 +1759,7 @@ module.exports.DataKonten = [
         bab: "Sistem Bilangan",
         subbab: "Menghitung Bilangan Biner",
         judul: "Penjumlahan dan Pengurangan Bilangan Biner",
-        link: "https://youtu.be/ZhwuDD5pqcg"
+        link: "https://www.youtube-nocookie.com/embed/ZhwuDD5pqcg"
     },
     {
         query: "informatika",
@@ -1771,7 +1771,7 @@ module.exports.DataKonten = [
         bab: "Sistem Bilangan",
         subbab: "Menghitung Bilangan Biner",
         judul: "Perkalian Bilangan Biner",
-        link: "https://youtu.be/u6mySYeI9zY"
+        link: "https://www.youtube-nocookie.com/embed/u6mySYeI9zY"
     },
     {
         query: "informatika",
@@ -1783,7 +1783,7 @@ module.exports.DataKonten = [
         bab: "Sistem Bilangan",
         subbab: "Menghitung Bilangan Biner",
         judul: "Pembagian Bilangan Biner",
-        link: "https://youtu.be/0I0BXbjX40w"
+        link: "https://www.youtube-nocookie.com/embed/0I0BXbjX40w"
     },
     
 ]
