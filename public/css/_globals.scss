@@ -21,7 +21,7 @@ body {
 
     @include breakpoint-up(large){
         font-size: $font-med;
-        background-color: $mostveryLightGreen;
+        // background-color: $mostveryLightGreen;
     }
 
     &.noscroll {

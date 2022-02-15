@@ -1,0 +1,68 @@
+.modal_video {
+
+    margin-top: 76px;
+    justify-content: center;
+    align-items: center;
+    background-color: $mostLightDarkBlue;
+    
+    .modals {
+        
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+        justify-content: center;
+        align-items: center;
+        padding-right: 13.2rem;
+        padding-left: 13.2rem;
+
+        @include breakpoint-down(medium) {
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+
+        @include breakpoint-down(small) {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        &__button {
+            padding-top: 1rem;
+
+            text-align: right;
+        }
+        
+
+        &__card {
+            padding: 1rem;
+            // border: 5px solid black;
+            text-align: center;
+            max-width: 850px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background: linear-gradient(to right, $lightBlue, $lightGreen);
+        }
+    
+        &__judul {
+            
+            h3 {
+                margin-bottom: 0;
+            }
+        }
+
+        &__body {
+            position: relative;
+            overflow: hidden;
+            max-width: 100%;
+            padding-top: 71%;
+        }
+
+        &__iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

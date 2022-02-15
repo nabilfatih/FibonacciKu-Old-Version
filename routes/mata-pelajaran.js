@@ -39,4 +39,19 @@ router.get('/:query/:querybab', isLoggedIn, async(req, res) => {
     });
 });
 
+router.get('/:query/:querybab/:queryjudul', isLoggedIn, async(req, res) => {
+    const pelajaran = await Pelajaran.findOne({query: req.params.query});
+    const babs = await Bab.findOne({querybab: req.params.querybab});
+    const subbabs = await SubBab.find({querybab: req.params.querybab});
+    const kontens = await Konten.find({querybab: req.params.querybab});
+    const video = await Konten.findOne({queryjudul: req.params.queryjudul});
+    res.render('pelajaran/modal', {
+        pelajaran,
+        babs,
+        subbabs,
+        kontens,
+        video
+    });
+});
+
 module.exports = router;

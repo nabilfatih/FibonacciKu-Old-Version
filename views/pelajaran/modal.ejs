@@ -1,0 +1,35 @@
+<% layout('layouts/boilerplate') %>
+
+<section class="modal_video">
+    
+    <div class="modals container container--px" id="modal">
+
+        <div class="modals__card">
+            <div class="modals__header">
+                <div class="modals__judul">
+                    <h3>
+                        <%= video.judul %>
+                    </h3> 
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="modals__body">
+                <iframe class="modals__iframe" src="<%= video.link %>?autoplay=1&modestbranding=1&showinfo=0&rel=0&cc_load_policy=1&iv_load_policy=3&cc_lang_pref=id" width="800" height="570" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="modals__button">
+            <a href="javascript:history.back()" class="button">
+                Kembali
+            </a>
+        </div>
+        
+    </div>
+
+
+<div id="overlays"></div>
+</section>
+
+<script src="/js/modal/script.js"></script>

@@ -36,18 +36,17 @@
                             </div>
 
                             <div class="belajar__videos">
-                                <% for (let judul of kontens) {%> 
-                                    <% if(judul.subbab == subbab.subbab) {%>
+                                <% for (let konten of kontens) {%> 
+                                    <% if(konten.subbab == subbab.subbab) {%>
                                         <div class="konten">
                                             <i class="uil uil-play-circle"></i>
                                             <div class="judul">
-                                                <a href="">
-                                                    <%= judul.judul %>
+                                                <a data-modal-target="#modal" href="/mata-pelajaran/<%= konten.query %>/<%= konten.querybab %>/<%= konten.queryjudul %>">
+                                                    <%= konten.judul %>
                                                 </a>
                                             </div>
                                         </div>
-            
-                                    <%  }%> 
+                                    <%  }%>
                                 <%  }%> 
                             </div>
                         </div>
@@ -57,3 +56,6 @@
         </div>
     </div>
 </section>
+
+
+<script src="/js/modal/script.js"></script>
