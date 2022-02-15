@@ -175,6 +175,15 @@
             .judul {
                 margin-top: 0.575rem;
 
+                @include breakpoint-down(medium) {
+                    font-size: 1.1rem;
+                }
+
+                @include breakpoint-down(small) {
+                    margin-top: 0.585rem;
+                    font-size: 1rem;
+                }
+
                 &:hover {
                     text-decoration: underline;
                 }

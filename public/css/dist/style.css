@@ -1233,6 +1233,19 @@ button:hover::before, .button:hover::before {
   margin-top: 0.575rem;
 }
 
+@media (max-width: 63.9375em) {
+  .belajar__videos .konten .judul {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .belajar__videos .konten .judul {
+    margin-top: 0.585rem;
+    font-size: 1rem;
+  }
+}
+
 .belajar__videos .konten .judul:hover {
   text-decoration: underline;
 }
