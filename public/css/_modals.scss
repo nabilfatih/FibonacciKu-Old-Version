@@ -15,8 +15,8 @@
         padding-left: 13.2rem;
 
         @include breakpoint-down(medium) {
-            padding-left: 5rem;
-            padding-right: 5rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
         }
 
         @include breakpoint-down(small) {

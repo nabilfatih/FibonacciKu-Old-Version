@@ -1275,8 +1275,8 @@ button:hover::before, .button:hover::before {
 
 @media (max-width: 63.9375em) {
   .modal_video .modals {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 
