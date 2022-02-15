@@ -32,7 +32,10 @@
         
 
         &__card {
-            padding: 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 0.33rem;
+            padding-bottom: 0.33rem;
             // border: 5px solid black;
             text-align: center;
             max-width: 850px;
@@ -43,8 +46,22 @@
     
         &__judul {
             
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+
             h3 {
                 margin-bottom: 0;
+                font-weight: 1000;
+                text-align: left;
+            }
+
+            .close-button {
+                font-size: 2.5rem;
+                font-weight: 1000;
+                
+                text-align: right;
             }
         }
 

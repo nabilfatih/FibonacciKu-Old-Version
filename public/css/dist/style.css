@@ -1293,7 +1293,10 @@ button:hover::before, .button:hover::before {
 }
 
 .modal_video .modals__card {
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.33rem;
+  padding-bottom: 0.33rem;
   text-align: center;
   max-width: 850px;
   border-top-left-radius: 10px;
@@ -1302,8 +1305,31 @@ button:hover::before, .button:hover::before {
   background: linear-gradient(to right, #88e0ef, #cfffdc);
 }
 
+.modal_video .modals__judul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .modal_video .modals__judul h3 {
   margin-bottom: 0;
+  font-weight: 1000;
+  text-align: left;
+}
+
+.modal_video .modals__judul .close-button {
+  font-size: 2.5rem;
+  font-weight: 1000;
+  text-align: right;
 }
 
 .modal_video .modals__body {
