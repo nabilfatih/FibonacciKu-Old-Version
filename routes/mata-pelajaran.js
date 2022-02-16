@@ -1,57 +1,15 @@
 const express = require('express');
 const router = express.Router();
 const catchAsync = require('../utils/catchAsync');
-const route = require('color-convert/route');
 const { isLoggedIn } = require('../middleware');
-const Pelajaran = require('../models/pelajaran');
-const Bab = require('../models/bab');
-const SubBab = require('../models/subbab');
-const Konten = require('../models/konten');
+const MataPelajaran = require('../controllers/mata-pelajaran');
 
-router.get('/', isLoggedIn, async (req, res) => {
-    const pelajarans = await Pelajaran.find({jenis: "pelajaran"});
-    const ujians = await Pelajaran.find({jenis: "ujian"});
-    res.render('pelajaran/index', {
-        pelajarans,
-        ujians
-    });
-});
+router.get('/', isLoggedIn, catchAsync(MataPelajaran.index));
 
-router.get('/:query', isLoggedIn, async(req, res) => {
-    const pelajaran = await Pelajaran.findOne({query: req.params.query});
-    const babs = await Bab.find({query: req.params.query});
-    res.render('pelajaran/show', {
-        pelajaran,
-        babs
-    });
-});
+router.get('/:query', isLoggedIn, catchAsync(MataPelajaran.show));
 
-router.get('/:query/:querybab', isLoggedIn, async(req, res) => {
-    const pelajaran = await Pelajaran.findOne({query: req.params.query});
-    const babs = await Bab.findOne({querybab: req.params.querybab});
-    const subbabs = await SubBab.find({querybab: req.params.querybab});
-    const kontens = await Konten.find({querybab: req.params.querybab});
-    res.render('pelajaran/show-belajar', {
-        pelajaran,
-        babs,
-        subbabs,
-        kontens
-    });
-});
+router.get('/:query/:querybab', isLoggedIn, catchAsync(MataPelajaran.showBelajar));
 
-router.get('/:query/:querybab/:queryjudul', isLoggedIn, async(req, res) => {
-    const pelajaran = await Pelajaran.findOne({query: req.params.query});
-    const babs = await Bab.findOne({querybab: req.params.querybab});
-    const subbabs = await SubBab.find({querybab: req.params.querybab});
-    const kontens = await Konten.find({querybab: req.params.querybab});
-    const video = await Konten.findOne({queryjudul: req.params.queryjudul});
-    res.render('pelajaran/modal', {
-        pelajaran,
-        babs,
-        subbabs,
-        kontens,
-        video
-    });
-});
+router.get('/:query/:querybab/:queryjudul', isLoggedIn, catchAsync(MataPelajaran.modal));
 
 module.exports = router;
