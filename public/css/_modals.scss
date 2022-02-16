@@ -8,11 +8,11 @@
     .modals {
         
         padding-top: 1.5rem;
-        padding-bottom: 1rem;
+        padding-bottom: 1.5rem;
         justify-content: center;
         align-items: center;
-        padding-right: 13.2rem;
-        padding-left: 13.2rem;
+        padding-right: 10.5rem;
+        padding-left: 10.5rem;
 
         @include breakpoint-down(medium) {
             padding-left: 3rem;
@@ -38,7 +38,7 @@
             padding-bottom: 0.33rem;
             // border: 5px solid black;
             text-align: center;
-            max-width: 850px;
+            max-width: 900px;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             background: linear-gradient(to right, $lightBlue, $lightGreen);
