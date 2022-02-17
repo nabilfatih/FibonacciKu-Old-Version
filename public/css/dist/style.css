@@ -453,6 +453,12 @@ button:hover::before, .button:hover::before {
   z-index: 0;
 }
 
+@media (max-width: 39.9375em) {
+  .forms {
+    margin-top: 30px;
+  }
+}
+
 .forms__image {
   content: "";
   position: absolute;
@@ -684,6 +690,12 @@ button:hover::before, .button:hover::before {
 
 .forms__imgBox img {
   max-width: 16.875rem;
+}
+
+@media (max-width: 39.9375em) {
+  .forms__imgBox img {
+    display: none;
+  }
 }
 
 .forms__imgBox .sliding-link {
@@ -1502,7 +1514,7 @@ button:hover::before, .button:hover::before {
 
 .hero__image {
   position: relative;
-  background-image: url("/img/beranda/latar_hero_mobile.svg");
+  background-image: url("/img/beranda/latar_hero_mobile.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1536,7 +1548,7 @@ button:hover::before, .button:hover::before {
     height: 117%;
     width: 161%;
     min-width: 75.875rem;
-    background-image: url("/img/beranda/latar_hero_desktop_new.png");
+    background-image: url("/img/beranda/latar_hero_desktop.png");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 136%;
@@ -1549,7 +1561,7 @@ button:hover::before, .button:hover::before {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("/img/beranda/dino_hero_mobile.svg");
+  background-image: url("/img/beranda/dino_hero_mobile.png");
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center 55%;
@@ -1687,28 +1699,28 @@ button:hover::before, .button:hover::before {
 }
 
 .feature__icon.belajar_mandiri {
-  background-image: url("/img/beranda/dino_pembelajaran_mandiri.svg");
+  background-image: url("/img/beranda/dino_pembelajaran_mandiri.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 90%;
 }
 
 .feature__icon.konten_terpercaya {
-  background-image: url("/img/beranda/burung_konten_terpercaya.svg");
+  background-image: url("/img/beranda/burung_konten_terpercaya.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 90%;
 }
 
 .feature__icon.belajar_asyik {
-  background-image: url("/img/beranda/dinoair_belajar_asyik.svg");
+  background-image: url("/img/beranda/dinoair_belajar_asyik.png");
   background-size: 65%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .feature__icon.akses_gratis {
-  background-image: url("/img/beranda/triceratop_akses_gratis.svg");
+  background-image: url("/img/beranda/triceratop_akses_gratis.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 90%;
@@ -1758,7 +1770,7 @@ button:hover::before, .button:hover::before {
 
 .donasi__image {
   position: relative;
-  background-image: url("/img/beranda/latar_donasi_mobile.svg");
+  background-image: url("/img/beranda/latar_donasi_mobile.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1806,7 +1818,7 @@ button:hover::before, .button:hover::before {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("/img/beranda/dino_donasi.svg");
+  background-image: url("/img/beranda/dino_donasi.png");
   background-size: 60%;
   background-repeat: no-repeat;
   background-position: center 60%;

@@ -6,6 +6,10 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+
+    @include breakpoint-down(small) {
+        margin-top: 30px;
+    }
     
     &__image {
         content: "";
@@ -175,6 +179,10 @@
 
         img {
             max-width: 16.875rem;
+
+            @include breakpoint-down(small) {
+                display: none;
+            }
         }
 
         .sliding-link {
