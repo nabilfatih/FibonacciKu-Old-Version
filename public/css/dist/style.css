@@ -716,7 +716,7 @@ button:hover::before, .button:hover::before {
 }
 
 .forms .sign-in-imgBox {
-  border-radius: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
+  border-radius: 0 0.3125rem 0.3125rem 0;
 }
 
 .forms .sign-up-imgBox {

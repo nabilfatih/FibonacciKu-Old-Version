@@ -15,7 +15,7 @@ const methodOverride = require('method-override');
 const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const User = require('./models/user');
-const nodemailer = require('nodemailer');
+const form = require('./controllers/kontak');
 
 const MongoDBStore = require("connect-mongo");
 
@@ -51,37 +51,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 app.use(mongoSanitize({
     replaceWith: '_'
-}));
-
-// contact form
-app.post('/', catchAsync(async(req, res) => {
-    console.log(req.body);
-
-    const transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-            user: 'fibonacciku@gmail.com',
-            pass: 'Fatih16112001'
-        }
-    })
-
-    
-    const mailOptions = {
-        from: req.body.email,
-        to: "fibonacci.id21@gmail.com",
-        subject: `Pesan dari ${req.body.email}: ${req.body.subject}`,
-        text: `${req.body.message} \n\nDari: ${req.body.name}`,
-    }
-
-    transporter.sendMail(mailOptions, (error, info) => {
-        if(error){
-            console.log(error);
-            res.send('error')
-        }else{
-            console.log('Email sent')
-            res.send('success')
-        }
-    })
 }));
 
 const secret = process.env.SECRET || 'thisshouldbeabettersecret!';
@@ -134,6 +103,9 @@ app.use('/', userRoutes);
 app.use('/beranda', berandaRoutes);
 
 app.use('/mata-pelajaran', matapelajaranRoutes);
+
+// contact form
+app.post('/', catchAsync(form.forms));
 
 app.use('/kontak', kontakRoutes);
 
