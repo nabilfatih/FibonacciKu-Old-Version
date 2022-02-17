@@ -106,7 +106,6 @@ app.use('/mata-pelajaran', matapelajaranRoutes);
 
 // contact form
 app.post('/', catchAsync(form.forms));
-
 app.use('/kontak', kontakRoutes);
 
 app.get('/', isLoggedOut, (req, res) => {
