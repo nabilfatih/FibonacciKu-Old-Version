@@ -280,6 +280,17 @@ button:hover::before, .button:hover::before {
   }
 }
 
+.alert {
+  background-color: #f8d7da;
+}
+
+.alert span {
+  background: #f8d7da;
+  margin-left: 0.5rem;
+  font-weight: 1000;
+  font-size: 1.14rem;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -1310,7 +1321,6 @@ button:hover::before, .button:hover::before {
   padding-top: 0.33rem;
   padding-bottom: 0.33rem;
   text-align: center;
-  max-width: 900px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background: -webkit-gradient(linear, left top, right top, from(#88e0ef), to(#cfffdc));
