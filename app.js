@@ -24,6 +24,7 @@ const mongoSanitize = require('express-mongo-sanitize');
 const userRoutes = require('./routes/users');
 const berandaRoutes = require('./routes/berandas');
 const matapelajaranRoutes = require('./routes/mata-pelajaran');
+const tentangRoutes = require('./routes/tentang');
 const kontakRoutes = require('./routes/kontak');
 const { isLoggedOut } = require('./middleware');
 
@@ -103,6 +104,8 @@ app.use('/', userRoutes);
 app.use('/beranda', berandaRoutes);
 
 app.use('/mata-pelajaran', matapelajaranRoutes);
+
+app.use('/tentang', tentangRoutes);
 
 // contact form
 app.post('/', catchAsync(form.forms));
