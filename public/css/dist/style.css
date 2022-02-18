@@ -1355,6 +1355,7 @@ button:hover::before, .button:hover::before {
 }
 
 .modal_video .modals__body {
+  background-color: black;
   position: relative;
   overflow: hidden;
   max-width: 100%;
