@@ -15,15 +15,15 @@
         content: "";
         position: absolute;
         min-height: 100%;
-        min-width: 170%;
-        background-image: url('/img/masuk/latar_planetdarkblueungu.png');
+        min-width: 102%;
+        background-image: url('/img/masuk/latar_planetdarkblueungu_new.png');
         background-size: 115%;
         background-repeat: no-repeat;
         background-position: center;
 
         @include breakpoint-down(medium){
             min-height: 100%;
-            background-size: 200%;
+            background-size: 180%;
         }
 
         @include breakpoint-down(small){
@@ -177,7 +177,15 @@
         height: 25rem;
         padding: 0.9375rem 2.1875rem;
 
-        img {
+        .masuk {
+            max-width: 13.875rem;
+
+            @include breakpoint-down(small) {
+                display: none;
+            }
+        }
+
+        .daftar {
             max-width: 16.875rem;
 
             @include breakpoint-down(small) {
@@ -209,6 +217,8 @@
 
     .sign-up-imgBox {
         border-radius: 0.3125rem 0 0 0.3125rem;
+        padding-left: 1.3875rem;
+        padding-right: 1.3875rem;
     }
 
     // .sign-in-form.hide .sign-in-box{

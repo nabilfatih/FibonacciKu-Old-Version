@@ -474,8 +474,8 @@ button:hover::before, .button:hover::before {
   content: "";
   position: absolute;
   min-height: 100%;
-  min-width: 170%;
-  background-image: url("/img/masuk/latar_planetdarkblueungu.png");
+  min-width: 102%;
+  background-image: url("/img/masuk/latar_planetdarkblueungu_new.png");
   background-size: 115%;
   background-repeat: no-repeat;
   background-position: center;
@@ -484,7 +484,7 @@ button:hover::before, .button:hover::before {
 @media (max-width: 63.9375em) {
   .forms__image {
     min-height: 100%;
-    background-size: 200%;
+    background-size: 180%;
   }
 }
 
@@ -699,12 +699,22 @@ button:hover::before, .button:hover::before {
   padding: 0.9375rem 2.1875rem;
 }
 
-.forms__imgBox img {
+.forms__imgBox .masuk {
+  max-width: 13.875rem;
+}
+
+@media (max-width: 39.9375em) {
+  .forms__imgBox .masuk {
+    display: none;
+  }
+}
+
+.forms__imgBox .daftar {
   max-width: 16.875rem;
 }
 
 @media (max-width: 39.9375em) {
-  .forms__imgBox img {
+  .forms__imgBox .daftar {
     display: none;
   }
 }
@@ -732,6 +742,8 @@ button:hover::before, .button:hover::before {
 
 .forms .sign-up-imgBox {
   border-radius: 0.3125rem 0 0 0.3125rem;
+  padding-left: 1.3875rem;
+  padding-right: 1.3875rem;
 }
 
 @media (max-width: 39.9375em) {
