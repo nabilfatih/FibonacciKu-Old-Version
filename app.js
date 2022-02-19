@@ -9,7 +9,6 @@ const ejsMate = require('ejs-mate');
 const Joi = require('joi');
 const catchAsync = require('./utils/catchAsync');
 const session = require('express-session');
-const cookieSession = require('cookie-session');
 const flash = require('connect-flash');
 const ExpressError = require('./utils/ExpressError');
 const methodOverride = require('method-override');
