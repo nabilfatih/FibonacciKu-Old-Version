@@ -1,5 +1,17 @@
 <% layout('layouts/boilerplate') %> 
 
-<section class="profil">
-    
+<style>
+    .profil {
+        margin-top: 76px;
+    }
+</style>
+
+<section class="profil">  
+    <h1>TES</h1>  
+    <h1><%= user.username %> </h1>
+    <img src="<%= user.avatar %>">
 </section>
+
+<script async>
+    document.title = "<%= user.username %>";
+</script>

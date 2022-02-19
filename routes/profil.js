@@ -4,6 +4,6 @@ const catchAsync = require('../utils/catchAsync');
 const { isLoggedIn } = require('../middleware');
 const Profil = require('../controllers/profil');
 
-router.get('/', isLoggedIn, catchAsync(Profil.profil));
+router.get('/:username', isLoggedIn, catchAsync(Profil.profil));
 
 module.exports = router;

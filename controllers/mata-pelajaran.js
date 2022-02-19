@@ -8,7 +8,8 @@ module.exports.index = async (req, res) => {
     const ujians = await Pelajaran.find({jenis: "ujian"});
     res.render('pelajaran/index', {
         pelajarans,
-        ujians
+        ujians,
+        user: req.user
     });
 }
 
@@ -17,7 +18,8 @@ module.exports.show = async(req, res) => {
     const babs = await Bab.find({query: req.params.query});
     res.render('pelajaran/show', {
         pelajaran,
-        babs
+        babs,
+        user: req.user
     });
 }
 
@@ -28,13 +30,15 @@ module.exports.showBelajar = async(req, res) => {
     res.render('pelajaran/show-belajar', {
         babs,
         subbabs,
-        kontens
+        kontens,
+        user: req.user
     });
 }
 
 module.exports.modal = async(req, res) => {
     const video = await Konten.findOne({queryjudul: req.params.queryjudul});
     res.render('pelajaran/modal', {
-        video
+        video,
+        user: req.user
     });
 }

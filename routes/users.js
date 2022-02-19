@@ -6,7 +6,9 @@ const User = require('../models/user');
 const { isLoggedOut } = require('../middleware');
 
 router.get('/daftar', isLoggedOut, (req, res) => {
-    res.render('registration/daftar');
+    res.render('registration/daftar', {
+        user: req.user
+    });
 });
 
 router.post('/daftar', catchAsync(async(req, res) => {
@@ -26,7 +28,9 @@ router.post('/daftar', catchAsync(async(req, res) => {
 }));
 
 router.get('/masuk', isLoggedOut, (req, res) => {
-    res.render('registration/masuk');
+    res.render('registration/masuk', {
+        user: req.user
+    });
 });
 
 router.post('/masuk', passport.authenticate('local', { failureFlash: 'Password or username is incorrect', failureRedirect: '/masuk'}), (req, res) => {
@@ -41,6 +45,19 @@ router.get('/auth/google', passport.authenticate('google', {
 }));
 
 router.get('/auth/google/callback', passport.authenticate('google', {
+    failureFlash: true, 
+    failureRedirect: '/daftar',
+    }),
+    (req, res) => {
+    req.flash('success', 'Welcome to FibonacciKu!');
+    const redirectUrl = req.session.returnTo || '/beranda';
+    delete req.session.returnTo;
+    res.redirect(redirectUrl);
+});
+
+router.get('/auth/github', passport.authenticate('github'));
+
+router.get('/auth/github/callback', passport.authenticate('github', {
     failureFlash: true, 
     failureRedirect: '/daftar',
     }),

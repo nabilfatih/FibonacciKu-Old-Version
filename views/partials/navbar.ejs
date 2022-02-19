@@ -27,7 +27,7 @@
                 <a href="/masuk" class="button header__cta">Masuk</a>
                 <a href="/daftar" class="button header__cta">Daftar</a>
                 <% } else {%>
-                <a href="/profil" class="profile">
+                <a href="/profil/<%= user.username %>" class="profile">
                     <svg
                         width="40"
                         height="40"
@@ -58,7 +58,7 @@
             <% if(!currentUser) {%>
             <a href="/">Beranda</a>
             <% } else {%>
-            <a href="/profil">Profil</a>
+            <a href="/profil/<%= user.username %>">Profil</a>
             <a href="/keluar">Keluar</a>
             <a href="/beranda">Beranda</a>
             <% } %>

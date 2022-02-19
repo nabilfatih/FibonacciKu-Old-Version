@@ -1,7 +1,9 @@
 const nodemailer = require('nodemailer');
 
 module.exports.kontak = async (req, res) => {
-    res.render('kontak/kontak')
+    res.render('kontak/kontak', {
+        user: req.user
+    })
 }
 
 module.exports.forms = async(req, res) => {
