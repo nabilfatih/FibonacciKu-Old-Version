@@ -177,6 +177,7 @@ passport.use(new GitHubStrategy(github_auth, (accessToken, refreshToken, profile
     })
 }))
 
+//not finished yet
 passport.use(new FacebookStrategy(facebook_auth, (accessToken, refreshToken, profile, done) => {
     console.log('Facebook Profile');
     console.log(profile);
