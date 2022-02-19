@@ -107,13 +107,13 @@ passport.deserializeUser((id, done) => {
     })
 })
 passport.use(new GoogleStrategy(google_auth, (accessToken, refreshToken, profile, done) => {
-    console.log('Google Profile');
-    console.log(profile);
+    // console.log('Google Profile');
+    // console.log(profile);
     User.findOne({
         email: profile._json['email']
     }).then((currentUser) => {
         if(currentUser) {
-            console.log('user is ' + currentUser)
+            // console.log('user is ' + currentUser)
             done(null, currentUser)
         } else {
             new User({
@@ -123,7 +123,7 @@ passport.use(new GoogleStrategy(google_auth, (accessToken, refreshToken, profile
                 nama: profile.displayName,
                 avatar: profile._json['picture']
             }).save().then((newUser) => {
-                console.log('new user created: ' + newUser)
+                // console.log('new user created: ' + newUser)
                 done(null, newUser)
             })
         }
