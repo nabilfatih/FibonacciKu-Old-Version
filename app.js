@@ -128,6 +128,7 @@ passport.deserializeUser((id, done) => {
         done(null, User);
     })
 })
+
 passport.use(new GoogleStrategy(google_auth, (accessToken, refreshToken, profile, done) => {
     console.log('Google Profile');
     console.log(profile);
