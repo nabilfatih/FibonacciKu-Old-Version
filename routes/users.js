@@ -45,7 +45,7 @@ router.get('/auth/google', passport.authenticate('google', {
 }));
 
 router.get('/auth/google/callback', passport.authenticate('google', {
-    failureFlash: true, 
+    failureFlash: 'Gagal masuk dengan Google', 
     failureRedirect: '/daftar',
     }),
     (req, res) => {
@@ -55,10 +55,28 @@ router.get('/auth/google/callback', passport.authenticate('google', {
     res.redirect(redirectUrl);
 });
 
-router.get('/auth/github', passport.authenticate('github'));
+router.get('/auth/github', passport.authenticate('github', { 
+    scope: [ 'user:email' ],
+}));
 
 router.get('/auth/github/callback', passport.authenticate('github', {
-    failureFlash: true, 
+    failureFlash: 'Gagal masuk dengan GitHub', 
+    failureRedirect: '/daftar',
+    }),
+    (req, res) => {
+    req.flash('success', 'Welcome to FibonacciKu!');
+    const redirectUrl = req.session.returnTo || '/beranda';
+    delete req.session.returnTo;
+    res.redirect(redirectUrl);
+});
+
+
+router.get('/auth/facebook', passport.authenticate('facebook', {
+    scope: ['profile']
+}));
+
+router.get('/auth/facebook/callback', passport.authenticate('facebook', {
+    failureFlash: 'Gagal masuk dengan Facebook', 
     failureRedirect: '/daftar',
     }),
     (req, res) => {

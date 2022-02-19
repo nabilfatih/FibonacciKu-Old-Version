@@ -17,6 +17,7 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const GoogleStrategy = require('passport-google-oauth20');
 const GitHubStrategy = require('passport-github2');
+const FacebookStrategy = require('passport-facebook');
 const User = require('./models/user');
 const form = require('./controllers/kontak');
 
@@ -96,7 +97,9 @@ const config = {
     GoogleClientID: process.env.GOOGLE_CLIENT_ID,
     GoogleClientSECRET: process.env.GOOGLE_CLIENT_SECRET,
     GitHubClientID: process.env.GITHUB_CLIENT_ID,
-    GitHubClientSECRET: process.env.GITHUB_CLIENT_SECRET
+    GitHubClientSECRET: process.env.GITHUB_CLIENT_SECRET,
+    FacebookClientID: process.env.FACEBOOK_CLIENT_ID,
+    FacebookClientSECRET: process.env.FACEBOOK_CLIENT_SECRET,
 };
 
 const google_auth = {
@@ -109,6 +112,12 @@ const github_auth = {
     callbackURL: '/auth/github/callback',
     clientID: config.GitHubClientID,
     clientSecret: config.GitHubClientSECRET
+}
+
+const facebook_auth = {
+    callbackURL: '/auth/facebook/callback',
+    clientID: config.FacebookClientID,
+    clientSecret: config.FacebookClientSECRET
 }
 
 passport.serializeUser((User, done) => {
@@ -144,10 +153,34 @@ passport.use(new GoogleStrategy(google_auth, (accessToken, refreshToken, profile
 }));
 
 passport.use(new GitHubStrategy(github_auth, (accessToken, refreshToken, profile, done) => {
-    console.log('Google Profile');
+    console.log('GitHub Profile');
     console.log(profile);
     User.findOne({
-        email: profile._json['email']
+        username: profile.username
+    }).then((currentUser) => {
+        if(currentUser) {
+            console.log('user is ' + currentUser)
+            done(null, currentUser)
+        } else {
+            new User({
+                githubID: profile.id,
+                email: profile._json['email'],
+                username: profile.username,
+                nama: profile.displayName,
+                avatar: profile._json['avatar_url']
+            }).save().then((newUser) => {
+                console.log('new user created: ' + newUser)
+                done(null, newUser)
+            })
+        }
+    })
+}))
+
+passport.use(new FacebookStrategy(facebook_auth, (accessToken, refreshToken, profile, done) => {
+    console.log('Facebook Profile');
+    console.log(profile);
+    User.findOne({
+        email: profile._json['email'],
     }).then((currentUser) => {
         if(currentUser) {
             console.log('user is ' + currentUser)
