@@ -14,6 +14,7 @@ const ExpressError = require('./utils/ExpressError');
 const methodOverride = require('method-override');
 const passport = require('passport');
 const LocalStrategy = require('passport-local');
+const GoogleStrategy = require('passport-google-oauth20');
 const User = require('./models/user');
 const form = require('./controllers/kontak');
 
@@ -26,7 +27,9 @@ const berandaRoutes = require('./routes/berandas');
 const matapelajaranRoutes = require('./routes/mata-pelajaran');
 const tentangRoutes = require('./routes/tentang');
 const kontakRoutes = require('./routes/kontak');
+const profilRoutes = require('./routes/profil');
 const { isLoggedOut } = require('./middleware');
+
 
 const dbUrl = 'mongodb://localhost:27017/fibonacciku';
 mongoose.connect(dbUrl, {
@@ -84,10 +87,52 @@ const sessionConfig = {
 app.use(session(sessionConfig));
 app.use(flash());
 
+const config = {
+    GoogleClientID: process.env.GOOGLE_CLIENT_ID,
+    GoogleClientSECRET: process.env.GOOGLE_CLIENT_SECRET
+};
+
+const google_auth = {
+    callbackURL: '/auth/google/callback',
+    clientID: config.GoogleClientID,
+    clientSecret: config.GoogleClientSECRET
+}
+
+passport.serializeUser((User, done) => {
+    done(null, User.id);
+})
+passport.deserializeUser((id, done) => {
+    User.findById(id).then((User) => {
+        done(null, User);
+    })
+})
+passport.use(new GoogleStrategy(google_auth, (accessToken, refreshToken, profile, done) => {
+    console.log('Google Profile');
+    console.log(profile);
+    User.findOne({
+        email: profile._json['email']
+    }).then((currentUser) => {
+        if(currentUser) {
+            console.log('user is ' + currentUser)
+            done(null, currentUser)
+        } else {
+            new User({
+                googleID: profile.id,
+                email: profile._json['email'],
+                username: profile._json['given_name'].toLowerCase() + profile._json['family_name'].toLowerCase(),
+                nama: profile.displayName,
+                avatar: profile._json['picture']
+            }).save().then((newUser) => {
+                console.log('new user created: ' + newUser)
+                done(null, newUser)
+            })
+        }
+    })
+}))
+
 app.use(passport.initialize());
 app.use(passport.session());
 passport.use(new LocalStrategy(User.authenticate()));
-
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
@@ -111,6 +156,8 @@ app.use('/tentang', tentangRoutes);
 app.post('/', catchAsync(form.forms));
 app.use('/kontak', kontakRoutes);
 
+app.use('/profil', profilRoutes);
+
 app.get('/', isLoggedOut, (req, res) => {
     res.render('index')
 });
@@ -127,5 +174,5 @@ app.use((err, req, res, next) => {
 
 const port = process.env.PORT || 3000
 app.listen(port, () => {
-    console.log(`Serving on port 3000 ${port}`)
+    console.log(`Serving on port ${port}`)
 })

@@ -20,7 +20,7 @@ router.post('/daftar', catchAsync(async(req, res) => {
             res.redirect('/beranda');
         })
     } catch(e) {
-        req.flash('error', e.message);
+        req.flash('error', 'A user with the given email or username is already registered');
         res.redirect('daftar');
     }
 }));
@@ -29,12 +29,28 @@ router.get('/masuk', isLoggedOut, (req, res) => {
     res.render('registration/masuk');
 });
 
-router.post('/masuk', passport.authenticate('local', { failureFlash: true, failureRedirect: '/masuk'}), (req, res) => {
-    req.flash('success', 'welcome back!');
+router.post('/masuk', passport.authenticate('local', { failureFlash: 'Password or username is incorrect', failureRedirect: '/masuk'}), (req, res) => {
+    req.flash('success', 'Welcome to FibonacciKu!');
     const redirectUrl = req.session.returnTo || '/beranda';
     delete req.session.returnTo;
     res.redirect(redirectUrl);
 });
+
+router.get('/auth/google', passport.authenticate('google', {
+    scope: ['email', 'profile'],
+}));
+
+router.get('/auth/google/callback', passport.authenticate('google', {
+    failureFlash: true, 
+    failureRedirect: '/daftar',
+    }),
+    (req, res) => {
+    req.flash('success', 'Welcome to FibonacciKu!');
+    const redirectUrl = req.session.returnTo || '/beranda';
+    delete req.session.returnTo;
+    res.redirect(redirectUrl);
+});
+
 
 router.get('/keluar', (req, res) => {
     req.logout();
