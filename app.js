@@ -30,6 +30,8 @@ const matapelajaranRoutes = require('./routes/mata-pelajaran');
 const tentangRoutes = require('./routes/tentang');
 const kontakRoutes = require('./routes/kontak');
 const profilRoutes = require('./routes/profil');
+const kebijakanRoutes = require('./routes/kebijakan');
+const syaratRoutes = require('./routes/syarat');
 const { isLoggedOut } = require('./middleware');
 
 
