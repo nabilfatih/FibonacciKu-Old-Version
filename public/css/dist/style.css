@@ -1508,6 +1508,31 @@ button:hover::before, .button:hover::before {
   resize: none;
 }
 
+.syarat {
+  background-color: #fff8f3;
+}
+
+.syarat__intro {
+  padding-top: 1.5rem;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.syarat__intro h1 {
+  font-weight: 1000;
+}
+
+.syarat__card {
+  padding: 1rem;
+  border-radius: 15px;
+  -webkit-box-shadow: 6px 3px 6px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 6px 3px 6px 0 rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, right top, from(#aefeff), to(#cddeff));
+  background: linear-gradient(to right, #aefeff, #cddeff);
+}
+
 .hero {
   background-color: #ebfffa;
   margin: 0;
