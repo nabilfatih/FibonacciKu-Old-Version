@@ -1,0 +1,13 @@
+.kebijakan {
+
+    background-color: $cream;
+
+    &__intro {
+        padding-top: 1.5rem;
+        text-align: center;
+        
+        h1 {
+            font-weight: 1000;
+        }
+    }
+}
