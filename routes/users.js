@@ -19,11 +19,15 @@ router.post('/daftar', catchAsync(async(req, res) => {
         req.login(registeredUser, err => {
             if(err) return next(err);
             req.flash('succes', 'Welcome to FibonacciKu');
-            res.redirect('/beranda');
+            res.redirect('/beranda', {
+                user: req.user
+            });
         })
     } catch(e) {
         req.flash('error', 'A user with the given email or username is already registered');
-        res.redirect('daftar');
+        res.redirect('daftar', {
+            user: req.user
+        });
     }
 }));
 
