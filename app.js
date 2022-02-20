@@ -227,6 +227,10 @@ app.use('/kontak', kontakRoutes);
 
 app.use('/profil', profilRoutes);
 
+app.use('/kebijakan-privasi', kebijakanRoutes);
+
+app.use('/syarat-ketentuan', syaratRoutes);
+
 app.get('/', isLoggedOut, (req, res) => {
     res.render('index', {
         user: req.user
