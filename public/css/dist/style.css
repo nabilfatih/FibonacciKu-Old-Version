@@ -1521,6 +1521,15 @@ button:hover::before, .button:hover::before {
   font-weight: 1000;
 }
 
+.kebijakan__card {
+  padding: 1rem;
+  border-radius: 15px;
+  -webkit-box-shadow: 6px 3px 6px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 6px 3px 6px 0 rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, right top, from(#aefeff), to(#cddeff));
+  background: linear-gradient(to right, #aefeff, #cddeff);
+}
+
 .syarat {
   background-color: #fff8f3;
 }
