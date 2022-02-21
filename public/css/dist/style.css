@@ -812,12 +812,7 @@ button:hover::before, .button:hover::before {
   }
 }
 
-.pelajaran__intro {
-  margin-bottom: 2rem;
-  margin-bottom: 0;
-}
-
-.pelajaran__intro h2 {
+.pelajaran__intro h1 {
   font-weight: 1000;
 }
 
@@ -941,7 +936,7 @@ button:hover::before, .button:hover::before {
   margin-bottom: 0;
 }
 
-.ujian__intro h2 {
+.ujian__intro h1 {
   font-weight: 1000;
 }
 
@@ -1380,8 +1375,8 @@ button:hover::before, .button:hover::before {
 }
 
 .kontak {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .kontak__intro {
@@ -1395,7 +1390,7 @@ button:hover::before, .button:hover::before {
   }
 }
 
-.kontak__intro h2 {
+.kontak__intro h1 {
   font-weight: 1000;
 }
 
@@ -1510,15 +1505,34 @@ button:hover::before, .button:hover::before {
 
 .kebijakan {
   background-color: #fff8f3;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .kebijakan__intro {
-  padding-top: 1.5rem;
   text-align: center;
 }
 
 .kebijakan__intro h1 {
   font-weight: 1000;
+}
+
+.kebijakan__grid {
+  gap: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 39.9375em) {
+  .kebijakan__grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .kebijakan__card {
@@ -1530,17 +1544,52 @@ button:hover::before, .button:hover::before {
   background: linear-gradient(to right, #aefeff, #cddeff);
 }
 
+@media (min-width: 40em) {
+  .kebijakan__card {
+    -webkit-box-flex: 2;
+        -ms-flex: 2 1 100%;
+            flex: 2 1 100%;
+  }
+}
+
+@media (min-width: 64em) {
+  .kebijakan__card {
+    -webkit-box-flex: 2;
+        -ms-flex: 2 1 100%;
+            flex: 2 1 100%;
+  }
+}
+
 .syarat {
   background-color: #fff8f3;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .syarat__intro {
-  padding-top: 1.5rem;
   text-align: center;
 }
 
 .syarat__intro h1 {
   font-weight: 1000;
+}
+
+.syarat__grid {
+  gap: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 39.9375em) {
+  .syarat__grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .syarat__card {
@@ -1550,6 +1599,47 @@ button:hover::before, .button:hover::before {
           box-shadow: 6px 3px 6px 0 rgba(0, 0, 0, 0.2);
   background: -webkit-gradient(linear, left top, right top, from(#aefeff), to(#cddeff));
   background: linear-gradient(to right, #aefeff, #cddeff);
+}
+
+@media (min-width: 40em) {
+  .syarat__card {
+    -webkit-box-flex: 2;
+        -ms-flex: 2 1 100%;
+            flex: 2 1 100%;
+  }
+}
+
+@media (min-width: 64em) {
+  .syarat__card {
+    -webkit-box-flex: 2;
+        -ms-flex: 2 1 100%;
+            flex: 2 1 100%;
+  }
+}
+
+.syarat__konten {
+  padding: 1rem;
+}
+
+.syarat__bab {
+  font-weight: 1000;
+  margin-bottom: 1rem;
+}
+
+.syarat__isi ul {
+  padding-left: 1rem;
+}
+
+.syarat__isi ul a {
+  color: blue;
+}
+
+.syarat__isi ul li {
+  margin-bottom: 1rem;
+}
+
+.syarat__isi ul li b {
+  font-weight: 1000;
 }
 
 .hero {

@@ -1,9 +1,11 @@
 .syarat {
 
     background-color: $cream;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
     &__intro {
-        padding-top: 1.5rem;
+    
         text-align: center;
 
         h1 {
@@ -11,7 +13,16 @@
         }
     }
 
-    
+    &__grid {
+        gap: 2.5rem;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        @include breakpoint-down(small) {
+            flex-direction: column;
+        }
+    }
 
     &__card {
         padding: 1rem;
@@ -19,5 +30,40 @@
         box-shadow: 6px 3px 6px 0 rgba(0,0,0,.2);
         background: linear-gradient(to right, $blueSky, $lightPurple);
 
+        @include breakpoint-up(medium){
+            flex: 2 1 100%;
+        }
+
+        @include breakpoint-up(large){
+            flex: 2 1 100%;
+        }
+    }
+
+    &__konten {
+        padding: 1rem;
+    }
+
+    &__bab {
+        font-weight: 1000;
+        margin-bottom: 1rem;
+    }
+
+    &__isi {
+
+        ul {
+            padding-left: 1rem;
+
+            a {
+                color: blue;
+            }
+            
+            li {
+                margin-bottom: 1rem;
+
+                b {
+                    font-weight: 1000;
+                }
+            }
+        }
     }
 }
