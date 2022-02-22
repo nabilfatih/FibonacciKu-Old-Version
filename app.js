@@ -21,7 +21,6 @@ const User = require('./models/user');
 const form = require('./controllers/kontak');
 
 const MongoDBStore = require("connect-mongo");
-
 const mongoSanitize = require('express-mongo-sanitize');
 
 const userRoutes = require('./routes/users');
