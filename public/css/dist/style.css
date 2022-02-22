@@ -1645,7 +1645,7 @@ button:hover::before, .button:hover::before {
 .hero {
   background-color: #ebfffa;
   margin: 0;
-  margin-top: 76px;
+  margin-top: 80px;
 }
 
 .hero .container {
