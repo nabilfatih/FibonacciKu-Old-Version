@@ -245,7 +245,7 @@ app.all('*', (req, res, next) => {
 app.use((err, req, res, next) => {
     const { statusCode = 500 } = err;
     if(!err.message) err.message = 'Oh No! Something went wrong!'
-    res.status(statusCode).render('error', { err })
+    res.status(statusCode).render('error', { err, user:req.user })
 })
 
 const port = process.env.PORT || 3000
