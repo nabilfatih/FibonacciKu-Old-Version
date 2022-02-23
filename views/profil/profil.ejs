@@ -1,15 +1,18 @@
 <% layout('layouts/boilerplate') %> 
 
 <style>
-    .profil {
+    .profils {
         margin-top: 80px;
     }
 </style>
 
-<section class="profil">  
-    <h1>TES</h1>  
-    <h1><%= user.username %> </h1>
-    <img src="<%= user.avatar %>">
+<section class="profils">
+    <div class="profil container container--pall">
+        <h1>TES</h1>  
+        <h1><%= user.username %> </h1>
+        <img src="<%= user.avatar %>">
+    </div>
+    
 </section>
 
 <script async>
