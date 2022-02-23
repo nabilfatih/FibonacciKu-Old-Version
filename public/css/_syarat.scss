@@ -44,7 +44,11 @@
     }
 
     &__bab {
-        font-weight: 1000;
+
+        h3 {
+            font-weight: 1000;
+        }
+        
         margin-bottom: 1rem;
     }
 
@@ -64,6 +68,7 @@
                     font-weight: 1000;
                 }
             }
+            
         }
     }
 }

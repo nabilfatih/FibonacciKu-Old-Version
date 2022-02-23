@@ -1560,6 +1560,38 @@ button:hover::before, .button:hover::before {
   }
 }
 
+.kebijakan__konten {
+  padding: 1rem;
+}
+
+.kebijakan__bab {
+  margin-bottom: 1rem;
+}
+
+.kebijakan__bab h3 {
+  font-weight: 1000;
+}
+
+.kebijakan__isi ul {
+  padding-left: 1rem;
+}
+
+.kebijakan__isi ul a {
+  color: blue;
+}
+
+.kebijakan__isi ul li {
+  margin-bottom: 1rem;
+}
+
+.kebijakan__isi ul li b {
+  font-weight: 1000;
+}
+
+.kebijakan__deskripsi {
+  margin-bottom: 1rem;
+}
+
 .syarat {
   background-color: #fff8f3;
   padding-top: 3rem;
@@ -1622,8 +1654,11 @@ button:hover::before, .button:hover::before {
 }
 
 .syarat__bab {
-  font-weight: 1000;
   margin-bottom: 1rem;
+}
+
+.syarat__bab h3 {
+  font-weight: 1000;
 }
 
 .syarat__isi ul {
