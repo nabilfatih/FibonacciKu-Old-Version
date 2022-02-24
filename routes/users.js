@@ -89,7 +89,7 @@ router.get('/auth/facebook/callback', passport.authenticate('facebook', {
 
 router.get('/keluar', (req, res) => {
     req.logout();
-    req.flash('success', "Goodbye!");
+    req.flash('success', "Sampai Jumpa lagi Sobat Fibo!");
     res.redirect('/');
 });
 
