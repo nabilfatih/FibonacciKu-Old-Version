@@ -485,7 +485,7 @@ button:hover::before, .button:hover::before {
 
 @media (max-width: 39.9375em) {
   .forms__image {
-    background-image: none;
+    display: none;
   }
 }
 

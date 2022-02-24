@@ -27,7 +27,7 @@
         }
 
         @include breakpoint-down(small){
-            background-image: none;
+            display: none;
         }
     }
     
