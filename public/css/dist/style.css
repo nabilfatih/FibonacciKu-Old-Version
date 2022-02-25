@@ -546,6 +546,35 @@ button:hover::before, .button:hover::before {
   transition: 0.3s ease;
 }
 
+.forms__box .field .form-control {
+  padding: 0;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.forms__box .field textarea:focus,
+.forms__box .field input[type="text"]:focus,
+.forms__box .field input[type="password"]:focus,
+.forms__box .field input[type="datetime"]:focus,
+.forms__box .field input[type="datetime-local"]:focus,
+.forms__box .field input[type="date"]:focus,
+.forms__box .field input[type="month"]:focus,
+.forms__box .field input[type="time"]:focus,
+.forms__box .field input[type="week"]:focus,
+.forms__box .field input[type="number"]:focus,
+.forms__box .field input[type="email"]:focus,
+.forms__box .field input[type="url"]:focus,
+.forms__box .field input[type="search"]:focus,
+.forms__box .field input[type="tel"]:focus,
+.forms__box .field input[type="color"]:focus,
+.forms__box .field .uneditable-input:focus {
+  border-color: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0 none;
+}
+
 .forms__box .field input {
   border: none;
   outline: none;

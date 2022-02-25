@@ -25,29 +25,29 @@
                 <p class="text">Atau, daftar dengan email...</p>
             </div>
 
-            <form action="/daftar" method="POST" class="validated-form">
+            <form action="/daftar" method="POST" novalidate class="validated-form">
                 <div class="field">
                     <i class="uil uil-at"></i>
                     <label for="email"></label>
-                    <input type="email" id="email" name="email" placeholder="Email ID" required>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Email ID" required>
                 </div>
 
                 <div class="field">
                     <i class="uil uil-user"></i>
                     <label for="nama"></label>
-                    <input type="text" id="nama" name="nama" placeholder="Nama Lengkap" required>
+                    <input class="form-control" type="text" id="nama" name="nama" placeholder="Nama Lengkap" required>
                 </div>
 
                 <div class="field">
                     <i class="uil uil-user-circle"></i>
                     <label for="username"></label>
-                    <input type="text" id="username" name="username" placeholder="Username" required>
+                    <input class="form-control" type="text" id="username" name="username" placeholder="Username" required>
                 </div>
 
                 <div class="field">
                     <i class="uil uil-lock-alt"></i>
                     <label for="password"></label>
-                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <input class="form-control" type="password" id="password" name="password" placeholder="Password" required>
                 </div>
 
                 <button class="submit-btn">Daftar</button>
