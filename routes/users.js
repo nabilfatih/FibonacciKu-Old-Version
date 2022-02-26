@@ -46,10 +46,10 @@ router.post('/daftar', catchAsync(async(req, res) => {
         }
         try {
             await sgMail.send(msg);
-            req.flash('success', 'Terima kasih sudah mendaftar di FibonacciKu, tolong cek inbox dan spam email kamu.');
+            req.flash('success', 'Terima kasih sudah mendaftar di FibonacciKu, tolong cek inbox dan spam email kamu');
             res.redirect('/');
         } catch(e) {
-            req.flash('error', 'Muncul error! tolong hubungi kita dengan fitur kontak FibonacciKu.');
+            req.flash('error', 'Muncul error! tolong hubungi kita dengan fitur kontak FibonacciKu');
             res.redirect('/');
         }
     });
@@ -59,7 +59,7 @@ router.get('/verify-email', catchAsync(async(req, res) => {
     try {
         const user = await User.findOne({ emailToken: req.query.token });
         if(!user) {
-            req.flash('error', 'Token tidak valid! tolong kontak FibonacciKu untuk bantuan.')
+            req.flash('error', 'Token tidak valid! tolong kontak FibonacciKu untuk bantuan')
             res.redirect('/');
         }
         user.emailToken = null,
@@ -73,7 +73,7 @@ router.get('/verify-email', catchAsync(async(req, res) => {
             res.redirect(redirectUrl);
         })
     } catch(e) {
-        req.flash('error', 'Muncul error! Tolong kontak kita untuk bantuan.');
+        req.flash('error', 'Muncul error! Tolong kontak kita untuk bantuan');
         res.redirect('/');
     }
 }));
