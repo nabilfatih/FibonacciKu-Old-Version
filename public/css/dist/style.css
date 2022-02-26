@@ -826,6 +826,86 @@ button:hover::before, .button:hover::before {
   }
 }
 
+.forgot {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.forgot__image {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("/img/illustration/mountain_tree.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.forgot__container {
+  padding-top: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 63.9375em) {
+  .forgot__container {
+    padding-top: 16rem;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .forgot__container {
+    padding-top: 11rem;
+  }
+}
+
+.forgot__box {
+  position: relative;
+  z-index: 1;
+  background: white;
+  -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+  width: 25.875rem;
+  min-width: 20rem;
+  padding: 3.125rem 2.5rem;
+  border-radius: 0.3125rem;
+  overflow: hidden;
+}
+
+.forgot__box legend {
+  font-size: 2rem;
+}
+
+.forgot__box .form-group label {
+  font-size: 1.3rem;
+}
+
+.forgot__box .form-group .deskripsi {
+  font-size: 1rem;
+  color: gray;
+}
+
+@media (max-width: 39.9375em) {
+  .forgot__box .form-group .deskripsi {
+    font-size: 0.9rem;
+  }
+}
+
 .pelajaran {
   background-color: #fff8f3;
   text-align: center;

@@ -33,7 +33,11 @@ router.get('/masuk', isLoggedOut, (req, res) => {
     });
 });
 
-router.post('/masuk', passport.authenticate('local', { failureFlash: 'Password or username is incorrect', failureRedirect: '/masuk'}), (req, res) => {
+router.post('/masuk', passport.authenticate('local', {
+    failureFlash: 'Password or username is incorrect',
+    failureRedirect: '/masuk'
+    }),
+    (req, res) => {
     req.flash('success', 'Welcome to FibonacciKu!');
     const redirectUrl = req.session.returnTo || '/beranda';
     delete req.session.returnTo;
@@ -86,6 +90,9 @@ router.get('/auth/facebook/callback', passport.authenticate('facebook', {
     res.redirect(redirectUrl);
 });
 
+router.get('/lupa-password', isLoggedOut,(req, res) => {
+    res.render('registration/forgot')
+})
 
 router.get('/keluar', (req, res) => {
     req.logout();

@@ -21,7 +21,17 @@ const UserSchema = new Schema({
         required: true,
         unique: true
     },
-    avatar: String
+    password: {
+        type: String,
+        required: true,
+    },
+    avatar: String,
+    resetPasswordToken: String,
+    resetPasswordExpires: Date,
+    isAdmin: {
+        type: Boolean,
+        default: false
+    }
 });
 
 UserSchema.plugin(passportLocalMongoose);

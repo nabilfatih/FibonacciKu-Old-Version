@@ -1,0 +1,24 @@
+<% layout('layouts/boilerplate') %> 
+<%- include('../partials/flash') %>
+
+<section class="forgot">
+
+    <div class="forgot__image"></div>
+
+    <div class="forgot__container">
+        <div class="forgot__box">
+            <form action="/forgot" method="POST">
+                <legend class="mb-4">Lupa Password</legend>
+                <div class="form-group">
+                    <label class="" for="email">Email</label>
+                    <label class="mb-3 deskripsi" for="description">Masukkan email untuk mereset password:</label>
+                    <input type="email" name="email" autofocus class="form-control">
+                </div>
+                <div class="form-group mt-4">
+                    <input type="submit" class="btn btn-primary" value="Reset Password">
+                </div>
+            </form>
+        </div>
+
+    </div>
+</section>
