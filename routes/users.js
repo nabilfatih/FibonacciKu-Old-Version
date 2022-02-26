@@ -15,49 +15,44 @@ router.get('/daftar', isLoggedOut, (req, res) => {
 });
 
 router.post('/daftar', catchAsync(async(req, res) => {
-    // try {
-        const newUser = new User({
-            email: req.body.email,
-            nama: req.body.nama,
-            username: req.body.username,
-            emailToken: crypto.randomBytes(64).toString('hex'),
-            isVerified: false
-        });
+    const newUser = new User({
+        email: req.body.email,
+        nama: req.body.nama,
+        username: req.body.username,
+        emailToken: crypto.randomBytes(64).toString('hex'),
+        isVerified: false
+    });
 
-        User.register(newUser, req.body.password, async(err, user) => {
-            if(err) {
-                req.flash('error', 'A user with the given email or username is already registered');
-                return res.redirect('/daftar');
-            }
-            const msg = {
-                from: 'nabilakbarazzima@gmail.com',
-                to: user.email,
-                subject: 'FibonacciKu - Verifikasi Email',
-                text: `
-                    Hai sobat Fibo! Terima kasih sudah mendaftar di FibonacciKu.
-                    Tolong copy dan paste link di bawah ini untuk verifikasi akun kamu.
-                    http://localhost:3000/verify-email?token=${user.emailToken}
-                    `,
-                html: `
-                    <h1>Hai sobat Fibo!</h1>
-                    <p>Terima kasih sudah mendaftar di FibonacciKu.</p>
-                    <p>Tolong menklik link di bawah ini untuk verifikasi akun kamu.</p>
-                    <a href="http://localhost:3000/verify-email?token=${user.emailToken}">Verifikasi Akun</a>
-                    `
-            }
-            try {
-                await sgMail.send(msg);
-                req.flash('success', 'Terima kasih sudah mendaftar di FibonacciKu, tolong cek inbox dan spam email kamu.');
-                res.redirect('/');
-            } catch(e) {
-                req.flash('error', 'Muncul error! tolong hubungi kita dengan fitur kontak FibonacciKu.');
-                res.redirect('/');
-            }
-        });
-    // } catch(e) {
-    //     req.flash('error', 'A user with the given email or username is already registered');
-    //     res.redirect('daftar');
-    // }
+    User.register(newUser, req.body.password, async(err, user) => {
+        if(err) {
+            req.flash('error', 'A user with the given email or username is already registered');
+            return res.redirect('/daftar');
+        }
+        const msg = {
+            from: 'nabilakbarazzima@gmail.com',
+            to: user.email,
+            subject: 'FibonacciKu - Verifikasi Email',
+            text: `
+                Hai sobat Fibo! Terima kasih sudah mendaftar di FibonacciKu.
+                Tolong copy dan paste link di bawah ini untuk verifikasi akun kamu.
+                http://localhost:3000/verify-email?token=${user.emailToken}
+                `,
+            html: `
+                <h1>Hai sobat Fibo!</h1>
+                <p>Terima kasih sudah mendaftar di FibonacciKu.</p>
+                <p>Tolong menklik link di bawah ini untuk verifikasi akun kamu.</p>
+                <a href="http://localhost:3000/verify-email?token=${user.emailToken}">Verifikasi Akun</a>
+                `
+        }
+        try {
+            await sgMail.send(msg);
+            req.flash('success', 'Terima kasih sudah mendaftar di FibonacciKu, tolong cek inbox dan spam email kamu.');
+            res.redirect('/');
+        } catch(e) {
+            req.flash('error', 'Muncul error! tolong hubungi kita dengan fitur kontak FibonacciKu.');
+            res.redirect('/');
+        }
+    });
 }));
 
 router.get('/verify-email', catchAsync(async(req, res) => {
