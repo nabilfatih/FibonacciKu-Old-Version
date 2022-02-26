@@ -888,6 +888,7 @@ button:hover::before, .button:hover::before {
 
 .forgot__box legend {
   font-size: 2rem;
+  font-weight: 1000;
 }
 
 .forgot__box .form-group label {

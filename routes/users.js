@@ -141,7 +141,7 @@ router.get('/auth/facebook/callback', passport.authenticate('facebook', {
         res.redirect(redirectUrl);
 });
 
-router.get('/lupa-password', isLoggedOut,(req, res) => {
+router.get('/lupa-password', isLoggedOut, (req, res) => {
     res.render('registration/forgot')
 })
 
