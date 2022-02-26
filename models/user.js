@@ -11,6 +11,8 @@ const UserSchema = new Schema({
         required: false,
         unique: true
     },
+    emailToken: String,
+    isVerified: Boolean,
     username: {
         type: String,
         required: true,
@@ -23,7 +25,7 @@ const UserSchema = new Schema({
     },
     password: {
         type: String,
-        required: true,
+        required: false,
     },
     avatar: String,
     resetPasswordToken: String,

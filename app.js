@@ -19,6 +19,9 @@ const GitHubStrategy = require('passport-github2');
 const FacebookStrategy = require('passport-facebook');
 const User = require('./models/user');
 const form = require('./controllers/kontak');
+const sgMail = require('@sendgrid/mail');
+const crypto = require('crypto');
+const expressSanitizer = require('express-sanitizer');
 
 const MongoDBStore = require("connect-mongo");
 const mongoSanitize = require('express-mongo-sanitize');
@@ -56,6 +59,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
+app.use(expressSanitizer());
 app.use(mongoSanitize({
     replaceWith: '_'
 }));
@@ -130,8 +134,8 @@ passport.deserializeUser((id, done) => {
 })
 
 passport.use(new GoogleStrategy(google_auth, (accessToken, refreshToken, profile, done) => {
-    // console.log('Google Profile');
-    // console.log(profile);
+    console.log('Google Profile');
+    console.log(profile);
     User.findOne({
         email: profile._json['email']
     }).then((currentUser) => {
@@ -142,11 +146,13 @@ passport.use(new GoogleStrategy(google_auth, (accessToken, refreshToken, profile
             new User({
                 googleID: profile.id,
                 email: profile._json['email'],
+                isVerified: true,
+                emailToken: null,
                 username: profile._json['given_name'].toLowerCase() + profile._json['family_name'].toLowerCase(),
                 nama: profile.displayName,
                 avatar: profile._json['picture']
             }).save().then((newUser) => {
-                // console.log('new user created: ' + newUser)
+                console.log('new user created: ' + newUser)
                 done(null, newUser)
             })
         }
@@ -154,8 +160,8 @@ passport.use(new GoogleStrategy(google_auth, (accessToken, refreshToken, profile
 }));
 
 passport.use(new GitHubStrategy(github_auth, (accessToken, refreshToken, profile, done) => {
-    // console.log('GitHub Profile');
-    // console.log(profile);
+    console.log('GitHub Profile');
+    console.log(profile);
     User.findOne({
         username: profile.username
     }).then((currentUser) => {
@@ -166,6 +172,8 @@ passport.use(new GitHubStrategy(github_auth, (accessToken, refreshToken, profile
             new User({
                 githubID: profile.id,
                 email: profile._json['email'],
+                isVerified: true,
+                emailToken: null,
                 username: profile.username,
                 nama: profile.displayName,
                 avatar: profile._json['avatar_url']
@@ -191,6 +199,8 @@ passport.use(new FacebookStrategy(facebook_auth, (accessToken, refreshToken, pro
             new User({
                 githubID: profile.id,
                 email: profile._json['email'],
+                isVerified: true,
+                emailToken: null,
                 username: profile.username,
                 nama: profile.displayName,
                 avatar: profile._json['avatar_url']
