@@ -29,7 +29,8 @@ module.exports.isNotVerified = async (req, res, next) =>{
         return res.redirect('/');
     } catch(e){
         // console.log(req.body)
-        req.flash('error', 'Muncul error! tolong kontak kita FibonacciKu untuk bantuan');
-        res.redirect('/')
+        // req.flash('error', 'Muncul error! tolong kontak kita FibonacciKu untuk bantuan');
+        // res.redirect('/')
+        return next();
     }
 }
