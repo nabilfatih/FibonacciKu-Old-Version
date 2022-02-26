@@ -18,7 +18,7 @@ router.post('/daftar', catchAsync(async(req, res) => {
     const newUser = new User({
         email: req.body.email,
         nama: req.body.nama,
-        username: req.body.username,
+        username: req.body.username.toLowerCase(),
         emailToken: crypto.randomBytes(64).toString('hex'),
         isVerified: false
     });
