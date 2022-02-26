@@ -33,10 +33,18 @@
                 &:hover {
                     text-decoration: underline;
                 }
+
+                @include breakpoint-down(small){
+                    padding-left: 1.1rem;
+                }
             }
 
             h1 {
                 margin-top: 0;
+            }
+
+            @include breakpoint-down(small){
+                margin-top: 0.9rem;
             }
         }
 
@@ -50,6 +58,10 @@
             @include breakpoint-down(medium){
                 font-size: 3rem;
                 margin-top: 1rem;
+            }
+
+            @include breakpoint-down(small) {
+                font-size: 2rem;
             }
         }
     }

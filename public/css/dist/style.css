@@ -1114,8 +1114,20 @@ button:hover::before, .button:hover::before {
   text-decoration: underline;
 }
 
+@media (max-width: 39.9375em) {
+  .shows__pelajaran .header__belajar h3 {
+    padding-left: 1.1rem;
+  }
+}
+
 .shows__pelajaran .header__belajar h1 {
   margin-top: 0;
+}
+
+@media (max-width: 39.9375em) {
+  .shows__pelajaran .header__belajar {
+    margin-top: 0.9rem;
+  }
 }
 
 .shows__pelajaran h1 {
@@ -1130,6 +1142,12 @@ button:hover::before, .button:hover::before {
   .shows__pelajaran h1 {
     font-size: 3rem;
     margin-top: 1rem;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .shows__pelajaran h1 {
+    font-size: 2rem;
   }
 }
 
