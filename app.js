@@ -140,6 +140,9 @@ passport.use(new GoogleStrategy(google_auth, (accessToken, refreshToken, profile
         email: profile._json['email']
     }).then((currentUser) => {
         if(currentUser) {
+            new User({
+                googleID: profile.id,
+            })
             // console.log('user is ' + currentUser)
             done(null, currentUser)
         } else {

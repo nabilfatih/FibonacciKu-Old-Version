@@ -46,7 +46,7 @@ router.post('/daftar', catchAsync(async(req, res) => {
         }
         try {
             await sgMail.send(msg);
-            req.flash('success', 'Terima kasih sudah mendaftar di FibonacciKu, tolong cek inbox dan spam email kamu');
+            req.flash('success', 'Terima kasih sudah mendaftar di FibonacciKu, tolong cek inbox dan spam email kamu untuk verifikasi');
             res.redirect('/');
         } catch(e) {
             req.flash('error', 'Muncul error! tolong hubungi kita dengan fitur kontak FibonacciKu');
