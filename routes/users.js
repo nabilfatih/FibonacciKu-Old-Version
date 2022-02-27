@@ -67,7 +67,7 @@ router.get('/verify-email', catchAsync(async(req, res) => {
         await user.save();
         await req.login(user, async(err) => {
             if(err) return next(err);
-            req.flash('success', `Welcome to FibonacciKu, ${user.nama}`);
+            req.flash('success', `Welcome to FibonacciKu, ${user.nama}!`);
             const redirectUrl = req.session.returnTo || '/beranda';
             delete req.session.returnTo;
             res.redirect(redirectUrl);

@@ -136,13 +136,12 @@ passport.deserializeUser((id, done) => {
 passport.use(new GoogleStrategy(google_auth, (accessToken, refreshToken, profile, done) => {
     console.log('Google Profile');
     console.log(profile);
-    User.findOne({
-        email: profile._json['email']
-    }).then((currentUser) => {
+    User.findOneAndUpdate(
+        { email: profile._json['email'] },
+        { googleID: profile.id, isVerified: true, emailToken: null },
+        { returnDocument: true }
+    ).then((currentUser) => {
         if(currentUser) {
-            new User({
-                googleID: profile.id,
-            })
             // console.log('user is ' + currentUser)
             done(null, currentUser)
         } else {
@@ -165,9 +164,11 @@ passport.use(new GoogleStrategy(google_auth, (accessToken, refreshToken, profile
 passport.use(new GitHubStrategy(github_auth, (accessToken, refreshToken, profile, done) => {
     console.log('GitHub Profile');
     console.log(profile);
-    User.findOne({
-        username: profile.username
-    }).then((currentUser) => {
+    User.findOneAndUpdate(
+        { username: profile.username },
+        { githubID: profile.id, isVerified: true, emailToken: null },
+        { returnDocument: true }
+    ).then((currentUser) => {
         if(currentUser) {
             // console.log('user is ' + currentUser)
             done(null, currentUser)
@@ -192,15 +193,17 @@ passport.use(new GitHubStrategy(github_auth, (accessToken, refreshToken, profile
 passport.use(new FacebookStrategy(facebook_auth, (accessToken, refreshToken, profile, done) => {
     console.log('Facebook Profile');
     console.log(profile);
-    User.findOne({
-        email: profile._json['email'],
-    }).then((currentUser) => {
+    User.findOneAndUpdate(
+        { email: profile._json['email'] },
+        { googleID: profile.id, isVerified: true, emailToken: null },
+        { returnDocument: true }
+    ).then((currentUser) => {
         if(currentUser) {
             console.log('user is ' + currentUser)
             done(null, currentUser)
         } else {
             new User({
-                githubID: profile.id,
+                facebookID: profile.id,
                 email: profile._json['email'],
                 isVerified: true,
                 emailToken: null,
