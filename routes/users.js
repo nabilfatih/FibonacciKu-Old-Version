@@ -148,7 +148,7 @@ router.get('/lupa-password', isLoggedOut, (req, res) => {
 router.get('/keluar', (req, res) => {
     req.logout();
     req.flash('success', "Sampai Jumpa lagi Sobat Fibo!");
-    res.redirect('/');
+    res.redirect('/masuk');
 });
 
 module.exports = router;

@@ -24,7 +24,11 @@ const UserSchema = new Schema({
         unique: true
     },
     emailToken: String,
-    isVerified: Boolean,
+    isVerified: {
+        type: Boolean,
+        default: false,
+        index: true
+    },
     username: {
         type: String,
         required: true,
@@ -48,6 +52,13 @@ const UserSchema = new Schema({
     isAdmin: {
         type: Boolean,
         default: false
+    },
+}, {timestamps: true});
+
+UserSchema.index({ createdAt: 1 }, {
+    expireAfterSeconds: 3 * 24 * 60 * 60,
+    partialFilterExpression: {
+        isVerified: false
     }
 });
 
