@@ -132,8 +132,8 @@ passport.deserializeUser((id, done) => {
 })
 
 passport.use(new GoogleStrategy(google_auth, (accessToken, refreshToken, profile, done) => {
-    console.log('Google Profile');
-    console.log(profile);
+    // console.log('Google Profile');
+    // console.log(profile);
     User.findOneAndUpdate(
         { email: profile._json['email'] },
         { googleID: profile.id, isVerified: true, emailToken: null },
@@ -152,7 +152,7 @@ passport.use(new GoogleStrategy(google_auth, (accessToken, refreshToken, profile
                 nama: profile.displayName,
                 avatar: profile._json['picture']
             }).save().then((newUser) => {
-                console.log('new user created: ' + newUser)
+                // console.log('new user created: ' + newUser)
                 done(null, newUser)
             })
         }
@@ -160,8 +160,8 @@ passport.use(new GoogleStrategy(google_auth, (accessToken, refreshToken, profile
 }));
 
 passport.use(new GitHubStrategy(github_auth, (accessToken, refreshToken, profile, done) => {
-    console.log('GitHub Profile');
-    console.log(profile);
+    // console.log('GitHub Profile');
+    // console.log(profile);
     User.findOneAndUpdate(
         { username: profile.username },
         { githubID: profile.id, isVerified: true, emailToken: null },
