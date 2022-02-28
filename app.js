@@ -19,8 +19,6 @@ const GitHubStrategy = require('passport-github2');
 const FacebookStrategy = require('passport-facebook');
 const User = require('./models/user');
 const form = require('./controllers/kontak');
-const sgMail = require('@sendgrid/mail');
-const crypto = require('crypto');
 const expressSanitizer = require('express-sanitizer');
 
 const MongoDBStore = require("connect-mongo");
