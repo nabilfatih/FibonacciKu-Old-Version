@@ -280,7 +280,7 @@ button:hover::before, .button:hover::before {
   }
 }
 
-.alert span {
+.alert .close span {
   margin-left: 0.5rem;
   font-weight: 1000;
   font-size: 1.14rem;
