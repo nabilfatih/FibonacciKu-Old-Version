@@ -29,7 +29,7 @@ router.post('/daftar', catchAsync(async(req, res) => {
             return res.redirect('/daftar');
         }
         const msg = {
-            from: 'nabilakbarazzima@gmail.com',
+            from: 'no-reply@fibonacciku.com',
             to: user.email,
             subject: 'FibonacciKu - Verifikasi Email',
             text: `
@@ -42,6 +42,9 @@ router.post('/daftar', catchAsync(async(req, res) => {
                 <p>Terima kasih sudah mendaftar di FibonacciKu.</p>
                 <p>Tolong menklik link di bawah ini untuk verifikasi akun kamu.</p>
                 <a href="http://localhost:3000/verify-email?token=${user.emailToken}">Verifikasi Akun</a>
+                <p>Email verifikasi ini hanya dikirim 1 kali, jangan sampai hilang email ini. Jika hilang, maka kalian harus menunggu selama 3 hari untuk membuat ulang akun FibonacciKu dengan email yang sama.</p>
+                <p>Terima Kasih, </p>
+                <p>FibonacciKu</p>
                 `
         }
         try {
