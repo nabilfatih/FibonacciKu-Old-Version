@@ -20,17 +20,20 @@
     }
 
     &__container {
-        padding-top: 15rem;
+        padding-top: 10rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-bottom: 5rem;
 
         @include breakpoint-down(medium){
-            padding-top: 16rem;
+            padding-top: 9rem;
+            padding-bottom: 4rem;
         }
 
         @include breakpoint-down(small){
-            padding-top: 11rem;
+            padding-top: 8rem;
+            padding-bottom: 3rem;
         }
     }
 

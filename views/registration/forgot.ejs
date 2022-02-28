@@ -1,16 +1,15 @@
 <% layout('layouts/boilerplate') %> 
-<%- include('../partials/flash') %>
 
 <section class="forgot">
-
+    <%- include('../partials/flash') %>
     <div class="forgot__image"></div>
 
     <div class="forgot__container">
         <div class="forgot__box">
-            <form action="/forgot" method="POST" novalidate class="validated-form">
+            <form action="/lupa-password?_method=PUT" method="POST" novalidate class="validated-form">
                 <legend class="mb-4">Lupa Password</legend>
                 <div class="form-group">
-                    <label class="" for="email">Email</label>
+                    <label for="email">Email</label>
                     <label class="mb-3 deskripsi" for="description">Masukkan email untuk mereset password:</label>
                     <input type="email" id="email" name="email" autofocus class="form-control" required>
                     <div class="invalid-feedback">

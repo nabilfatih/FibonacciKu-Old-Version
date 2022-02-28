@@ -3,6 +3,7 @@ const router = express.Router();
 const passport = require('passport');
 const catchAsync = require('../utils/catchAsync');
 const User = require('../models/user');
+const Users = require('../controllers/users');
 const { isLoggedOut, isNotVerified } = require('../middleware');
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
@@ -29,14 +30,14 @@ router.post('/daftar', catchAsync(async(req, res) => {
             return res.redirect('/daftar');
         }
         const msg = {
-            from: 'no-reply@fibonacciku.com',
+            from: 'FibonacciKu <no-reply@fibonacciku.com>',
             to: user.email,
             subject: 'FibonacciKu - Verifikasi Email',
             text: `
                 Hai sobat Fibo! Terima kasih sudah mendaftar di FibonacciKu.
                 Tolong copy dan paste link di bawah ini untuk verifikasi akun kamu.
                 http://localhost:3000/verify-email?token=${user.emailToken}
-                `,
+                `.replace(/                /g, ''),
             html: `
                 <h1>Hai sobat Fibo!</h1>
                 <p>Terima kasih sudah mendaftar di FibonacciKu.</p>
@@ -144,9 +145,13 @@ router.get('/auth/facebook/callback', passport.authenticate('facebook', {
         res.redirect(redirectUrl);
 });
 
-router.get('/lupa-password', isLoggedOut, (req, res) => {
-    res.render('registration/forgot')
-})
+router.get('/lupa-password', isLoggedOut, catchAsync(Users.getForgotPw));
+
+router.put('/lupa-password', isLoggedOut, catchAsync(Users.putForgotPw));
+
+router.get('/reset/:token', isLoggedOut, catchAsync(Users.getReset));
+
+router.put('/reset/:token', isLoggedOut, catchAsync(Users.putReset));
 
 router.get('/keluar', (req, res) => {
     req.logout();
