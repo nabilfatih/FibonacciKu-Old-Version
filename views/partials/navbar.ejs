@@ -12,7 +12,7 @@
             </a>
             <% } %> 
             
-            <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+            <a id="btnHamburger" type="button" class="header__toggle hide-for-desktop">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -27,17 +27,24 @@
                 <a href="/masuk" class="button header__cta">Masuk</a>
                 <a href="/daftar" class="button header__cta">Daftar</a>
                 <% } else {%>
-                    <div id="dropdowns" class="dropdowns">
-                        <a id="drop-down" class="drop-down" href="#">
-                            <img class="foto-profil" src="<%= user.avatar %> " alt="logo profile">
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="profil-dropdown"><a href="/profil/<%= user.username %>"><i class="uil uil-user-circle"></i>Profil</a></li>
-                            <li class="pengaturan-dropdown"><a href="/pengaturan"><i class="uil uil-setting"></i>Pengaturan</a></li>
-                            <li class="garis-batas"><hr></li>
-                            <li class="keluar-dropdown"><a href="/keluar"><i class="uil uil-signout"></i>Keluar</a></li>
-                        </ul>
+                    <div class="menu-desktop">
+                        <div id="dropdowns" class="dropdowns">
+                            <a id="drop-down" class="drop-down" type="button">
+                                <img class="foto-profil" src="<%= user.avatar %> " alt="logo profile">
+                                <i class="uil uil-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="profil-dropdown"><a href="/profil/<%= user.username %>"><i class="uil uil-user-circle"></i>Profil</a></li>
+                                <li class="pengaturan-dropdown"><a href="/pengaturan"><i class="uil uil-setting"></i>Pengaturan</a></li>
+                                <li class="garis-batas"><hr></li>
+                                <li class="keluar-dropdown"><a href="/keluar"><i class="uil uil-signout"></i>Keluar</a></li>
+                            </ul>
+                        </div>
+                        <div class="display-username">
+                            <%= user.username %> 
+                        </div>
                     </div>
+                    
                 <!-- <a href="/keluar" class="button header__cta keluar">Keluar</a> -->
                 <% } %> 
             </div>

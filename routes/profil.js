@@ -6,4 +6,6 @@ const Profil = require('../controllers/profil');
 
 router.get('/:username', isLoggedIn, catchAsync(Profil.profil));
 
+router.get('/', isLoggedIn, catchAsync(Profil.index));
+
 module.exports = router;

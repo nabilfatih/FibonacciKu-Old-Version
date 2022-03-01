@@ -155,11 +155,29 @@
             display: none;
         }
 
+        .menu-desktop {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+
+            .display-username {
+                font-size: $font-med;
+                color: $darkBlue;
+            }
+        }
+
         .dropdowns {
             position: relative;
             text-align: right;
 
             .drop-down {
+                display: flex;
+                gap: 0.5rem;
+                align-items: center;
+
+                .uil {
+                    color: $darkBlue;
+                }
 
                 .foto-profil {
                     width: 48px;
@@ -248,10 +266,5 @@
             }
             
         }
-    }
-
-    .menu-mobile {
-        display: flex;
-        align-items: center;
     }
 }

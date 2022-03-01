@@ -451,9 +451,38 @@ button:hover::before, .button:hover::before {
   }
 }
 
+.header__register .menu-desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__register .menu-desktop .display-username {
+  font-size: 1.125rem;
+  color: #002651;
+}
+
 .header__register .dropdowns {
   position: relative;
   text-align: right;
+}
+
+.header__register .dropdowns .drop-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__register .dropdowns .drop-down .uil {
+  color: #002651;
 }
 
 .header__register .dropdowns .drop-down .foto-profil {
@@ -553,15 +582,6 @@ button:hover::before, .button:hover::before {
   margin: 0;
   height: 1px;
   color: black;
-}
-
-.header .menu-mobile {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .forms {

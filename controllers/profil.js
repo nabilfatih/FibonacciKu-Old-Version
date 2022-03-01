@@ -5,3 +5,8 @@ module.exports.profil = async (req, res) => {
         user: req.user
     });
 }
+
+module.exports.index = async (req, res) => {
+    const username = req.user.username
+    res.redirect(`/profil/${username}`);
+};
