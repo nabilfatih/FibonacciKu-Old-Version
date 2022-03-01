@@ -4,7 +4,7 @@
     background-color: white;
     box-shadow: 0 3px 6px 0 rgba(0,0,0,.2);
     z-index: 2;
-    
+    top: 0;
     // Hamburger Open Styles
     &.open {
 
@@ -32,13 +32,21 @@
         left: 0px;
         background-image: linear-gradient($darkBlue, transparent);
         z-index: 1;
+        overflow-y: hidden;
 
         &.fade-in {
             display: block;
+            @include breakpoint-up(large) {
+                display: none;
+            }
         }
 
         &.fade-out {
             display: block;
+        }
+
+        @include breakpoint-up(large) {
+            display: none;
         }
     }
 
@@ -57,6 +65,12 @@
             width: 12.375rem;
             height: 2.875rem;
             // margin-top: 0.2rem;
+        }
+
+        @include breakpoint-down(small){
+            img {
+                width: 10.375rem;
+            }
         }
     }
 
@@ -134,28 +148,110 @@
     }
 
     &__register {
-        display: flex; 
-        text-align: center;
-        display: inline-block;
+        
         height: 44px;
 
         @include breakpoint-down(medium) {
             display: none;
         }
 
-        .keluar {
-            display: inline-flex;
-        }
+        .dropdowns {
+            position: relative;
+            text-align: right;
 
-        .profile {
+            .drop-down {
 
-            svg {
-            
-                &:hover {
-                    opacity: 0.8;
-                    transition: opacity 150ms ease-in-out;
+                .foto-profil {
+                    width: 48px;
+                    border-radius: 50%;
                 }
             }
+
+            &.aktif {
+                .drop-down + .dropdown-menu {
+                    opacity: 1;
+                    pointer-events: auto;
+                    transform: translateY(0px);
+                }
+            }
+
+            .dropdown-menu {
+                position: absolute;
+                background: $verylightBlue;
+                margin-top: 10px;
+                right: 0;
+                padding: 0;
+                width: 200px;
+                display: flex;
+                gap: 0;
+                text-align: right;
+                align-items: center;
+                flex-direction: column;
+                list-style: none;
+                border-radius: 10px;
+                border: none;
+                box-shadow: 0 0 10px rgba(0,0,0,.2);
+                opacity: 0;
+                pointer-events: none;
+                transform: translateY(-10px);
+                transition: all 150ms ease-in-out;
+
+                li {
+                    padding: 10px;
+                    padding-left: 1rem;
+                    text-align: left;
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .uil {
+                        padding-right: 0.5rem;
+                        font-size: 1.5rem;
+                    }
+                    
+                    font-size: 1rem;
+                    
+                }
+
+                .profil-dropdown {
+                    &:hover {
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                        background-color: rgba(124, 124, 124, 0.2);
+                    }
+                }
+                .pengaturan-dropdown {
+                    &:hover {
+                        background-color: rgba(124, 124, 124, 0.2);
+                    }
+                }
+                .keluar-dropdown {
+                    &:hover {
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        background-color: rgba(124, 124, 124, 0.2);
+                    }
+                }
+                .garis-batas {
+                    padding: 0;
+                    hr {
+                        margin: 0;
+                        height: 1px;
+                        color: black;
+                    }
+                }
+            }
+            
         }
+    }
+
+    .menu-mobile {
+        display: flex;
+        align-items: center;
     }
 }

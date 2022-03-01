@@ -76,7 +76,6 @@ html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 *, *::before, *::after {
@@ -293,6 +292,7 @@ button:hover::before, .button:hover::before {
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
   z-index: 2;
+  top: 0;
 }
 
 .header.open .header__toggle > span:first-child {
@@ -319,14 +319,27 @@ button:hover::before, .button:hover::before {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#002651), to(transparent));
   background-image: linear-gradient(#002651, transparent);
   z-index: 1;
+  overflow-y: hidden;
 }
 
 .header .overlay.fade-in {
   display: block;
 }
 
+@media (min-width: 64em) {
+  .header .overlay.fade-in {
+    display: none;
+  }
+}
+
 .header .overlay.fade-out {
   display: block;
+}
+
+@media (min-width: 64em) {
+  .header .overlay {
+    display: none;
+  }
 }
 
 .header nav {
@@ -341,6 +354,12 @@ button:hover::before, .button:hover::before {
 .header__logo img {
   width: 12.375rem;
   height: 2.875rem;
+}
+
+@media (max-width: 39.9375em) {
+  .header__logo img {
+    width: 10.375rem;
+  }
 }
 
 .header__toggle > span {
@@ -416,11 +435,6 @@ button:hover::before, .button:hover::before {
 }
 
 .header__register {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  display: inline-block;
   height: 44px;
 }
 
@@ -430,16 +444,117 @@ button:hover::before, .button:hover::before {
   }
 }
 
-.header__register .keluar {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.header__register .dropdowns {
+  position: relative;
+  text-align: right;
 }
 
-.header__register .profile svg:hover {
-  opacity: 0.8;
-  -webkit-transition: opacity 150ms ease-in-out;
-  transition: opacity 150ms ease-in-out;
+.header__register .dropdowns .drop-down .foto-profil {
+  width: 48px;
+  border-radius: 50%;
+}
+
+.header__register .dropdowns.aktif .drop-down + .dropdown-menu {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.header__register .dropdowns .dropdown-menu {
+  position: absolute;
+  background: #e4fbff;
+  margin-top: 10px;
+  right: 0;
+  padding: 0;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0;
+  text-align: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  border-radius: 10px;
+  border: none;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.header__register .dropdowns .dropdown-menu li {
+  padding: 10px;
+  padding-left: 1rem;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.header__register .dropdowns .dropdown-menu li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__register .dropdowns .dropdown-menu li .uil {
+  padding-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.header__register .dropdowns .dropdown-menu .profil-dropdown:hover {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgba(124, 124, 124, 0.2);
+}
+
+.header__register .dropdowns .dropdown-menu .pengaturan-dropdown:hover {
+  background-color: rgba(124, 124, 124, 0.2);
+}
+
+.header__register .dropdowns .dropdown-menu .keluar-dropdown:hover {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgba(124, 124, 124, 0.2);
+}
+
+.header__register .dropdowns .dropdown-menu .garis-batas {
+  padding: 0;
+}
+
+.header__register .dropdowns .dropdown-menu .garis-batas hr {
+  margin: 0;
+  height: 1px;
+  color: black;
+}
+
+.header .menu-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .forms {

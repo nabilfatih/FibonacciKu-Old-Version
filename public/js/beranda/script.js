@@ -24,3 +24,13 @@ btnHamburger.addEventListener('click', function() {
         });
     }
 });
+
+document.addEventListener('click', function(e) {
+    if (!e.target.closest('#btnHamburger')) {
+        body.classList.remove('noscroll');
+        header.classList.remove('open');
+        fadeElems.forEach(function(element){
+            element.classList.remove('fade-in');
+        });
+    }
+})
