@@ -76,6 +76,13 @@ html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+@media (max-width: 63.9375em) {
+  html {
+    overflow-x: visible;
+  }
 }
 
 *, *::before, *::after {
