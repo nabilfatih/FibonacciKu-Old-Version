@@ -1762,6 +1762,50 @@ button:hover::before, .button:hover::before {
   padding: .5rem 1rem .25rem;
 }
 
+.kontak__konten .form-control {
+  padding: 0;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0 none;
+  border-color: none;
+}
+
+.kontak__konten textarea:focus,
+.kontak__konten textarea[type="text"]:focus,
+.kontak__konten input[type="text"]:focus,
+.kontak__konten input[type="password"]:focus,
+.kontak__konten input[type="datetime"]:focus,
+.kontak__konten input[type="datetime-local"]:focus,
+.kontak__konten input[type="date"]:focus,
+.kontak__konten input[type="month"]:focus,
+.kontak__konten input[type="time"]:focus,
+.kontak__konten input[type="week"]:focus,
+.kontak__konten input[type="number"]:focus,
+.kontak__konten input[type="email"]:focus,
+.kontak__konten input[type="url"]:focus,
+.kontak__konten input[type="search"]:focus,
+.kontak__konten input[type="tel"]:focus,
+.kontak__konten input[type="color"]:focus,
+.kontak__konten .uneditable-input:focus {
+  border: none;
+  background: none;
+  border-color: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0 none;
+}
+
+.kontak__konten input, .kontak__konten textarea {
+  border: none;
+  border-color: none;
+  outline: 0 none;
+  background: none;
+  width: 100%;
+  font-size: 1em;
+  padding-bottom: 0.3125rem;
+}
+
 .kontak__label {
   font-size: small;
 }
