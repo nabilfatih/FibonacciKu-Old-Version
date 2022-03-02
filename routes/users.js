@@ -100,7 +100,10 @@ router.post('/masuk', isNotVerified, passport.authenticate('local', {
 });
 
 router.get('/auth/google', passport.authenticate('google', {
-    scope: ['email', 'profile'],
+    scope: [
+        'https://www.googleapis.com/auth/userinfo.profile',
+        'https://www.googleapis.com/auth/userinfo.email'
+    ]
 }));
 
 router.get('/auth/google/callback', passport.authenticate('google', {
