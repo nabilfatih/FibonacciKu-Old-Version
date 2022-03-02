@@ -111,7 +111,7 @@ router.get('/auth/google/callback', passport.authenticate('google', {
     failureRedirect: '/daftar',
     }),
     (req, res) => {
-        req.flash('success', 'Welcome to FibonacciKu!');
+        req.flash('success', `Welcome to FibonacciKu, ${req.user.nama}!`);
         const redirectUrl = req.session.returnTo || '/beranda';
         delete req.session.returnTo;
         res.redirect(redirectUrl);
@@ -126,7 +126,7 @@ router.get('/auth/github/callback', passport.authenticate('github', {
     failureRedirect: '/daftar',
     }),
     (req, res) => {
-        req.flash('success', 'Welcome to FibonacciKu!');
+        req.flash('success', `Welcome to FibonacciKu, ${req.user.nama}!`);
         const redirectUrl = req.session.returnTo || '/beranda';
         delete req.session.returnTo;
         res.redirect(redirectUrl);
@@ -142,7 +142,7 @@ router.get('/auth/facebook/callback', passport.authenticate('facebook', {
     failureRedirect: '/daftar',
     }),
     (req, res) => {
-        req.flash('success', 'Welcome to FibonacciKu!');
+        req.flash('success', `Welcome to FibonacciKu, ${req.user.nama}!`);
         const redirectUrl = req.session.returnTo || '/beranda';
         delete req.session.returnTo;
         res.redirect(redirectUrl);
