@@ -30,6 +30,7 @@ const matapelajaranRoutes = require('./routes/mata-pelajaran');
 const tentangRoutes = require('./routes/tentang');
 const kontakRoutes = require('./routes/kontak');
 const profilRoutes = require('./routes/profil');
+const pengaturanRoutes = require('./routes/pengaturan');
 const kebijakanRoutes = require('./routes/kebijakan');
 const syaratRoutes = require('./routes/syarat');
 const { isLoggedOut } = require('./middleware');
@@ -241,6 +242,8 @@ app.post('/', catchAsync(form.forms));
 app.use('/kontak', kontakRoutes);
 
 app.use('/profil', profilRoutes);
+
+app.use('/pengaturan', pengaturanRoutes);
 
 app.use('/kebijakan-privasi', kebijakanRoutes);
 
