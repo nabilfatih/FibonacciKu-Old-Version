@@ -498,6 +498,10 @@ button:hover::before, .button:hover::before {
           transform: translateY(0px);
 }
 
+.header__register .dropdowns.aktif .foto-profil {
+  border: 1px solid #e4fbff;
+}
+
 .header__register .dropdowns .dropdown-menu {
   position: absolute;
   background: #e4fbff;
