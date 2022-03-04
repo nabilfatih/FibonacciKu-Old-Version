@@ -53,6 +53,10 @@ const UserSchema = new Schema({
         required: false,
         default: '/img/profile/default-background.png',
     },
+    bio: {
+        type: String,
+        required: false
+    },
     resetPasswordToken: String,
     resetPasswordExpires: Date,
     isAdmin: {

@@ -13,13 +13,22 @@
             <img src="<%= user.background %>">
         </div>
 
-        <div class="container">
+        <div class="container container--px">
             <div class="profil__info">
                 <div class="profil__avatar">
                     <img src="<%= user.avatar %>">
                 </div>
                 <div class="profil__username">
-                    <h2><%= user.username %> </h2>
+                    <div class="user">
+                        <h2><%= user.username %></h2>
+                        <% if(user.username == username.username) {%> 
+                            <a href="/pengaturan"><i class="uil uil-setting"></i></a>
+                        <% } %> 
+                    </div>
+
+                    <div class="nama">
+                        <h3><%=  %> </h3>
+                    </div>
                 </div>
             </div>
         </div>
