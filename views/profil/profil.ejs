@@ -1,5 +1,7 @@
 <% layout('layouts/boilerplate') %> 
 
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
 <style>
     .profils {
         margin-top: 80px;
@@ -10,24 +12,30 @@
     <div class="profil">
 
         <div class="profil__background">
-            <img src="<%= user.background %>">
+            <img src="<%= username.background %>">
         </div>
 
         <div class="container container--px">
             <div class="profil__info">
                 <div class="profil__avatar">
-                    <img src="<%= user.avatar %>">
+                    <img src="<%= username.avatar %>">
                 </div>
                 <div class="profil__username">
                     <div class="user">
-                        <h2><%= user.username %></h2>
+                        <h2><%= username.username %></h2>
                         <% if(user.username == username.username) {%> 
                             <a href="/pengaturan"><i class="uil uil-setting"></i></a>
                         <% } %> 
                     </div>
 
                     <div class="nama">
-                        <h3><%=  %> </h3>
+                        <h3><%= username.nama %> </h3>
+                        <p><%= username.bio %> </p>
+                        <div class="link">
+                            <a href=""><img src="/img/profile/instagram-icon.png" alt=""></a>
+                            <a href=""><img src="/img/profile/github-icon.png" alt=""></a>
+                            <a href=""><img src="/img/profile/twitter-icon.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>

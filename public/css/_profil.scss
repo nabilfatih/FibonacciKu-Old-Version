@@ -1,29 +1,39 @@
 .profil {
 
+    background-color: $verylightBlue;
+    overflow: hidden;
 
     &__background {
 
         img {
             position: relative;
-            width: 100%;
-            height: 27vh;
+            width: 189vh;
+            height: 30vh;
+
+            @include breakpoint-down(medium) {
+                width: 234vh;
+                height: 34vh;
+            }
+
+            @include breakpoint-down(small){
+                width: 140vh;
+                height: 22vh;
+            }
         }
     }
 
     .container {
         padding-top: 2rem;
         padding-bottom: 2rem;
+        background-color: $verylightBlue;
     }
 
     &__info {
-        padding-left: 10rem;
-        padding-right: 10rem;
+        padding: 2rem;
         position: relative;
         display: flex;
-        gap: 1rem;
+        gap: 2.5rem;
         justify-content: center;
-        align-items: center;
-        text-align: center;
     }
 
     &__avatar {
@@ -37,10 +47,10 @@
 
     &__username {
         display: flex;
+        gap: 2.5rem;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        text-align: center;
+        text-align: left;
 
         .user {
             display: flex;
@@ -51,11 +61,42 @@
             h2 {
                 font-size: 2.2rem;
                 margin-bottom: 0;
+                font-family: 'Lora', serif;
             }
 
             .uil {
                 font-size: 2rem;
                 color: $darkBlue;
+            }
+        }
+
+        .nama {
+
+            h3 {
+                font-weight: 1000;
+                margin-bottom: 0;
+            }
+
+            .link {
+                display: flex;
+
+                a {
+                    border: 1px solid #ccc;
+                    padding: 0.6875rem 2rem;
+                    border-radius: 0.75rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 0.5rem;
+
+                    img {
+                        width: 1.5rem;
+                    }
+                }
+
+                a:hover {
+                    border: 1px solid $darkBlue;
+                }
             }
         }
 

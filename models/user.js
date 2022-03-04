@@ -57,6 +57,20 @@ const UserSchema = new Schema({
         type: String,
         required: false
     },
+    link: {
+        instagram: {
+            type: String,
+            required: false
+        },
+        github: {
+            type: String,
+            required: false
+        },
+        twitter: {
+            type: String,
+            required: false
+        }
+    },
     resetPasswordToken: String,
     resetPasswordExpires: Date,
     isAdmin: {
