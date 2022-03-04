@@ -1,0 +1,39 @@
+.profil {
+
+
+    &__background {
+
+        img {
+            position: relative;
+            width: 100%;
+            height: 27vh;
+        }
+    }
+
+    &__info {
+        padding-left: 10rem;
+        padding-right: 10rem;
+        position: relative;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__avatar {
+
+        img {
+            background-color: $cream;
+            width: 128px;
+            border-radius: 50%;
+        }
+    }
+
+    &__username {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+}

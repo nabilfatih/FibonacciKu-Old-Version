@@ -504,7 +504,7 @@ button:hover::before, .button:hover::before {
 
 .header__register .dropdowns .dropdown-menu {
   position: absolute;
-  background: #e4fbff;
+  background: #fff8f3;
   margin-top: 10px;
   right: 0;
   padding: 0;
@@ -1650,6 +1650,45 @@ button:hover::before, .button:hover::before {
   right: 0;
   width: 100%;
   height: 100%;
+}
+
+.profil__background img {
+  position: relative;
+  width: 100%;
+  height: 27vh;
+}
+
+.profil__info {
+  padding-left: 10rem;
+  padding-right: 10rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.profil__avatar img {
+  background-color: #fff8f3;
+  width: 128px;
+  border-radius: 50%;
+}
+
+.profil__username {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .kontak {

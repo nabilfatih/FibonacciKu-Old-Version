@@ -7,10 +7,23 @@
 </style>
 
 <section class="profils">
-    <div class="profil container container--pall">
-        <h1>TES</h1>  
-        <h1><%= user.username %> </h1>
-        <img src="<%= user.avatar %>">
+    <div class="profil">
+
+        <div class="profil__background">
+            <img src="<%= user.background %>">
+        </div>
+
+        <div class="container">
+            <div class="profil__info">
+                <div class="profil__avatar">
+                    <img src="<%= user.avatar %>">
+                </div>
+                <div class="profil__username">
+                    <h2><%= user.username %> </h2>
+                </div>
+            </div>
+        </div>
+        
     </div>
     
 </section>
