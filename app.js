@@ -241,7 +241,7 @@ app.use('/tentang', tentangRoutes);
 app.post('/', catchAsync(form.forms));
 app.use('/kontak', kontakRoutes);
 
-app.use('/profil', profilRoutes);
+app.use('/fibo', profilRoutes);
 
 app.use('/pengaturan', pengaturanRoutes);
 

@@ -34,7 +34,7 @@
                                 <i class="uil uil-angle-down"></i>
                             </a>
                             <ul class="dropdown-menu">
-                                <li class="profil-dropdown"><a href="/profil/<%= user.username %>"><i class="uil uil-user-circle"></i>Profil</a></li>
+                                <li class="profil-dropdown"><a href="/fibo/<%= user.username %>"><i class="uil uil-user-circle"></i>Profil</a></li>
                                 <li class="pengaturan-dropdown"><a href="/pengaturan"><i class="uil uil-setting"></i>Pengaturan</a></li>
                                 <li class="garis-batas"><hr></li>
                                 <li class="keluar-dropdown"><a href="/keluar"><i class="uil uil-signout"></i>Keluar</a></li>
@@ -54,7 +54,7 @@
             <% if(!currentUser) {%>
             <a href="/">Beranda</a>
             <% } else {%>
-            <a href="/profil/<%= user.username %>">Profil</a>
+            <a href="/fibo/<%= user.username %>">Profil</a>
             <a href="/keluar">Keluar</a>
             <a href="/beranda">Beranda</a>
             <% } %>
