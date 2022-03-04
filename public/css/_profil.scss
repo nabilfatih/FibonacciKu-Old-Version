@@ -2,6 +2,7 @@
 
     background-color: $verylightBlue;
     overflow: hidden;
+    padding-bottom: 2rem;
 
     &__background {
 
@@ -30,6 +31,13 @@
         background-color: $verylightBlue;
         display: flex;
         text-align: left;
+
+        @include breakpoint-down(small){
+            padding-left: 0;
+            padding-right: 0;
+            flex-direction: column;
+            text-align: center;
+        }
     }
 
     &__info {
@@ -37,6 +45,14 @@
         position: relative;
         display: flex;
         gap: 2.5rem;
+
+        @include breakpoint-down(small){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 2rem;
+        }
     }
 
     &__avatar {
@@ -54,6 +70,11 @@
         flex-direction: column;
         justify-content: center;
         text-align: left;
+
+        @include breakpoint-down(small){
+            text-align: center;
+            align-items: center;
+        }
 
         .user {
             display: flex;
@@ -104,6 +125,11 @@
                 a:hover {
                     border: 1px solid $darkBlue;
                 }
+            }
+
+            p {
+                max-width: 35rem;
+                margin-bottom: 0;
             }
         }
 

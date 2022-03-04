@@ -1655,6 +1655,7 @@ button:hover::before, .button:hover::before {
 .profil {
   background-color: #e4fbff;
   overflow: hidden;
+  padding-bottom: 2rem;
 }
 
 .profil__background img {
@@ -1689,6 +1690,18 @@ button:hover::before, .button:hover::before {
   text-align: left;
 }
 
+@media (max-width: 39.9375em) {
+  .profil .container {
+    padding-left: 0;
+    padding-right: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
 .profil__info {
   padding: 2rem;
   position: relative;
@@ -1696,6 +1709,23 @@ button:hover::before, .button:hover::before {
   display: -ms-flexbox;
   display: flex;
   gap: 2.5rem;
+}
+
+@media (max-width: 39.9375em) {
+  .profil__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
 }
 
 .profil__avatar img {
@@ -1717,6 +1747,15 @@ button:hover::before, .button:hover::before {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: left;
+}
+
+@media (max-width: 39.9375em) {
+  .profil__username {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .profil__username .user {
@@ -1785,6 +1824,11 @@ button:hover::before, .button:hover::before {
 
 .profil__username .nama .link a:hover {
   border: 1px solid #002651;
+}
+
+.profil__username .nama p {
+  max-width: 35rem;
+  margin-bottom: 0;
 }
 
 .kontak {
