@@ -30,11 +30,17 @@
 
                     <div class="nama">
                         <h3><%= username.nama %> </h3>
-                        <p><%= username.bio %> </p>
+                        <p><%= username.bio %> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti voluptate, necessitatibus reiciendis voluptatem laudantium error fuga dolores facilis eum nobis architecto, numquam nesciunt tempora quas velit eligendi explicabo accusantium quam. </p>
                         <div class="link">
-                            <a href=""><img src="/img/profile/instagram-icon.png" alt=""></a>
-                            <a href=""><img src="/img/profile/github-icon.png" alt=""></a>
-                            <a href=""><img src="/img/profile/twitter-icon.png" alt=""></a>
+                            <% if(username.link.instagram) { %>
+                            <a href="instagram.com/<%= username.link.instagram %>"><img src="/img/profile/instagram-icon.png" alt=""></a>
+                            <% } %>
+                            <% if(username.link.github) { %> 
+                            <a href="github.com/<%= username.link.github %>"><img src="/img/profile/github-icon.png" alt=""></a>
+                            <% } %> 
+                            <% if(username.link.twitter) { %> 
+                            <a href="twitter.com/<%= username.link.twitter %>"><img src="/img/profile/twitter-icon.png" alt=""></a>
+                            <% } %>
                         </div>
                     </div>
                 </div>

@@ -72,6 +72,10 @@
 
         .nama {
 
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
             h3 {
                 font-weight: 1000;
                 margin-bottom: 0;
