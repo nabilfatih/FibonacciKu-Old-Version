@@ -1816,6 +1816,7 @@ button:hover::before, .button:hover::before {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 0.5rem;
+  background-color: white;
 }
 
 .profil__username .nama .link a img {

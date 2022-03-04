@@ -137,7 +137,7 @@ passport.use(new GoogleStrategy(google_auth, (accessToken, refreshToken, profile
     // console.log(profile);
     User.findOneAndUpdate(
         { email: profile._json.email },
-        { googleID: profile.id, isVerified: true, emailToken: null },
+        { $set: { googleID: profile.id, isVerified: true, emailToken: null }},
         { returnDocument: true }
     ).then((currentUser) => {
         if(currentUser) {
@@ -165,7 +165,7 @@ passport.use(new GitHubStrategy(github_auth, (accessToken, refreshToken, profile
     // console.log(profile);
     User.findOneAndUpdate(
         { username: profile.username },
-        { githubID: profile.id, isVerified: true, emailToken: null },
+        { $set: {githubID: profile.id, isVerified: true, emailToken: null }},
         { returnDocument: true }
     ).then((currentUser) => {
         if(currentUser) {
@@ -194,7 +194,7 @@ passport.use(new FacebookStrategy(facebook_auth, (accessToken, refreshToken, pro
     console.log(profile);
     User.findOneAndUpdate(
         { email: profile._json['email'] },
-        { googleID: profile.id, isVerified: true, emailToken: null },
+        { $set: {googleID: profile.id, isVerified: true, emailToken: null }},
         { returnDocument: true }
     ).then((currentUser) => {
         if(currentUser) {
