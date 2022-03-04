@@ -1680,7 +1680,13 @@ button:hover::before, .button:hover::before {
 .profil .container {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   background-color: #e4fbff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
 }
 
 .profil__info {
@@ -1690,9 +1696,6 @@ button:hover::before, .button:hover::before {
   display: -ms-flexbox;
   display: flex;
   gap: 2.5rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .profil__avatar img {

@@ -25,7 +25,11 @@
     .container {
         padding-top: 2rem;
         padding-bottom: 2rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
         background-color: $verylightBlue;
+        display: flex;
+        text-align: left;
     }
 
     &__info {
@@ -33,7 +37,6 @@
         position: relative;
         display: flex;
         gap: 2.5rem;
-        justify-content: center;
     }
 
     &__avatar {
