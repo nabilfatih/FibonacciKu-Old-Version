@@ -101,11 +101,17 @@
         border-radius: 5px;
         z-index: 1;
 
+        @include breakpoint-down(medium){
+            overflow-y: scroll;
+        }
+
         a {
             display: block;
             padding: 0.625rem;
             color: $darkBlue;
             text-align: center;
+
+            overflow-y: scroll;
         }
     }
 

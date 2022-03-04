@@ -397,11 +397,18 @@ button:hover::before, .button:hover::before {
   z-index: 1;
 }
 
+@media (max-width: 63.9375em) {
+  .header__menu {
+    overflow-y: scroll;
+  }
+}
+
 .header__menu a {
   display: block;
   padding: 0.625rem;
   color: #002651;
   text-align: center;
+  overflow-y: scroll;
 }
 
 .header__links a {
@@ -1692,6 +1699,7 @@ button:hover::before, .button:hover::before {
 
 @media (max-width: 39.9375em) {
   .profil .container {
+    padding-top: 0.5rem;
     padding-left: 0;
     padding-right: 0;
     -webkit-box-orient: vertical;
@@ -1800,6 +1808,14 @@ button:hover::before, .button:hover::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 39.9375em) {
+  .profil__username .nama .link {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .profil__username .nama .link a {

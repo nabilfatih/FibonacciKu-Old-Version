@@ -87,7 +87,7 @@ const sessionConfig = {
         httpOnly: true,
         // secure: true,
         expires: Date.now() + 1000 * 60 * 60 * 24 * 3,
-        maxAge: 1000 * 60 * 60 * 24 * 7
+        maxAge: 1000 * 60 * 60 * 24 * 3
     }
 }
 app.use(session(sessionConfig));
@@ -137,7 +137,7 @@ passport.use(new GoogleStrategy(google_auth, (accessToken, refreshToken, profile
     // console.log(profile);
     User.findOneAndUpdate(
         { email: profile._json.email },
-        { $set: { googleID: profile.id, isVerified: true, emailToken: null }},
+        { $set: { googleID: profile.id, isVerified: true, emailToken: null}},
         { returnDocument: true }
     ).then((currentUser) => {
         if(currentUser) {
@@ -165,7 +165,7 @@ passport.use(new GitHubStrategy(github_auth, (accessToken, refreshToken, profile
     // console.log(profile);
     User.findOneAndUpdate(
         { username: profile.username },
-        { $set: {githubID: profile.id, isVerified: true, emailToken: null }},
+        { $set: {githubID: profile.id, isVerified: true, emailToken: null, link: {github: profile.username}}},
         { returnDocument: true }
     ).then((currentUser) => {
         if(currentUser) {
@@ -179,7 +179,10 @@ passport.use(new GitHubStrategy(github_auth, (accessToken, refreshToken, profile
                 emailToken: null,
                 username: profile.username,
                 nama: profile.displayName,
-                avatar: profile._json.avatar_url
+                avatar: profile._json.avatar_url,
+                link: {
+                    github: profile.username
+                }
             }).save().then((newUser) => {
                 // console.log('new user created: ' + newUser)
                 done(null, newUser)

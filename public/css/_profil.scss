@@ -33,6 +33,7 @@
         text-align: left;
 
         @include breakpoint-down(small){
+            padding-top: 0.5rem;
             padding-left: 0;
             padding-right: 0;
             flex-direction: column;
@@ -107,6 +108,10 @@
 
             .link {
                 display: flex;
+
+                @include breakpoint-down(small){
+                    justify-content: center;
+                }
 
                 a {
                     border: 1px solid #ccc;
