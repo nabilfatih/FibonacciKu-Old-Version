@@ -76,8 +76,39 @@
         background-color: $verylightBlue;
         border-radius: .5rem;
         padding: .5rem 1rem .25rem;
-
         margin-bottom: 2rem;
+
+        .form-control {
+            padding: 0;
+            border: 0;
+            box-shadow: none;
+            outline: 0 none;
+            border-color: none;
+        }
+
+        textarea:focus,
+        textarea[type="text"]:focus,
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        input[type="datetime"]:focus,
+        input[type="datetime-local"]:focus,
+        input[type="date"]:focus,
+        input[type="month"]:focus,
+        input[type="time"]:focus,
+        input[type="week"]:focus,
+        input[type="number"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="color"]:focus,
+        .uneditable-input:focus {
+            border: none;
+            background: none;
+            border-color: none;
+            box-shadow: none;
+            outline: 0 none;
+        }
 
         input ,textarea {
             border: none;
@@ -97,6 +128,22 @@
 
             @include breakpoint-down(small){
                 font-size: 0.8rem;
+            }
+        }
+
+        i {
+            color: #828da0;
+            font-size: 1.2em;
+            margin-right: 0.625rem;
+            padding-bottom: 0.3125rem;
+        }
+
+        .eye-btn {
+            cursor: pointer;
+
+            i:hover {
+                color: #0065ff;
+                transition: 0.3s ease;
             }
         }
     }

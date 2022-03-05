@@ -44,19 +44,19 @@
                         <div class="pengaturan__konten">
                             <label for="" class="pengaturan__label form-label">Instagram</label>
                             <label class="mb-3 deskripsi" for="description">Username saja tanpa @</label>
-                            <input class="" type="email" id="email" class="pengaturan__input" value="<%= user.link.instagram %> ">
+                            <input class="" type="text" id="email" class="pengaturan__input" value="<%= user.link.instagram %> ">
                         </div>
 
                         <div class="pengaturan__konten">
                             <label for="" class="pengaturan__label form-label">Github</label>
                             <label class="mb-3 deskripsi" for="description">Username saja</label>
-                            <input class="" type="email" id="email" class="pengaturan__input" value="<%= user.link.github %> ">
+                            <input class="" type="text" id="email" class="pengaturan__input" value="<%= user.link.github %> ">
                         </div>
 
                         <div class="pengaturan__konten">
                             <label for="" class="pengaturan__label form-label">Twitter</label>
                             <label class="mb-3 deskripsi" for="description">Username saja tanpa @</label>
-                            <input class="" type="email" id="email" class="pengaturan__input" value="<%= user.link.twitter %> ">
+                            <input class="" type="text" id="email" class="pengaturan__input" value="<%= user.link.twitter %> ">
                         </div>
             
                         <div>
@@ -70,7 +70,7 @@
 
             <div class="pengaturan__card">
                 <div class="pengaturan__isi">
-                    <form class="pengaturan__form" action="" novalidate class="validated-form">
+                    <form class="pengaturan__form" action="" method="POST" name="theform" novalidate class="validated-form">
                         <div class="judul">
                             <h3>Password</h3>
                             <hr>
@@ -78,23 +78,36 @@
                         <div class="keterangan">
                             <p>Membuat password membuat kamu dapat masuk dengan username dan password Fibonacciku kamu.</p>
                         </div>
+                        <% if(user.password) { %> 
+                        <div class="pengaturan__konten">
+                            <label for="password" class="pengaturan__label form-label">Password Lama</label>
+                            <input class="password-input form-control" type="password" id="password" class="pengaturan__input" required>
+                            <div class="eye-btn"><i class="uil uil-eye-slash"></i></div>
+                            <div class="invalid-feedback">
+                                Masukkan password lama
+                            </div>
+                        </div>
+                        <% } %> 
                         <div class="pengaturan__konten">
                             <label for="password" class="pengaturan__label form-label">Password Baru</label>
-                            <input class="form-control" type="text" id="password" class="pengaturan__input" minlength="8" required>
+                            <input class="password-input form-control" type="password" id="password" class="pengaturan__input" minlength="8" required>
+                            <div class="eye-btn"><i class="uil uil-eye-slash"></i></div>
                             <div class="invalid-feedback">
                                 Masukkan password baru min.8 karakter
                             </div>
                         </div>
                         <div class="pengaturan__konten">
                             <label for="confirm" class="pengaturan__label form-label">Konfirmasi Password</label>
-                            <input class="form-control" type="text" id="confirm" class="pengaturan__input" required>
+                            <input class="password-input form-control" type="password" id="confirm" class="pengaturan__input" required>
+                            <div class="eye-btn"><i class="uil uil-eye-slash"></i></div>
+                            <div id="validation-message"></div>
                             <div class="invalid-feedback">
                                 Masukkan konfirmasi password
                             </div>
                         </div>
 
                         <div>
-                            <button type="submit">
+                            <button class="form-group" type="submit">
                                 Buat Password
                             </button>
                         </div>
@@ -105,6 +118,25 @@
     </div>
 </section>
 
+<script src="/js/profil/pengaturan.js" async></script>
+
 <script async>
     document.title = 'Pengaturan | FibonacciKu'
 </script>
+
+<script type="text/javascript" language="javascript" async>
+    //password show/hide button
+    const passwordInput = document.querySelector(".password-input");
+    const eyeBtn = document.querySelector(".eye-btn");
+
+    eyeBtn.addEventListener("click", (e) => {
+        if(passwordInput.type === "password") {
+            passwordInput.type = "text";
+            eyeBtn.innerHTML = "<i class='uil uil-eye'></i>"
+        }
+        else {
+            passwordInput.type = "password";
+            eyeBtn.innerHTML = "<i class='uil uil-eye-slash'></i>"
+        }
+    });
+</script> 

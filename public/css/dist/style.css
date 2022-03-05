@@ -1944,6 +1944,40 @@ button:hover::before, .button:hover::before {
   margin-bottom: 2rem;
 }
 
+.pengaturan__konten .form-control {
+  padding: 0;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0 none;
+  border-color: none;
+}
+
+.pengaturan__konten textarea:focus,
+.pengaturan__konten textarea[type="text"]:focus,
+.pengaturan__konten input[type="text"]:focus,
+.pengaturan__konten input[type="password"]:focus,
+.pengaturan__konten input[type="datetime"]:focus,
+.pengaturan__konten input[type="datetime-local"]:focus,
+.pengaturan__konten input[type="date"]:focus,
+.pengaturan__konten input[type="month"]:focus,
+.pengaturan__konten input[type="time"]:focus,
+.pengaturan__konten input[type="week"]:focus,
+.pengaturan__konten input[type="number"]:focus,
+.pengaturan__konten input[type="email"]:focus,
+.pengaturan__konten input[type="url"]:focus,
+.pengaturan__konten input[type="search"]:focus,
+.pengaturan__konten input[type="tel"]:focus,
+.pengaturan__konten input[type="color"]:focus,
+.pengaturan__konten .uneditable-input:focus {
+  border: none;
+  background: none;
+  border-color: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0 none;
+}
+
 .pengaturan__konten input, .pengaturan__konten textarea {
   border: none;
   border-color: none;
@@ -1964,6 +1998,23 @@ button:hover::before, .button:hover::before {
   .pengaturan__konten .deskripsi {
     font-size: 0.8rem;
   }
+}
+
+.pengaturan__konten i {
+  color: #828da0;
+  font-size: 1.2em;
+  margin-right: 0.625rem;
+  padding-bottom: 0.3125rem;
+}
+
+.pengaturan__konten .eye-btn {
+  cursor: pointer;
+}
+
+.pengaturan__konten .eye-btn i:hover {
+  color: #0065ff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .pengaturan__label {
