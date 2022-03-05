@@ -286,6 +286,10 @@ button:hover::before, .button:hover::before {
   }
 }
 
+.alert {
+  margin-top: 80px;
+}
+
 .alert .close span {
   margin-left: 0.5rem;
   font-weight: 1000;
@@ -1984,6 +1988,11 @@ button:hover::before, .button:hover::before {
 
 .pengaturan__form .judul hr {
   margin-bottom: 2.5rem;
+}
+
+.pengaturan__form .btn-valid-error {
+  background: gray;
+  color: white;
 }
 
 .pengaturan__konten {

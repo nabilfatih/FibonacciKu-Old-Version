@@ -7,6 +7,7 @@
 </style>
 
 <section class="pengaturans">
+    <%- include('../partials/flash') %>
     <div class="pengaturan container container--px">
         <div class="pengaturan__intro">
             <h1>Pengaturan</h1>
@@ -15,7 +16,7 @@
         <div class="pengaturan__grid">
             <div class="pengaturan__card">
                 <div class="pengaturan__isi">
-                    <form class="pengaturan__form" action="" method="POST" novalidate class="validated-form">
+                    <form class="pengaturan__form" action="/pengaturan/akun?_method=PUT" method="POST" novalidate class="validated-form">
                         <div class="judul">
                             <div class="pilihan-akun">
                                 <a href="/pengaturan/akun"><h3 class="akun">Akun</h3></a>
@@ -25,41 +26,41 @@
                         </div>
                         <div class="pengaturan__konten">
                             <label for="" class="pengaturan__label form-label">Nama Lengkap</label>
-                            <input class="" type="text" id="nama" class="pengaturan__input" value="<%= user.nama %> " required>
+                            <input class="" type="text" id="nama" class="pengaturan__input" value="<%= user.nama %>" name="nama" required>
                         </div>
                         <div class="pengaturan__konten">
                             <label for="" class="pengaturan__label form-label">Username</label>
                             <label class="mb-3 deskripsi" for="description">Username akan muncul di alamat FibonacciKu kamu.
                                 https://www.fibonacciku.com/fibo/</label>
-                            <input class="" type="text" id="username" class="pengaturan__input" value="<%= user.username %> " required>
+                            <input class="" type="text" id="username" class="pengaturan__input" value="<%= user.username %>" name="username" required>
                         </div>
                             
                         <div class="pengaturan__konten">
                             <label for="" class="pengaturan__label form-label">Email</label>
-                            <input class="" type="email" id="email" class="pengaturan__input" value="<%= user.email %> ">
+                            <input class="" type="email" id="email" class="pengaturan__input" value="<%= user.email %>" name="email">
                         </div>
         
                         <div class="pengaturan__konten">
                             <label for="" class="pengaturan__label form-label">Bio</label>
-                            <textarea class="" type="text" id="bio" cols="0" rows="4" maxlength="128" class="pengaturan__input" ></textarea>
+                            <textarea class="" type="text" id="bio" cols="0" rows="4" maxlength="128" class="pengaturan__input" name="bio"></textarea>
                         </div>
 
                         <div class="pengaturan__konten">
                             <label for="" class="pengaturan__label form-label">Instagram</label>
                             <label class="mb-3 deskripsi" for="description">Username saja tanpa @</label>
-                            <input class="" type="text" id="email" class="pengaturan__input" value="<%= user.link.instagram %> ">
+                            <input class="" type="text" id="email" class="pengaturan__input" value="<%= user.link.instagram %>" name="instagram">
                         </div>
 
                         <div class="pengaturan__konten">
-                            <label for="" class="pengaturan__label form-label">Github</label>
+                            <label for="" class="pengaturan__label form-label">GitHub</label>
                             <label class="mb-3 deskripsi" for="description">Username saja</label>
-                            <input class="" type="text" id="email" class="pengaturan__input" value="<%= user.link.github %> ">
+                            <input class="" type="text" id="email" class="pengaturan__input" value="<%= user.link.github %>" name="github">
                         </div>
 
                         <div class="pengaturan__konten">
                             <label for="" class="pengaturan__label form-label">Twitter</label>
                             <label class="mb-3 deskripsi" for="description">Username saja tanpa @</label>
-                            <input class="" type="text" id="email" class="pengaturan__input" value="<%= user.link.twitter %> ">
+                            <input class="" type="text" id="email" class="pengaturan__input" value="<%= user.link.twitter %>" name="twitter">
                         </div>
             
                         <div>
