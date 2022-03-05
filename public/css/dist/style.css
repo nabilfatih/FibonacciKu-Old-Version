@@ -2007,11 +2007,11 @@ button:hover::before, .button:hover::before {
   padding-bottom: 0.3125rem;
 }
 
-.pengaturan__konten .eye-btn {
+.pengaturan__konten .eye-btn1, .pengaturan__konten .eye-btn2 {
   cursor: pointer;
 }
 
-.pengaturan__konten .eye-btn i:hover {
+.pengaturan__konten .eye-btn1 i:hover, .pengaturan__konten .eye-btn2 i:hover {
   color: #0065ff;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;

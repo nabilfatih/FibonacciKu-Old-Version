@@ -90,16 +90,16 @@
                         <% } %> 
                         <div class="pengaturan__konten">
                             <label for="password" class="pengaturan__label form-label">Password Baru</label>
-                            <input class="password-input form-control" type="password" id="password" class="pengaturan__input" minlength="8" required>
-                            <div class="eye-btn"><i class="uil uil-eye-slash"></i></div>
+                            <input class="password-input1 form-control" type="password" id="password" class="pengaturan__input" minlength="8" required>
+                            <div class="eye-btn1"><i class="uil uil-eye-slash"></i></div>
                             <div class="invalid-feedback">
                                 Masukkan password baru min.8 karakter
                             </div>
                         </div>
                         <div class="pengaturan__konten">
                             <label for="confirm" class="pengaturan__label form-label">Konfirmasi Password</label>
-                            <input class="password-input form-control" type="password" id="confirm" class="pengaturan__input" required>
-                            <div class="eye-btn"><i class="uil uil-eye-slash"></i></div>
+                            <input class="password-input2 form-control" type="password" id="password" class="pengaturan__input" required>
+                            <div class="eye-btn2"><i class="uil uil-eye-slash"></i></div>
                             <div id="validation-message"></div>
                             <div class="invalid-feedback">
                                 Masukkan konfirmasi password
@@ -126,7 +126,11 @@
 
 <script type="text/javascript" language="javascript" async>
     //password show/hide button
+    const passwordInput1 = document.querySelector(".password-input1");
     const passwordInput = document.querySelector(".password-input");
+    const passwordInput2 = document.querySelector(".password-input2");
+    const eyeBtn1 = document.querySelector(".eye-btn1");
+    const eyeBtn2 = document.querySelector(".eye-btn2");
     const eyeBtn = document.querySelector(".eye-btn");
 
     eyeBtn.addEventListener("click", (e) => {
@@ -137,6 +141,26 @@
         else {
             passwordInput.type = "password";
             eyeBtn.innerHTML = "<i class='uil uil-eye-slash'></i>"
+        }
+    });
+    eyeBtn1.addEventListener("click", (e) => {
+        if(passwordInput1.type === "password") {
+            passwordInput1.type = "text";
+            eyeBtn1.innerHTML = "<i class='uil uil-eye'></i>"
+        }
+        else {
+            passwordInput1.type = "password";
+            eyeBtn1.innerHTML = "<i class='uil uil-eye-slash'></i>"
+        }
+    });
+    eyeBtn2.addEventListener("click", (e) => {
+        if(passwordInput2.type === "password") {
+            passwordInput2.type = "text";
+            eyeBtn2.innerHTML = "<i class='uil uil-eye'></i>"
+        }
+        else {
+            passwordInput2.type = "password";
+            eyeBtn2.innerHTML = "<i class='uil uil-eye-slash'></i>"
         }
     });
 </script> 
