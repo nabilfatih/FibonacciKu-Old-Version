@@ -259,7 +259,7 @@ app.get('/', isLoggedOut, (req, res) => {
 });
 
 app.all('*', (req, res, next) => {
-    next(new ExpressError('Page Not Found :(', 404))
+    next(new ExpressError('Halaman Tidak Ditemukan :(', 404))
 })
 
 app.use((err, req, res, next) => {

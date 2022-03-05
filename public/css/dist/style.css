@@ -1848,6 +1848,138 @@ button:hover::before, .button:hover::before {
   margin-bottom: 0;
 }
 
+.pengaturans {
+  background-color: #fff8f3;
+}
+
+.pengaturan {
+  background-color: #fff8f3;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 18rem;
+  padding-right: 18rem;
+}
+
+@media (max-width: 63.9375em) {
+  .pengaturan {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .pengaturan {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.pengaturan__intro {
+  text-align: center;
+}
+
+.pengaturan__intro h1 {
+  text-align: center;
+  font-weight: 1000;
+}
+
+.pengaturan__grid {
+  gap: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 39.9375em) {
+  .pengaturan__grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.pengaturan__card {
+  padding: 2rem;
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, right top, from(#aefeff), to(#cddeff));
+  background: linear-gradient(to right, #aefeff, #cddeff);
+}
+
+@media (min-width: 40em) {
+  .pengaturan__card {
+    -webkit-box-flex: 2;
+        -ms-flex: 2 1 100%;
+            flex: 2 1 100%;
+  }
+}
+
+@media (min-width: 64em) {
+  .pengaturan__card {
+    -webkit-box-flex: 2;
+        -ms-flex: 2 1 100%;
+            flex: 2 1 100%;
+  }
+}
+
+.pengaturan__form .judul h3 {
+  font-weight: 1000;
+}
+
+.pengaturan__konten {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #e4fbff;
+  border-radius: .5rem;
+  padding: .5rem 1rem .25rem;
+  margin-bottom: 2rem;
+}
+
+.pengaturan__konten input, .pengaturan__konten textarea {
+  border: none;
+  border-color: none;
+  outline: 0 none;
+  background: none;
+  width: 100%;
+  font-size: 1em;
+  padding-bottom: 0.3125rem;
+}
+
+.pengaturan__konten .deskripsi {
+  font-size: 0.9rem;
+  color: gray;
+  white-space: pre-line;
+}
+
+@media (max-width: 39.9375em) {
+  .pengaturan__konten .deskripsi {
+    font-size: 0.8rem;
+  }
+}
+
+.pengaturan__label {
+  font-size: 1rem;
+}
+
+.pengaturan__input {
+  width: 100%;
+  background-color: #e4fbff;
+  font-size: medium;
+  border: none;
+  outline: none;
+  padding: .25rem .5rem .5rem 0;
+  resize: none;
+}
+
 .kontak {
   padding-top: 3rem;
   padding-bottom: 3rem;

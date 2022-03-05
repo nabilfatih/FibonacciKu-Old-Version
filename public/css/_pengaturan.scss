@@ -1,0 +1,118 @@
+.pengaturans {
+    background-color: $cream;
+}
+
+.pengaturan {
+
+    background-color: $cream;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 18rem;
+    padding-right: 18rem;
+
+    @include breakpoint-down(medium){
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    @include breakpoint-down(small){
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    &__intro {
+
+        text-align: center;
+
+        h1 {
+            text-align: center;
+            font-weight: 1000;
+        }
+    }
+
+    &__grid {
+        gap: 2.5rem;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        @include breakpoint-down(small) {
+            flex-direction: column;
+        }
+    }
+
+    &__card {
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 3px 3px 6px 0 rgba(0,0,0,.2);
+        background: linear-gradient(to right, $blueSky, $lightPurple);
+
+        @include breakpoint-up(medium){
+            flex: 2 1 100%;
+        }
+
+        @include breakpoint-up(large){
+            flex: 2 1 100%;
+        }
+    }
+
+    &__isi {
+
+    }
+
+    &__form {
+
+        .judul {
+            h3 {
+                font-weight: 1000;
+            }
+        }
+    }
+
+    &__konten {
+
+        display: flex;
+        flex-direction: column;
+        background-color: $verylightBlue;
+        border-radius: .5rem;
+        padding: .5rem 1rem .25rem;
+
+        margin-bottom: 2rem;
+
+        input ,textarea {
+            border: none;
+            border-color: none;
+            outline: 0 none;
+            background: none;
+            width: 100%;
+            font-size: 1em;
+            padding-bottom: 0.3125rem;
+        }
+
+        .deskripsi {
+            font-size: 0.9rem;
+            color: gray;
+
+            white-space: pre-line;
+
+            @include breakpoint-down(small){
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    &__label {
+        font-size: 1rem;
+    }
+
+    &__input {
+
+        width: 100%;
+        background-color: $verylightBlue;
+        font-size: medium;
+        border: none;
+        outline: none;
+        padding: .25rem .5rem .5rem 0;
+        resize: none;
+    }
+}
