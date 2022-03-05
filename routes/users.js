@@ -21,7 +21,8 @@ router.post('/daftar', catchAsync(async(req, res) => {
         nama: req.body.nama,
         username: req.body.username.toLowerCase(),
         emailToken: crypto.randomBytes(64).toString('hex'),
-        isVerified: false
+        isVerified: false,
+        isPassword: true
     });
 
     User.register(newUser, req.body.password, async(err, user) => {

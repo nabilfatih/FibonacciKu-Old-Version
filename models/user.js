@@ -71,6 +71,10 @@ const UserSchema = new Schema({
             required: false
         }
     },
+    isPassword: {
+        type: Boolean,
+        default: false
+    },
     resetPasswordToken: String,
     resetPasswordExpires: Date,
     isAdmin: {
@@ -80,7 +84,7 @@ const UserSchema = new Schema({
 }, {timestamps: true});
 
 UserSchema.index({ createdAt: 1 }, {
-    expireAfterSeconds: 3 * 24 * 60 * 60,
+    expireAfterSeconds: 1 * 24 * 60 * 60,
     partialFilterExpression: {
         isVerified: false
     }

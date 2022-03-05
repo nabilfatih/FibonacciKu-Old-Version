@@ -77,6 +77,7 @@ module.exports.putReset = async(req, res, next) => {
         await user.setPassword(req.body.password);
         user.resetPasswordToken = null;
         user.resetPasswordExpires = null;
+        user.isPassword = true;
         await user.save();
         const login = util.promisify(req.login.bind(req));
         await login(user);
