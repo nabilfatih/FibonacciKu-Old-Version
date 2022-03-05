@@ -133,8 +133,8 @@ passport.deserializeUser((id, done) => {
 })
 
 passport.use(new GoogleStrategy(google_auth, (accessToken, refreshToken, profile, done) => {
-    console.log('Google Profile');
-    console.log(profile);
+    // console.log('Google Profile');
+    // console.log(profile);
     User.findOneAndUpdate(
         { email: profile._json.email },
         { $set: { googleID: profile.id, isVerified: true, emailToken: null}},
@@ -164,7 +164,10 @@ passport.use(new GitHubStrategy(github_auth, (accessToken, refreshToken, profile
     // console.log('GitHub Profile');
     // console.log(profile);
     User.findOneAndUpdate(
-        { email: profile._json.email },
+        { $or: [
+            { email: profile._json.email },
+            { username: profile.username }
+        ] },
         { $set: {githubID: profile.id, isVerified: true, emailToken: null, link: {github: profile.username}}},
         { returnDocument: true }
     ).then((currentUser) => {

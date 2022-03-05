@@ -59,8 +59,57 @@
     &__form {
 
         .judul {
-            h3 {
-                font-weight: 1000;
+
+            .pilihan-akun {
+                display: flex;
+                gap: 1.5rem;
+                align-items: center;
+
+                h3 {
+                    font-weight: 1000;
+                }
+
+                .akun {
+                    text-decoration: underline;
+                }
+
+                .password {
+                    color: gray;
+
+                    &:hover {
+                        color: $darkBlue;
+                        opacity: 0.7;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .pilihan-password {
+                display: flex;
+                gap: 1.5rem;
+                align-items: center;
+
+                h3 {
+                    font-weight: 1000;
+                }
+
+                .akun {
+                    color: gray;
+
+                    &:hover {
+                        color: $darkBlue;
+                        opacity: 0.7;
+                        text-decoration: underline;
+                    }
+                }
+
+                .password {
+                    text-decoration: underline;
+                }
+            }
+
+            hr {
+                margin-bottom: 2.5rem;
             }
         }
     }
@@ -134,7 +183,7 @@
             padding-bottom: 0.3125rem;
         }
 
-        .eye-btn1, .eye-btn2 {
+        .eye-btn1, .eye-btn2, .eye-btn {
             cursor: pointer;
 
             i:hover {

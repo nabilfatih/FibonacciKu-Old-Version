@@ -1926,8 +1926,64 @@ button:hover::before, .button:hover::before {
   }
 }
 
-.pengaturan__form .judul h3 {
+.pengaturan__form .judul .pilihan-akun {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pengaturan__form .judul .pilihan-akun h3 {
   font-weight: 1000;
+}
+
+.pengaturan__form .judul .pilihan-akun .akun {
+  text-decoration: underline;
+}
+
+.pengaturan__form .judul .pilihan-akun .password {
+  color: gray;
+}
+
+.pengaturan__form .judul .pilihan-akun .password:hover {
+  color: #002651;
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+.pengaturan__form .judul .pilihan-password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pengaturan__form .judul .pilihan-password h3 {
+  font-weight: 1000;
+}
+
+.pengaturan__form .judul .pilihan-password .akun {
+  color: gray;
+}
+
+.pengaturan__form .judul .pilihan-password .akun:hover {
+  color: #002651;
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+.pengaturan__form .judul .pilihan-password .password {
+  text-decoration: underline;
+}
+
+.pengaturan__form .judul hr {
+  margin-bottom: 2.5rem;
 }
 
 .pengaturan__konten {
@@ -2007,11 +2063,11 @@ button:hover::before, .button:hover::before {
   padding-bottom: 0.3125rem;
 }
 
-.pengaturan__konten .eye-btn1, .pengaturan__konten .eye-btn2 {
+.pengaturan__konten .eye-btn1, .pengaturan__konten .eye-btn2, .pengaturan__konten .eye-btn {
   cursor: pointer;
 }
 
-.pengaturan__konten .eye-btn1 i:hover, .pengaturan__konten .eye-btn2 i:hover {
+.pengaturan__konten .eye-btn1 i:hover, .pengaturan__konten .eye-btn2 i:hover, .pengaturan__konten .eye-btn i:hover {
   color: #0065ff;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;

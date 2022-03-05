@@ -37,7 +37,7 @@ const UserSchema = new Schema({
     nama: {
         type: String,
         required: true,
-        unique: true
+        unique: false
     },
     password: {
         type: String,
