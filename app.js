@@ -106,19 +106,19 @@ const config = {
 };
 
 const google_auth = {
-    callbackURL: '/auth/google/callback',
+    callbackURL: 'http://localhost:3000/auth/google/callback',
     clientID: config.GoogleClientID,
     clientSecret: config.GoogleClientSECRET
 }
 
 const github_auth = {
-    callbackURL: '/auth/github/callback',
+    callbackURL: 'http://localhost:3000/auth/github/callback',
     clientID: config.GitHubClientID,
     clientSecret: config.GitHubClientSECRET
 }
 
 const facebook_auth = {
-    callbackURL: '/auth/facebook/callback',
+    callbackURL: 'http://localhost:3000/auth/facebook/callback',
     clientID: config.FacebookClientID,
     clientSecret: config.FacebookClientSECRET
 }
@@ -133,8 +133,8 @@ passport.deserializeUser((id, done) => {
 })
 
 passport.use(new GoogleStrategy(google_auth, (accessToken, refreshToken, profile, done) => {
-    // console.log('Google Profile');
-    // console.log(profile);
+    console.log('Google Profile');
+    console.log(profile);
     User.findOneAndUpdate(
         { email: profile._json.email },
         { $set: { googleID: profile.id, isVerified: true, emailToken: null}},
