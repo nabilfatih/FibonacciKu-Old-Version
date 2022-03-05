@@ -2073,6 +2073,11 @@ button:hover::before, .button:hover::before {
   transition: 0.3s ease;
 }
 
+.pengaturan__konten .valid-error {
+  font-size: 1rem;
+  color: red;
+}
+
 .pengaturan__label {
   font-size: 1rem;
 }
