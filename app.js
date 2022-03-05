@@ -149,7 +149,7 @@ passport.use(new GoogleStrategy(google_auth, (accessToken, refreshToken, profile
                 email: profile._json.email,
                 isVerified: true,
                 emailToken: null,
-                username: profile._json.given_name.toLowerCase() + profile._json.family_name.toLowerCase(),
+                username: profile._json.email.replace('@gmail.com', ''),
                 nama: profile.displayName,
                 avatar: profile._json.picture
             }).save().then((newUser) => {
