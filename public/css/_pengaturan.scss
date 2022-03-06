@@ -44,7 +44,7 @@
     &__card {
         padding: 2rem;
         border-radius: 15px;
-        box-shadow: 3px 3px 6px 0 rgba(0,0,0,.2);
+        box-shadow: 0 0 20px rgba(0,0,0,.2);
         background: linear-gradient(to right, $blueSky, $lightPurple);
 
         @include breakpoint-up(medium){

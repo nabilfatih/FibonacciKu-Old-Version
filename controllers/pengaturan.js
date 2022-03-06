@@ -22,5 +22,5 @@ module.exports.updateProfile = async (req, res) => {
     const login = util.promisify(req.login.bind(req));
     await login(user);
     req.flash('success', 'Profil Sudah Dirubah!')
-    res.redirect(`/fibo/${user.username}`)
+    res.redirect('/pengaturan/akun')
 }

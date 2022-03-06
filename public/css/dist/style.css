@@ -1908,8 +1908,8 @@ button:hover::before, .button:hover::before {
 .pengaturan__card {
   padding: 2rem;
   border-radius: 15px;
-  -webkit-box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   background: -webkit-gradient(linear, left top, right top, from(#aefeff), to(#cddeff));
   background: linear-gradient(to right, #aefeff, #cddeff);
 }
@@ -2204,8 +2204,8 @@ button:hover::before, .button:hover::before {
   gap: 1.5rem;
   padding: 1.5rem;
   border-radius: 15px;
-  -webkit-box-shadow: 4px 3px 6px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 4px 3px 6px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   background: -webkit-gradient(linear, left top, right top, from(#aefeff), to(#cddeff));
   background: linear-gradient(to right, #aefeff, #cddeff);
 }
