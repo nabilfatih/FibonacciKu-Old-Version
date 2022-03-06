@@ -16,6 +16,7 @@ module.exports.password = async (req, res) => {
 module.exports.updateProfile = async (req, res) => {
     const user = req.user
     const emailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    const letterformat = /[a-zA-Z]/;
     const { nama, username, email, bio, instagram, github, twitter } = req.body
     const existingUser = await User.findOne({ username: username })
     if(!nama) {
@@ -27,7 +28,7 @@ module.exports.updateProfile = async (req, res) => {
         return res.redirect('/pengaturan/akun')
     }
     try {
-        if (nama) user.nama = nama;
+        if (nama.match(letterformat)) user.nama = nama;
         if (username) user.username = username;
         if(email.match(emailformat) || (!email)) user.email = email;
         user.bio = bio;
