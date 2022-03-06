@@ -37,14 +37,30 @@ module.exports.isNotVerified = async (req, res, next) => {
 }
 
 module.exports.isValidPassword = async (req, res, next) => {
+    const users = await User.findOne({ username: req.user.username })
     const { user } = await User.authenticate()(req.user.username, req.body.currentPassword);
-    if (user) {
-        res.locals.user = user;
-        next();
+
+    if(users.isPassword) {
+        if(user) {
+            res.locals.user = user;
+            return next();
+        }
+        else if(!user) {
+            req.flash('error', 'Password Lama Salah!')
+            return res.redirect('/pengaturan/password')
+        }
     }
     else {
-        req.flash('error', 'Password Lama Salah!')
-        return res.redirect('/pengaturan/password')
+        if(!req.body.currentPassword) {
+            if(users) {
+                res.locals.user = users;
+                return next();
+            }
+            else {
+                req.flash('error', 'Gagal Ganti Password!');
+                return res.redirect('/pengaturan/password');
+            }
+        }
     }
 }
 
@@ -57,19 +73,21 @@ module.exports.changePassword = async (req, res, next) => {
     if (newPassword && passwordConfirmation) {
         const { user } = res.locals;
         if (newPassword === passwordConfirmation) {
-            await user.setPassword(newPassword)
+            await user.setPassword(newPassword);
+            user.isPassword = true;
             await user.save();
             const login = util.promisify(req.login.bind(req));
-            await login(user);
+            await login(user)
         }
         else {
             req.flash('error', 'Password baru harus sama!');
             return res.redirect('/pengaturan/password');
         }
-        req.flash('success', 'Password sudah dirubah!');
-        res.redirect('/pengaturan/password')
     }
     else {
-        next();
+        req.flash('Gagal Ganti Password!')
+        res.redirect('/pengaturan/password')
     }
+    req.flash('success', 'Password sudah dirubah!');
+    res.redirect('/pengaturan/password')
 }

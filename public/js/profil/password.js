@@ -7,6 +7,7 @@ const newPassword = document.getElementById('password-baru');
 const confirmation = document.getElementById('password-konfirmasi');
 const validationMessageKonfirmasi = document.getElementById('validation-message-konfirmasi');
 const validationMessageBaru = document.getElementById('validation-message-baru');
+const validationMessageLama = document.getElementById('validation-message-lama');
 
 function validatePasswordsKonfirmasi(message, add, remove) {
     validationMessageKonfirmasi.textContent = message;
@@ -18,6 +19,12 @@ function validatePasswordsBaru(message, add, remove) {
     validationMessageBaru.textContent = message;
     validationMessageBaru.classList.add(add)
     validationMessageBaru.classList.remove(remove)
+}
+
+function validatePasswordsLama(message, add, remove) {
+    validationMessageLama.textContent = message;
+    validationMessageLama.classList.add(add)
+    validationMessageLama.classList.remove(remove)
 }
 
 newPassword.addEventListener('input', e => {
@@ -46,8 +53,8 @@ confirmation.addEventListener('input', e => {
 const button = document.getElementById('btn-submit')
 button.disabled = true;
 
-function checkPassword(old, news, confirm) {
-    if((oldPasswordvalue == "") || (newPasswordValue == "") || (confirmationValue == "" ) || (newPasswordValue.length < 8) || (newPasswordValue !== confirmationValue)) {
+function checkPassword(oldPasswordvalue, newPasswordValue, confirmationValue) {
+    if((!newPasswordValue) || (!confirmationValue) || (newPasswordValue.length < 8) || (newPasswordValue !== confirmationValue)) {
         button.disabled = true;
         button.classList.add('btn-valid-error')
     }
@@ -57,17 +64,9 @@ function checkPassword(old, news, confirm) {
     }
 }
 
-oldPassword.addEventListener('keyup', e => {
-    e.preventDefault();
-    oldPasswordvalue = oldPassword.value;
-    newPasswordValue = newPassword.value;
-    confirmationValue = confirmation.value;
-    checkPassword(oldPasswordvalue, newPasswordValue, confirmationValue)
-})
-
 newPassword.addEventListener('keyup', e => {
     e.preventDefault();
-    oldPasswordvalue = oldPassword.value;
+    // oldPasswordvalue = oldPassword.value;
     newPasswordValue = newPassword.value;
     confirmationValue = confirmation.value;
     checkPassword(oldPasswordvalue, newPasswordValue, confirmationValue)
@@ -75,8 +74,30 @@ newPassword.addEventListener('keyup', e => {
 
 confirmation.addEventListener('keyup', e => {
     e.preventDefault();
-    oldPasswordvalue = oldPassword.value;
+    // oldPasswordvalue = oldPassword.value;
     newPasswordValue = newPassword.value;
     confirmationValue = confirmation.value;
     checkPassword(oldPasswordvalue, newPasswordValue, confirmationValue)
 })
+
+// oldPassword.addEventListener('keyup', e => {
+//     e.preventDefault();
+//     oldPasswordvalue = oldPassword.value;
+//     newPasswordValue = newPassword.value;
+//     confirmationValue = confirmation.value;
+//     checkPassword(oldPasswordvalue, newPasswordValue, confirmationValue)
+// });
+
+
+validationMessageLama.textContent = 'Masukkan Password Lama!';
+oldPassword.addEventListener('input', e => {
+    e.preventDefault()
+    oldPasswordvalue = oldPassword.value;
+
+    if(oldPasswordvalue) {
+        validatePasswordsLama('', '', 'valid-error');
+    } else {
+        validatePasswordsLama('Masukkan Password Lama!', 'valid-error', 'valid-sukses')
+    }
+})
+
