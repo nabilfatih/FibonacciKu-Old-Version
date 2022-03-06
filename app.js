@@ -167,10 +167,7 @@ passport.use(new GitHubStrategy(github_auth, (accessToken, refreshToken, profile
     // console.log('GitHub Profile');
     // console.log(profile);
     User.findOneAndUpdate(
-        { $or: [
-            { email: profile._json.email },
-            { username: profile.username }
-        ] },
+        { username: profile.username },
         { $set: {githubID: profile.id, isVerified: true, emailToken: null, link: {github: profile.username}}},
         { returnDocument: true }
     ).then((currentUser) => {

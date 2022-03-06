@@ -85,11 +85,8 @@ email.addEventListener('input', e => {
     if(emailValue.match(mailformat)) {
         validateEmail('', '', 'valid-error');
     } 
-    else if(emailValue == "") {
-        validateEmail('', '', 'valid-error')
-    }
     else {
-        validateEmail('Masukkan Email yang Valid!', 'valid-error', 'valid-sukses')
+        validateEmail('Email harus diisi yang valid!', 'valid-error', 'valid-sukses')
     }
 })
 
@@ -128,7 +125,7 @@ email.addEventListener('keyup', e => {
     namavalue = nama.value;
     usernameValue = username.value;
     emailValue = email.value;
-    if(emailValue == "" || emailValue.match(mailformat)) {
+    if(emailValue.match(mailformat)) {
         button.disabled = false;
         button.classList.remove('btn-valid-error')
     }

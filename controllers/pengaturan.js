@@ -20,30 +20,38 @@ module.exports.updateProfile = async (req, res) => {
     const { nama, username, email, bio, instagram, github, twitter } = req.body
     const existingUser = await User.findOne({ username: username })
     if(!nama) {
-        req.flash('error', 'Masukkan Nama Kamu!')
+        req.flash('error', 'Masukkan nama kamu!')
         return res.redirect('/pengaturan/akun')
     }
     if (!username) {
-        req.flash('error', 'Masukkan Username Kamu!')
+        req.flash('error', 'Masukkan username kamu!')
+        return res.redirect('/pengaturan/akun')
+    }
+    if (!email) {
+        req.flash('error', 'Masukkan email kamu!')
         return res.redirect('/pengaturan/akun')
     }
     try {
         if (nama.match(letterformat)) user.nama = nama;
         if (username) user.username = username;
-        if(email.match(emailformat) || (!email)) user.email = email;
+        if(email.match(emailformat)) user.email = email;
         user.bio = bio;
         user.link.instagram = instagram;
         user.link.github = github;
         user.link.twitter = twitter;
         await user.save();
     } catch(e) {
-        req.flash('error', 'Username atau email sudah ada yang punya!')
+        if(e.toString().includes('username')) {
+            req.flash('error', 'Username sudah ada yang punya!')
+        }
+        if(e.toString().includes('email')) {
+            req.flash('error', 'Email sudah ada yang punya!')
+        }
         return res.redirect('/pengaturan/akun')
     }
     const login = util.promisify(req.login.bind(req));
     await login(user);
 
-    
     req.flash('success', 'Profil Sudah Dirubah!')
     res.redirect('/pengaturan/akun')
 }
