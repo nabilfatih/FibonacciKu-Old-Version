@@ -53,6 +53,30 @@ function validateTwitter(message, add, remove) {
 
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
+nama.addEventListener('input', e => {
+    e.preventDefault();
+    namaValue = nama.value;
+
+    if(namaValue == "") {
+        validateNama('Masukkan Nama Kamu!', 'valid-error', 'valid-sukses')
+    }
+    else {
+        validateNama('', '', 'valid-error')
+    }
+})
+
+username.addEventListener('input', e => {
+    e.preventDefault();
+    usernameValue = username.value;
+
+    if(usernameValue == "") {
+        validateUsername('Masukkan Username!', 'valid-error', 'valid-sukses')
+    }
+    else {
+        validateUsername('', '', 'valid-error')
+    }
+})
+
 email.addEventListener('input', e => {
     e.preventDefault()
     emailValue = email.value;
