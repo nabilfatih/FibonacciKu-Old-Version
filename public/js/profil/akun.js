@@ -97,17 +97,13 @@ const button = document.getElementById('btn-submit')
 button.disabled = true;
 
 function checkAkun(nama, username, email) {
-    // if(!email) {
-    //     button.disabled = false;
-    //     button.classList.remove('btn-valid-error')
-    // }
-    if((nama == "") || (!nama.match(letterformat)) || (username == "")) {
-        button.disabled = true;
-        button.classList.add('btn-valid-error')
-    }
-    else {
+    if((!nama) || (!username) || (nama.match(letterformat)) || (email.match(mailformat))){
         button.disabled = false;
         button.classList.remove('btn-valid-error')
+    }
+    else {
+        button.disabled = true;
+        button.classList.add('btn-valid-error')
     }
 }
 
@@ -132,12 +128,13 @@ email.addEventListener('keyup', e => {
     namavalue = nama.value;
     usernameValue = username.value;
     emailValue = email.value;
-    if(emailValue == "") {
+    if(emailValue == "" || emailValue.match(mailformat)) {
         button.disabled = false;
         button.classList.remove('btn-valid-error')
     }
     else {
-        checkAkun(namavalue, usernameValue, emailValue);
+        button.disabled = true;
+        button.classList.add('btn-valid-error')
     }
 })
 
