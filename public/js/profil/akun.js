@@ -52,12 +52,13 @@ function validateTwitter(message, add, remove) {
 }
 
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+var letterformat = /[a-zA-Z]/;
 
 nama.addEventListener('input', e => {
     e.preventDefault();
     namaValue = nama.value;
 
-    if(namaValue == "") {
+    if(namaValue == "" || (!namaValue.match(letterformat))) {
         validateNama('Masukkan Nama Kamu!', 'valid-error', 'valid-sukses')
     }
     else {
@@ -96,11 +97,11 @@ const button = document.getElementById('btn-submit')
 button.disabled = true;
 
 function checkAkun(nama, username, email) {
-    if(email == "") {
-        button.disabled = false;
-        button.classList.remove('btn-valid-error')
-    }
-    else if((nama == "") || (username == "") || (!(email.match(mailformat)))) {
+    // if(email == "") {
+    //     button.disabled = false;
+    //     button.classList.remove('btn-valid-error')
+    // }
+    if((nama == "") || (!nama.match(letterformat)) || (username == "") || (!(email.match(mailformat)))) {
         button.disabled = true;
         button.classList.add('btn-valid-error')
     }
@@ -131,5 +132,44 @@ email.addEventListener('keyup', e => {
     namavalue = nama.value;
     usernameValue = username.value;
     emailValue = email.value;
-    checkAkun(namavalue, usernameValue, emailValue);
+    if(emailValue == "") {
+        button.disabled = false;
+        button.classList.remove('btn-valid-error')
+    }
+    else {
+        checkAkun(namavalue, usernameValue, emailValue);
+    }
+})
+
+instagram.addEventListener('keyup', e => {
+    e.preventDefault();
+    instagramValue = instagram.value;
+    if(instagramValue != "") {
+        button.disabled = false;
+        button.classList.remove('btn-valid-error')
+    }
+})
+twitter.addEventListener('keyup', e => {
+    e.preventDefault();
+    twitterValue = twitter.value;
+    if(twitterValue != "") {
+        button.disabled = false;
+        button.classList.remove('btn-valid-error')
+    }
+})
+github.addEventListener('keyup', e => {
+    e.preventDefault();
+    githubValue = github.value;
+    if(githubValue != "") {
+        button.disabled = false;
+        button.classList.remove('btn-valid-error')
+    }
+})
+bio.addEventListener('keyup', e => {
+    e.preventDefault();
+    bioValue = bio.value;
+    if(bioValue != "") {
+        button.disabled = false;
+        button.classList.remove('btn-valid-error')
+    }
 })
