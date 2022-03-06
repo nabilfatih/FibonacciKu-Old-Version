@@ -136,7 +136,10 @@ passport.use(new GoogleStrategy(google_auth, (accessToken, refreshToken, profile
     // console.log('Google Profile');
     // console.log(profile);
     User.findOneAndUpdate(
-        { email: profile._json.email },
+        { $or: [
+            { email: profile._json.email },
+            { username: profile._json.email.replace('@gmail.com', '') }
+        ] },
         { $set: { googleID: profile.id, isVerified: true, emailToken: null}},
         { returnDocument: true }
     ).then((currentUser) => {

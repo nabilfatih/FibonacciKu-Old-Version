@@ -21,7 +21,8 @@ const UserSchema = new Schema({
     email: {
         type: String,
         required: false,
-        unique: true
+        unique: true,
+        default: null
     },
     emailToken: String,
     isVerified: {
@@ -39,10 +40,6 @@ const UserSchema = new Schema({
         required: true,
         unique: false
     },
-    password: {
-        type: String,
-        required: false,
-    },
     avatar: {
         type: String,
         required: false,
@@ -55,20 +52,24 @@ const UserSchema = new Schema({
     },
     bio: {
         type: String,
-        required: false
+        required: false,
+        default: null
     },
     link: {
         instagram: {
             type: String,
-            required: false
+            required: false,
+            default: null
         },
         github: {
             type: String,
-            required: false
+            required: false,
+            default: null
         },
         twitter: {
             type: String,
-            required: false
+            required: false,
+            default: null
         }
     },
     isPassword: {

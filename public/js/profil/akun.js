@@ -97,11 +97,11 @@ const button = document.getElementById('btn-submit')
 button.disabled = true;
 
 function checkAkun(nama, username, email) {
-    // if(email == "") {
+    // if(!email) {
     //     button.disabled = false;
     //     button.classList.remove('btn-valid-error')
     // }
-    if((nama == "") || (!nama.match(letterformat)) || (username == "") || (!(email.match(mailformat)))) {
+    if((nama == "") || (!nama.match(letterformat)) || (username == "")) {
         button.disabled = true;
         button.classList.add('btn-valid-error')
     }
@@ -148,11 +148,19 @@ instagram.addEventListener('keyup', e => {
         button.disabled = false;
         button.classList.remove('btn-valid-error')
     }
+    else {
+        button.disabled = false;
+        button.classList.remove('btn-valid-error')
+    }
 })
 twitter.addEventListener('keyup', e => {
     e.preventDefault();
     twitterValue = twitter.value;
     if(twitterValue != "") {
+        button.disabled = false;
+        button.classList.remove('btn-valid-error')
+    }
+    else {
         button.disabled = false;
         button.classList.remove('btn-valid-error')
     }
@@ -164,11 +172,19 @@ github.addEventListener('keyup', e => {
         button.disabled = false;
         button.classList.remove('btn-valid-error')
     }
+    else {
+        button.disabled = false;
+        button.classList.remove('btn-valid-error')
+    }
 })
 bio.addEventListener('keyup', e => {
     e.preventDefault();
     bioValue = bio.value;
     if(bioValue != "") {
+        button.disabled = false;
+        button.classList.remove('btn-valid-error')
+    }
+    else {
         button.disabled = false;
         button.classList.remove('btn-valid-error')
     }
