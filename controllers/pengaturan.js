@@ -18,7 +18,6 @@ module.exports.updateProfile = async (req, res) => {
     const emailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     const letterformat = /[a-zA-Z]/;
     const { nama, username, email, bio, instagram, github, twitter } = req.body
-    const existingUser = await User.findOne({ username: username })
     if(!nama) {
         req.flash('error', 'Masukkan nama kamu!')
         return res.redirect('/pengaturan/akun')
