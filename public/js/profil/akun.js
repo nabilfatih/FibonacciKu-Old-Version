@@ -1,1 +1,111 @@
 const form = document.querySelector('pengaturan__form');
+const nama = document.getElementById('nama');
+const username = document.getElementById('username');
+const email = document.getElementById('email');
+const bio = document.getElementById('bio');
+const instagram = document.getElementById('instagram');
+const github = document.getElementById('github');
+const twitter = document.getElementById('twitter');
+
+const validationMessageNama = document.getElementById('validation-message-nama');
+const validationMessageUsername = document.getElementById('validation-message-username');
+const validationMessageEmail = document.getElementById('validation-message-email');
+const validationMessageBio = document.getElementById('validation-message-bio');
+const validationMessageInstagram = document.getElementById('validation-message-instagram');
+const validationMessageGithub = document.getElementById('validation-message-github');
+const validationMessageTwitter = document.getElementById('validation-message-twitter');
+
+function validateNama(message, add, remove) {
+    validationMessageNama.textContent = message;
+    validationMessageNama.classList.add(add)
+    validationMessageNama.classList.remove(remove)
+}
+function validateUsername(message, add, remove) {
+    validationMessageUsername.textContent = message;
+    validationMessageUsername.classList.add(add)
+    validationMessageUsername.classList.remove(remove)
+}
+function validateEmail(message, add, remove) {
+    validationMessageEmail.textContent = message;
+    validationMessageEmail.classList.add(add)
+    validationMessageEmail.classList.remove(remove)
+}
+function validateBio(message, add, remove) {
+    validationMessageBio.textContent = message;
+    validationMessageBio.classList.add(add)
+    validationMessageBio.classList.remove(remove)
+}
+function validateInstagram(message, add, remove) {
+    validationMessageInstagram.textContent = message;
+    validationMessageInstagram.classList.add(add)
+    validationMessageInstagram.classList.remove(remove)
+}
+function validateGithub(message, add, remove) {
+    validationMessageGithub.textContent = message;
+    validationMessageGithub.classList.add(add)
+    validationMessageGithub.classList.remove(remove)
+}
+function validateTwitter(message, add, remove) {
+    validationMessageTwitter.textContent = message;
+    validationMessageTwitter.classList.add(add)
+    validationMessageTwitter.classList.remove(remove)
+}
+
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+email.addEventListener('input', e => {
+    e.preventDefault()
+    emailValue = email.value;
+
+    if(emailValue.match(mailformat)) {
+        validateEmail('', '', 'valid-error');
+    } 
+    else if(emailValue == "") {
+        validateEmail('', '', 'valid-error')
+    }
+    else {
+        validateEmail('Masukkan Email yang Valid!', 'valid-error', 'valid-sukses')
+    }
+})
+
+const button = document.getElementById('btn-submit')
+button.disabled = true;
+
+function checkAkun(nama, username, email) {
+    if(email == "") {
+        button.disabled = false;
+        button.classList.remove('btn-valid-error')
+    }
+    else if((nama == "") || (username == "") || (!(email.match(mailformat)))) {
+        button.disabled = true;
+        button.classList.add('btn-valid-error')
+    }
+    else {
+        button.disabled = false;
+        button.classList.remove('btn-valid-error')
+    }
+}
+
+nama.addEventListener('keyup', e => {
+    e.preventDefault();
+    namavalue = nama.value;
+    usernameValue = username.value;
+    emailValue = email.value;
+    checkAkun(namavalue, usernameValue, emailValue);
+})
+
+username.addEventListener('keyup', e => {
+    e.preventDefault();
+    namavalue = nama.value;
+    usernameValue = username.value;
+    emailValue = email.value;
+    checkAkun(namavalue, usernameValue, emailValue);
+})
+
+email.addEventListener('keyup', e => {
+    e.preventDefault();
+    namavalue = nama.value;
+    usernameValue = username.value;
+    emailValue = email.value;
+    checkAkun(namavalue, usernameValue, emailValue);
+})

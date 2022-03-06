@@ -27,44 +27,51 @@
                         <div class="pengaturan__konten">
                             <label for="" class="pengaturan__label form-label">Nama Lengkap</label>
                             <input class="" type="text" id="nama" class="pengaturan__input" value="<%= user.nama %>" name="nama" required>
+                            <div id="validation-message-nama" class=""></div>
                         </div>
                         <div class="pengaturan__konten">
                             <label for="" class="pengaturan__label form-label">Username</label>
                             <label class="mb-3 deskripsi" for="description">Username akan muncul di alamat FibonacciKu kamu.
                                 https://www.fibonacciku.com/fibo/</label>
                             <input class="" type="text" id="username" class="pengaturan__input" value="<%= user.username %>" name="username" required>
+                            <div id="validation-message-username" class=""></div>
                         </div>
                             
                         <div class="pengaturan__konten">
                             <label for="" class="pengaturan__label form-label">Email</label>
                             <input class="" type="email" id="email" class="pengaturan__input" value="<%= user.email %>" name="email">
+                            <div id="validation-message-email" class=""></div>
                         </div>
         
                         <div class="pengaturan__konten">
                             <label for="" class="pengaturan__label form-label">Bio</label>
                             <textarea class="" type="text" id="bio" cols="0" rows="4" maxlength="128" class="pengaturan__input" name="bio"></textarea>
+                            <div id="validation-message-bio" class=""></div>
                         </div>
 
                         <div class="pengaturan__konten">
                             <label for="" class="pengaturan__label form-label">Instagram</label>
                             <label class="mb-3 deskripsi" for="description">Username saja tanpa @</label>
-                            <input class="" type="text" id="email" class="pengaturan__input" value="<%= user.link.instagram %>" name="instagram">
+                            <input class="" type="text" id="instagram" class="pengaturan__input" value="<%= user.link.instagram %>" name="instagram">
+                            <div id="validation-message-instagram" class=""></div>
                         </div>
 
                         <div class="pengaturan__konten">
                             <label for="" class="pengaturan__label form-label">GitHub</label>
                             <label class="mb-3 deskripsi" for="description">Username saja</label>
-                            <input class="" type="text" id="email" class="pengaturan__input" value="<%= user.link.github %>" name="github">
+                            <input class="" type="text" id="github" class="pengaturan__input" value="<%= user.link.github %>" name="github">
+                            <div id="validation-message-github" class=""></div>
                         </div>
 
                         <div class="pengaturan__konten">
                             <label for="" class="pengaturan__label form-label">Twitter</label>
                             <label class="mb-3 deskripsi" for="description">Username saja tanpa @</label>
-                            <input class="" type="text" id="email" class="pengaturan__input" value="<%= user.link.twitter %>" name="twitter">
+                            <input class="" type="text" id="twitter" class="pengaturan__input" value="<%= user.link.twitter %>" name="twitter">
+                            <div id="validation-message-twitter" class=""></div>
                         </div>
             
                         <div>
-                            <button type="submit">
+                            <button type="submit" id="btn-submit" class="form-group btn-valid-error">
                                 Simpan
                             </button>
                         </div>
