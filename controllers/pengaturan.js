@@ -50,7 +50,6 @@ module.exports.updateProfile = async (req, res) => {
     }
     const login = util.promisify(req.login.bind(req));
     await login(user);
-
     req.flash('success', 'Profil Sudah Dirubah!')
     res.redirect('/pengaturan/akun')
 }
