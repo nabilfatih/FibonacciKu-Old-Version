@@ -59,7 +59,7 @@ nama.addEventListener('input', e => {
     namaValue = nama.value;
 
     if(namaValue == "" || (!namaValue.match(letterformat))) {
-        validateNama('Masukkan Nama Kamu!', 'valid-error', 'valid-sukses')
+        validateNama('Masukkan nama kamu!', 'valid-error', 'valid-sukses')
     }
     else {
         validateNama('', '', 'valid-error')
@@ -71,7 +71,7 @@ username.addEventListener('input', e => {
     usernameValue = username.value;
 
     if(usernameValue == "") {
-        validateUsername('Masukkan Username!', 'valid-error', 'valid-sukses')
+        validateUsername('Masukkan username!', 'valid-error', 'valid-sukses')
     }
     else {
         validateUsername('', '', 'valid-error')

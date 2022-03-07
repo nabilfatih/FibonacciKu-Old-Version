@@ -32,7 +32,7 @@ newPassword.addEventListener('input', e => {
     newPasswordValue = newPassword.value;
 
     if(newPasswordValue.length < 8) {
-        validatePasswordsBaru('Password Min. 8 Karakter!', 'valid-error', 'valid-sukses');
+        validatePasswordsBaru('Password min. 8 karakter!', 'valid-error', 'valid-sukses');
     } else {
         validatePasswordsBaru('', '', 'valid-error')
     }
@@ -44,7 +44,7 @@ confirmation.addEventListener('input', e => {
     confirmationValue = confirmation.value;
 
     if(newPasswordValue !== confirmationValue) {
-        validatePasswordsKonfirmasi('Password Tidak Sama!', 'valid-error', 'valid-sukses');
+        validatePasswordsKonfirmasi('Password tidak sama!', 'valid-error', 'valid-sukses');
     } else {
         validatePasswordsKonfirmasi('', '', 'valid-error');
         }
@@ -89,7 +89,7 @@ confirmation.addEventListener('keyup', e => {
 // });
 
 
-validationMessageLama.textContent = 'Masukkan Password Lama!';
+validationMessageLama.textContent = 'Masukkan password lama!';
 oldPassword.addEventListener('input', e => {
     e.preventDefault()
     oldPasswordvalue = oldPassword.value;
@@ -97,7 +97,7 @@ oldPassword.addEventListener('input', e => {
     if(oldPasswordvalue) {
         validatePasswordsLama('', '', 'valid-error');
     } else {
-        validatePasswordsLama('Masukkan Password Lama!', 'valid-error', 'valid-sukses')
+        validatePasswordsLama('Masukkan password lama!', 'valid-error', 'valid-sukses')
     }
 })
 
