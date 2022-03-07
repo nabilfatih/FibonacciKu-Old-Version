@@ -1,16 +1,43 @@
 <% layout('layouts/boilerplate') %>
 
+<script src="/js/tentang/p5.js"></script>
+<script src="/js/tentang/p5.sound.js"></script>
+
 <style>
     .tentangs {
-        margin-top: 76px;
+        margin-top: 80px;
+        background-color: black;
     }
+    .canva {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        font-family: 'Courier';
+        font-size: 12pt;
+        line-height: 10pt;
+        color: rgb(78, 255, 55);
+    }
+
+    .canva > video {
+        display: none;
+    }
+
+    .footer {
+        position: relative;
+    }
+    
 </style>
 
 <section class="tentangs">
     <div class="tentang container">
-        
+        <div id="canva" class="canva"></div>
     </div>
 </section>
+
+<script src="/js/tentang/sketch.js"></script>
+<script src="/js/tentang/tentang.js"></script>
 
 <script async>
     document.title = "Tentang | FibonacciKu"
