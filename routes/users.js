@@ -27,7 +27,7 @@ router.post('/daftar', catchAsync(async(req, res) => {
 
     User.register(newUser, req.body.password, async(err, user) => {
         if(err) {
-            req.flash('error', 'A user with the given email or username is already registered');
+            req.flash('error', 'Email atau username sudah ada yang punya!');
             return res.redirect('/daftar');
         }
         const msg = {
@@ -90,7 +90,7 @@ router.get('/masuk', isLoggedOut, (req, res) => {
 });
 
 router.post('/masuk', isNotVerified, passport.authenticate('local', {
-    failureFlash: 'Password or username is incorrect',
+    failureFlash: 'Username atau password salah!',
     failureRedirect: '/masuk'
     }),
     (req, res) => {
