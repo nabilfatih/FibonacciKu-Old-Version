@@ -156,7 +156,7 @@ passport.use(new GoogleStrategy(google_auth, (accessToken, refreshToken, profile
                 emailToken: null,
                 username: profile._json.email.replace('@gmail.com', ''),
                 nama: profile.displayName,
-                avatar: { secure_url: profile._json.picture }
+                avatar: { path: profile._json.picture }
             }).save().then((newUser) => {
                 // console.log('new user created: ' + newUser)
                 done(null, newUser)
@@ -184,7 +184,7 @@ passport.use(new GitHubStrategy(github_auth, (accessToken, refreshToken, profile
                 emailToken: null,
                 username: profile.username,
                 nama: profile.displayName,
-                avatar: { secure_url: profile._json.avatar_url },
+                avatar: { path: profile._json.avatar_url },
                 link: {
                     github: profile.username
                 }
@@ -216,7 +216,7 @@ passport.use(new FacebookStrategy(facebook_auth, (accessToken, refreshToken, pro
                 emailToken: null,
                 username: profile.username,
                 nama: profile.displayName,
-                avatar: profile._json['avatar_url']
+                avatar: { path: profile._json['avatar_url'] }
             }).save().then((newUser) => {
                 console.log('new user created: ' + newUser)
                 done(null, newUser)

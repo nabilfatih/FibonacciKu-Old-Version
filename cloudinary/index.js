@@ -1,6 +1,6 @@
 const crypto = require('crypto');
 const multer = require('multer');
-const cloudinary = require('cloudinary');
+const cloudinary = require('cloudinary').v2;
 const { CloudinaryStorage } = require('multer-storage-cloudinary');
 
 const cloudinaryConfig = (req, res, next) => {

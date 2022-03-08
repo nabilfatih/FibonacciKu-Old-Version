@@ -94,5 +94,5 @@ module.exports.changePassword = async (req, res, next) => {
 }
 
 module.exports.deleteProfileImage = async (req, res) => {
-    if (req.file) await cloudinary.v2.uploader.destroy(req.file.public_id);
+    if (req.file) await cloudinary.uploader.destroy(req.file.public_id);
 }

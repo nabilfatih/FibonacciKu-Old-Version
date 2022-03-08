@@ -22,9 +22,9 @@ module.exports.index = async (req, res) => {
 module.exports.gantiFoto = async (req, res) => {
     const user = req.user
     if (req.file) {
-        if (user.avatar.public_id) await cloudinary.v2.uploader.destroy(user.avatar.public_id);
-        const { secure_url, public_id } = req.file;
-        user.avatar = { secure_url, public_id };
+        if (user.avatar.filename) await cloudinary.uploader.destroy(user.avatar.filename);
+        const { path, filename } = req.file;
+        user.avatar = { path, filename };
     }
     await user.save();
     const login = util.promisify(req.login.bind(req));

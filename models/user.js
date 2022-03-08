@@ -41,8 +41,8 @@ const UserSchema = new Schema({
         unique: false
     },
     avatar: {
-        secure_url: { type: String, default: '/img/profile/default-icon.png' },
-        public_id: String
+        path: { type: String, default: '/img/profile/default-icon.png' },
+        filename: String
     },
     background: {
         type: String,
