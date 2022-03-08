@@ -498,6 +498,7 @@ button:hover::before, .button:hover::before {
 
 .header__register .dropdowns .drop-down .foto-profil {
   width: 48px;
+  height: 48px;
   border-radius: 50%;
   background-color: #fff8f3;
 }
@@ -1757,6 +1758,7 @@ button:hover::before, .button:hover::before {
 .profil__avatar img {
   background-color: #fff8f3;
   width: 128px;
+  height: 128px;
   border-radius: 50%;
 }
 

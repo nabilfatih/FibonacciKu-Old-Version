@@ -29,6 +29,6 @@ module.exports.gantiFoto = async (req, res) => {
     await user.save();
     const login = util.promisify(req.login.bind(req));
     await login(user);
-    req.flash('success', 'Foto profil sudah diganti!')
+    // req.flash('success', 'Foto profil sudah diganti!')
     return res.redirect(`/fibo/${user.username}`)
 }
