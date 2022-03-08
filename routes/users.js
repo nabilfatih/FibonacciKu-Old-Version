@@ -135,7 +135,7 @@ router.get('/auth/github/callback', passport.authenticate('github', {
 
 
 router.get('/auth/facebook', passport.authenticate('facebook', {
-    scope: ['profile']
+    scope: ['user_friends', 'manage_pages']
 }));
 
 router.get('/auth/facebook/callback', passport.authenticate('facebook', {

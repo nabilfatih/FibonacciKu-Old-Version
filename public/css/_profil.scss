@@ -58,10 +58,46 @@
 
     &__avatar {
 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
         img {
             background-color: $cream;
             width: 128px;
             border-radius: 50%;
+        }
+
+        .edit-foto {
+            // width: 10rem;
+            // border-radius: 10px;
+            // background-color: $darkBlue;
+            padding: 0.5rem;
+
+            a {
+                color: white;
+            }
+
+            input[type="file"] {
+                display: none;
+            }
+            .custom-foto-upload {
+                // border: 1px solid #ccc;
+                border-radius: 10px;
+                background-color: $darkBlue;    
+                color: white;
+                display: inline-block;
+                padding: 6px 12px;
+                cursor: pointer;
+
+                &:hover {
+                    box-shadow: 0 0 15px rgba(0,0,0,.2);
+                    color: $darkBlue;
+                    background-color: #81ecec;
+                    // border: 1px solid #00cec9;
+                }
+            }
         }
     }
 

@@ -41,9 +41,8 @@ const UserSchema = new Schema({
         unique: false
     },
     avatar: {
-        type: String,
-        required: false,
-        default: '/img/profile/default-icon.png'
+        secure_url: { type: String, default: '/img/profile/default-icon.png' },
+        public_id: String
     },
     background: {
         type: String,
@@ -51,6 +50,11 @@ const UserSchema = new Schema({
         default: '/img/profile/default-background.png',
     },
     bio: {
+        type: String,
+        required: false,
+        default: null
+    },
+    website: {
         type: String,
         required: false,
         default: null

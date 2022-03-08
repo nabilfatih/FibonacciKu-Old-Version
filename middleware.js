@@ -1,6 +1,7 @@
 const ExpressError = require('./utils/ExpressError');
 const User = require('./models/user');
 const util = require('util');
+const { cloudinary } = require('./cloudinary');
 
 module.exports.isLoggedIn = (req, res, next) => {
     if (!req.isAuthenticated()) {
@@ -86,8 +87,12 @@ module.exports.changePassword = async (req, res, next) => {
     }
     else {
         req.flash('Gagal Ganti Password!')
-        res.redirect('/pengaturan/password')
+        return res.redirect('/pengaturan/password')
     }
     req.flash('success', 'Password sudah dirubah!');
-    res.redirect('/pengaturan/password')
+    return res.redirect('/pengaturan/password')
+}
+
+module.exports.deleteProfileImage = async (req, res) => {
+    if (req.file) await cloudinary.v2.uploader.destroy(req.file.public_id);
 }

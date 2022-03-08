@@ -1740,10 +1740,52 @@ button:hover::before, .button:hover::before {
   }
 }
 
+.profil__avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
 .profil__avatar img {
   background-color: #fff8f3;
   width: 128px;
   border-radius: 50%;
+}
+
+.profil__avatar .edit-foto {
+  padding: 0.5rem;
+}
+
+.profil__avatar .edit-foto a {
+  color: white;
+}
+
+.profil__avatar .edit-foto input[type="file"] {
+  display: none;
+}
+
+.profil__avatar .edit-foto .custom-foto-upload {
+  border-radius: 10px;
+  background-color: #002651;
+  color: white;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.profil__avatar .edit-foto .custom-foto-upload:hover {
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  color: #002651;
+  background-color: #81ecec;
 }
 
 .profil__username {
@@ -2007,6 +2049,10 @@ button:hover::before, .button:hover::before {
   border-radius: .5rem;
   padding: .5rem 1rem .25rem;
   margin-bottom: 2rem;
+}
+
+.pengaturan__konten .foto-profil {
+  max-width: 20rem;
 }
 
 .pengaturan__konten .form-control {

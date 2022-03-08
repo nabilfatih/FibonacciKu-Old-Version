@@ -1,5 +1,7 @@
 const User = require('../models/user');
 const util = require('util');
+const { cloudinary } = require('../cloudinary');
+const { deleteProfileImage } = require('../middleware');
 
 module.exports.akun = async (req, res) => {
     res.render('profil/akun', {
@@ -33,7 +35,7 @@ module.exports.updateProfile = async (req, res) => {
     try {
         if (nama.match(letterformat)) user.nama = nama;
         if (username) user.username = username;
-        if(email.match(emailformat)) user.email = email;
+        if (email.match(emailformat)) user.email = email;
         user.bio = bio;
         user.link.instagram = instagram;
         user.link.github = github;

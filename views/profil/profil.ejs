@@ -22,7 +22,15 @@
         <div class="container container--px">
             <div class="profil__info">
                 <div class="profil__avatar">
-                    <img src="<%= username.avatar %>">
+                    <img src="<%= username.avatar.secure_url %>">
+                    <% if(user.username == username.username) {%> 
+                    <div class="edit-foto">
+                        <form action="/fibo/<%= user.username %>?_method=PUT" method="POST" enctype="multipart/form-data">
+                            <label for="avatar" name="avatar" class="custom-foto-upload">Ganti Foto</label>
+                            <input type="file" onchange="form.submit()" id="avatar" name="avatar" class="custom-file-input" accept="image/png, image/jpg, image/jpeg"/>
+                        </form>
+                    </div>
+                    <% } %> 
                 </div>
                 <div class="profil__username">
                     <div class="user">

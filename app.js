@@ -4,6 +4,8 @@ if (process.env.NODE_ENV !== "production") {
 
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
+const https = require('https');
 const mongoose = require('mongoose');
 const ejsMate = require('ejs-mate');
 const Joi = require('joi');
@@ -106,19 +108,19 @@ const config = {
 };
 
 const google_auth = {
-    callbackURL: 'http://localhost:3000/auth/google/callback',
+    callbackURL: 'https://localhost:3000/auth/google/callback',
     clientID: config.GoogleClientID,
     clientSecret: config.GoogleClientSECRET
 }
 
 const github_auth = {
-    callbackURL: 'http://localhost:3000/auth/github/callback',
+    callbackURL: 'https://localhost:3000/auth/github/callback',
     clientID: config.GitHubClientID,
     clientSecret: config.GitHubClientSECRET
 }
 
 const facebook_auth = {
-    callbackURL: 'http://localhost:3000/auth/facebook/callback',
+    callbackURL: 'https://localhost:3000/auth/facebook/callback',
     clientID: config.FacebookClientID,
     clientSecret: config.FacebookClientSECRET
 }
@@ -154,7 +156,7 @@ passport.use(new GoogleStrategy(google_auth, (accessToken, refreshToken, profile
                 emailToken: null,
                 username: profile._json.email.replace('@gmail.com', ''),
                 nama: profile.displayName,
-                avatar: profile._json.picture
+                avatar: { secure_url: profile._json.picture }
             }).save().then((newUser) => {
                 // console.log('new user created: ' + newUser)
                 done(null, newUser)
@@ -182,7 +184,7 @@ passport.use(new GitHubStrategy(github_auth, (accessToken, refreshToken, profile
                 emailToken: null,
                 username: profile.username,
                 nama: profile.displayName,
-                avatar: profile._json.avatar_url,
+                avatar: { secure_url: profile._json.avatar_url },
                 link: {
                     github: profile.username
                 }
@@ -272,6 +274,10 @@ app.use((err, req, res, next) => {
 })
 
 const port = process.env.PORT || 3000
-app.listen(port, () => {
+
+https.createServer({
+    key: fs.readFileSync('key.pem'),
+    cert: fs.readFileSync('cert.pem')
+}, app).listen(port, () => {
     console.log(`Serving on port ${port}`)
 });
