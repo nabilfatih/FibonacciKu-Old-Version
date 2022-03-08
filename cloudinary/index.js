@@ -15,7 +15,7 @@ const storage = new CloudinaryStorage({
   params: {
 	folder: 'fibonacciku-profile',
 	allowedFormats: ['jpeg', 'jpg', 'png'],
-	transformation: { width: 256, height: 256, crop: "crop" },
+	transformation: { width: 356, height: 356, crop: "crop" },
   },
   filename: function (req, file, cb) {
   	let buf = crypto.randomBytes(16);
