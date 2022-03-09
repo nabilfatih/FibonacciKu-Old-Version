@@ -2173,6 +2173,179 @@ button:hover::before, .button:hover::before {
   resize: none;
 }
 
+.matrixs {
+  background-color: black;
+}
+
+.matrixs .container {
+  padding-top: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.matrixs .matrix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  font-family: 'Courier';
+  background-color: black;
+}
+
+.matrixs__konten {
+  margin-top: 2rem;
+}
+
+.matrixs__intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 3.5rem;
+}
+
+.matrixs__intro h1 {
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2rem;
+  font-weight: 1000;
+  color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: color 150ms ease, -webkit-transform 300ms ease-in-out;
+  transition: color 150ms ease, -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, color 150ms ease;
+  transition: transform 300ms ease-in-out, color 150ms ease, -webkit-transform 300ms ease-in-out;
+}
+
+.matrixs__intro h1:hover {
+  -webkit-transform: translate(7px, -7px);
+          transform: translate(7px, -7px);
+  color: #ff7c7c;
+}
+
+.matrixs__intro .blue:hover {
+  color: #88e1f2;
+}
+
+.waktus {
+  background-color: #21243d;
+  padding-top: 2rem;
+}
+
+.waktus .container {
+  padding-top: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.waktus .waktu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.waktus__konten {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-top: 2rem;
+}
+
+.waktus__intro {
+  text-align: center;
+}
+
+.waktus__intro h1 {
+  margin: 0;
+  font-size: 3.8rem;
+  color: white;
+  font-family: 'Kalam', cursive;
+}
+
+@media (max-width: 63.9375em) {
+  .waktus__intro h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .waktus__intro h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.waktus__isi {
+  text-align: left;
+}
+
+.waktus__isi p {
+  font-family: 'Kalam', cursive;
+  white-space: pre-line;
+  color: white;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+@media (max-width: 63.9375em) {
+  .waktus__isi p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .waktus__isi p {
+    font-size: 1.1rem;
+  }
+}
+
+.tujuan {
+  background-color: #ff7c7c;
+}
+
+.fibo {
+  background-color: #ffd082;
+}
+
+.penutup {
+  background-color: #88e1f2;
+}
+
 .kontak {
   padding-top: 3rem;
   padding-bottom: 3rem;
