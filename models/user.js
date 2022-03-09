@@ -59,22 +59,20 @@ const UserSchema = new Schema({
         required: false,
         default: null
     },
-    link: {
-        instagram: {
-            type: String,
-            required: false,
-            default: null
-        },
-        github: {
-            type: String,
-            required: false,
-            default: null
-        },
-        twitter: {
-            type: String,
-            required: false,
-            default: null
-        }
+    instagram: {
+        type: String,
+        required: false,
+        default: null
+    },
+    github: {
+        type: String,
+        required: false,
+        default: null
+    },
+    twitter: {
+        type: String,
+        required: false,
+        default: null
     },
     isPassword: {
         type: Boolean,

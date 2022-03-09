@@ -44,14 +44,14 @@
                         <h3><%= username.nama %> </h3>
                         <p><%= username.bio %></p>
                         <div class="link">
-                            <% if(username.link.instagram) { %>
-                            <a href="https://www.instagram.com/<%= username.link.instagram %>" target="_blank"><img src="/img/profile/instagram-icon.png" alt=""></a>
+                            <% if(username.instagram) { %>
+                            <a href="https://www.instagram.com/<%= username.instagram %>" target="_blank"><img src="/img/profile/instagram-icon.png" alt=""></a>
                             <% } %>
-                            <% if(username.link.github) { %> 
-                            <a href="http://github.com/<%= username.link.github %>" target="_blank"><img src="/img/profile/github-icon.png" alt=""></a>
+                            <% if(username.github) { %> 
+                            <a href="http://github.com/<%= username.github %>" target="_blank"><img src="/img/profile/github-icon.png" alt=""></a>
                             <% } %> 
-                            <% if(username.link.twitter) { %> 
-                            <a href="https://twitter.com/<%= username.link.twitter %>" target="_blank"><img src="/img/profile/twitter-icon.png" alt=""></a>
+                            <% if(username.twitter) { %> 
+                            <a href="https://twitter.com/<%= username.twitter %>" target="_blank"><img src="/img/profile/twitter-icon.png" alt=""></a>
                             <% } %>
                         </div>
                     </div>

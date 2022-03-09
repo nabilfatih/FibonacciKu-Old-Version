@@ -170,7 +170,7 @@ passport.use(new GitHubStrategy(github_auth, (accessToken, refreshToken, profile
     // console.log(profile);
     User.findOneAndUpdate(
         { username: profile.username },
-        { $set: {githubID: profile.id, isVerified: true, emailToken: null, link: {github: profile.username}}},
+        { $set: {githubID: profile.id, isVerified: true, emailToken: null, github: profile.username }},
         { returnDocument: true }
     ).then((currentUser) => {
         if(currentUser) {
@@ -185,9 +185,7 @@ passport.use(new GitHubStrategy(github_auth, (accessToken, refreshToken, profile
                 username: profile.username,
                 nama: profile.displayName,
                 avatar: { path: profile._json.avatar_url },
-                link: {
-                    github: profile.username
-                }
+                github: profile.username
             }).save().then((newUser) => {
                 // console.log('new user created: ' + newUser)
                 done(null, newUser)
@@ -196,7 +194,6 @@ passport.use(new GitHubStrategy(github_auth, (accessToken, refreshToken, profile
     })
 }))
 
-//not finished yet
 passport.use(new FacebookStrategy(facebook_auth, (accessToken, refreshToken, profile, done) => {
     // console.log('Facebook Profile');
     // console.log(profile);

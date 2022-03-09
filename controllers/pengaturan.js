@@ -37,9 +37,9 @@ module.exports.updateProfile = async (req, res) => {
         if (username) user.username = username;
         if (email.match(emailformat)) user.email = email;
         user.bio = bio;
-        user.link.instagram = instagram;
-        user.link.github = github;
-        user.link.twitter = twitter;
+        user.instagram = instagram;
+        user.github = github;
+        user.twitter = twitter;
         await user.save();
     } catch(e) {
         if(e.toString().includes('username')) {

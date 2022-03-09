@@ -52,28 +52,28 @@
         
                         <div class="pengaturan__konten">
                             <label for="" class="pengaturan__label form-label">Bio</label>
-                            <textarea class="" type="text" id="bio" cols="0" rows="4" maxlength="128" class="pengaturan__input" name="bio"><%= user.bio %></textarea>
+                            <textarea class="" type="text" id="bio" cols="0" rows="4" maxlength="256" class="pengaturan__input" name="bio"><%= user.bio %></textarea>
                             <div id="validation-message-bio" class=""></div>
                         </div>
 
                         <div class="pengaturan__konten">
                             <label for="" class="pengaturan__label form-label">Instagram</label>
                             <label class="mb-3 deskripsi" for="description">Username saja tanpa @</label>
-                            <input class="" type="text" id="instagram" class="pengaturan__input" value="<%= user.link.instagram %>" name="instagram">
+                            <input class="" type="text" id="instagram" class="pengaturan__input" value="<%= user.instagram %>" name="instagram">
                             <div id="validation-message-instagram" class=""></div>
                         </div>
 
                         <div class="pengaturan__konten">
                             <label for="" class="pengaturan__label form-label">GitHub</label>
                             <label class="mb-3 deskripsi" for="description">Username saja</label>
-                            <input class="" type="text" id="github" class="pengaturan__input" value="<%= user.link.github %>" name="github">
+                            <input class="" type="text" id="github" class="pengaturan__input" value="<%= user.github %>" name="github">
                             <div id="validation-message-github" class=""></div>
                         </div>
 
                         <div class="pengaturan__konten">
                             <label for="" class="pengaturan__label form-label">Twitter</label>
                             <label class="mb-3 deskripsi" for="description">Username saja tanpa @</label>
-                            <input class="" type="text" id="twitter" class="pengaturan__input" value="<%= user.link.twitter %>" name="twitter">
+                            <input class="" type="text" id="twitter" class="pengaturan__input" value="<%= user.twitter %>" name="twitter">
                             <div id="validation-message-twitter" class=""></div>
                         </div>
             

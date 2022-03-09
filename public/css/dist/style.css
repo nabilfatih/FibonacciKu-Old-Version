@@ -1892,7 +1892,7 @@ button:hover::before, .button:hover::before {
 }
 
 .profil__username .nama p {
-  max-width: 18rem;
+  max-width: 26rem;
   margin-bottom: 0;
   white-space: pre-line;
 }
