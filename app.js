@@ -122,7 +122,7 @@ const github_auth = {
 const facebook_auth = {
     callbackURL: 'https://localhost:3000/auth/facebook/callback',
     clientID: config.FacebookClientID,
-    clientSecret: config.FacebookClientSECRET
+    clientSecret: config.FacebookClientSECRET,
 }
 
 passport.serializeUser((User, done) => {
@@ -198,27 +198,27 @@ passport.use(new GitHubStrategy(github_auth, (accessToken, refreshToken, profile
 
 //not finished yet
 passport.use(new FacebookStrategy(facebook_auth, (accessToken, refreshToken, profile, done) => {
-    console.log('Facebook Profile');
-    console.log(profile);
+    // console.log('Facebook Profile');
+    // console.log(profile);
     User.findOneAndUpdate(
-        { email: profile._json['email'] },
-        { $set: {googleID: profile.id, isVerified: true, emailToken: null }},
+        { username: profile.displayName.toLowerCase().replace(' ', '') },
+        { $set: {facebookID: profile.id, isVerified: true, emailToken: null }},
         { returnDocument: true }
     ).then((currentUser) => {
         if(currentUser) {
-            console.log('user is ' + currentUser)
+            // console.log('user is ' + currentUser)
             done(null, currentUser)
         } else {
             new User({
                 facebookID: profile.id,
-                email: profile._json['email'],
+                // email: profile._json.email,
                 isVerified: true,
                 emailToken: null,
-                username: profile.username,
+                username: profile.displayName.toLowerCase().replace(' ', ''),
                 nama: profile.displayName,
-                avatar: { path: profile._json['avatar_url'] }
+                // avatar: { path: profile._json['avatar_url'] }
             }).save().then((newUser) => {
-                console.log('new user created: ' + newUser)
+                // console.log('new user created: ' + newUser)
                 done(null, newUser)
             })
         }
