@@ -86,6 +86,13 @@
         box-shadow: 3px 3px 6px 0 rgba(0,0,0,.2);
         background: linear-gradient(to right, $lightBlue, $lightGreen);
 
+        transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
+
+        &:hover {
+            box-shadow: 0 0 20px rgba(0,0,0,.2);
+            transform: translate(7px, -7px);
+        }
+
         @include breakpoint-up(medium){
             flex: 2 1 30%;
         }

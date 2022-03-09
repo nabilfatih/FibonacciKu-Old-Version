@@ -1129,12 +1129,20 @@ button:hover::before, .button:hover::before {
 }
 
 .pelajaran__card .button {
+  -webkit-transition: border 150ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  transition: border 150ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, border 150ms ease-in-out;
+  transition: transform 300ms ease-in-out, border 150ms ease-in-out, -webkit-transform 300ms ease-in-out;
   border: 1px solid transparent;
   background-image: -webkit-gradient(linear, left top, right top, from(#cfffdc), to(#93ffd8));
   background-image: linear-gradient(to right, #cfffdc, #93ffd8);
 }
 
 .pelajaran__card .button:hover {
+  -webkit-transform: translate(5px, -5px);
+          transform: translate(5px, -5px);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border: 1px solid #002651;
 }
 
@@ -1253,12 +1261,20 @@ button:hover::before, .button:hover::before {
 }
 
 .ujian__card .button {
+  -webkit-transition: border 150ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  transition: border 150ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, border 150ms ease-in-out;
+  transition: transform 300ms ease-in-out, border 150ms ease-in-out, -webkit-transform 300ms ease-in-out;
   border: 1px solid transparent;
   background-image: -webkit-gradient(linear, left top, right top, from(#ffbf86), to(#fed2aa));
   background-image: linear-gradient(to right, #ffbf86, #fed2aa);
 }
 
 .ujian__card .button:hover {
+  -webkit-transform: translate(5px, -5px);
+          transform: translate(5px, -5px);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border: 1px solid #002651;
 }
 
@@ -1421,6 +1437,17 @@ button:hover::before, .button:hover::before {
           box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);
   background: -webkit-gradient(linear, left top, right top, from(#88e0ef), to(#cfffdc));
   background: linear-gradient(to right, #88e0ef, #cfffdc);
+  -webkit-transition: -webkit-transform 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out, -webkit-transform 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+}
+
+.shows__card:hover {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translate(7px, -7px);
+          transform: translate(7px, -7px);
 }
 
 @media (min-width: 40em) {
