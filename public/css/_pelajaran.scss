@@ -49,12 +49,12 @@
         background: linear-gradient(to right, $blueSky, $lightPurple);
 
         .button {
-            transition: transform 300ms ease-in-out, border 150ms ease-in-out;
-            border: 1px solid transparent;
+            transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
+            // border: 1px solid transparent;
             &:hover {
-                transform: translate(5px, -5px);
+                transform: translate(3px, -3px);
                 box-shadow: 0 0 20px rgba(0,0,0,.2);
-                border: 1px solid $darkBlue;
+                // border: 1px solid $darkBlue;
             }
             background-image: linear-gradient(to right, $lightGreen, $greenTeal);
         }
@@ -148,12 +148,12 @@
         background: linear-gradient(to left, $greenTeal, $yellowGreen);
 
         .button {
-            transition: transform 300ms ease-in-out, border 150ms ease-in-out;
-            border: 1px solid transparent;
+            transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
+            // border: 1px solid transparent;
             &:hover {
-                transform: translate(5px, -5px);
+                transform: translate(3px, -3px);
                 box-shadow: 0 0 20px rgba(0,0,0,.2);
-                border: 1px solid $darkBlue;
+                // border: 1px solid $darkBlue;
             }
             background-image: linear-gradient(to right, $lightBrown, $mostLightBrown);
         }
