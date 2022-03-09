@@ -223,8 +223,8 @@ passport.use(new FacebookStrategy(facebook_auth, (accessToken, refreshToken, pro
 }))
 
 passport.use(new LocalStrategy(User.authenticate()));
-// passport.serializeUser(User.serializeUser());
-// passport.deserializeUser(User.deserializeUser());
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
 
 app.use((req, res, next) => {
     console.log(req.session);
