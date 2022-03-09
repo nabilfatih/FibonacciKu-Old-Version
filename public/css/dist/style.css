@@ -1894,6 +1894,7 @@ button:hover::before, .button:hover::before {
 .profil__username .nama p {
   max-width: 18rem;
   margin-bottom: 0;
+  white-space: pre-line;
 }
 
 .pengaturans {
