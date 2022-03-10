@@ -23,7 +23,7 @@ const s = ( sketch ) => {
         sketch.push();
         sketch.rotate(second)
         sketch.stroke(255, 124, 124);
-        sketch.line(0, 0, 100, 0)
+        sketch.line(0, 0, 150, 0)
         sketch.pop()
 
         sketch.stroke(255, 208, 130);
@@ -33,7 +33,7 @@ const s = ( sketch ) => {
         sketch.push();
         sketch.rotate(minute)
         sketch.stroke(255, 208, 130);
-        sketch.line(0, 0, 75, 0)
+        sketch.line(0, 0, 125, 0)
         sketch.pop()
 
         sketch.stroke(136, 225, 242);
@@ -43,7 +43,7 @@ const s = ( sketch ) => {
         sketch.push();
         sketch.rotate(hour)
         sketch.stroke(136, 225, 242);
-        sketch.line(0, 0, 50, 0)
+        sketch.line(0, 0, 100, 0)
         sketch.pop()
 
         sketch.stroke(255);

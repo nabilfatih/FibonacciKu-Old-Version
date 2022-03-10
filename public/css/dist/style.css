@@ -2311,7 +2311,58 @@ button:hover::before, .button:hover::before {
 }
 
 .waktus__isi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.waktus__isi .card {
+  padding: 1.5rem;
+  border-radius: 15px;
+  -webkit-box-shadow: 6px 3px 6px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 6px 3px 6px 0 rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, right top, from(#aefeff), to(#cddeff));
+  background: linear-gradient(to right, #aefeff, #cddeff);
+  -webkit-transition: -webkit-transform 300ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
+  transition: transform 300ms ease-in-out, box-shadow 150ms ease-in-out;
+  transition: transform 300ms ease-in-out, box-shadow 150ms ease-in-out, -webkit-transform 300ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
+}
+
+.waktus__isi .card:hover {
+  -webkit-transform: translate(7px, -7px);
+          transform: translate(7px, -7px);
+  -webkit-box-shadow: 0 0 20px #88e1f2;
+          box-shadow: 0 0 20px #88e1f2;
+}
+
+@media (min-width: 40em) {
+  .waktus__isi .card {
+    -webkit-box-flex: 2;
+        -ms-flex: 2 1 30%;
+            flex: 2 1 30%;
+  }
+}
+
+@media (min-width: 64em) {
+  .waktus__isi .card {
+    -webkit-box-flex: 2;
+        -ms-flex: 2 1 30%;
+            flex: 2 1 30%;
+  }
+}
+
+.waktus__isi .card .judul {
   text-align: center;
+  font-family: 'Kalam', cursive;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 .waktus__isi p {

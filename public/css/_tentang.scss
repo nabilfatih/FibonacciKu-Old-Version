@@ -104,8 +104,38 @@
     }
 
     &__isi {
-        
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: left;
+
+        .card {
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 6px 3px 6px 0 rgba(0,0,0,.2);
+            background: linear-gradient(to right, $blueSky, $lightPurple);
+
+            transition: transform 300ms ease-in-out, box-shadow 150ms ease-in-out, ;
+            &:hover {
+                transform: translate(7px, -7px);
+                box-shadow: 0 0 20px $lightBlueSky;
+            }
+
+            @include breakpoint-up(medium){
+                flex: 2 1 30%;
+            }
+
+            @include breakpoint-up(large){
+                flex: 2 1 30%;
+            }
+
+            .judul {
+                text-align: center;
+                font-family: 'Kalam', cursive;
+                font-size: 2rem;
+                padding-bottom: 0.5rem;
+            }
+        }
         
         p {
             font-family: 'Kalam', cursive;
