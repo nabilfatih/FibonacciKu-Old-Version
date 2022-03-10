@@ -1,6 +1,4 @@
-if (process.env.NODE_ENV !== "production") {
-    require('dotenv').config();
-}
+require('dotenv').config();
 
 const express = require('express');
 const path = require('path');
@@ -37,8 +35,8 @@ const kebijakanRoutes = require('./routes/kebijakan');
 const syaratRoutes = require('./routes/syarat');
 const { isLoggedOut } = require('./middleware');
 
-
-const dbUrl = 'mongodb://localhost:27017/fibonacciku';
+const dbUrl = process.env.DB_URL;
+const dbUrlProduction = 'mongodb://localhost:27017/fibonacciku';
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -87,7 +85,7 @@ const sessionConfig = {
     saveUninitialized: true,
     cookie: {
         httpOnly: true,
-        // secure: true,
+        secure: true,
         expires: Date.now() + 1000 * 60 * 60 * 24 * 3,
         maxAge: 1000 * 60 * 60 * 24 * 3
     }
@@ -108,19 +106,19 @@ const config = {
 };
 
 const google_auth = {
-    callbackURL: 'https://localhost:3000/auth/google/callback',
+    callbackURL: 'https://www.fibonacciku.com/auth/google/callback',
     clientID: config.GoogleClientID,
     clientSecret: config.GoogleClientSECRET
 }
 
 const github_auth = {
-    callbackURL: 'https://localhost:3000/auth/github/callback',
+    callbackURL: 'https://www.fibonacciku.com/auth/github/callback',
     clientID: config.GitHubClientID,
     clientSecret: config.GitHubClientSECRET
 }
 
 const facebook_auth = {
-    callbackURL: 'https://localhost:3000/auth/facebook/callback',
+    callbackURL: 'https://www.fibonacciku.com/auth/facebook/callback',
     clientID: config.FacebookClientID,
     clientSecret: config.FacebookClientSECRET,
 }
@@ -243,7 +241,7 @@ app.use('/mata-pelajaran', matapelajaranRoutes);
 app.use('/tentang', tentangRoutes);
 
 // contact form
-app.post('/', catchAsync(form.forms));
+// app.post('/', catchAsync(form.forms));
 app.use('/kontak', kontakRoutes);
 
 app.use('/fibo', profilRoutes);
@@ -272,9 +270,6 @@ app.use((err, req, res, next) => {
 
 const port = process.env.PORT || 3000
 
-https.createServer({
-    key: fs.readFileSync('key.pem'),
-    cert: fs.readFileSync('cert.pem')
-}, app).listen(port, () => {
+app.listen(port, () => {
     console.log(`Serving on port ${port}`)
 });

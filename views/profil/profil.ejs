@@ -43,6 +43,7 @@
                     <div class="nama">
                         <h3><%= username.nama %> </h3>
                         <p><%= username.bio %></p>
+                        <a href="https://www.<%= username.website %>" class="website" target="_blank"><%= username.website %></a>
                         <div class="link">
                             <% if(username.instagram) { %>
                             <a href="https://www.instagram.com/<%= username.instagram %>" target="_blank"><img src="/img/profile/instagram-icon.png" alt=""></a>

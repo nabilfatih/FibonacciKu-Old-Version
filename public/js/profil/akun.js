@@ -3,6 +3,7 @@ const nama = document.getElementById('nama');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
 const bio = document.getElementById('bio');
+const web = document.getElementById('web');
 const instagram = document.getElementById('instagram');
 const github = document.getElementById('github');
 const twitter = document.getElementById('twitter');
@@ -11,6 +12,7 @@ const validationMessageNama = document.getElementById('validation-message-nama')
 const validationMessageUsername = document.getElementById('validation-message-username');
 const validationMessageEmail = document.getElementById('validation-message-email');
 const validationMessageBio = document.getElementById('validation-message-bio');
+const validationMessageWeb = document.getElementById('validation-message-web');
 const validationMessageInstagram = document.getElementById('validation-message-instagram');
 const validationMessageGithub = document.getElementById('validation-message-github');
 const validationMessageTwitter = document.getElementById('validation-message-twitter');
@@ -34,6 +36,11 @@ function validateBio(message, add, remove) {
     validationMessageBio.textContent = message;
     validationMessageBio.classList.add(add)
     validationMessageBio.classList.remove(remove)
+}
+function validateWeb(message, add, remove) {
+    validationMessageWeb.textContent = message;
+    validationMessageWeb.classList.add(add)
+    validationMessageWeb.classList.remove(remove)
 }
 function validateInstagram(message, add, remove) {
     validationMessageInstagram.textContent = message;
@@ -175,6 +182,18 @@ bio.addEventListener('keyup', e => {
     e.preventDefault();
     bioValue = bio.value;
     if(bioValue != "") {
+        button.disabled = false;
+        button.classList.remove('btn-valid-error')
+    }
+    else {
+        button.disabled = false;
+        button.classList.remove('btn-valid-error')
+    }
+})
+web.addEventListener('keyup', e => {
+    e.preventDefault();
+    webValue = web.value;
+    if(webValue != "") {
         button.disabled = false;
         button.classList.remove('btn-valid-error')
     }

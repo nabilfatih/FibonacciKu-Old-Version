@@ -47,7 +47,7 @@ module.exports.isValidPassword = async (req, res, next) => {
             return next();
         }
         else if(!user) {
-            req.flash('error', 'Password Lama Salah!')
+            req.flash('error', 'Password lama salah!')
             return res.redirect('/pengaturan/password')
         }
     }
@@ -58,7 +58,7 @@ module.exports.isValidPassword = async (req, res, next) => {
                 return next();
             }
             else {
-                req.flash('error', 'Gagal Ganti Password!');
+                req.flash('error', 'Gagal ganti password!');
                 return res.redirect('/pengaturan/password');
             }
         }
@@ -86,7 +86,7 @@ module.exports.changePassword = async (req, res, next) => {
         }
     }
     else {
-        req.flash('Gagal Ganti Password!')
+        req.flash('Gagal ganti password!')
         return res.redirect('/pengaturan/password')
     }
     req.flash('success', 'Password sudah dirubah!');

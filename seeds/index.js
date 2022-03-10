@@ -8,7 +8,10 @@ const { DataBab } = require('./dataBab');
 const { DataSubBab } = require('./dataSubBab');
 const { DataKonten } = require('./dataKonten');
 
-mongoose.connect('mongodb://localhost:27017/fibonacciku', {
+const dbUrl = 'mongodb+srv://fibonacciku:Fatih16112001@fibonacciku.hjx4b.mongodb.net/FibonacciKu?retryWrites=true&w=majority';
+const dbUrlProduction = 'mongodb://localhost:27017/fibonacciku';
+
+mongoose.connect(dbUrl, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });

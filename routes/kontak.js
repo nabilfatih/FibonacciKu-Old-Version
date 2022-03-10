@@ -5,4 +5,6 @@ const catchAsync = require('../utils/catchAsync');
 
 router.get('/', catchAsync(kontak.kontak));
 
+router.put('/', catchAsync(kontak.putKontak));
+
 module.exports = router;

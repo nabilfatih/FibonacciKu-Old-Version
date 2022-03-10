@@ -19,7 +19,7 @@ module.exports.updateProfile = async (req, res) => {
     const user = req.user
     const emailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     const letterformat = /[a-zA-Z]/;
-    const { nama, username, email, bio, instagram, github, twitter } = req.body
+    const { nama, username, email, bio, web, instagram, github, twitter } = req.body
     if(!nama) {
         req.flash('error', 'Masukkan nama kamu!')
         return res.redirect('/pengaturan/akun')
@@ -37,6 +37,7 @@ module.exports.updateProfile = async (req, res) => {
         if (username) user.username = username;
         if (email.match(emailformat)) user.email = email;
         user.bio = bio;
+        user.website = web;
         user.instagram = instagram;
         user.github = github;
         user.twitter = twitter;

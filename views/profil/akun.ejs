@@ -57,6 +57,13 @@
                         </div>
 
                         <div class="pengaturan__konten">
+                            <label for="" class="pengaturan__label form-label">Website</label>
+                            <label class="mb-3 deskripsi" for="description">Tulis website kamu: websitekamu.com</label>
+                            <input class="" type="text" id="web" class="pengaturan__input" value="<%= user.website %>" name="web">
+                            <div id="validation-message-web" class=""></div>
+                        </div>
+
+                        <div class="pengaturan__konten">
                             <label for="" class="pengaturan__label form-label">Instagram</label>
                             <label class="mb-3 deskripsi" for="description">Username saja tanpa @</label>
                             <input class="" type="text" id="instagram" class="pengaturan__input" value="<%= user.instagram %>" name="instagram">

@@ -143,6 +143,17 @@
                 margin-bottom: 0;
             }
 
+            .website {
+                font-size: 1.2rem;
+                font-style: italic;
+                font-weight: 1000;
+                color: $lightBlack;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
             .link {
                 display: flex;
 

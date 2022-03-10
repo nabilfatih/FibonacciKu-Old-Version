@@ -1,5 +1,4 @@
 <% layout('layouts/boilerplate') %>
-<%- include('../partials/flash') %>
 
 <style>
     .kontak-form {
@@ -9,6 +8,7 @@
 </style>
 
 <section class="kontak-form">
+    <%- include('../partials/flash') %>
     <div class="kontak container container--pall">
         <div class="kontak__intro">
             <h1>Kamu Bisa Kontak Kita!</h1>
@@ -46,25 +46,25 @@
                 </div>
             </div>
     
-            <form action="/kontakSubmit" method="POST" class="kontak__form grid validated-form" novalidate>
+            <form action="/kontak?_method=PUT" method="POST" class="kontak__form grid validated-form" novalidate>
                     
                 <div class="kontak__konten">
                     <label for="" class="kontak__label form-label">Nama Lengkap</label>
-                    <input class="form-control" type="text" id="nama" class="kontak__input" required>
+                    <input class="form-control" type="text" id="nama" name="nama" class="kontak__input" required>
                 </div>
                 <div class="kontak__konten">
                     <label for="" class="kontak__label form-label">Email</label>
-                    <input class="form-control" type="email" id="email" class="kontak__input" required>
+                    <input class="form-control" type="email" id="email" name="email" class="kontak__input" required>
                 </div>
                     
                 <div class="kontak__konten">
                     <label for="" class="kontak__label form-label">Subjek</label>
-                    <input class="form-control" type="text" id="subject" class="kontak__input" required>
+                    <input class="form-control" type="text" id="subject" name="subjek" class="kontak__input" required>
                 </div>
 
                 <div class="kontak__konten">
                     <label for="" class="kontak__label form-label">Pesan</label>
-                    <textarea class="form-control" type="text" id="pesan" cols="0" rows="9" class="kontak__input" required></textarea>
+                    <textarea class="form-control" type="text" id="pesan" cols="0" rows="9" name="pesan" class="kontak__input" required></textarea>
                 </div>
     
                 <div>
@@ -79,6 +79,8 @@
     </div>
 
 </section>
+
+<!-- <script src="/js/kontak/script.js"></script> -->
 
 <script async>
     document.title = "Kontak | FibonacciKu";
