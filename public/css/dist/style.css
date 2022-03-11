@@ -2186,6 +2186,7 @@ button:hover::before, .button:hover::before {
 
 .matrixs {
   background-color: black;
+  overflow-x: hidden;
 }
 
 .matrixs .container {
