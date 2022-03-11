@@ -24,7 +24,7 @@
             <% for (let pelajaran of pelajarans) {%>
                 <div class="pelajaran__card">
                     <div class="pelajaran__icon">
-                        <img src="<%= pelajaran.icon %> ">
+                        <img src="<%= pelajaran.icon %>" alt="logo <%= pelajaran.pelajaran %>">
                     </div>
     
                     <div class="pelajaran__title">
@@ -54,11 +54,11 @@
             <% for (let ujian of ujians) {%>
                 <div class="ujian__card">
                     <div class="ujian__icon">
-                        <img src="<%= ujian.icon %> ">
+                        <img src="<%= ujian.icon %>" alt="logo <%= ujian.pelajaran %>">
                     </div>
     
                     <div class="ujian__title">
-                        <%= ujian.pelajaran %> 
+                        <%= ujian.pelajaran %>
                     </div>
                     
                     <a class="button" href="mata-pelajaran/<%= ujian.query %>">
