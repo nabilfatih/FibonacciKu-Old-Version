@@ -1,53 +1,53 @@
-const s = ( sk ) => {
+const s = ( sketch ) => {
   
-    sk.setup = () => {
-        sk.createCanvas(400, 400);
-        sk.angleMode(DEGREES);
+    sketch.setup = () => {
+        sketch.createCanvas(400, 400);
+        sketch.angleMode(DEGREES);
     };
   
-    sk.draw = () => {
-        sk.background(33, 36, 61);
-        sk.translate(200, 200);
-        sk.rotate(-90); 
+    sketch.draw = () => {
+        sketch.background(33, 36, 61);
+        sketch.translate(200, 200);
+        sketch.rotate(-90); 
 
-        let hr = sk.hour();
-        let mn = sk.minute();
-        let sc = sk.second();
+        let hr = sketch.hour();
+        let mn = sketch.minute();
+        let sc = sketch.second();
 
-        sk.strokeWeight(8);
-        sk.stroke(255, 124, 124);
-        sk.noFill();
-        let second = sk.map(sc, 0, 60, 0, 360);
-        sk.arc(0, 0, 385, 385, 0, second);
+        sketch.strokeWeight(8);
+        sketch.stroke(255, 124, 124);
+        sketch.noFill();
+        let second = sketch.map(sc, 0, 60, 0, 360);
+        sketch.arc(0, 0, 385, 385, 0, second);
 
-        sk.push();
-        sk.rotate(second)
-        sk.stroke(255, 124, 124);
-        sk.line(0, 0, 150, 0)
-        sk.pop()
+        sketch.push();
+        sketch.rotate(second)
+        sketch.stroke(255, 124, 124);
+        sketch.line(0, 0, 150, 0)
+        sketch.pop()
 
-        sk.stroke(255, 208, 130);
-        let minute = sk.map(mn, 0, 60, 0, 360);
-        sk.arc(0, 0, 365, 365, 0, minute);
+        sketch.stroke(255, 208, 130);
+        let minute = sketch.map(mn, 0, 60, 0, 360);
+        sketch.arc(0, 0, 365, 365, 0, minute);
 
-        sk.push();
-        sk.rotate(minute)
-        sk.stroke(255, 208, 130);
-        sk.line(0, 0, 125, 0)
-        sk.pop()
+        sketch.push();
+        sketch.rotate(minute)
+        sketch.stroke(255, 208, 130);
+        sketch.line(0, 0, 125, 0)
+        sketch.pop()
 
-        sk.stroke(136, 225, 242);
-        let hour = sk.map(hr % 12, 0, 12, 0, 360)
-        sk.arc(0, 0, 345, 345, 0, hour);
+        sketch.stroke(136, 225, 242);
+        let hour = sketch.map(hr % 12, 0, 12, 0, 360)
+        sketch.arc(0, 0, 345, 345, 0, hour);
 
-        sk.push();
-        sk.rotate(hour)
-        sk.stroke(136, 225, 242);
-        sk.line(0, 0, 100, 0)
-        sk.pop()
+        sketch.push();
+        sketch.rotate(hour)
+        sketch.stroke(136, 225, 242);
+        sketch.line(0, 0, 100, 0)
+        sketch.pop()
 
-        sk.stroke(255);
-        sk.point(0, 0)
+        sketch.stroke(255);
+        sketch.point(0, 0)
     };
   };
   
