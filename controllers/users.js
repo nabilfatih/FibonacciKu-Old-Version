@@ -29,14 +29,14 @@ module.exports.putForgotPw = async(req, res, next) => {
             Hai sobat Fibo!
             Kamu mendapatkan email ini karena kamu (atau orang lain) ingin mereset/merubah password kamu.
             Tolong klik link di bawah atau copy paste di browser kamu untuk mereset password:
-            http://localhost:3000/reset/${token}
+            https://www.fibonacciku.com/reset/${token}
             Jika kamu permintaan reset password bukan dari kamu, tolong abaikan email ini dan password kamu tidak akan berubah.
         `.replace(/            /g, ''),
         html: `
             <h1>Hai sobat Fibo!</h1>
             <p>Kamu mendapatkan email ini karena kamu (atau orang lain) ingin mereset/merubah password kamu.</p>
             <p>Tolong klik link di bawah atau copy paste di browser kamu untuk mereset password:</p>
-            <a href="http://localhost:3000/reset/${token}">Reset Password</a>
+            <a href="https://www.fibonacciku.com/reset/${token}">Reset Password</a>
             <p>Jika kamu permintaan reset password bukan dari kamu, tolong abaikan email ini dan password kamu tidak akan berubah.</p>
             <p>Terima Kasih, </p>
             <p>FibonacciKu</p>

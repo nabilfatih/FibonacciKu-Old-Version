@@ -37,13 +37,13 @@ router.post('/daftar', catchAsync(async(req, res) => {
             text: `
                 Hai sobat Fibo! Terima kasih sudah mendaftar di FibonacciKu.
                 Tolong copy dan paste link di bawah ini untuk verifikasi akun kamu.
-                http://localhost:3000/verify-email?token=${user.emailToken}
+                https://www.fibonacciku.com/verify-email?token=${user.emailToken}
                 `.replace(/                /g, ''),
             html: `
                 <h1>Hai sobat Fibo!</h1>
                 <p>Terima kasih sudah mendaftar di FibonacciKu.</p>
                 <p>Tolong menklik link di bawah ini untuk verifikasi akun kamu.</p>
-                <a href="http://localhost:3000/verify-email?token=${user.emailToken}">Verifikasi Akun</a>
+                <a href="https://www.fibonacciku.com/verify-email?token=${user.emailToken}">Verifikasi Akun</a>
                 <p>Email verifikasi ini hanya dikirim 1 kali, jangan sampai hilang email ini. Jika hilang, maka kalian harus menunggu selama 3 hari untuk membuat ulang akun FibonacciKu dengan email yang sama.</p>
                 <p>Terima Kasih, </p>
                 <p>FibonacciKu</p>
