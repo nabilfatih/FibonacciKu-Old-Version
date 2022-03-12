@@ -14,25 +14,28 @@ module.exports.putKontak = async (req, res) => {
     const { nama, email, subjek, pesan } = req.body;
     try {
         const msg = {
-            from: 'FibonacciKu <kontak@fibonacciku.com>',
-            to: 'fibonacci.id21@gmail.com',
-            subject: `${subjek} - Kontak FibonacciKu`,
+            from: `${nama} <kontak-noreply@fibonacciku.com>`,
+            to: 'kontak@fibonacciku.com',
+            subject: `${subjek}`,
             text: `
                 Pesan dari ${email}:
                 ${pesan}
                 dari ${nama}
             `.replace(/            /g, ''),
             html: `
-                <h1>Pesan dari ${email}</h1>
-                <p>${pesan}</p>
-                <p>dari ${nama}</p>
-    
+                <h3>Pesan dari ${email}:</h3>
+                <hr>
+                <pre>${pesan}</pre>
+                <hr>
+                <h3>dari ${nama}</h3>
+                <hr>
                 <p>Kontak - FibonacciKu</p>
             `
         }
         await sgMail.send(msg);
         req.flash('success', 'Pesan sudah dikirim');
     } catch(e) {
+        console.log(e)
         req.flash('error', 'Pesan gagal dikirim, tolong kontak FibonacciKu')
     }
     return res.redirect('/kontak')
