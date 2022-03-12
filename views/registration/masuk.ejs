@@ -12,7 +12,7 @@
                     <div class="field">
                         <i class="uil uil-user-circle"></i>
                         <label class="form-label" for="username"></label>
-                        <input class="form-control" type="text" id="username" name="username" style="text-transform:lowercase" maxlength="20" placeholder="Username" required>
+                        <input class="form-control" type="text" id="username" name="username" maxlength="20" placeholder="Username" required>
                     </div>
 
 
@@ -53,6 +53,13 @@
 
 <script async>
     document.title = "Masuk | FibonacciKu"
+</script>
+
+<script>
+    const username = document.getElementById('username');
+    username.oninput = function() {
+        username.value = username.value.toLowerCase()
+    }
 </script>
 
 <script src="/js/masuk/script.js" async></script>

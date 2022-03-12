@@ -41,7 +41,7 @@
                 <div class="field">
                     <i class="uil uil-user-circle"></i>
                     <label for="username"></label>
-                    <input class="form-control" type="text" id="username" name="username" placeholder="username" maxlength="20" style="text-transform:lowercase" required>
+                    <input class="form-control" type="text" id="username" name="username" placeholder="username" maxlength="20" required>
                 </div>
 
                 <div class="field">
@@ -59,6 +59,13 @@
 
 <script async>
     document.title = "Daftar | FibonacciKu";
+</script>
+
+<script>
+    const username = document.getElementById('username');
+    username.oninput = function() {
+        username.value = username.value.toLowerCase()
+    }
 </script>
 
 <script src="/js/masuk/script.js" async></script>
