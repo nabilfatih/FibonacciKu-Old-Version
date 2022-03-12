@@ -22,7 +22,7 @@
         <div class="container container--px">
             <div class="profil__info">
                 <div class="profil__avatar">
-                    <img src="<%= username.avatar.path %>" alt="foto profile <%= username.username %>">
+                    <img src="<%= username.avatar.path %>" alt="foto profil <%= username.username %>">
                     <% if(user.username == username.username) {%> 
                     <div class="edit-foto">
                         <form action="/fibo/<%= user.username %>?_method=PUT" method="POST" enctype="multipart/form-data">
